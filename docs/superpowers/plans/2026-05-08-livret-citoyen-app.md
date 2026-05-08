@@ -14,19 +14,19 @@
 
 ## Phase organization
 
-| Phase | Tasks | Delivers |
-|---|---|---|
-| 1. Repo scaffold | 1–5 | Vite + TS + lint + tests bootstrap |
-| 2. Tailwind v4 + shadcn + fonts | 6–8 | Theme tokens applied, dark mode, font self-hosting |
-| 3. Data layer | 9–12 | Card schema, theme registry, fixture cards, validator |
-| 4. Audio infrastructure | 13–15 | sha1 helper, audio URL builder, AudioButton |
-| 5. Flashcard core | 16–21 | FlagAccent, ResponseButtons, CardFront/Back, Flashcard, flip |
-| 6. Progress & dark mode | 22–25 | localStorage adapter, useProgress hook, theme provider, DeckProgressRing |
-| 7. Deck Picker | 26–28 | DeckTile, DeckPicker grid, Home route |
-| 8. Study Session | 29–32 | Shuffle, reducer, StudySession (auto-advance + keyboard + swipe + finish), Study route |
-| 9. Routing & layout | 33–37 | Router, Header, Footer, About, favicon |
-| 10. E2E tests | 38–40 | Playwright study flow, RTL assertion, reduced-motion |
-| 11. CI & deploy | 41–43 | GitHub Actions, Cloudflare Pages, README |
+| Phase                           | Tasks | Delivers                                                                               |
+| ------------------------------- | ----- | -------------------------------------------------------------------------------------- |
+| 1. Repo scaffold                | 1–5   | Vite + TS + lint + tests bootstrap                                                     |
+| 2. Tailwind v4 + shadcn + fonts | 6–8   | Theme tokens applied, dark mode, font self-hosting                                     |
+| 3. Data layer                   | 9–12  | Card schema, theme registry, fixture cards, validator                                  |
+| 4. Audio infrastructure         | 13–15 | sha1 helper, audio URL builder, AudioButton                                            |
+| 5. Flashcard core               | 16–21 | FlagAccent, ResponseButtons, CardFront/Back, Flashcard, flip                           |
+| 6. Progress & dark mode         | 22–25 | localStorage adapter, useProgress hook, theme provider, DeckProgressRing               |
+| 7. Deck Picker                  | 26–28 | DeckTile, DeckPicker grid, Home route                                                  |
+| 8. Study Session                | 29–32 | Shuffle, reducer, StudySession (auto-advance + keyboard + swipe + finish), Study route |
+| 9. Routing & layout             | 33–37 | Router, Header, Footer, About, favicon                                                 |
+| 10. E2E tests                   | 38–40 | Playwright study flow, RTL assertion, reduced-motion                                   |
+| 11. CI & deploy                 | 41–43 | GitHub Actions, Cloudflare Pages, README                                               |
 
 Total: **43 tasks.** Each task ends in a commit. Run `pnpm test` and `pnpm typecheck` between phases.
 
@@ -37,19 +37,23 @@ Total: **43 tasks.** Each task ends in a commit. Run `pnpm test` and `pnpm typec
 ### Task 1: Initialize Vite + React + TypeScript
 
 **Files:**
+
 - Create: `package.json`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `index.html`, `src/main.tsx`, `src/App.tsx`, `src/vite-env.d.ts`, `.nvmrc`
 
 - [ ] **Step 1: Create the Vite project skeleton in the existing directory.**
 
 Run from project root:
+
 ```bash
 pnpm create vite@latest . -- --template react-ts
 ```
+
 When prompted "Current directory is not empty," choose **"Ignore files and continue."**
 
 - [ ] **Step 2: Pin Node version.**
 
 Create `.nvmrc`:
+
 ```
 20
 ```
@@ -75,7 +79,7 @@ import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
 ```
 
@@ -103,6 +107,7 @@ createRoot(document.getElementById("root")!).render(
 pnpm install
 pnpm dev
 ```
+
 Expected: server listens on http://localhost:5173 and renders "Livret du Citoyen". Stop with Ctrl+C.
 
 - [ ] **Step 7: Commit.**
@@ -117,11 +122,13 @@ git commit -m "feat: scaffold Vite + React + TypeScript project"
 ### Task 2: Configure path aliases
 
 **Files:**
+
 - Modify: `tsconfig.app.json`, `vite.config.ts`
 
 - [ ] **Step 1: Add path alias to `tsconfig.app.json`.**
 
 Inside `compilerOptions`, add:
+
 ```json
 "baseUrl": ".",
 "paths": { "@/*": ["./src/*"] }
@@ -146,16 +153,20 @@ export default defineConfig({
 - [ ] **Step 3: Verify the alias works.**
 
 Add a `src/lib/hello.ts`:
+
 ```ts
 export const hello = () => "ok";
 ```
+
 Update `src/App.tsx`:
+
 ```tsx
 import { hello } from "@/lib/hello";
 export default function App() {
   return <div>Livret du Citoyen — {hello()}</div>;
 }
 ```
+
 Run `pnpm dev`, visit http://localhost:5173, confirm it shows "Livret du Citoyen — ok". Then **revert** the App change (keep `hello.ts` for now — used in Task 5 test).
 
 - [ ] **Step 4: Commit.**
@@ -170,6 +181,7 @@ git commit -m "feat: configure @/ path alias"
 ### Task 3: Add ESLint + Prettier
 
 **Files:**
+
 - Modify: `package.json`
 - Create: `.prettierrc.json`, `.prettierignore`
 
@@ -242,6 +254,7 @@ pnpm format
 pnpm lint
 pnpm typecheck
 ```
+
 Expected: all three pass with zero errors.
 
 - [ ] **Step 7: Commit.**
@@ -256,6 +269,7 @@ git commit -m "feat: add Prettier and lint/format/typecheck scripts"
 ### Task 4: Add Vitest + Testing Library
 
 **Files:**
+
 - Modify: `package.json`, `vite.config.ts`
 - Create: `vitest.setup.ts`, `tsconfig.vitest.json`
 
@@ -301,6 +315,7 @@ export default defineConfig({
 - [ ] **Step 4: Add test scripts.**
 
 In `package.json`:
+
 ```json
 "test": "vitest run",
 "test:watch": "vitest"
@@ -309,6 +324,7 @@ In `package.json`:
 - [ ] **Step 5: Add `globals: true` to TS so `describe/it/expect` resolve.**
 
 In `tsconfig.app.json`, add to `compilerOptions`:
+
 ```json
 "types": ["vitest/globals", "@testing-library/jest-dom"]
 ```
@@ -325,6 +341,7 @@ git commit -m "feat: add Vitest + Testing Library setup"
 ### Task 5: First passing unit test (smoke test)
 
 **Files:**
+
 - Create: `src/lib/hello.test.ts`
 
 - [ ] **Step 1: Write a failing test.**
@@ -346,6 +363,7 @@ describe("hello", () => {
 ```bash
 pnpm test
 ```
+
 Expected: 1 passing.
 
 - [ ] **Step 3: Commit.**
@@ -362,6 +380,7 @@ git commit -m "test: smoke unit test for path alias"
 ### Task 6: Install Tailwind v4 + apply user theme tokens
 
 **Files:**
+
 - Modify: `package.json`, `vite.config.ts`, `src/index.css`
 - Create: `src/index.css` (replace auto-generated)
 
@@ -445,9 +464,9 @@ Use exactly the token sheet from spec §3 D9. Full content:
   --destructive-foreground: #ffffff;
   --sidebar-accent-foreground: #374151;
   --sidebar-primary-foreground: #ffffff;
-  --flag-blue: #0055A4;
-  --flag-white: #FFFFFF;
-  --flag-red: #EF4135;
+  --flag-blue: #0055a4;
+  --flag-white: #ffffff;
+  --flag-red: #ef4135;
 }
 
 .dark {
@@ -516,14 +535,18 @@ Use exactly the token sheet from spec §3 D9. Full content:
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
+  * {
+    border-color: var(--color-border);
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  [dir="rtl"] { text-align: right; }
+  [dir="rtl"] {
+    text-align: right;
+  }
 }
 ```
 
@@ -532,6 +555,7 @@ Use exactly the token sheet from spec §3 D9. Full content:
 ```bash
 pnpm dev
 ```
+
 Expected: page background uses `--background` (`#f8fafc` light slate). Stop server.
 
 - [ ] **Step 5: Commit.**
@@ -546,6 +570,7 @@ git commit -m "feat: integrate Tailwind v4 with user theme tokens"
 ### Task 7: Self-host fonts via @fontsource
 
 **Files:**
+
 - Modify: `package.json`, `src/main.tsx`
 
 - [ ] **Step 1: Install font packages.**
@@ -576,7 +601,7 @@ import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
 ```
 
@@ -594,6 +619,7 @@ git commit -m "feat: self-host Inter, Merriweather, JetBrains Mono, Noto Sans Ar
 ### Task 8: Initialize shadcn/ui + first primitive (Button)
 
 **Files:**
+
 - Modify: `package.json`, `tsconfig.json`, `tsconfig.app.json`, `vite.config.ts`
 - Create: `components.json`, `src/components/ui/button.tsx`, `src/lib/utils.ts`
 
@@ -602,6 +628,7 @@ git commit -m "feat: self-host Inter, Merriweather, JetBrains Mono, Noto Sans Ar
 ```bash
 pnpm dlx shadcn@latest init
 ```
+
 Answer the prompts: framework=Vite, style=default, base color=slate, css variables=yes, alias `@/*` already configured.
 
 This creates `components.json`, adds `tailwindcss-animate` and `clsx` + `tailwind-merge`, and seeds `src/lib/utils.ts` with the `cn` helper.
@@ -635,6 +662,7 @@ export default function App() {
 ```bash
 pnpm dev
 ```
+
 Expected: indigo Button renders with the user's primary color.
 
 - [ ] **Step 5: Run lint + tests.**
@@ -642,6 +670,7 @@ Expected: indigo Button renders with the user's primary color.
 ```bash
 pnpm lint && pnpm typecheck && pnpm test
 ```
+
 All should pass.
 
 - [ ] **Step 6: Commit.**
@@ -658,6 +687,7 @@ git commit -m "feat: initialize shadcn/ui and add Button primitive"
 ### Task 9: Card schema with Zod
 
 **Files:**
+
 - Create: `src/lib/card.ts`, `src/lib/card.test.ts`
 
 - [ ] **Step 1: Install Zod.**
@@ -711,6 +741,7 @@ describe("Card schema", () => {
 ```bash
 pnpm test src/lib/card.test.ts
 ```
+
 Expected: FAIL "Cannot find module '@/lib/card'".
 
 - [ ] **Step 4: Implement.**
@@ -754,6 +785,7 @@ export const CardArray = z.array(Card);
 ```bash
 pnpm test src/lib/card.test.ts
 ```
+
 Expected: 5 passing.
 
 - [ ] **Step 6: Commit.**
@@ -768,6 +800,7 @@ git commit -m "feat: add Card Zod schema with strict validation"
 ### Task 10: Theme registry
 
 **Files:**
+
 - Create: `src/data/themes.ts`, `src/data/themes.test.ts`
 
 - [ ] **Step 1: Install lucide-react.**
@@ -899,6 +932,7 @@ export function themeById(id: ThemeId): Theme {
 ```bash
 pnpm test src/data/themes.test.ts
 ```
+
 Expected: 2 passing.
 
 - [ ] **Step 6: Commit.**
@@ -913,6 +947,7 @@ git commit -m "feat: add theme registry with bilingual labels"
 ### Task 11: Fixture cards (3 per theme) + data loader
 
 **Files:**
+
 - Create: `src/data/cards/valeurs.json`, `src/data/cards/droits-devoirs.json`, `src/data/cards/institutions.json`, `src/data/cards/histoire.json`, `src/data/cards/geographie.json`, `src/data/cards/ddhc.json`, `src/data/index.ts`, `src/data/index.test.ts`
 
 > Fixture cards include verbatim French answers from the source PDFs and **placeholder Arabic** translations marked clearly so Plan 2 can replace them. The `audio` `sha1` fields use placeholder hashes (40 zeros + theme num) until Plan 2 generates real audio. Plan 1 ships a working app shell; Plan 2 swaps in real Arabic and audio.
@@ -1148,6 +1183,7 @@ git commit -m "feat: add theme registry with bilingual labels"
 ```
 
 - [ ] **Step 3d: Create `src/data/cards/ddhc.json` (uses the actual articles to keep verbatim integrity).**
+
 ```json
 [
   {
@@ -1234,14 +1270,7 @@ import histoire from "./cards/histoire.json";
 import geographie from "./cards/geographie.json";
 import ddhc from "./cards/ddhc.json";
 
-const raw = [
-  ...valeurs,
-  ...droitsDevoirs,
-  ...institutions,
-  ...histoire,
-  ...geographie,
-  ...ddhc,
-];
+const raw = [...valeurs, ...droitsDevoirs, ...institutions, ...histoire, ...geographie, ...ddhc];
 
 export const allCards: Card[] = CardArray.parse(raw);
 
@@ -1261,6 +1290,7 @@ export function cardsByTheme(theme: ThemeId): Card[] {
 ```bash
 pnpm test
 ```
+
 Expected: data tests pass, schema tests pass.
 
 - [ ] **Step 8: Commit.**
@@ -1275,6 +1305,7 @@ git commit -m "feat: add fixture cards (3 per theme) and data loader with Zod va
 ### Task 12: validate-cards CLI script
 
 **Files:**
+
 - Create: `scripts/validate-cards.ts`
 - Modify: `package.json`
 
@@ -1345,6 +1376,7 @@ touch public/audio/.gitkeep
 ```
 
 In `package.json`:
+
 ```json
 "validate:cards": "tsx scripts/validate-cards.ts"
 ```
@@ -1354,6 +1386,7 @@ In `package.json`:
 ```bash
 SKIP_AUDIO_CHECK=1 pnpm validate:cards
 ```
+
 Expected: prints `✓ <file>: 3 cards` six times, then `18 cards total`.
 
 - [ ] **Step 5: Commit.**
@@ -1370,6 +1403,7 @@ git commit -m "feat: add validate-cards CLI for schema + audio file presence"
 ### Task 13: sha1 helper + audio URL builder
 
 **Files:**
+
 - Create: `src/lib/audio.ts`, `src/lib/audio.test.ts`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1415,6 +1449,7 @@ git commit -m "feat: add audioUrl helper"
 ### Task 14: useAudioPlayer hook (single-channel global)
 
 **Files:**
+
 - Create: `src/lib/useAudioPlayer.ts`, `src/lib/useAudioPlayer.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1519,7 +1554,9 @@ export function useAudioPlayer(url: string) {
 
     const unsubscribe = () => {
       if (currentlyPlaying === a) currentlyPlaying = null;
-      try { a.pause(); } catch {}
+      try {
+        a.pause();
+      } catch {}
     };
     subscribers.add(unsubscribe);
 
@@ -1529,7 +1566,9 @@ export function useAudioPlayer(url: string) {
       a.removeEventListener("ended", onEnded);
       a.removeEventListener("error", onError);
       subscribers.delete(unsubscribe);
-      try { a.pause(); } catch {}
+      try {
+        a.pause();
+      } catch {}
       if (currentlyPlaying === a) currentlyPlaying = null;
     };
   }, [url]);
@@ -1542,7 +1581,9 @@ export function useAudioPlayer(url: string) {
       return;
     }
     if (currentlyPlaying && currentlyPlaying !== a) {
-      try { currentlyPlaying.pause(); } catch {}
+      try {
+        currentlyPlaying.pause();
+      } catch {}
       broadcastStop();
     }
     currentlyPlaying = a;
@@ -1563,6 +1604,7 @@ export function useAudioPlayer(url: string) {
 ```bash
 pnpm test src/lib/useAudioPlayer.test.tsx
 ```
+
 Expected: 2 passing.
 
 - [ ] **Step 5: Commit.**
@@ -1577,6 +1619,7 @@ git commit -m "feat: useAudioPlayer hook with single-channel global state"
 ### Task 15: AudioButton component
 
 **Files:**
+
 - Create: `src/components/flashcard/AudioButton.tsx`, `src/components/flashcard/AudioButton.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1591,10 +1634,18 @@ import { AudioButton } from "@/components/flashcard/AudioButton";
 class FakeAudio {
   src = "";
   paused = true;
-  play = vi.fn(async () => { this.paused = false; this.listeners["play"]?.forEach((l) => l()); });
-  pause = vi.fn(() => { this.paused = true; this.listeners["pause"]?.forEach((l) => l()); });
+  play = vi.fn(async () => {
+    this.paused = false;
+    this.listeners["play"]?.forEach((l) => l());
+  });
+  pause = vi.fn(() => {
+    this.paused = true;
+    this.listeners["pause"]?.forEach((l) => l());
+  });
   listeners: Record<string, Array<() => void>> = {};
-  addEventListener(ev: string, cb: () => void) { (this.listeners[ev] ||= []).push(cb); }
+  addEventListener(ev: string, cb: () => void) {
+    (this.listeners[ev] ||= []).push(cb);
+  }
   removeEventListener() {}
 }
 
@@ -1638,13 +1689,24 @@ export function AudioButton({ sha1, label, size = "md" }: Props) {
   const px = size === "sm" ? "h-9 w-9" : "h-10 w-10";
 
   const Icon =
-    state === "loading" ? Loader2 : state === "playing" ? Square : state === "error" ? AlertCircle : Play;
+    state === "loading"
+      ? Loader2
+      : state === "playing"
+        ? Square
+        : state === "error"
+          ? AlertCircle
+          : Play;
 
   return (
     <button
       type="button"
-      onClick={(e) => { e.stopPropagation(); void toggle(); }}
-      onKeyDown={(e) => { if (e.key === " " || e.key === "Enter") e.stopPropagation(); }}
+      onClick={(e) => {
+        e.stopPropagation();
+        void toggle();
+      }}
+      onKeyDown={(e) => {
+        if (e.key === " " || e.key === "Enter") e.stopPropagation();
+      }}
       aria-label={label}
       aria-pressed={state === "playing"}
       className={cn(
@@ -1677,6 +1739,7 @@ git commit -m "feat: AudioButton with aria-pressed and click-stop-propagation"
 ### Task 16: FlagAccent component
 
 **Files:**
+
 - Create: `src/components/flashcard/FlagAccent.tsx`, `src/components/flashcard/FlagAccent.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1711,16 +1774,14 @@ type Props = { className?: string; orientation?: "vertical" | "horizontal" };
 
 export function FlagAccent({ className, orientation = "vertical" }: Props) {
   const wrap =
-    orientation === "vertical"
-      ? "flex flex-col w-1 h-full"
-      : "flex flex-row h-[2px] w-6";
+    orientation === "vertical" ? "flex flex-col w-1 h-full" : "flex flex-row h-[2px] w-6";
   const seg = orientation === "vertical" ? "flex-1 w-full" : "flex-1 h-full";
 
   return (
     <div className={cn(wrap, className)} aria-hidden="true">
-      <div data-flag-segment="blue"  className={cn(seg, "bg-[var(--color-flag-blue)]")} />
+      <div data-flag-segment="blue" className={cn(seg, "bg-[var(--color-flag-blue)]")} />
       <div data-flag-segment="white" className={cn(seg, "bg-[var(--color-flag-white)]")} />
-      <div data-flag-segment="red"   className={cn(seg, "bg-[var(--color-flag-red)]")} />
+      <div data-flag-segment="red" className={cn(seg, "bg-[var(--color-flag-red)]")} />
     </div>
   );
 }
@@ -1740,6 +1801,7 @@ git commit -m "feat: FlagAccent — vertical or horizontal tricolor"
 ### Task 17: ResponseButtons component
 
 **Files:**
+
 - Create: `src/components/flashcard/ResponseButtons.tsx`, `src/components/flashcard/ResponseButtons.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1781,7 +1843,10 @@ export function ResponseButtons({ onKnown, onReview }: Props) {
     <div className="grid grid-cols-2 gap-3 w-full">
       <button
         type="button"
-        onClick={(e) => { e.stopPropagation(); onKnown(); }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onKnown();
+        }}
         className={cn(
           "flex flex-col items-center justify-center gap-1 py-3 rounded-lg",
           "bg-[var(--color-primary)] text-[var(--color-primary-foreground)]",
@@ -1793,11 +1858,16 @@ export function ResponseButtons({ onKnown, onReview }: Props) {
           <Check className="h-4 w-4" aria-hidden="true" />
           Je sais
         </span>
-        <span dir="rtl" lang="ar" className="text-sm opacity-90">أعرف</span>
+        <span dir="rtl" lang="ar" className="text-sm opacity-90">
+          أعرف
+        </span>
       </button>
       <button
         type="button"
-        onClick={(e) => { e.stopPropagation(); onReview(); }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onReview();
+        }}
         className={cn(
           "flex flex-col items-center justify-center gap-1 py-3 rounded-lg border",
           "bg-[var(--color-secondary)] text-[var(--color-secondary-foreground)]",
@@ -1806,10 +1876,11 @@ export function ResponseButtons({ onKnown, onReview }: Props) {
         )}
       >
         <span className="inline-flex items-center gap-2 font-semibold">
-          <X className="h-4 w-4" aria-hidden="true" />
-          À revoir
+          <X className="h-4 w-4" aria-hidden="true" />À revoir
         </span>
-        <span dir="rtl" lang="ar" className="text-sm opacity-90">أحتاج مراجعة</span>
+        <span dir="rtl" lang="ar" className="text-sm opacity-90">
+          أحتاج مراجعة
+        </span>
       </button>
     </div>
   );
@@ -1830,6 +1901,7 @@ git commit -m "feat: ResponseButtons (Je sais / À revoir) with bilingual labels
 ### Task 18: CardFront component
 
 **Files:**
+
 - Create: `src/components/flashcard/CardFront.tsx`, `src/components/flashcard/CardFront.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1899,7 +1971,11 @@ export function CardFront({ card, position, total }: Props) {
         {theme.label_fr} · {position} / {total}
       </div>
 
-      <p className="font-sans font-semibold text-xl sm:text-2xl leading-snug text-[var(--color-card-foreground)]" dir="ltr" lang="fr">
+      <p
+        className="font-sans font-semibold text-xl sm:text-2xl leading-snug text-[var(--color-card-foreground)]"
+        dir="ltr"
+        lang="fr"
+      >
         {card.fr_q}
       </p>
 
@@ -1909,12 +1985,19 @@ export function CardFront({ card, position, total }: Props) {
 
       <hr className="border-[var(--color-border)]" />
 
-      <p className="font-[family-name:var(--font-sans)] text-base sm:text-lg text-[var(--color-muted-foreground)] leading-relaxed" dir="rtl" lang="ar">
+      <p
+        className="font-[family-name:var(--font-sans)] text-base sm:text-lg text-[var(--color-muted-foreground)] leading-relaxed"
+        dir="rtl"
+        lang="ar"
+      >
         {card.ar_q}
       </p>
 
       <div className="mt-auto pt-4 text-center text-xs text-[var(--color-muted-foreground)]">
-        Tap to reveal · <span dir="rtl" lang="ar">اضغط لكشف الإجابة</span>
+        Tap to reveal ·{" "}
+        <span dir="rtl" lang="ar">
+          اضغط لكشف الإجابة
+        </span>
       </div>
     </div>
   );
@@ -1935,6 +2018,7 @@ git commit -m "feat: CardFront with bilingual question and audio"
 ### Task 19: CardBack component
 
 **Files:**
+
 - Create: `src/components/flashcard/CardBack.tsx`, `src/components/flashcard/CardBack.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -1946,14 +2030,24 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { CardBack } from "@/components/flashcard/CardBack";
 
-class FakeAudio { paused=true; play=vi.fn(async()=>{}); pause=vi.fn(); addEventListener(){} removeEventListener(){} }
-beforeEach(() => { /* @ts-expect-error */ globalThis.Audio = FakeAudio; });
+class FakeAudio {
+  paused = true;
+  play = vi.fn(async () => {});
+  pause = vi.fn();
+  addEventListener() {}
+  removeEventListener() {}
+}
+beforeEach(() => {
+  /* @ts-expect-error */ globalThis.Audio = FakeAudio;
+});
 
 const card = {
   id: "valeurs-001",
   theme: "valeurs" as const,
-  fr_q: "Q?", ar_q: "س؟",
-  fr_a: "Réponse en français.", ar_a: "إجابة بالعربية.",
+  fr_q: "Q?",
+  ar_q: "س؟",
+  fr_a: "Réponse en français.",
+  ar_a: "إجابة بالعربية.",
   source: "Livret p.4",
   audio: { fr_q_sha1: "a".repeat(40), fr_a_sha1: "b".repeat(40) },
 };
@@ -1965,7 +2059,8 @@ describe("CardBack", () => {
     expect(screen.getByText("إجابة بالعربية.")).toHaveAttribute("dir", "rtl");
   });
   it("forwards onKnown/onReview from ResponseButtons", async () => {
-    const onKnown = vi.fn(); const onReview = vi.fn();
+    const onKnown = vi.fn();
+    const onReview = vi.fn();
     const user = userEvent.setup();
     render(<CardBack card={card} position={1} total={3} onKnown={onKnown} onReview={onReview} />);
     await user.click(screen.getByRole("button", { name: /je sais/i }));
@@ -2003,7 +2098,11 @@ export function CardBack({ card, position, total, onKnown, onReview }: Props) {
         {theme.label_fr} · {position} / {total}
       </div>
 
-      <p className="font-serif text-base sm:text-lg leading-relaxed text-[var(--color-card-foreground)]" dir="ltr" lang="fr">
+      <p
+        className="font-serif text-base sm:text-lg leading-relaxed text-[var(--color-card-foreground)]"
+        dir="ltr"
+        lang="fr"
+      >
         {card.fr_a}
       </p>
 
@@ -2013,7 +2112,11 @@ export function CardBack({ card, position, total, onKnown, onReview }: Props) {
 
       <hr className="border-[var(--color-border)]" />
 
-      <p className="text-sm sm:text-base leading-relaxed text-[var(--color-muted-foreground)]" dir="rtl" lang="ar">
+      <p
+        className="text-sm sm:text-base leading-relaxed text-[var(--color-muted-foreground)]"
+        dir="rtl"
+        lang="ar"
+      >
         {card.ar_a}
       </p>
 
@@ -2039,6 +2142,7 @@ git commit -m "feat: CardBack with serif French answer and ResponseButtons"
 ### Task 20: Flashcard wrapper with flip + flag accent
 
 **Files:**
+
 - Create: `src/components/flashcard/Flashcard.tsx`, `src/components/flashcard/Flashcard.test.tsx`, `src/components/flashcard/flashcard.css`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2050,12 +2154,24 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Flashcard } from "@/components/flashcard/Flashcard";
 
-class FakeAudio { paused=true; play=vi.fn(async()=>{}); pause=vi.fn(); addEventListener(){} removeEventListener(){} }
-beforeEach(() => { /* @ts-expect-error */ globalThis.Audio = FakeAudio; });
+class FakeAudio {
+  paused = true;
+  play = vi.fn(async () => {});
+  pause = vi.fn();
+  addEventListener() {}
+  removeEventListener() {}
+}
+beforeEach(() => {
+  /* @ts-expect-error */ globalThis.Audio = FakeAudio;
+});
 
 const card = {
-  id: "valeurs-001", theme: "valeurs" as const,
-  fr_q: "Question?", ar_q: "س؟", fr_a: "Réponse.", ar_a: "إجابة.",
+  id: "valeurs-001",
+  theme: "valeurs" as const,
+  fr_q: "Question?",
+  ar_q: "س؟",
+  fr_a: "Réponse.",
+  ar_a: "إجابة.",
   source: "Livret p.4",
   audio: { fr_q_sha1: "a".repeat(40), fr_a_sha1: "b".repeat(40) },
 };
@@ -2065,9 +2181,14 @@ describe("Flashcard", () => {
     const user = userEvent.setup();
     render(
       <Flashcard
-        card={card} position={1} total={3} flipped={false}
-        onFlip={() => {}} onKnown={() => {}} onReview={() => {}}
-      />
+        card={card}
+        position={1}
+        total={3}
+        flipped={false}
+        onFlip={() => {}}
+        onKnown={() => {}}
+        onReview={() => {}}
+      />,
     );
     const root = screen.getByTestId("flashcard");
     expect(root.querySelector(".flashcard-inner")?.classList.contains("flipped")).toBe(false);
@@ -2078,9 +2199,14 @@ describe("Flashcard", () => {
     const user = userEvent.setup();
     render(
       <Flashcard
-        card={card} position={1} total={3} flipped={false}
-        onFlip={onFlip} onKnown={() => {}} onReview={() => {}}
-      />
+        card={card}
+        position={1}
+        total={3}
+        flipped={false}
+        onFlip={onFlip}
+        onKnown={() => {}}
+        onReview={() => {}}
+      />,
     );
     await user.click(screen.getByTestId("flashcard"));
     expect(onFlip).toHaveBeenCalled();
@@ -2104,21 +2230,32 @@ describe("Flashcard", () => {
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
-.flashcard-inner.flipped { transform: rotateY(180deg); }
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
 .flashcard-face {
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
 }
-.flashcard-face.back { transform: rotateY(180deg); }
+.flashcard-face.back {
+  transform: rotateY(180deg);
+}
 @media (prefers-reduced-motion: reduce) {
   .flashcard-inner {
     transition: opacity 200ms ease;
     transform: none !important;
   }
-  .flashcard-face.back { display: none; }
-  .flashcard-inner.flipped .flashcard-face.front { display: none; }
-  .flashcard-inner.flipped .flashcard-face.back { display: block; transform: none; }
+  .flashcard-face.back {
+    display: none;
+  }
+  .flashcard-inner.flipped .flashcard-face.front {
+    display: none;
+  }
+  .flashcard-inner.flipped .flashcard-face.back {
+    display: block;
+    transform: none;
+  }
 }
 ```
 
@@ -2162,7 +2299,9 @@ export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onR
     <div
       data-testid="flashcard"
       role="button"
-      aria-label={flipped ? "Réponse révélée — touchez pour cacher" : "Touchez pour révéler la réponse"}
+      aria-label={
+        flipped ? "Réponse révélée — touchez pour cacher" : "Touchez pour révéler la réponse"
+      }
       tabIndex={0}
       onClick={onFlip}
       onKeyDown={(e) => {
@@ -2190,7 +2329,13 @@ export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onR
         <div className="flashcard-face back">
           <FlagAccent className="absolute left-0 top-0 h-full" />
           <div className="pl-3 h-full overflow-y-auto">
-            <CardBack card={card} position={position} total={total} onKnown={onKnown} onReview={onReview} />
+            <CardBack
+              card={card}
+              position={position}
+              total={total}
+              onKnown={onKnown}
+              onReview={onReview}
+            />
           </div>
         </div>
       </div>
@@ -2207,6 +2352,7 @@ export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onR
 ```bash
 pnpm test src/components/flashcard
 ```
+
 Expected: all flashcard tests pass.
 
 - [ ] **Step 6: Commit.**
@@ -2221,6 +2367,7 @@ git commit -m "feat: Flashcard with 3D flip, flag accent, keyboard support, redu
 ### Task 21: Smoke-render Flashcard in App
 
 **Files:**
+
 - Modify: `src/App.tsx`
 
 - [ ] **Step 1: Wire Flashcard into App for visual smoke test.**
@@ -2256,6 +2403,7 @@ export default function App() {
 ```bash
 pnpm dev
 ```
+
 Click the card — it flips. Click Je sais — alert. Tab to card and press Space — flips. Resize window to 375 px wide — card responsive.
 
 - [ ] **Step 3: Commit.**
@@ -2272,6 +2420,7 @@ git commit -m "feat: smoke-render Flashcard at app root"
 ### Task 22: localStorage progress adapter
 
 **Files:**
+
 - Create: `src/lib/progress.ts`, `src/lib/progress.test.ts`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2279,7 +2428,14 @@ git commit -m "feat: smoke-render Flashcard at app root"
 ```ts
 // src/lib/progress.test.ts
 import { describe, it, expect, beforeEach } from "vitest";
-import { getProgress, markKnown, markReview, getPrefs, setPref, resetProgress } from "@/lib/progress";
+import {
+  getProgress,
+  markKnown,
+  markReview,
+  getPrefs,
+  setPref,
+  resetProgress,
+} from "@/lib/progress";
 
 beforeEach(() => {
   localStorage.clear();
@@ -2400,6 +2556,7 @@ export function resetAll() {
 ```bash
 pnpm test src/lib/progress.test.ts
 ```
+
 Expected: 6 passing.
 
 - [ ] **Step 5: Commit.**
@@ -2414,6 +2571,7 @@ git commit -m "feat: localStorage progress adapter (v1) with versioning"
 ### Task 23: useProgress React hook
 
 **Files:**
+
 - Create: `src/lib/useProgress.ts`, `src/lib/useProgress.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2452,23 +2610,39 @@ import * as p from "@/lib/progress";
 import type { ThemeId } from "@/lib/card";
 
 const subs = new Set<() => void>();
-function notify() { subs.forEach((s) => s()); }
+function notify() {
+  subs.forEach((s) => s());
+}
 
-function subscribe(cb: () => void) { subs.add(cb); return () => subs.delete(cb); }
-function getSnapshot() { return JSON.stringify(p.getProgress()) + JSON.stringify(p.getPrefs()); }
+function subscribe(cb: () => void) {
+  subs.add(cb);
+  return () => subs.delete(cb);
+}
+function getSnapshot() {
+  return JSON.stringify(p.getProgress()) + JSON.stringify(p.getPrefs());
+}
 
 export function useProgress() {
   useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
   const cards = p.getProgress();
   const prefs = p.getPrefs();
 
-  const markKnown = useCallback((id: string) => { p.markKnown(id); notify(); }, []);
-  const markReview = useCallback((id: string) => { p.markReview(id); notify(); }, []);
+  const markKnown = useCallback((id: string) => {
+    p.markKnown(id);
+    notify();
+  }, []);
+  const markReview = useCallback((id: string) => {
+    p.markReview(id);
+    notify();
+  }, []);
   const setPref = useCallback(<K extends keyof p.Prefs>(k: K, v: p.Prefs[K]) => {
     p.setPref(k, v);
     notify();
   }, []);
-  const reset = useCallback(() => { p.resetProgress(); notify(); }, []);
+  const reset = useCallback(() => {
+    p.resetProgress();
+    notify();
+  }, []);
 
   function countByTheme(theme: ThemeId, status: "known" | "review") {
     return Object.entries(cards).filter(
@@ -2508,6 +2682,7 @@ git commit -m "feat: useProgress hook with reactive counts"
 ### Task 24: Theme provider (dark mode)
 
 **Files:**
+
 - Create: `src/lib/useTheme.ts`, `src/components/layout/DarkModeToggle.tsx`, `src/components/layout/DarkModeToggle.test.tsx`
 
 - [ ] **Step 1: Write the failing test for the toggle.**
@@ -2555,8 +2730,7 @@ export function useTheme() {
     function apply() {
       const wantDark =
         prefs.darkMode === "dark" ||
-        (prefs.darkMode === "system" &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches);
+        (prefs.darkMode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
       document.documentElement.classList.toggle("dark", wantDark);
     }
     apply();
@@ -2614,6 +2788,7 @@ export function DarkModeToggle() {
 ```bash
 pnpm test src/components/layout
 ```
+
 Expected: 1 passing.
 
 - [ ] **Step 5: Commit.**
@@ -2628,6 +2803,7 @@ git commit -m "feat: dark mode hook + cycling toggle (system/light/dark)"
 ### Task 25: DeckProgressRing
 
 **Files:**
+
 - Create: `src/components/deck/DeckProgressRing.tsx`, `src/components/deck/DeckProgressRing.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2668,12 +2844,26 @@ export function DeckProgressRing({ value, max, size = 72, className }: Props) {
   return (
     <div className={cn("relative inline-flex", className)} style={{ width: size, height: size }}>
       <svg width={size} height={size} role="img" aria-label={`${v} sur ${max}`}>
-        <circle cx={size / 2} cy={size / 2} r={r}
-          fill="none" stroke="var(--color-muted)" strokeWidth={stroke} />
-        <circle cx={size / 2} cy={size / 2} r={r}
-          fill="none" stroke="var(--color-primary)" strokeWidth={stroke}
-          strokeDasharray={c} strokeDashoffset={offset} strokeLinecap="round"
-          transform={`rotate(-90 ${size / 2} ${size / 2})`} />
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke="var(--color-muted)"
+          strokeWidth={stroke}
+        />
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke="var(--color-primary)"
+          strokeWidth={stroke}
+          strokeDasharray={c}
+          strokeDashoffset={offset}
+          strokeLinecap="round"
+          transform={`rotate(-90 ${size / 2} ${size / 2})`}
+        />
       </svg>
       <span className="absolute inset-0 flex items-center justify-center text-xs font-semibold tabular-nums">
         {v} / {max}
@@ -2703,6 +2893,7 @@ git commit -m "feat: DeckProgressRing SVG component"
 ### Task 26: DeckTile
 
 **Files:**
+
 - Create: `src/components/deck/DeckTile.tsx`, `src/components/deck/DeckTile.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2790,6 +2981,7 @@ git commit -m "feat: DeckTile with bilingual labels and progress ring"
 ### Task 27: DeckPicker grid + Tout mélanger button
 
 **Files:**
+
 - Create: `src/components/deck/DeckPicker.tsx`, `src/components/deck/DeckPicker.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2865,7 +3057,10 @@ export function DeckPicker() {
           )}
         >
           <Shuffle className="h-4 w-4" aria-hidden="true" />
-          Tout mélanger · <span dir="rtl" lang="ar">خلط الكل</span>
+          Tout mélanger ·{" "}
+          <span dir="rtl" lang="ar">
+            خلط الكل
+          </span>
         </button>
       </div>
     </div>
@@ -2887,6 +3082,7 @@ git commit -m "feat: DeckPicker grid + Tout mélanger CTA"
 ### Task 28: Home route stub
 
 **Files:**
+
 - Create: `src/routes/Home.tsx`
 
 - [ ] **Step 1: Implement.**
@@ -2899,7 +3095,10 @@ export function Home() {
   return (
     <section>
       <h2 className="text-lg font-semibold mb-4">
-        Choisissez un thème · <span dir="rtl" lang="ar">اختر موضوعًا</span>
+        Choisissez un thème ·{" "}
+        <span dir="rtl" lang="ar">
+          اختر موضوعًا
+        </span>
       </h2>
       <DeckPicker />
     </section>
@@ -2921,6 +3120,7 @@ git commit -m "feat: Home route renders DeckPicker"
 ### Task 29: shuffle helper
 
 **Files:**
+
 - Create: `src/lib/shuffle.ts`, `src/lib/shuffle.test.ts`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2973,6 +3173,7 @@ git commit -m "feat: pure shuffled() Fisher-Yates helper"
 ### Task 30: Session reducer
 
 **Files:**
+
 - Create: `src/components/deck/sessionReducer.ts`, `src/components/deck/sessionReducer.test.ts`
 
 - [ ] **Step 1: Write the failing test.**
@@ -2984,8 +3185,14 @@ import { sessionReducer, initSession } from "@/components/deck/sessionReducer";
 import type { Card } from "@/lib/card";
 
 const c = (id: string): Card => ({
-  id, theme: "valeurs", fr_q: "Q?", ar_q: "س؟", fr_a: "R", ar_a: "إ",
-  source: "x", audio: { fr_q_sha1: "a".repeat(40), fr_a_sha1: "b".repeat(40) },
+  id,
+  theme: "valeurs",
+  fr_q: "Q?",
+  ar_q: "س؟",
+  fr_a: "R",
+  ar_a: "إ",
+  source: "x",
+  audio: { fr_q_sha1: "a".repeat(40), fr_a_sha1: "b".repeat(40) },
 });
 
 const deck = [c("valeurs-001"), c("valeurs-002"), c("valeurs-003")];
@@ -3071,9 +3278,21 @@ export function sessionReducer(s: SessionState, a: SessionAction): SessionState 
       return { ...s, cursor: s.cursor + 1, flipped: false };
     }
     case "JUMP":
-      return { ...s, cursor: Math.max(0, Math.min(a.to, s.deck.length - 1)), flipped: false, finished: false };
+      return {
+        ...s,
+        cursor: Math.max(0, Math.min(a.to, s.deck.length - 1)),
+        flipped: false,
+        finished: false,
+      };
     case "SHUFFLE":
-      return { ...s, deck: shuffled(s.deck), cursor: 0, flipped: false, shuffled: true, finished: false };
+      return {
+        ...s,
+        deck: shuffled(s.deck),
+        cursor: 0,
+        flipped: false,
+        shuffled: true,
+        finished: false,
+      };
     case "RESTART":
       return initSession(a.deck ?? s.deck);
   }
@@ -3093,6 +3312,7 @@ git commit -m "feat: session reducer for study flow"
 ### Task 31: StudySession component (auto-advance, keyboard, swipe)
 
 **Files:**
+
 - Create: `src/components/deck/StudySession.tsx`, `src/components/deck/StudySession.test.tsx`
 
 - [ ] **Step 1: Write the failing test.**
@@ -3105,7 +3325,13 @@ import userEvent from "@testing-library/user-event";
 import { StudySession } from "@/components/deck/StudySession";
 import { cardsByTheme } from "@/data";
 
-class FakeAudio { paused=true; play=vi.fn(async()=>{}); pause=vi.fn(); addEventListener(){} removeEventListener(){} }
+class FakeAudio {
+  paused = true;
+  play = vi.fn(async () => {});
+  pause = vi.fn();
+  addEventListener() {}
+  removeEventListener() {}
+}
 beforeEach(() => {
   // @ts-expect-error
   globalThis.Audio = FakeAudio;
@@ -3157,7 +3383,10 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     function onKey(e: KeyboardEvent) {
       const t = e.target as HTMLElement | null;
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA")) return;
-      if (e.key === " " || e.key === "Enter") { e.preventDefault(); dispatch({ type: "FLIP" }); }
+      if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        dispatch({ type: "FLIP" });
+      }
       if (e.key === "ArrowLeft") dispatch({ type: "PREV" });
       if (e.key === "ArrowRight") dispatch({ type: "NEXT" });
       if (state.flipped && e.key === "1") {
@@ -3171,7 +3400,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   }, [state.deck, state.cursor, state.flipped, prefs.autoAdvance, markKnown, markReview]);
 
-  function onTouchStart(e: React.TouchEvent) { touchStartX.current = e.touches[0].clientX; }
+  function onTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX;
+  }
   function onTouchEnd(e: React.TouchEvent) {
     if (touchStartX.current == null) return;
     const dx = e.changedTouches[0].clientX - touchStartX.current;
@@ -3185,7 +3416,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     return (
       <div className="text-center space-y-4 py-8">
         <h2 className="text-xl font-semibold">Bravo ! Vous avez parcouru toutes les cartes.</h2>
-        <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">أحسنت! لقد أنهيت جميع البطاقات.</p>
+        <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">
+          أحسنت! لقد أنهيت جميع البطاقات.
+        </p>
         <div className="flex justify-center gap-3">
           <button
             onClick={() => dispatch({ type: "RESTART" })}
@@ -3193,7 +3426,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           >
             Recommencer
           </button>
-          <Link to={backHref} className="px-4 py-2 rounded-[var(--radius)] border">Retour</Link>
+          <Link to={backHref} className="px-4 py-2 rounded-[var(--radius)] border">
+            Retour
+          </Link>
         </div>
       </div>
     );
@@ -3222,10 +3457,13 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
         {state.deck.map((c, i) => {
           const status = statusOf(c.id);
           const cls =
-            i === state.cursor ? "bg-[var(--color-primary)]" :
-            status === "known" ? "bg-[var(--color-primary)]/70" :
-            status === "review" ? "border border-[var(--color-primary)] bg-transparent" :
-            "bg-[var(--color-muted)]";
+            i === state.cursor
+              ? "bg-[var(--color-primary)]"
+              : status === "known"
+                ? "bg-[var(--color-primary)]/70"
+                : status === "review"
+                  ? "border border-[var(--color-primary)] bg-transparent"
+                  : "bg-[var(--color-muted)]";
           return <span key={c.id} role="listitem" className={cn("h-2 w-2 rounded-full", cls)} />;
         })}
       </div>
@@ -3267,7 +3505,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           Suivant <ChevronRight className="h-4 w-4" />
         </button>
       </div>
-      <div aria-live="polite" className="sr-only">{announce}</div>
+      <div aria-live="polite" className="sr-only">
+        {announce}
+      </div>
     </div>
   );
 }
@@ -3291,6 +3531,7 @@ git commit -m "feat: StudySession with auto-advance, keyboard, swipe, finished s
 ### Task 32: Study route
 
 **Files:**
+
 - Create: `src/routes/Study.tsx`
 
 - [ ] **Step 1: Implement.**
@@ -3332,6 +3573,7 @@ git commit -m "feat: Study route routes per theme or 'all'"
 ### Task 33: Hash router
 
 **Files:**
+
 - Create: `src/routes/About.tsx`
 - Modify: `src/App.tsx`
 
@@ -3389,6 +3631,7 @@ git commit -m "feat: hash router with Home / Study / About / 404→/"
 ### Task 34: Header (title + tricolor + dark toggle + About link)
 
 **Files:**
+
 - Create: `src/components/layout/Header.tsx`
 
 - [ ] **Step 1: Implement.**
@@ -3441,6 +3684,7 @@ git commit -m "feat: Header with bilingual title, tricolor underline, dark toggl
 ### Task 35: Footer with attribution
 
 **Files:**
+
 - Create: `src/components/layout/Footer.tsx`
 
 - [ ] **Step 1: Implement.**
@@ -3456,7 +3700,8 @@ export function Footer() {
           CC BY-SA 4.0. Application non officielle.
         </p>
         <p dir="rtl" lang="ar">
-          المحتوى الأصلي © وزارة الداخلية الفرنسية. الترجمة العربية والتطبيق: رامي حنا، رخصة CC BY-SA 4.0. تطبيق غير رسمي.
+          المحتوى الأصلي © وزارة الداخلية الفرنسية. الترجمة العربية والتطبيق: رامي حنا، رخصة CC
+          BY-SA 4.0. تطبيق غير رسمي.
         </p>
       </div>
     </footer>
@@ -3476,6 +3721,7 @@ git commit -m "feat: Footer with bilingual attribution"
 ### Task 36: About route (sources, license, privacy, settings, reset)
 
 **Files:**
+
 - Modify: `src/routes/About.tsx`
 
 - [ ] **Step 1: Replace stub with full About page.**
@@ -3504,7 +3750,8 @@ export function About() {
       <section>
         <h2 className="text-xl font-semibold">Confidentialité · الخصوصية</h2>
         <p className="text-[var(--color-muted-foreground)]">
-          Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur (localStorage).
+          Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur
+          (localStorage).
         </p>
         <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">
           لا حساب. لا ملفات تعريف ارتباط. لا متعقّبات. يبقى تقدّمك في متصفّحك.
@@ -3540,7 +3787,8 @@ export function About() {
       <section>
         <h2 className="text-xl font-semibold">Licence</h2>
         <p className="text-[var(--color-muted-foreground)]">
-          Code : MIT. Traductions arabes : CC BY-SA 4.0. Contenu source français : © Ministère de l'Intérieur (document public).
+          Code : MIT. Traductions arabes : CC BY-SA 4.0. Contenu source français : © Ministère de
+          l'Intérieur (document public).
         </p>
       </section>
     </article>
@@ -3553,6 +3801,7 @@ export function About() {
 ```bash
 pnpm dev
 ```
+
 Navigate to /#/about — confirm sections render and reset button works.
 
 - [ ] **Step 3: Commit.**
@@ -3567,6 +3816,7 @@ git commit -m "feat: About page with sources, privacy, settings, reset, license"
 ### Task 37: Favicon + OG image stubs
 
 **Files:**
+
 - Create: `public/favicon.svg`, `public/og.png` (placeholder)
 
 - [ ] **Step 1: Create favicon.**
@@ -3605,6 +3855,7 @@ git commit -m "feat: tricolor LC favicon and OG placeholder"
 ### Task 38: Playwright setup + smoke test
 
 **Files:**
+
 - Create: `playwright.config.ts`, `tests/e2e/smoke.spec.ts`
 - Modify: `package.json`, `.gitignore`
 
@@ -3634,8 +3885,11 @@ export default defineConfig({
     timeout: 120_000,
   },
   projects: [
-    { name: "desktop", use: { ...devices["Desktop Chrome"], viewport: { width: 1280, height: 800 } } },
-    { name: "mobile",  use: { ...devices["iPhone SE (3rd generation)"] } },
+    {
+      name: "desktop",
+      use: { ...devices["Desktop Chrome"], viewport: { width: 1280, height: 800 } },
+    },
+    { name: "mobile", use: { ...devices["iPhone SE (3rd generation)"] } },
   ],
 });
 ```
@@ -3649,6 +3903,7 @@ export default defineConfig({
 - [ ] **Step 4: Add ignore.**
 
 In `.gitignore` append:
+
 ```
 playwright-report
 test-results
@@ -3664,7 +3919,9 @@ import { test, expect } from "@playwright/test";
 test("home renders deck picker with 6 tiles", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 2 })).toContainText(/choisissez un thème/i);
-  const tiles = page.getByRole("button", { name: /valeurs|droits|institutions|histoire|géographie|droits de l'homme/i });
+  const tiles = page.getByRole("button", {
+    name: /valeurs|droits|institutions|histoire|géographie|droits de l'homme/i,
+  });
   await expect(tiles).toHaveCount(6);
 });
 ```
@@ -3675,6 +3932,7 @@ test("home renders deck picker with 6 tiles", async ({ page }) => {
 pnpm build
 pnpm test:e2e
 ```
+
 Expected: 1 passing on each project (desktop + mobile).
 
 - [ ] **Step 7: Commit.**
@@ -3689,6 +3947,7 @@ git commit -m "test: Playwright config + smoke test for home"
 ### Task 39: Full study flow E2E
 
 **Files:**
+
 - Create: `tests/e2e/study-flow.spec.ts`
 
 - [ ] **Step 1: Write the test.**
@@ -3701,7 +3960,10 @@ test("study a deck, mark cards, reload, progress survives, then reset", async ({
   await page.goto("/");
 
   // Open Valeurs deck
-  await page.getByRole("button", { name: /valeurs/i }).first().click();
+  await page
+    .getByRole("button", { name: /valeurs/i })
+    .first()
+    .click();
   await expect(page).toHaveURL(/study\/valeurs/);
 
   const card = page.getByTestId("flashcard");
@@ -3754,6 +4016,7 @@ git commit -m "test: full study flow E2E with progress persistence and reset"
 ### Task 40: RTL + reduced-motion E2E checks
 
 **Files:**
+
 - Create: `tests/e2e/rtl-reduced-motion.spec.ts`
 
 - [ ] **Step 1: Write the test.**
@@ -3799,6 +4062,7 @@ git commit -m "test: RTL Arabic and reduced-motion E2E"
 ### Task 41: GitHub Actions CI
 
 **Files:**
+
 - Create: `.github/workflows/ci.yml`
 
 - [ ] **Step 1: Add workflow.**
@@ -3867,12 +4131,14 @@ git commit -m "ci: lint + typecheck + test + e2e + deploy to Cloudflare Pages"
 ### Task 42: Cloudflare Pages connection (manual + docs)
 
 **Files:**
+
 - Create: `docs/DEPLOY.md`
 
 - [ ] **Step 1: Document the manual setup steps.**
 
-```markdown
+````markdown
 <!-- docs/DEPLOY.md -->
+
 # Cloudflare Pages deployment
 
 ## One-time setup
@@ -3904,33 +4170,36 @@ pnpm build
 pnpm preview
 # open http://localhost:4173
 ```
+````
 
 ## Custom domain (later)
 
 In Cloudflare Pages → project → **Custom domains** → add the domain. Cloudflare guides you through the DNS records. Free.
-```
+
+````
 
 - [ ] **Step 2: Commit.**
 
 ```bash
 git add docs/DEPLOY.md
 git commit -m "docs: Cloudflare Pages deployment guide"
-```
+````
 
 ---
 
 ### Task 43: README and final cleanup
 
 **Files:**
+
 - Create: `README.md`
 - Modify: `package.json`
 
 - [ ] **Step 1: Write README.**
 
-```markdown
+````markdown
 # Livret du Citoyen — Bilingual Flashcards
 
-A free, ad-free, account-free web app that drills the verbatim contents of the official French citizenship study materials (*Livret du citoyen* + *Charte des droits et devoirs*) with Arabic translations as a comprehension aid.
+A free, ad-free, account-free web app that drills the verbatim contents of the official French citizenship study materials (_Livret du citoyen_ + _Charte des droits et devoirs_) with Arabic translations as a comprehension aid.
 
 **For Arabic-speaking applicants for French naturalization.**
 
@@ -3965,6 +4234,7 @@ SKIP_AUDIO_CHECK=1 pnpm validate:cards   # Plan 1 only — Plan 2 generates audi
 pnpm build
 pnpm preview      # http://localhost:4173
 ```
+````
 
 ## Project layout
 
@@ -3992,7 +4262,8 @@ See [docs/DEPLOY.md](docs/DEPLOY.md).
 - French content: © Ministère de l'Intérieur (public administrative document)
 
 This is a **non-official application**. Authoritative source: https://www.immigration.interieur.gouv.fr.
-```
+
+````
 
 - [ ] **Step 2: Final round of all checks.**
 
@@ -4004,7 +4275,7 @@ pnpm test
 SKIP_AUDIO_CHECK=1 pnpm validate:cards
 pnpm build
 pnpm test:e2e
-```
+````
 
 All should pass.
 
