@@ -1,0 +1,41 @@
+[
+  {
+    "id": "institutions-001",
+    "theme": "institutions",
+    "fr_q": "Qui est élu au suffrage universel pour cinq ans ?",
+    "ar_q": "[AR-DRAFT] من يُنتخب بالاقتراع العام لمدة خمس سنوات؟",
+    "fr_a": "Le Président de la République est élu au suffrage universel pour cinq ans. Il nomme le Gouvernement, dirigé par le Premier ministre, issu de la majorité aux élections législatives.",
+    "ar_a": "[AR-DRAFT] يُنتخب رئيس الجمهورية بالاقتراع العام لمدة خمس سنوات. وهو يعيّن الحكومة التي يقودها رئيس الوزراء المنبثق عن الأغلبية في الانتخابات التشريعية.",
+    "source": "Livret p.9",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000021",
+      "fr_a_sha1": "0000000000000000000000000000000000000022"
+    }
+  },
+  {
+    "id": "institutions-002",
+    "theme": "institutions",
+    "fr_q": "De quelles deux chambres est composé le Parlement ?",
+    "ar_q": "[AR-DRAFT] ممَّ يتألف البرلمان الفرنسي من غرفتيه؟",
+    "fr_a": "Le Parlement, composé de l'Assemblée nationale et du Sénat, vote les lois et contrôle le Gouvernement. Les députés à l'Assemblée nationale sont élus tous les cinq ans lors des élections législatives. Les sénateurs sont élus au suffrage universel indirect pour un mandat de 6 ans.",
+    "ar_a": "[AR-DRAFT] يتألف البرلمان من الجمعية الوطنية ومجلس الشيوخ، ويصوّت على القوانين ويراقب الحكومة. ويُنتخب نواب الجمعية الوطنية كل خمس سنوات عبر الانتخابات التشريعية. أمّا أعضاء مجلس الشيوخ فيُنتخبون بالاقتراع العام غير المباشر لولاية مدتها ست سنوات.",
+    "source": "Livret p.9",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000023",
+      "fr_a_sha1": "0000000000000000000000000000000000000024"
+    }
+  },
+  {
+    "id": "institutions-003",
+    "theme": "institutions",
+    "fr_q": "Quelles sont les trois collectivités locales en France ?",
+    "ar_q": "[AR-DRAFT] ما هي الجماعات الثلاث المحلية في فرنسا؟",
+    "fr_a": "Au niveau local, trois collectivités exercent des compétences en application des lois de décentralisation : la commune, le département et la région.",
+    "ar_a": "[AR-DRAFT] على المستوى المحلي، تمارس ثلاث جماعات صلاحيّات تطبيقًا لقوانين اللامركزية: البلدية، والمقاطعة (المحافظة)، والمنطقة.",
+    "source": "Livret p.11",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000025",
+      "fr_a_sha1": "0000000000000000000000000000000000000026"
+    }
+  }
+]

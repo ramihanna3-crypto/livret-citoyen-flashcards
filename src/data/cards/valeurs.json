@@ -1,0 +1,41 @@
+[
+  {
+    "id": "valeurs-001",
+    "theme": "valeurs",
+    "fr_q": "Avez-vous le droit de tout dire, de tout exprimer publiquement ?",
+    "ar_q": "[AR-DRAFT] هل يحق لك قول وتعبير كل شيء علناً؟",
+    "fr_a": "Oui, la liberté d'expression est un droit fondamental. Cependant, elle a des limites, pour respecter les droits des autres. Il est ainsi interdit de diffuser des injures, des propos diffamatoires, des provocations à la haine, ou de faire l'apologie de crimes contre l'humanité.",
+    "ar_a": "[AR-DRAFT] نعم، حرية التعبير حق أساسي. ومع ذلك، لها حدود لاحترام حقوق الآخرين. لذا يُحظر نشر الإهانات أو الأقوال التشهيرية أو التحريض على الكراهية أو تمجيد الجرائم ضد الإنسانية.",
+    "source": "Livret p.4",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000001",
+      "fr_a_sha1": "0000000000000000000000000000000000000002"
+    }
+  },
+  {
+    "id": "valeurs-002",
+    "theme": "valeurs",
+    "fr_q": "Quelle est la devise de la République française ?",
+    "ar_q": "[AR-DRAFT] ما هو شعار الجمهورية الفرنسية؟",
+    "fr_a": "La République garantit le respect des principes de liberté, d'égalité et de fraternité. Ces trois mots constituent sa devise.",
+    "ar_a": "[AR-DRAFT] تكفل الجمهورية احترام مبادئ الحرية والمساواة والإخاء. هذه الكلمات الثلاث هي شعارها.",
+    "source": "Livret p.4",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000003",
+      "fr_a_sha1": "0000000000000000000000000000000000000004"
+    }
+  },
+  {
+    "id": "valeurs-003",
+    "theme": "valeurs",
+    "fr_q": "Qu'est-ce que la laïcité ?",
+    "ar_q": "[AR-DRAFT] ما هي العلمانية؟",
+    "fr_a": "La laïcité est un principe fondamental de la République. Elle signifie que les affaires religieuses et les affaires publiques sont clairement séparées. Ce principe est ancien : il est consacré par la loi de 1905 qui sépare les Églises de l'État.",
+    "ar_a": "[AR-DRAFT] العلمانية مبدأ أساسي للجمهورية. تعني الفصل الواضح بين الشؤون الدينية والشؤون العامة. وهو مبدأ قديم، كرّسه قانون 1905 الذي يفصل الكنائس عن الدولة.",
+    "source": "Livret p.7",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000005",
+      "fr_a_sha1": "0000000000000000000000000000000000000006"
+    }
+  }
+]

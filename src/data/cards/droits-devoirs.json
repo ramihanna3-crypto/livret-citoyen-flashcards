@@ -1,0 +1,41 @@
+[
+  {
+    "id": "droits-devoirs-001",
+    "theme": "droits-devoirs",
+    "fr_q": "À quel âge les citoyens français peuvent-ils voter ?",
+    "ar_q": "[AR-DRAFT] في أي سن يحق للمواطنين الفرنسيين التصويت؟",
+    "fr_a": "Les citoyens bénéficient du droit de vote dès 18 ans.",
+    "ar_a": "[AR-DRAFT] يتمتع المواطنون بحق التصويت ابتداءً من سن الثامنة عشرة.",
+    "source": "Livret p.8",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000011",
+      "fr_a_sha1": "0000000000000000000000000000000000000012"
+    }
+  },
+  {
+    "id": "droits-devoirs-002",
+    "theme": "droits-devoirs",
+    "fr_q": "Quels sont les principaux devoirs du citoyen français ?",
+    "ar_q": "[AR-DRAFT] ما هي الواجبات الرئيسية للمواطن الفرنسي؟",
+    "fr_a": "Respecter la loi (« nul n'est censé ignorer la loi »), contribuer au financement des services publics en payant des impôts, et contribuer à la Défense nationale en se faisant recenser à la mairie à partir de 16 ans.",
+    "ar_a": "[AR-DRAFT] احترام القانون («لا يُعذر أحد بجهل القانون»)، والمساهمة في تمويل الخدمات العامة بدفع الضرائب، والمساهمة في الدفاع الوطني بالتسجيل في البلدية ابتداءً من سن السادسة عشرة.",
+    "source": "Livret p.8",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000013",
+      "fr_a_sha1": "0000000000000000000000000000000000000014"
+    }
+  },
+  {
+    "id": "droits-devoirs-003",
+    "theme": "droits-devoirs",
+    "fr_q": "Tout être humain possède-t-il des droits inaliénables ?",
+    "ar_q": "[AR-DRAFT] هل لكل إنسان حقوق غير قابلة للتصرف؟",
+    "fr_a": "Tout être humain, sans distinction de race, de religion ni de croyance, possède des droits inaliénables. Sur le territoire de la République, ces droits sont garantis à chacun et chacun a le devoir de les respecter.",
+    "ar_a": "[AR-DRAFT] لكل إنسان، دون تمييز بسبب العرق أو الدين أو المعتقد، حقوق غير قابلة للتصرف. وعلى أراضي الجمهورية، هذه الحقوق مكفولة للجميع وعلى الجميع واجب احترامها.",
+    "source": "Charte §Droits et devoirs",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000015",
+      "fr_a_sha1": "0000000000000000000000000000000000000016"
+    }
+  }
+]

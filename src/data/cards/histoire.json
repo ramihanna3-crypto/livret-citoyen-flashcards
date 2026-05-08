@@ -1,0 +1,41 @@
+[
+  {
+    "id": "histoire-001",
+    "theme": "histoire",
+    "fr_q": "Que s'est-il passé le 14 juillet 1789 ?",
+    "ar_q": "[AR-DRAFT] ماذا حدث في 14 يوليو 1789؟",
+    "fr_a": "Le 14 juillet 1789, le peuple de Paris s'empare de la prison royale de la Bastille. Un an plus tard, le 14 juillet 1790, lors de la fête de la Fédération, cette date du 14 juillet est devenue la date de la fête nationale.",
+    "ar_a": "[AR-DRAFT] في 14 يوليو 1789، استولى أهل باريس على سجن الباستيل الملكي. وبعد عام، في 14 يوليو 1790، خلال عيد الاتحاد، أصبح هذا التاريخ هو تاريخ العيد الوطني.",
+    "source": "Livret p.4",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000041",
+      "fr_a_sha1": "0000000000000000000000000000000000000042"
+    }
+  },
+  {
+    "id": "histoire-002",
+    "theme": "histoire",
+    "fr_q": "Quand la IIIe République a-t-elle été établie de façon stable ?",
+    "ar_q": "[AR-DRAFT] متى استقرّت الجمهورية الثالثة؟",
+    "fr_a": "Naissance de la IIIe République (1875). La forme républicaine du Gouvernement est alors établie de façon stable.",
+    "ar_a": "[AR-DRAFT] قيام الجمهورية الثالثة (1875). عندئذٍ تأسّس الشكل الجمهوري للحكم بصورة مستقرّة.",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000043",
+      "fr_a_sha1": "0000000000000000000000000000000000000044"
+    }
+  },
+  {
+    "id": "histoire-003",
+    "theme": "histoire",
+    "fr_q": "Qui était Charles de Gaulle ?",
+    "ar_q": "[AR-DRAFT] من هو شارل ديغول؟",
+    "fr_a": "Charles de Gaulle (1890-1970), chef de la résistance française contre les armées allemandes qui occupent notre pays, il est l'artisan, avec les alliés, de la libération de la France. Bien après la guerre, en 1958, il est à l'origine de nos institutions actuelles (la Ve République).",
+    "ar_a": "[AR-DRAFT] شارل ديغول (1890-1970)، قائد المقاومة الفرنسية ضد الجيوش الألمانية التي احتلّت البلاد، وهو من صانعي تحرير فرنسا إلى جانب الحلفاء. وبعد الحرب بفترة طويلة، عام 1958، كان الباني لمؤسساتنا الحالية (الجمهورية الخامسة).",
+    "source": "Livret p.16",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000045",
+      "fr_a_sha1": "0000000000000000000000000000000000000046"
+    }
+  }
+]
