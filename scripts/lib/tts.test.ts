@@ -50,8 +50,8 @@ describe("tts", () => {
       statusText: "Unauthorized",
       text: async () => '{"detail":"invalid_api_key"}',
     });
-    await expect(
-      tts({ apiKey: "bad", voiceId: "v1", modelId: "m", text: "x" }),
-    ).rejects.toThrow(/401|invalid_api_key/);
+    await expect(tts({ apiKey: "bad", voiceId: "v1", modelId: "m", text: "x" })).rejects.toThrow(
+      /401|invalid_api_key/,
+    );
   });
 });

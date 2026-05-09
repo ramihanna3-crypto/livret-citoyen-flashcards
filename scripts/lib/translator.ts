@@ -51,7 +51,10 @@ const TOOL_EMIT_NEW = {
   input_schema: {
     type: "object",
     properties: {
-      fr_q: { type: "string", description: "Short French question that elicits the verbatim answer." },
+      fr_q: {
+        type: "string",
+        description: "Short French question that elicits the verbatim answer.",
+      },
       ar_q: { type: "string", description: "Arabic translation of fr_q." },
       ar_a: { type: "string", description: "Arabic translation of the French answer." },
     },

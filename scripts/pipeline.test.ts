@@ -67,9 +67,7 @@ describe("pipeline (extract → draft → build-audio)", () => {
       }
     }
 
-    const fakeTts = vi.fn(
-      async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer,
-    );
+    const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const audio = await buildAudio({
       root: TMP,
       apiKey: "k",

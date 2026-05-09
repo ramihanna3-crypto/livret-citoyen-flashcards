@@ -37,9 +37,7 @@ afterEach(() => {
 
 describe("buildAudio", () => {
   it("generates one MP3 per unique French text and rewrites card sha1s", async () => {
-    const fakeTts = vi.fn(
-      async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer,
-    );
+    const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const r = await buildAudio({
       root: TMP,
       apiKey: "k",
@@ -59,9 +57,7 @@ describe("buildAudio", () => {
 
   it("skips clips whose MP3 already exists", async () => {
     writeFileSync(join(TMP, `public/audio/${sha1("Question 1 ?")}.mp3`), "existing");
-    const fakeTts = vi.fn(
-      async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer,
-    );
+    const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const r = await buildAudio({
       root: TMP,
       apiKey: "k",
@@ -91,9 +87,7 @@ describe("buildAudio", () => {
 
   it("--force regenerates even if MP3 exists", async () => {
     writeFileSync(join(TMP, `public/audio/${sha1("Question 1 ?")}.mp3`), "old");
-    const fakeTts = vi.fn(
-      async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer,
-    );
+    const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const r = await buildAudio({
       root: TMP,
       apiKey: "k",
@@ -111,9 +105,7 @@ describe("buildAudio", () => {
       join(TMP, "src/data/cards/histoire.json"),
       JSON.stringify([sampleCard("histoire-001", "QQ ?", "AA.")]),
     );
-    const fakeTts = vi.fn(
-      async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer,
-    );
+    const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     await buildAudio({
       root: TMP,
       apiKey: "k",

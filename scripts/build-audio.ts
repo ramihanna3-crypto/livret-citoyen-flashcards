@@ -34,8 +34,7 @@ export async function buildAudio(opts: BuildAudioOptions = {}): Promise<BuildAud
   const modelId = opts.modelId ?? (opts.dryRun ? "" : env.elevenLabsModelId());
 
   const tts =
-    opts.tts ??
-    ((text: string) => defaultTts({ apiKey, voiceId, modelId, text } as TtsOptions));
+    opts.tts ?? ((text: string) => defaultTts({ apiKey, voiceId, modelId, text } as TtsOptions));
 
   let generated = 0;
   let reused = 0;
@@ -102,9 +101,7 @@ if (isMain) {
         console.log(`Dry-run: ${r.totalClips} clips, ${r.dryRunChars} characters total.`);
         console.log(`Estimate cost from your ElevenLabs plan's per-character rate.`);
       } else {
-        console.log(
-          `Generated ${r.generated}, reused ${r.reused}. Total clips: ${r.totalClips}.`,
-        );
+        console.log(`Generated ${r.generated}, reused ${r.reused}. Total clips: ${r.totalClips}.`);
       }
     })
     .catch((e) => {
