@@ -9,6 +9,26 @@
       "ar": {
         "q": "هل يحق لك قول كل شيء والتعبير عن كل شيء علناً؟",
         "a": "نعم، حرية التعبير حق أساسي. غير أن لها حدوداً لاحترام حقوق الآخرين. فيُحظر بذلك نشر الإهانات أو الأقوال التشهيرية أو التحريض على الكراهية أو تمجيد الجرائم ضد الإنسانية."
+      },
+      "uk": {
+        "q": "Чи маєте ви право говорити все, виражати все публічно?",
+        "a": "Так, свобода вираження є основоположним правом. Однак вона має межі для поваги до прав інших. Так, забороняється поширювати образи, наклепницькі висловлювання, заклики до ненависті або виправдовувати злочини проти людства."
+      },
+      "fa": {
+        "q": "آیا حق دارید هر چیزی را بگویید و هر چیزی را علناً بیان کنید؟",
+        "a": "بله، آزادی بیان حقی بنیادین است. اما این حق برای احترام به حقوق دیگران، حدودی دارد. بنابراین، انتشار توهین، گفتار افترا‌آمیز، تحریک به نفرت، یا تجلیل از جنایت‌های ضد بشریت ممنوع است."
+      },
+      "ps": {
+        "q": "ایا تاسو حق لرئ هر څه ووایاست، هر څه په عامه توګه څرګند کړئ؟",
+        "a": "هو، د بیان ازادي یو بنسټیز حق دی. خو دا حدود لري، ترڅو د نورو حقونه وساتل شي. نو ښکنځل، تهمتي وینا، د کرکې هڅونې، یا د بشریت په وړاندې د جرمونو ستاینه منع ده."
+      },
+      "ht": {
+        "q": "Èske w gen dwa di tout bagay, eksprime tout bagay piblikman?",
+        "a": "Wi, libète ekspresyon se yon dwa fondamantal. Sepandan, li gen limit, pou respekte dwa lòt yo. Konsa li entèdi pou difize ensilt, pwopo difamatwa, pwovokasyon ak rayisman, oswa pou fè apoloji krim kont limanite."
+      },
+      "tr": {
+        "q": "Her şeyi söyleme, her şeyi alenen ifade etme hakkına sahip misiniz?",
+        "a": "Evet, ifade özgürlüğü temel bir haktır. Ancak başkalarının haklarına saygı göstermek için sınırları vardır. Bu çerçevede hakaretler, iftira niteliğindeki sözler, nefret kışkırtmaları yaymak veya insanlığa karşı suçları övmek yasaktır."
       }
     },
     "audio": {
@@ -26,6 +46,26 @@
       "ar": {
         "q": "من يُنتخب بالاقتراع العام في فرنسا، وما السن التي يحق فيها التصويت؟",
         "a": "يُنتخب رئيس الجمهورية والبرلمانيون ورؤساء البلديات بالاقتراع العام: ويعني ذلك أن جميع المواطنين، رجالاً ونساءً، الذين بلغوا الثامنة عشرة من العمر ويتمتعون بحقوقهم المدنية والسياسية، لهم حق التصويت والترشح للانتخابات وفق الشروط التي يحددها القانون."
+      },
+      "uk": {
+        "q": "Хто обирається загальним голосуванням у Франції і з якого віку можна голосувати?",
+        "a": "Президент Республіки, парламентарі, мери обираються загальним голосуванням: це означає, що всі громадяни, чоловіки та жінки, яким виповнилося щонайменше 18 років і які користуються своїми громадянськими та політичними правами, мають право голосувати та висуватися на виборах на умовах, встановлених законом."
+      },
+      "fa": {
+        "q": "چه کسانی در فرانسه با اقتراع عمومی انتخاب می‌شوند و از چه سنی می‌توان رأی داد؟",
+        "a": "رئیس‌جمهور، پارلمان‌داران و شهرداران از طریق اقتراع عمومی انتخاب می‌شوند: یعنی همهٔ شهروندان، اعم از زن و مرد، که حداقل ۱۸ سال داشته باشند و از حقوق مدنی و سیاسی خود برخوردار باشند، حق دارند بر اساس شرایط مقرر در قانون رأی دهند و در انتخابات نامزد شوند."
+      },
+      "ps": {
+        "q": "په فرانسه کې څوک د عمومي رایې له لارې ټاکل کیږي او په کوم عمر کې رایه ورکول کیدای شي؟",
+        "a": "د جمهوریت رئیس، پارلمانیان، ښاروالان، د عمومي رایې له لارې ټاکل کیږي: دا معنی لري چې ټول اتباع، نارینه او ښځې چې لږ تر لږه ۱۸ کاله عمر ولري او خپل مدني او سیاسي حقونه ولري، د قانون له خوا د ټاکل شویو شرایطو په چوکاټ کې د رایه ورکولو او د کاندیدوالۍ حق لري."
+      },
+      "ht": {
+        "q": "Ki moun yo eli pa sifraj inivèsèl an Frans e apati ki laj yon moun ka vote?",
+        "a": "Prezidan Repiblik la, palmantè yo, majò yo, eli pa sifraj inivèsèl: sa vle di tout sitwayen, gason ak fanm ki gen omwen 18 an e ki gen dwa sivil ak politik yo, gen dwa pou vote e pou prezante tèt yo nan eleksyon nan kondisyon lalwa fikse."
+      },
+      "tr": {
+        "q": "Fransa'da kim genel oyla seçilir ve kaç yaşından itibaren oy verilebilir?",
+        "a": "Cumhurbaşkanı, milletvekilleri ve belediye başkanları genel oyla seçilir: bu, en az 18 yaşında olan ve medeni ve siyasi haklarına sahip bütün yurttaşların — kadın olsun, erkek olsun — kanunda öngörülen koşullarda oy verme ve seçimlere aday olma hakkına sahip olduğu anlamına gelir."
       }
     },
     "audio": {
@@ -43,6 +83,26 @@
       "ar": {
         "q": "ما هي الجمهورية، وعلى أي أساس قامت؟",
         "a": "الجمهورية نظامٌ سياسي يحكم فيه القادة المنتخبون باسم الشعب. وهي تقوم على قوانين يجب على الجميع احترامها. وقد جاء قيام الجمهورية تدريجياً، وهو ثمرةُ نضالاتٍ عديدة."
+      },
+      "uk": {
+        "q": "Що таке Республіка і на чому вона ґрунтується?",
+        "a": "Республіка — це політичний устрій, у якому обрані керівники правлять від імені народу. Вона ґрунтується на законах, яких усі повинні дотримуватися. Становлення Республіки було поступовим і є плодом численних змагань."
+      },
+      "fa": {
+        "q": "جمهوری چیست و بر چه چیز استوار است؟",
+        "a": "جمهوری نظام سیاسی‌ای است که در آن رهبران منتخب به نام مردم حکومت می‌کنند. جمهوری بر قوانینی استوار است که همه باید به آن‌ها احترام بگذارند. ظهور جمهوری به‌تدریج صورت گرفت و حاصل چندین مبارزه است."
+      },
+      "ps": {
+        "q": "جمهوریت څه ده او په څه ولاړه ده؟",
+        "a": "جمهوریت یو سیاسي رژیم دی چې په کې ټاکل شوي مشران د ولس په نوم حکومت کوي. هغه پر هغو قوانینو ولاړه ده چې ټول يې باید درناوی وکړي. د جمهوریت راتګ تدریجي و او د څو مبارزو ثمر دی."
+      },
+      "ht": {
+        "q": "Kisa Repiblik la e sou kisa li fonde?",
+        "a": "Repiblik la se yon rejim politik kote dirijan eli yo gouvène nan non pèp la. Li fonde sou lwa ke tout moun dwe respekte. Avenman Repiblik la te pwogresif epi se fwi plizyè konba."
+      },
+      "tr": {
+        "q": "Cumhuriyet nedir ve neye dayanır?",
+        "a": "Cumhuriyet (République), seçilmiş yöneticilerin halk adına yönettiği bir siyasi rejimdir. Herkesin saygı göstermesi gereken yasalara dayanır. Cumhuriyet'in ortaya çıkışı tedrici olmuştur ve birçok mücadelenin meyvesidir."
       }
     },
     "audio": {
@@ -60,6 +120,26 @@
       "ar": {
         "q": "لماذا يُعدّ الرابع عشر من يوليو العيد الوطني لفرنسا؟",
         "a": "في الرابع عشر من يوليو 1789، استولى أهل باريس على سجن الباستيل الملكي. وبعد عامٍ، في الرابع عشر من يوليو 1790، خلال عيد الاتحاد (la fête de la Fédération)، أصبح هذا التاريخ هو تاريخ العيد الوطني. وفي تلك الحقبة، أُلِّف النشيد الوطني، «المرسييز» (La Marseillaise). وغدت ماريان (Marianne) رمزاً للجمهورية، وتمثالها الموضوع في جميع البلديات يذكِّر بالثورة الفرنسية. كما يعود العَلَم الثلاثي الألوان، الأزرق والأبيض والأحمر، إلى عهد الثورة أيضاً."
+      },
+      "uk": {
+        "q": "Чому 14 липня є національним святом Франції?",
+        "a": "14 липня 1789 року народ Парижа захоплює королівську в'язницю Бастилію. Через рік, 14 липня 1790 року, під час свята Федерації, ця дата 14 липня стала датою національного свята. У ту епоху було складено національний гімн «Марсельєза» (La Marseillaise). Маріанна (Marianne) стала символом Республіки. Її статуя, розміщена в усіх мерія, нагадує про Французьку революцію. Триколірний прапор — синій, білий, червоний — також походить з часів Революції."
+      },
+      "fa": {
+        "q": "چرا چهاردهم جولای عید ملی فرانسه است؟",
+        "a": "در ۱۴ جولای ۱۷۸۹، مردم پاریس زندان سلطنتی باستیل را تصرف کردند. یک سال بعد، در ۱۴ جولای ۱۷۹۰، در جشن فدراسیون، این تاریخ به تاریخ عید ملی تبدیل شد. در همین دوره، سرود ملی به نام «مارسِی‌یز» (La Marseillaise) سروده شد. ماریان (Marianne) به نماد جمهوری تبدیل گشت. مجسمهٔ او که در همهٔ شهرداری‌ها قرار دارد، انقلاب فرانسه را به یاد می‌آورد. پرچم سه‌رنگ آبی، سفید و سرخ نیز به دوران انقلاب بازمی‌گردد."
+      },
+      "ps": {
+        "q": "ولې د جولای ۱۴ نېټه د فرانسې ملي اختر دی؟",
+        "a": "د ۱۷۸۹ کال د جولای په ۱۴ نېټه، د پاریس ولس د باستیل (Bastille) د شاهي زندان نیوونه وکړه. یو کال وروسته، د ۱۷۹۰ کال د جولای په ۱۴ نېټه، د فدراسیون د اختر په جریان کې، د جولای ۱۴ نېټه د ملي اختر نېټه وګرځېده. په هغه وخت کې، ملي سرود «لا مارسیلیز» (La Marseillaise) جوړ شو. ماریان د جمهوریت سمبول وګرځېده. د هغې مجسمه چې په ټولو ښاروالیو کې ایښودل شوې، د فرانسوي انقلاب یادونه کوي. درې رنګه بیرغ، نیلي، سپین، سور، هم د انقلاب وخت ته راګرځي."
+      },
+      "ht": {
+        "q": "Poukisa 14 jiyè se fèt nasyonal Lafrans?",
+        "a": "14 jiyè 1789, pèp Paris la pran prizon wayal Bastille la. Yon ane apre, 14 jiyè 1790, pandan fèt Federasyon an, dat 14 jiyè sa a te vin tounen dat fèt nasyonal la. Nan epòk sa a, im nasyonal la, La Marseillaise, te konpoze. Marianne te vin senbòl Repiblik la. Estati li, plase nan tout meri yo, rapèl Revolisyon franse a. Drapo trikolò, ble, blan, wouj, date tou Revolisyon an."
+      },
+      "tr": {
+        "q": "14 Temmuz neden Fransa'nın millî bayramıdır?",
+        "a": "14 Temmuz 1789'da Paris halkı kraliyet hapishanesi Bastille'i ele geçirmiştir. Bir yıl sonra, 14 Temmuz 1790'da Federasyon Bayramı'nda 14 Temmuz tarihi millî bayram günü olmuştur. Bu dönemde millî marş La Marseillaise bestelenmiştir. Marianne, Cumhuriyet'in sembolü olmuştur. Tüm belediyelere yerleştirilen heykeli, Fransız Devrimi'ni hatırlatır. Mavi-beyaz-kırmızı üç renkli bayrak da Devrim dönemine aittir."
       }
     },
     "audio": {
@@ -77,6 +157,26 @@
       "ar": {
         "q": "ما هي لغة الجمهورية وما هو شعارها؟",
         "a": "لغة الجمهورية هي الفرنسية. وتكفل الجمهورية احترام مبادئ الحرية والمساواة والإخاء. وهذه الكلمات الثلاث تشكِّل شعارها."
+      },
+      "uk": {
+        "q": "Якою є мова Республіки і яким є її девіз?",
+        "a": "Мовою Республіки є французька. Республіка гарантує дотримання принципів свободи, рівності та братерства. Ці три слова становлять її девіз."
+      },
+      "fa": {
+        "q": "زبان جمهوری چیست و شعار آن کدام است؟",
+        "a": "زبان جمهوری، فرانسوی است. جمهوری احترام به اصول آزادی، برابری و برادری را تضمین می‌کند. این سه واژه شعار جمهوری را تشکیل می‌دهند."
+      },
+      "ps": {
+        "q": "د جمهوریت ژبه څه ده او شعار يې څه دی؟",
+        "a": "د جمهوریت ژبه فرانسوي ده. جمهوریت د ازادۍ، برابرۍ او ورورولۍ د اصولو درناوی تضمینوي. دا درې کلمې د هغې شعار تشکیلوي."
+      },
+      "ht": {
+        "q": "Ki lang Repiblik la e ki deviz li?",
+        "a": "Lang Repiblik la se franse. Repiblik la garanti respè prensip libète, egalite ak fratènite. Twa mo sa yo konstitye deviz li."
+      },
+      "tr": {
+        "q": "Cumhuriyet'in dili nedir ve özdeyişi (devise) nedir?",
+        "a": "Cumhuriyet'in dili Fransızcadır. Cumhuriyet, özgürlük, eşitlik ve kardeşlik (liberté, égalité, fraternité) ilkelerine saygıyı güvence altına alır. Bu üç sözcük Cumhuriyet'in özdeyişini oluşturur."
       }
     },
     "audio": {
@@ -94,6 +194,26 @@
       "ar": {
         "q": "ما هي الحريات الأساسية التي تكفلها الجمهورية؟",
         "a": "الحريات الأساسية مكفولة: حرية الفكر، وحرية المعتقد، وحرية التعبير، وحرية التجمع... وقد استقرت الجمهورية بشكلٍ ثابت في عام 1875. وفي ثمانينيات القرن التاسع عشر، صدر قانون يكفل حرية الصحافة. وأصبح التعليم الابتدائي إلزامياً، كما باتت المدرسة العمومية مجانية وعلمانية."
+      },
+      "uk": {
+        "q": "Якими є основоположні свободи, які гарантує Республіка?",
+        "a": "Гарантовані основоположні свободи: свобода думки, свобода вірування, свобода вираження, свобода зібрань… Республіка стабільно встановлюється у 1875 році. У 1880-х роках закон гарантує свободу преси. Початкова школа стає обов'язковою, а державна школа — безкоштовною та світською."
+      },
+      "fa": {
+        "q": "آزادی‌های بنیادینی که جمهوری تضمین می‌کند کدام‌اند؟",
+        "a": "آزادی‌های بنیادین تضمین شده‌اند: آزادی اندیشه، آزادی باور، آزادی بیان، آزادی اجتماع... جمهوری در سال ۱۸۷۵ به‌طور پایدار برقرار شد. در دههٔ ۱۸۸۰، قانونی آزادی مطبوعات را تضمین کرد. مدرسهٔ ابتدایی اجباری گردید و مدرسهٔ عمومی، رایگان و سکولار شد."
+      },
+      "ps": {
+        "q": "هغه بنسټیزې ازادۍ کومې دي چې جمهوریت يې تضمینوي؟",
+        "a": "بنسټیزې ازادۍ تضمین شوي دي: د فکر ازادي، د عقیدې ازادي، د بیان ازادي، د راټولیدو ازادي... جمهوریت په ۱۹۸۵ کې په ثابته توګه وټاکل شوه. په ۱۸۸۰ کلونو کې، یو قانون د مطبوعاتو ازادي تضمینوي. لومړنی ښوونځی اجباري شو، او عامه ښوونځی وړیا او سیکولر شو."
+      },
+      "ht": {
+        "q": "Ki libète fondamantal Repiblik la garanti?",
+        "a": "Libète fondamantal yo garanti: libète panse, libète kwayans, libète pou eksprime, libète pou rasanble... Repiblik la enstale yon fason estab an 1875. Nan ane 1880 yo, yon lwa garanti libète laprès. Lekòl primè vin obligatwa, e lekòl piblik vin gratis e leyik."
+      },
+      "tr": {
+        "q": "Cumhuriyet'in güvence altına aldığı temel özgürlükler nelerdir?",
+        "a": "Temel özgürlükler güvence altına alınmıştır: düşünce özgürlüğü, inanç özgürlüğü, ifade özgürlüğü, toplanma özgürlüğü... Cumhuriyet 1875'te istikrarlı biçimde kurulmuştur. 1880'lerde bir kanun basın özgürlüğünü güvence altına almıştır. İlköğretim zorunlu, kamusal okul ücretsiz ve laik hâle gelmiştir."
       }
     },
     "audio": {
@@ -111,6 +231,26 @@
       "ar": {
         "q": "هل يحق للإدارة أن ترفض منح الجنسية الفرنسية لشخصٍ لا يحترم المساواة بين النساء والرجال؟",
         "a": "نعم، حتى لو كان ذلك الشخص متزوجاً من مواطنٍ أو مواطنةٍ فرنسية. فالمساواة بين النساء والرجال جزءٌ من القيم الأساسية للجمهورية. ويُقيَّم الالتزام بهذه القيم خلال المقابلة النظامية."
+      },
+      "uk": {
+        "q": "Чи може адміністрація відмовити у наданні французького громадянства особі, яка не дотримується рівності між жінками та чоловіками?",
+        "a": "Так, навіть якщо ця особа одружена з французом/француженкою. Рівність між жінками та чоловіками є однією з основних цінностей Республіки. Прихильність до цих цінностей оцінюється під час офіційної співбесіди."
+      },
+      "fa": {
+        "q": "آیا اداره می‌تواند تابعیت فرانسوی را به شخصی که برابری زن و مرد را رعایت نمی‌کند ندهد؟",
+        "a": "بله، حتی اگر این شخص با یک فرانسوی (زن یا مرد) ازدواج کرده باشد. برابری زنان و مردان از ارزش‌های اساسی جمهوری به شمار می‌رود. پای‌بندی به این ارزش‌ها در جریان مصاحبهٔ آیین‌نامه‌ای ارزیابی می‌گردد."
+      },
+      "ps": {
+        "q": "ایا اداره کولای شي د هغه شخص لپاره فرانسوي تابعیت رد کړي چې د ښځو-نارینه‌و برابري نه احترام کوي؟",
+        "a": "هو، حتی که چېرې دا شخص د فرانسوي سره واده شوی وي. د ښځو او نارینه‌و ترمنځ برابري د جمهوریت د بنسټیزو ارزښتونو څخه ده. د دې ارزښتونو ته منلو ته د قانوني مرکې (entretien réglementaire) په جریان کې ارزونه کیږي."
+      },
+      "ht": {
+        "q": "Èske administrasyon an ka refize bay nasyonalite franse a yon moun ki pa respekte egalite ant fanm ak gason?",
+        "a": "Wi, menm si moun sa a marye ak yon Franse(z). Egalite ant fanm ak gason fè pati valè esansyèl Repiblik la. Adezyon ak valè sa yo evalye pandan antretyen reglemantè a."
+      },
+      "tr": {
+        "q": "İdare, kadın-erkek eşitliğine saygı göstermeyen bir kişiye Fransız vatandaşlığını reddedebilir mi?",
+        "a": "Evet, bu kişi bir Fransız erkek/kadınla evli olsa bile. Kadınlar ve erkekler arasındaki eşitlik, Cumhuriyet'in temel değerlerindendir. Bu değerlere bağlılık, yasal görüşme (entretien réglementaire) sırasında değerlendirilir."
       }
     },
     "audio": {
@@ -128,6 +268,26 @@
       "ar": {
         "q": "ماذا يكفل مبدأ المساواة في الجمهورية الفرنسية؟",
         "a": "لجميع المواطنين الحقوق نفسها والواجبات نفسها بصرف النظر عن جنسهم أو أصلهم أو دينهم أو آرائهم أو ميولهم الجنسية. ويعود إعلان حقوق الإنسان والمواطن (Déclaration des Droits de l’Homme et du Citoyen) — انظر آخر الكتيِّب — إلى الثورة الفرنسية عام 1789، وهو يكفل الحرية والمساواة لجميع المواطنين. ويمنح القانون النساء والرجال الحقوق نفسها."
+      },
+      "uk": {
+        "q": "Що гарантує принцип рівності у Французькій Республіці?",
+        "a": "Усі громадяни мають однакові права та обов'язки незалежно від статі, походження, релігії, поглядів чи сексуальної орієнтації. Декларація прав людини і громадянина (див. в кінці посібника) походить з часів Французької революції 1789 року. Вона забезпечує свободу та рівність усіх громадян. Закон надає однакові права жінкам і чоловікам."
+      },
+      "fa": {
+        "q": "اصل برابری در جمهوری فرانسه چه چیزی را تضمین می‌کند؟",
+        "a": "همهٔ شهروندان فارغ از جنسیت، خاستگاه، دین، عقاید یا گرایش جنسی، از حقوق و وظایف یکسان برخوردارند. اعلامیهٔ حقوق بشر و شهروند (Déclaration des Droits de l’Homme et du Citoyen) (نگاه کنید به پایان دفترچه) به انقلاب فرانسهٔ ۱۷۸۹ بازمی‌گردد. این اعلامیه آزادی و برابری همهٔ شهروندان را تضمین می‌کند. قانون به زنان و مردان حقوق یکسان اعطا می‌نماید."
+      },
+      "ps": {
+        "q": "د فرانسوي جمهوریت په برابرۍ اصل څه تضمینوي؟",
+        "a": "ټول اتباع ورته حقونه او ورته وجایب لري بدون له هر ډول توپیر د جنس، اصل، دین، نظریاتو یا جنسي تمایلاتو له مخې. د بشر او اتباع د حقونو اعلامیه (Déclaration des Droits de l'Homme et du Citoyen) (د کتاب په پای کې وګورئ) د ۱۷۸۹ کال د فرانسوي انقلاب څخه دی. هغه د ټولو اتباعو د ازادۍ او برابرۍ تضمین کوي. قانون ښځو او نارینه‌و ته ورته حقونه ورکوي."
+      },
+      "ht": {
+        "q": "Kisa prensip egalite a garanti nan Repiblik franse a?",
+        "a": "Tout sitwayen gen menm dwa ak menm devwa kèlkeswa sèks yo, orijin yo, relijyon yo, opinyon yo oswa oryantasyon seksyèl yo. Deklarasyon Dwa Moun ak Sitwayen (gade nan fen liv la) date Revolisyon franse 1789 la. Li asire libète ak egalite tout sitwayen. Lalwa akòde menm dwa pou fanm ak gason."
+      },
+      "tr": {
+        "q": "Eşitlik ilkesi Fransız Cumhuriyeti'nde neyi güvence altına alır?",
+        "a": "Bütün yurttaşlar; cinsiyet, köken, din, görüş veya cinsel yönelim ne olursa olsun aynı haklara ve aynı ödevlere sahiptir. İnsan ve Yurttaş Hakları Bildirgesi (kitapçığın sonuna bakınız) 1789 Fransız Devrimi tarihlidir. Bütün yurttaşların özgürlüğünü ve eşitliğini güvence altına alır. Yasa, kadınlar ve erkekler için aynı hakları tanır."
       }
     },
     "audio": {
@@ -145,6 +305,26 @@
       "ar": {
         "q": "ما هي الأسباب التي لا يحق لصاحب العمل بسببها أن يرفض توظيف أجير، وما هو التمييز؟",
         "a": "لا يحق لصاحب العمل أن يرفض توظيف أجيرٍ بسبب أصوله أو سنه أو إعاقته أو انتمائه إلى عرقٍ أو دين، أو بسبب جنسه أو ميوله الجنسية. وأي قرارٍ (توظيف أو ترقية أو غير ذلك) يتخذه صاحب العمل ينبغي أن يستند إلى أسبابٍ مهنية لا شخصية. ومعاملة شخصٍ معاملةً أقل تفضيلاً بسبب أصوله أو دينه أو جنسه هو تمييز."
+      },
+      "uk": {
+        "q": "З яких причин роботодавець не може відмовити у працевлаштуванні працівника і що таке дискримінація?",
+        "a": "Роботодавець не може відмовити у працевлаштуванні працівника через його походження, вік, інвалідність, належність до етносу чи релігії, стать чи сексуальну орієнтацію. Будь-яке рішення (працевлаштування, підвищення тощо) роботодавця має ґрунтуватися на професійних, а не особистих причинах. Менш сприятливе ставлення до когось через його походження, релігію чи стать є дискримінацією."
+      },
+      "fa": {
+        "q": "صاحب‌کار به چه دلایلی نمی‌تواند از استخدام یک کارمند خودداری کند، و تبعیض چیست؟",
+        "a": "صاحب‌کار نمی‌تواند به دلیل خاستگاه، سن، معلولیت، تعلق قومی یا دینی، جنسیت یا گرایش جنسی، از استخدام یک کارمند خودداری کند. هر تصمیم (استخدام، ارتقاء و غیره) از سوی صاحب‌کار باید بر دلایل حرفه‌ای استوار باشد، نه بر دلایل شخصی. رفتار نامطلوب‌تر با کسی به دلیل خاستگاه، دین یا جنسیت، تبعیض است."
+      },
+      "ps": {
+        "q": "د کومو دلیلونو پر بنسټ یو کارفرما نه شي کولای د یوه کارمند د ګمارنې څخه ډډه وکړي، او تبعیض څه شی دی؟",
+        "a": "یو کارفرما نه شي کولای د کارمند د اصل، عمر، معلولیت، توکمیز یا دیني تړاو، جنس یا جنسي تمایل له امله د هغه ګمارنه رد کړي. د کارفرما هره پریکړه (ګمارنه، ترفیع، او نور) باید په مسلکي دلیلونو ولاړه وي نه په شخصي دلیلونو. د یو چا سره د هغه د اصل، دین یا جنس له امله کم په ښه چلند تبعیض دی."
+      },
+      "ht": {
+        "q": "Pou ki rezon yon anplwayè pa ka refize anboche yon salarye, e kisa yon diskriminasyon ye?",
+        "a": "Yon anplwayè pa ka refize anboche yon salarye akoz orijin li, laj li, andikap li, apatenans li ak yon etni oswa yon relijyon, sèks li oswa oryantasyon seksyèl li. Tout desizyon (anboch, pwomosyon, eltr.) anplwayè a dwe fonde sou rezon pwofesyonèl e non pèsonèl. Trete yon moun mwens favorabman akoz orijin li, relijyon li oswa sèks li se yon diskriminasyon."
+      },
+      "tr": {
+        "q": "Bir işveren, bir çalışanı işe almayı hangi gerekçelerle reddedemez ve ayrımcılık (discrimination) nedir?",
+        "a": "Bir işveren bir çalışanı, kökeni, yaşı, engellilik durumu, etnik ya da dinî mensubiyeti, cinsiyeti veya cinsel yönelimi nedeniyle işe almayı reddedemez. İşverenin her kararı (işe alım, terfi vb.) kişisel değil, mesleki gerekçelere dayanmalıdır. Birine kökeni, dini veya cinsiyeti nedeniyle daha az lehte muamele etmek bir ayrımcılıktır."
       }
     },
     "audio": {
@@ -162,6 +342,26 @@
       "ar": {
         "q": "ما هو الإخاء، وكيف يتجسد في المجتمع الفرنسي؟",
         "a": "تقوم فرنسا على إرادة المواطنين الفرنسيين في العيش المشترك. وتتجسد هذه الإرادة في التضامن بين المواطنين. ومنذ عام 1945، يُمثِّل نظام الضمان الاجتماعي (sécurité sociale) — الذي تموِّله الاشتراكات الاجتماعية التي يدفعها في فرنسا أصحاب العمل والأجراء وغير الأجراء، إلى جانب الضرائب — تطبيقاً لمبدأ الإخاء هذا. وتدين فرنسا أشكال التمييز القائمة على سببٍ ينص عليه القانون وتؤدي إلى اختلافٍ في المعاملة. والتعبير عن آراءٍ عنصرية بأقوالٍ أو أفعالٍ أمرٌ مستوجِب للعقاب."
+      },
+      "uk": {
+        "q": "Що таке братерство і як воно проявляється у французькому суспільстві?",
+        "a": "Франція ґрунтується на волі французьких громадян жити разом. Ця воля проявляється у солідарності між громадянами. З 1945 року система соціального захисту, що фінансується з соціальних внесків, які сплачуються у Франції роботодавцями, найманими працівниками та особами, які не є найманими працівниками, а також з податків, є ілюстрацією цього принципу братерства. Франція засуджує дискримінацію, що ґрунтується на підставі, передбаченій законом, і призводить до різниці у ставленні. Висловлювання расистських поглядів через слова чи дії є караним."
+      },
+      "fa": {
+        "q": "برادری چیست و چگونه در جامعهٔ فرانسه تجلی می‌یابد؟",
+        "a": "فرانسه بر ارادهٔ هم‌زیستی شهروندان فرانسوی استوار است. این اراده در همبستگی میان شهروندان متجلی می‌شود. از سال ۱۹۴۵، نظام تأمین اجتماعی، که از طریق حق بیمه‌های اجتماعی پرداخت‌شده توسط صاحب‌کاران، حقوق‌بگیران و غیرحقوق‌بگیران در فرانسه و نیز از طریق مالیات‌ها تأمین مالی می‌شود، نمونه‌ای از این اصل برادری است. فرانسه تبعیض‌هایی را که بر اساس انگیزه‌ای پیش‌بینی‌شده در قانون و موجب رفتار متفاوت می‌شوند، محکوم می‌کند. ابراز عقاید نژادپرستانه از طریق گفتار یا اعمال، قابل کیفر است."
+      },
+      "ps": {
+        "q": "ورورولي څه شی ده، او په فرانسوي ټولنه کې څنګه ځان څرګندوي؟",
+        "a": "فرانسه د فرانسوي اتباعو د یوځایي ژوند کولو په ارادې ولاړه ده. دا اراده د اتباعو ترمنځ په پیوستون سره ځان څرګندوي. له ۱۹۴۵ راهیسې، د ټولنیز خوندیتوب نظام، چې په فرانسه کې د کارفرمایانو، کارمندانو او غیر کارمندانو د ورکړل شویو ټولنیزو ونډو لخوا تمویل کیږي، او همدارنګه د مالیې لخوا، د ورورولۍ د دې اصل یوه بیلګه ده. فرانسه د قانون لخوا د وړاندې شوي دلیل پر بنسټ تبعیضات چې د چلند توپیر رامنځته کړي محکوموي. د ویناوو یا کړنو له لارې د توکمیزو نظریاتو څرګندونه د سزا وړ ده."
+      },
+      "ht": {
+        "q": "Kisa fratènite, e kòman li tradui nan sosyete franse a?",
+        "a": "Lafrans fonde sou volonte sitwayen franse yo pou viv ansanm. Volonte sa a tradui pa solidarite ant sitwayen yo. Depi 1945, sistèm sekirite sosyal la, finanse pa kotizasyon sosyal verse an Frans pa anplwayè, salarye ak ki pa salarye yo, ansanm ak taks yo, se yon ilistrasyon prensip fratènite sa a. Lafrans kondane diskriminasyon ki fonde sou yon motif lalwa prevwa e ki antrene yon diferans tretman. Eksprime opinyon rasis atravè pwopo oswa aksyon repreyansib."
+      },
+      "tr": {
+        "q": "Kardeşlik (fraternité) nedir ve Fransız toplumunda kendisini nasıl gösterir?",
+        "a": "Fransa, Fransız yurttaşlarının birlikte yaşama iradesine dayanır. Bu irade, yurttaşlar arasındaki dayanışmada kendisini gösterir. 1945'ten beri Fransa'da işverenler, ücretliler ve serbest çalışanlar tarafından ödenen sosyal primlerle ve vergilerle finanse edilen sosyal güvenlik sistemi (sécurité sociale), bu kardeşlik ilkesinin bir örneğidir. Fransa, kanunda öngörülen bir gerekçeye dayanan ve farklı muameleye yol açan ayrımcılıkları kınar. Sözler veya eylemler aracılığıyla ırkçı görüşler ifade etmek cezalandırılabilir."
       }
     },
     "audio": {
@@ -179,6 +379,26 @@
       "ar": {
         "q": "لماذا لا يحق لتلاميذ المدارس والإعداديات والثانويات ارتداء رموزٍ دينية بارزة جداً داخل المؤسسات المدرسية؟",
         "a": "يحظر قانون 15 مارس 2004 ارتداء رموزٍ أو ملابس تُظهر بشكلٍ بارز (أي بطريقةٍ مفرطة في الظهور) الانتماء إلى دينٍ ما داخل المدرسة. ذلك أن المدرسة مؤسسة عمومية تتولى تكوين جميع المواطنين، وعليها بالتالي أن تكون محايدة تجاه الأديان. ويُسهم حظر ارتداء الرموز الدينية البارزة في حماية القاصرين من الضغوط التي قد يتعرضون لها من قِبَل زملائهم داخل حرم المدرسة."
+      },
+      "uk": {
+        "q": "Чому учні шкіл, коледжів та ліцеїв не мають права носити надто помітні релігійні символи у навчальних закладах?",
+        "a": "Закон від 15 березня 2004 року забороняє носити в школі знаки чи одяг, що демонстративно (надто помітно) виявляють належність до релігії. Адже школа є державним закладом, який формує всіх громадян: тому вона має бути нейтральною щодо релігій. Заборона носити демонстративні релігійні символи сприяє захисту неповнолітніх від тиску, якого вони можуть зазнавати з боку своїх товаришів у межах школи."
+      },
+      "fa": {
+        "q": "چرا دانش‌آموزان مدارس ابتدایی، دبیرستان‌های دورهٔ اول و دبیرستان‌های دورهٔ دوم، حق پوشیدن نمادهای دینی بسیار آشکار را در محیط‌های آموزشی ندارند؟",
+        "a": "قانون ۱۵ مارچ ۲۰۰۴، پوشیدن نمادها یا لباس‌هایی را که آشکارا (به‌گونه‌ای بسیار نمایان) تعلق به یک دین را اظهار می‌کنند، در مدرسه ممنوع کرده است. زیرا مدرسه نهادی عمومی است که همهٔ شهروندان را تربیت می‌کند: بنابراین باید در برابر ادیان بی‌طرف باشد. ممنوعیت پوشیدن نمادهای دینی آشکار، به حمایت از خردسالان در برابر فشارهایی که ممکن است از سوی همکلاسی‌های آنان در محوطهٔ مدرسه با آن مواجه شوند، یاری می‌رساند."
+      },
+      "ps": {
+        "q": "ولې د ښوونځیو، اعدادیو او لیسو زده‌کوونکي حق نه لري چې په ښوونیزو موسساتو کې ډیر څرګند مذهبي نښې وغوړوي؟",
+        "a": "د ۲۰۰۴ کال د مارچ د ۱۵ نېټې قانون په ښوونځي کې د هغو نښو یا جامو غوړونه منع کوي چې په څرګنده توګه (په ډیر څرګند ډول) د یو دین تړاو ښیې. په حقیقت کې، ښوونځی یوه عامه موسسه ده چې ټول اتباع روزي: نو هغه باید د دینونو په وړاندې بې‌طرفه وي. د څرګندو مذهبي نښو د غوړولو منع د کوچنیانو د ساتلو لپاره مرسته کوي د هغه فشار څخه چې له خوا د خپلو ملګرو لخوا په ښوونځي کې پرې راتلای شي."
+      },
+      "ht": {
+        "q": "Poukisa elèv lekòl, kolèj ak lise pa gen dwa pote siy relijye twò vizib nan etablisman eskolè yo?",
+        "a": "Lwa 15 mas 2004 la entèdi pou pote nan lekòl siy oswa rad ki manifeste ostansibleman (yon fason twò vizib) apatenans ak yon relijyon. An efè, lekòl la se yon enstitisyon piblik ki fòme tout sitwayen: li dwe donk net devan relijyon yo. Entèdiksyon pou pote siy relijye ostansib kontribye pou pwoteje minè kont presyon yo ta ka sibi pa kanmarad yo nan lakou lekòl la."
+      },
+      "tr": {
+        "q": "İlkokul, ortaokul ve lise öğrencileri okul kurumlarında neden çok belirgin dinî semboller takma hakkına sahip değildir?",
+        "a": "15 Mart 2004 tarihli kanun, okulda bir dine mensubiyeti açıkça (çok belirgin biçimde) ortaya koyan sembollerin veya kıyafetlerin giyilmesini yasaklamaktadır. Zira okul, bütün yurttaşları yetiştiren bir kamu kurumudur: dolayısıyla dinler karşısında tarafsız olmalıdır. Belirgin dinî sembollerin yasaklanması, küçüklerin okul içinde arkadaşlarından görebilecekleri baskılara karşı korunmasına katkıda bulunur."
       }
     },
     "audio": {
@@ -196,6 +416,26 @@
       "ar": {
         "q": "ما هي العلمانية؟",
         "a": "العلمانية (laïcité) مبدأ أساسي من مبادئ الجمهورية. وتعني الفصلَ الواضح بين الشؤون الدينية والشؤون العامة. وهذا المبدأ قديم، فقد كرَّسه قانون عام 1905 الذي يفصل الكنائس عن الدولة. غير أنه حفاظاً على النظام العام، يحق للدولة أن تقيِّد حق إظهار الدين في الفضاء العام. كما تكفل الدولة من جهةٍ أخرى الحرية الدينية، فلكل فردٍ حرية الإيمان أو عدم الإيمان واعتناق الدين الذي يشاء."
+      },
+      "uk": {
+        "q": "Що таке світськість (laïcité)?",
+        "a": "Світськість (laïcité) є основоположним принципом Республіки. Вона означає, що релігійні та державні справи чітко розділені. Цей принцип є давнім: він закріплений законом 1905 року, який відокремлює Церкви від Держави. Але для збереження громадського порядку Держава може обмежувати право публічно виявляти свою релігію. Держава, з іншого боку, гарантує релігійну свободу. Кожен вільний вірити чи не вірити та обирати релігію, яку він бажає."
+      },
+      "fa": {
+        "q": "سکولاریسم (laïcité) چیست؟",
+        "a": "سکولاریسم اصلی بنیادین در جمهوری است. این اصل به این معناست که امور دینی و امور عمومی به‌روشنی از یکدیگر جدا هستند. این اصل کهن است: قانون سال ۱۹۰۵ که کلیساها را از دولت جدا می‌سازد، آن را تثبیت کرده است. اما برای حفظ نظم عمومی، دولت می‌تواند حق ابراز علنی دین را محدود سازد. دولت همچنین آزادی دینی را تضمین می‌کند. هر کس آزاد است که باور داشته باشد یا نداشته باشد و دینی را که می‌خواهد بپذیرد."
+      },
+      "ps": {
+        "q": "سیکولرزم/لائیسیته (laïcité) څه ده؟",
+        "a": "سیکولرزم/لائیسیته د جمهوریت یو بنسټیز اصل دی. دا معنی لري چې مذهبي چارې او عامه چارې په څرګنده توګه سره جلا دي. دا اصل پخوانی دی: هغه د ۱۹۰۵ کال د قانون لخوا چې کلیساوې له دولت څخه جلا کوي تأیید شوی. خو د عامه نظم د ساتلو لپاره، دولت کولای شي په عامه توګه د خپل دین د څرګندولو حق محدود کړي. دولت سربېره پر دې د دیني ازادۍ تضمین کوي. هر څوک ازاد دی چې عقیده ولري یا ونه لري او هغه دین غوره کړي چې غواړي."
+      },
+      "ht": {
+        "q": "Kisa leyisite (laïcité)?",
+        "a": "Leyisite a se yon prensip fondamantal Repiblik la. Li vle di ke afè relijye ak afè piblik klèman separe. Prensip sa a ansyen: li konsakre pa lwa 1905 la ki separe Legliz yo ak Eta a. Men pou prezève lòd piblik, Eta a ka restren dwa pou manifeste relijyon w an piblik. Eta a pa lòt kote garanti libète relijye. Chak moun lib pou kwè oswa pa kwè e pou adopte relijyon li vle a."
+      },
+      "tr": {
+        "q": "Laiklik (laïcité) nedir?",
+        "a": "Laiklik, Cumhuriyet'in temel ilkelerindendir. Dinî işlerin ve kamusal işlerin açıkça birbirinden ayrı olduğu anlamına gelir. Bu ilke eskidir: Kiliseleri Devlet'ten ayıran 1905 kanunuyla benimsenmiştir. Ancak kamu düzenini korumak için Devlet, dini alenen ifade etme hakkını kısıtlayabilir. Devlet ayrıca dinî özgürlüğü de güvence altına alır. Herkes inanmakta veya inanmamakta ve dilediği dini benimsemekte özgürdür."
       }
     },
     "audio": {
@@ -213,6 +453,26 @@
       "ar": {
         "q": "ما هي النصوص التي تحدد القواعد التي يجب على المواطنين احترامها؟",
         "a": "للمواطنين والمواطنات حقوق وعليهم واجبات. وعلى كلٍّ منهم احترام القوانين والأنظمة. والقواعد الأساسية التي تُطبَّق بين الأشخاص يحددها القانون المدني (code civil). وثَمَّة أيضاً قواعد جماعية تتعلق بالحياة في المجتمع وهي مدرجة في القانون. فعلى سبيل المثال، يُحدِّد قانون العقوبات (code pénal) الجرائم والعقوبات المقابلة لها."
+      },
+      "uk": {
+        "q": "Які тексти визначають правила, яких повинні дотримуватися громадяни?",
+        "a": "Громадянки і громадяни мають права та обов'язки. Кожен повинен дотримуватися законів і правил. Основні правила, що застосовуються між особами, визначені Цивільним кодексом. Існують також колективні правила, що стосуються життя у суспільстві і записані в законі. Наприклад, Кримінальний кодекс визначає правопорушення та покарання, що відповідають їх санкціям."
+      },
+      "fa": {
+        "q": "کدام متون، قواعدی را که شهروندان باید رعایت کنند، تعیین می‌کنند؟",
+        "a": "شهروندان (زن و مرد) دارای حقوق و وظایف هستند. هر کس باید قوانین و آیین‌نامه‌ها را رعایت کند. قواعد اساسی قابل اِعمال میان اشخاص، در قانون مدنی (code civil) تعیین شده‌اند. قواعد جمعی نیز وجود دارند که به زندگی در جامعه می‌پردازند و در قانون درج شده‌اند. برای مثال، قانون جزا (code pénal) جرایم و مجازات‌های متناظر با آن‌ها را تعریف می‌کند."
+      },
+      "ps": {
+        "q": "کوم متنونه هغه قواعد تعریفوي چې اتباع يې باید درناوی وکړي؟",
+        "a": "اتباع حقونه او وجایب لري. هر څوک باید قوانین او مقررات احترام کړي. د اشخاصو ترمنځ د پلي کیدو وړ اساسي قواعد د مدني کود (code civil) لخوا تعریف شوي. سربېره پر دې، ډله‌ییز قواعد هم شته چې په ټولنیز ژوند پورې تړاو لري او په قانون کې درج شوي. د بیلګې په توګه، جزایي کود (code pénal) سرغړونې او هغه سزاوې چې د هغوی د سزا سره مطابقت لري تعریفوي."
+      },
+      "ht": {
+        "q": "Ki tèks ki defini règ sitwayen yo dwe respekte?",
+        "a": "Sitwayen(èn) yo gen dwa ak devwa. Chak moun dwe respekte lwa ak règleman yo. Règ esansyèl ki aplike ant moun yo defini pa kòd sivil la. Genyen tou règ kolektif, ki konsène vi nan sosyete e ki enskri nan lalwa. Pa egzanp, kòd penal la defini enfraksyon yo ak penalite ki koresponn ak sanksyon yo."
+      },
+      "tr": {
+        "q": "Yurttaşların uyması gereken kuralları hangi metinler tanımlar?",
+        "a": "Yurttaşların hakları ve ödevleri vardır. Herkes yasalara ve düzenlemelere uymak zorundadır. Kişiler arasında uygulanan temel kurallar Medeni Kanun (code civil) tarafından tanımlanır. Bunun yanı sıra toplumsal yaşama ilişkin ve kanunda yer alan kolektif kurallar da vardır. Örneğin Ceza Kanunu (code pénal), suçları ve bunlara karşılık gelen cezaları tanımlar."
       }
     },
     "audio": {

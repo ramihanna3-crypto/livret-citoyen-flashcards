@@ -1,0 +1,454 @@
+{
+  "ddhc-001": {
+    "q": "1789 tarihli İnsan ve Yurttaş Hakları Bildirgesi'nin (Déclaration des Droits de l'Homme et du Citoyen) 1. Maddesi ne der?",
+    "a": "Madde 1. İnsanlar, haklar bakımından özgür ve eşit doğarlar ve öyle kalırlar. Toplumsal ayrımlar ancak ortak yarara dayanabilir."
+  },
+  "ddhc-002": {
+    "q": "2. Maddeye göre her siyasi birliğin amacı nedir?",
+    "a": "Madde 2. Her siyasi birliğin amacı, insanın doğal ve devredilmez haklarının korunmasıdır. Bu haklar; özgürlük, mülkiyet, güvenlik ve baskıya karşı direnmedir."
+  },
+  "ddhc-003": {
+    "q": "3. Maddeye göre her egemenliğin (Souveraineté) ilkesi nerededir?",
+    "a": "Madde 3. Her egemenliğin ilkesi esas olarak Millet'te bulunur. Hiçbir kurum, hiçbir birey, açıkça Millet'ten kaynaklanmayan bir yetki kullanamaz."
+  },
+  "ddhc-004": {
+    "q": "4. Maddeye göre özgürlük neden ibarettir?",
+    "a": "Madde 4. Özgürlük, başkasına zarar vermeyen her şeyi yapabilme hakkıdır: dolayısıyla her insanın doğal haklarını kullanmasının yegâne sınırı, toplumun diğer üyelerine de aynı hakların kullanımını güvence altına alan sınırlardır. Bu sınırlar ancak Kanun tarafından belirlenebilir."
+  },
+  "ddhc-005": {
+    "q": "5. Madde Kanun'un (Loi) sınırları hakkında ne der?",
+    "a": "Madde 5. Kanun, ancak topluma zarar veren eylemleri yasaklama hakkına sahiptir. Kanun tarafından yasaklanmayan hiçbir şey engellenemez ve hiç kimse, kanunun emretmediği bir şeyi yapmaya zorlanamaz."
+  },
+  "ddhc-006": {
+    "q": "6. Madde Kanun ve yurttaşların eşitliği hakkında ne der?",
+    "a": "Madde 6. Kanun, genel iradenin (volonté générale) ifadesidir. Bütün yurttaşların bizzat ya da temsilcileri aracılığıyla onun oluşumuna katılma hakkı vardır. Kanun, ister korusun ister cezalandırsın, herkes için aynı olmalıdır. Kanun önünde eşit olan bütün yurttaşlar; yetenekleri ölçüsünde, erdemleri ve becerileri dışında hiçbir ayrım gözetilmeksizin, her türlü onura, makama ve kamu görevine eşit biçimde kabul edilirler."
+  },
+  "ddhc-007": {
+    "q": "7. Madde tutuklama veya gözaltı koşulları hakkında ne der?",
+    "a": "Madde 7. Hiç kimse, ancak Kanun'un belirlediği hâllerde ve öngördüğü usullere göre suçlanabilir, yakalanabilir veya gözaltına alınabilir. Keyfî emirler talep edenler, çıkaranlar, uygulayanlar veya uygulatanlar cezalandırılmalıdır; ancak Kanun gereği çağrılan veya yakalanan her yurttaş derhal itaat etmelidir; direnmesi hâlinde suçlu duruma düşer."
+  },
+  "ddhc-008": {
+    "q": "8. Madde cezaların geriye yürümezliği hakkında ne der?",
+    "a": "Madde 8. Kanun ancak kesin ve açıkça gerekli olan cezaları öngörmelidir; hiç kimse, suç tarihinden önce yürürlüğe konulmuş ve yasal biçimde uygulanan bir kanun olmaksızın cezalandırılamaz."
+  },
+  "ddhc-009": {
+    "q": "9. Madde masumiyet karinesi hakkında ne der?",
+    "a": "Madde 9. Her insan suçlu ilan edilinceye kadar masum sayıldığından, eğer tutuklanması zorunlu görülürse, kişiliğini güvence altına almak için gerekli olmayan her türlü sertlik kanunla şiddetle yasaklanmalıdır."
+  },
+  "ddhc-010": {
+    "q": "10. Madde düşünce özgürlüğü hakkında ne der?",
+    "a": "Madde 10. Hiç kimse, ifade biçimleri Kanun'un kurduğu kamu düzenini bozmadıkça, dinî de olsa görüşlerinden dolayı rahatsız edilemez."
+  },
+  "ddhc-011": {
+    "q": "11. Madde düşünce ve görüşlerin serbestçe iletilmesi hakkında ne der?",
+    "a": "Madde 11. Düşünce ve görüşlerin serbestçe iletilmesi, insanın en değerli haklarından biridir: dolayısıyla her yurttaş, bu özgürlüğün Kanun'la belirlenen hâllerde kötüye kullanılmasından sorumlu olmak kaydıyla, serbestçe konuşabilir, yazabilir ve basabilir."
+  },
+  "ddhc-012": {
+    "q": "12. Maddeye göre kamu kuvveti (force publique) ne işe yarar?",
+    "a": "Madde 12. İnsan ve Yurttaş haklarının güvence altına alınması bir kamu kuvvetini gerekli kılar: bu kuvvet, kendisine emanet edilen kişilerin özel çıkarı için değil, herkesin yararı için kurulmuştur."
+  },
+  "ddhc-013": {
+    "q": "13. Maddeye göre kamu katkısı (vergi) nasıl dağıtılmalıdır?",
+    "a": "Madde 13. Kamu kuvvetinin idamesi ve idarenin masrafları için ortak bir katkı zorunludur: bu katkı, bütün yurttaşlar arasında, mali güçleri oranında eşit biçimde dağıtılmalıdır."
+  },
+  "ddhc-014": {
+    "q": "14. Madde vergiye rıza hakkında ne der?",
+    "a": "Madde 14. Bütün yurttaşlar, kamu katkısının gerekliliğini bizzat ya da temsilcileri aracılığıyla saptama, ona serbestçe rıza gösterme, kullanımını izleme ve miktarını, matrahını, tahsilini ve süresini belirleme hakkına sahiptir."
+  },
+  "ddhc-015": {
+    "q": "15. Madde kamu görevlilerinin sorumluluğu hakkında ne der?",
+    "a": "Madde 15. Toplumun, her kamu görevlisinden idaresi hakkında hesap sorma hakkı vardır."
+  },
+  "ddhc-016": {
+    "q": "16. Madde bir Anayasa'yı oluşturan unsur hakkında ne der?",
+    "a": "Madde 16. Hakların güvence altına alınmadığı ve kuvvetler ayrılığının belirlenmediği bir toplumun Anayasası yoktur."
+  },
+  "ddhc-017": {
+    "q": "17. Madde mülkiyet hakkı hakkında ne der?",
+    "a": "Madde 17. Mülkiyet, dokunulmaz ve kutsal bir hak olduğundan, hiç kimse, yasal olarak saptanan kamusal zorunluluğun açıkça gerektirdiği hâl dışında ve adil ve önceden ödenmiş bir tazminat koşulu olmaksızın bu hakkından yoksun bırakılamaz."
+  },
+  "droits-devoirs-001": {
+    "q": "Fransız yurttaşları kaç yaşında oy hakkından yararlanır?",
+    "a": "Yurttaşlar 18 yaşından itibaren oy hakkından yararlanırlar."
+  },
+  "droits-devoirs-002": {
+    "q": "Yurttaşlar kamu görevlerine hangi ölçütlere göre erişirler?",
+    "a": "Bütün yurttaşlar idaredeki görevlere eşit biçimde erişir. Yalnızca nitelikleri ve yetkinlikleri esas alınarak seçilirler."
+  },
+  "droits-devoirs-003": {
+    "q": "Her yurttaş neden yasaya saygı göstermek zorundadır?",
+    "a": "Yasaya saygı göstermek gerekir: zira «kanunu bilmemek mazeret sayılmaz». Yasa herkese uygulanır."
+  },
+  "droits-devoirs-004": {
+    "q": "Yurttaşlar kamu hizmetlerinin finansmanına nasıl katkıda bulunur?",
+    "a": "Bütün yurttaşlar, mali güçleri oranında vergi ödeyerek kamu hizmetlerinin finansmanına katılmak zorundadır. Maaşlarından kesilen sosyal primlerle sosyal korumanın finansmanına katkıda bulunurlar. Gelirlerini beyan etmek ve vergi ödemek zorunludur."
+  },
+  "droits-devoirs-005": {
+    "q": "Yurttaş Millî Savunma'ya nasıl katkıda bulunur?",
+    "a": "Savaş hâlinde her yurttaş, ülkenin savunmasına katılmak üzere orduya çağrılabilir. 16 yaşından itibaren Fransız kadın ve erkekleri, «Savunma ve Yurttaşlık Günü»ne (Journée défense et citoyenneté) katılmak için belediyede nüfus kütüğüne kaydolmak zorundadır."
+  },
+  "droits-devoirs-006": {
+    "q": "Fransız Yurttaşının Hakları ve Ödevleri Bildirgesi'nin (Charte des droits et devoirs du citoyen français) konusu nedir?",
+    "a": "Medeni Kanun'un 21-24. maddesinin uygulanması bağlamında bu Bildirge, Cumhuriyet'in temel ilke ve değerlerini hatırlatır ve Anayasa veya kanundan doğan yurttaş haklarını ve ödevlerini bildirir."
+  },
+  "droits-devoirs-007": {
+    "q": "Fransız halkının saygı duyduğu cumhuriyet sembolleri nelerdir?",
+    "a": "Fransız halkı, kendisini 26 Ağustos 1789 tarihli İnsan ve Yurttaş Hakları Bildirgesi'nde ve tarihinden miras aldığı demokratik ilkelerde tanır. Cumhuriyet sembollerine saygı duyar. Millî sembol, mavi-beyaz-kırmızı üç renkli bayraktır. Millî marş La Marseillaise'dir. Cumhuriyet'in özdeyişi «Özgürlük, Eşitlik, Kardeşlik»tir (Liberté, Égalité, Fraternité). Millî bayram 14 Temmuz'dur. «Marianne», Cumhuriyet'in sembolik temsilidir. Cumhuriyet'in dili Fransızcadır."
+  },
+  "droits-devoirs-008": {
+    "q": "1958 Anayasası'na göre Fransız Cumhuriyeti'ni tanımlayan dört ilke nedir?",
+    "a": "Fransa; bölünmez (indivisible), laik (laïque), demokratik ve sosyal bir Cumhuriyettir; ilkeleri 4 Ekim 1958 tarihli Anayasa ile belirlenmiştir."
+  },
+  "droits-devoirs-009": {
+    "q": "Cumhuriyet'in «bölünmez» (indivisible) niteliği ne anlama gelir?",
+    "a": "Bölünmez: millî egemenlik, onu seçilmiş temsilcileri aracılığıyla ve referandum yoluyla kullanan halka aittir. Halkın hiçbir kısmı ve hiçbir birey, bu egemenliğin kullanımını kendisine mal edemez."
+  },
+  "droits-devoirs-010": {
+    "q": "Cumhuriyet'in «laik» (laïque) niteliği ne anlama gelir?",
+    "a": "Laik: Cumhuriyet vicdan özgürlüğünü güvence altına alır. Tüm inançlara saygı gösterir. Herkes inanmakta, inanmamakta veya din değiştirmekte özgürdür. Cumhuriyet ibadetlerin serbestçe yerine getirilmesini güvence altına alır; ancak hiçbirini tanımaz, ücretlendirmez ve desteklemez. Devlet ve dinler birbirinden ayrıdır."
+  },
+  "droits-devoirs-011": {
+    "q": "Cumhuriyet'in «demokratik» niteliği ne anlama gelir?",
+    "a": "Demokratik: Cumhuriyet'in ilkesi şudur: halkın yönetimi, halk tarafından ve halk için. Doğrudan veya dolaylı olsa da oylama daima genel, eşit ve gizlidir. Yasa, genel iradenin ifadesi olduğundan her yurttaş ona saygı göstermek zorundadır. Hiç kimse, kanunun emretmediği bir şeyi yapmaya zorlanamaz. Fransız halkı adına verilen adalet bağımsızdır. Kamu kuvveti, kanunun ve adli kararların uygulanmasını güvence altına alır."
+  },
+  "droits-devoirs-012": {
+    "q": "Cumhuriyet'in «sosyal» (sociale) niteliği ne anlama gelir?",
+    "a": "Sosyal: Millet, bireye ve aileye gelişimleri için gerekli koşulları sağlar. Cumhuriyet, herkese kişilerin ve malların güvenliğini güvence altına alır."
+  },
+  "droits-devoirs-013": {
+    "q": "Fransız Cumhuriyeti'nin Avrupa Birliği ile ilişkisi nedir?",
+    "a": "Cumhuriyet, yetkilerinin bir kısmını ortaklaşa kullanmayı serbestçe seçmiş Devletlerden oluşan Avrupa Birliği'ne katılır."
+  },
+  "droits-devoirs-014": {
+    "q": "Her insanın devredilmez hakları var mıdır?",
+    "a": "Her insan, ırk, din veya inanç ayrımı gözetilmeksizin devredilmez haklara sahiptir. Cumhuriyet'in ülkesi üzerinde bu haklar herkese güvence altına alınmıştır ve herkesin onlara saygı gösterme ödevi vardır."
+  },
+  "droits-devoirs-015": {
+    "q": "Fransız yurttaşı sıfatına bağlanan özel haklar ve ödevler nelerdir?",
+    "a": "Fransız yurttaşı sıfatına ayrıca; halkın temsilcilerinin seçimine katılma hakkı ile millî savunmaya katılma veya ağır ceza mahkemesi jürilerinde görev alma ödevi gibi özel haklar ve ödevler bağlıdır."
+  },
+  "droits-devoirs-016": {
+    "q": "Bildirge'ye göre özgürlük neden ibarettir?",
+    "a": "İnsanlar, haklar bakımından özgür ve eşit doğar ve öyle kalır. Özgürlük, başkasına zarar vermeyen her şeyi yapabilmektir. Kişiye gösterilmesi gereken saygı, onuruna yönelik her türlü saldırıyı yasaklar. İnsan bedeni dokunulmazdır."
+  },
+  "droits-devoirs-017": {
+    "q": "Bildirge hangi düşünce ve ifade özgürlüklerini güvence altına alır?",
+    "a": "Hiç kimse, ifade biçimleri kamu düzenini bozmadıkça görüşlerinden dolayı rahatsız edilemez. Her yurttaş, bu özgürlüğün kanunda öngörülen hâllerde kötüye kullanılmasından sorumlu olmak kaydıyla serbestçe konuşabilir, yazabilir ve basabilir. Herkes özel hayatına saygı gösterilmesi hakkına sahiptir."
+  },
+  "droits-devoirs-018": {
+    "q": "Suçlanan veya yakalanan bir kişiyi hangi güvenceler korur?",
+    "a": "Hiç kimse, ancak kanunun belirlediği hâl ve usullerde suçlanabilir, yakalanabilir veya gözaltına alınabilir. Suçlu olduğuna karar verilinceye kadar herkes masum sayılır."
+  },
+  "droits-devoirs-019": {
+    "q": "Hangi dernek, parti ve sendika özgürlükleri güvence altına alınmıştır?",
+    "a": "Herkes bir dernek kurmakta veya seçtiği derneklere katılmakta özgürdür. Siyasi partilere veya gruplara serbestçe üye olabilir ve haklarını ve çıkarlarını sendikal eylemle savunabilir."
+  },
+  "droits-devoirs-020": {
+    "q": "Fransa'da kim seçmendir ve oylama neyi temsil eder?",
+    "a": "On sekiz yaşını doldurmuş ve medeni haklarından yararlanan her Fransız yurttaşı seçmendir. Seçmen niteliğine sahip her yurttaş, kanunun öngördüğü koşullarda adaylığını koyabilir. Oy vermek bir haktır; aynı zamanda yurttaşlık ödevidir."
+  },
+  "droits-devoirs-021": {
+    "q": "Bildirge herkesin kanun önünde eşitliği hakkında ne der?",
+    "a": "Bütün yurttaşlar; cinsiyet, köken, ırk veya din ayrımı gözetilmeksizin kanun önünde eşittir. İster korusun ister cezalandırsın, kanun herkes için aynıdır."
+  },
+  "droits-devoirs-022": {
+    "q": "Bildirge'nin kadın-erkek eşitliği konusundaki tutumu nedir?",
+    "a": "Erkek ve kadın bütün alanlarda aynı haklara sahiptir. Cumhuriyet, kadın ve erkeklerin seçimle gelinen makamlara ve kamu görevlerine ve mesleki ve sosyal sorumluluklara eşit erişimini destekler. Eşlerin her biri serbestçe bir meslek icra edebilir, gelirlerini elde edebilir ve ortak yüklere katkıda bulunduktan sonra dilediği gibi tasarruf edebilir."
+  },
+  "droits-devoirs-023": {
+    "q": "Anne babanın çocuklarına karşı ödevi nedir?",
+    "a": "Anne baba, ebeveynlik yetkisini birlikte kullanır. Çocukların eğitimini sağlar ve geleceklerini hazırlar. Eğitim, on altı yaşına kadar her iki cinsiyetten çocuklar için zorunludur. Tüm kademelerde ücretsiz ve laik kamusal eğitimin örgütlenmesi Devlet'in bir ödevidir."
+  },
+  "droits-devoirs-024": {
+    "q": "Bir Fransız hangi durumlarda Fransız vatandaşlığından çıkarılabilir?",
+    "a": "Her Fransız yurttaşı, Millet'in savunmasına ve birliğine katkıda bulunur. Fransız sıfatını sonradan kazanmış bir kişi, savunma yükümlülüklerinden kaçınması veya Fransa'nın temel çıkarlarına aykırı eylemlerde bulunması hâlinde Fransız vatandaşlığından çıkarılabilir."
+  },
+  "droits-devoirs-025": {
+    "q": "Yurttaşın mali ödevleri ve Devlet'in sunduğu sosyal güvenceler nelerdir?",
+    "a": "Herkes, mali gücüne göre, vergi ve sosyal prim ödeyerek Millet'in giderlerine katkıda bulunma ödevindedir. Millet herkese sağlığın korunmasını, maddi güvenliği ve izin hakkını güvence altına alır. Yaşı, fiziksel veya zihinsel durumu ya da ekonomik durumu nedeniyle çalışamayacak durumda olan herkes, topluluktan uygun geçim olanakları talep etme hakkına sahiptir."
+  },
+  "geographie-001": {
+    "q": "Fransa'nın Avrupa entegrasyonundaki yeri nedir?",
+    "a": "Fransa, Avrupa entegrasyonunun öncülerinden biridir. 1957'de Avrupa Ekonomik Topluluğu'nun (Communauté économique européenne) kurucu üyelerinden biri olmuştur. 1992'de üye Devletleri daha sıkı biçimde birleştiren Avrupa Birliği kurulmuştur. Bugün Birlik, demokratik ilkeleri paylaşan 27 üye Devletten oluşmaktadır. 2000'de kabul edilen Avrupa Birliği Temel Haklar Şartı, kişilerin haklarını güvence altına alır."
+  },
+  "geographie-002": {
+    "q": "Fransız yurttaşları ne zamandan beri aynı zamanda Avrupa yurttaşıdır ve bu onlara hangi hakları verir?",
+    "a": "1992'den beri Fransız yurttaşları aynı zamanda Avrupa yurttaşıdır. Beş yılda bir Avrupa Parlamentosu seçimlerinde oy kullanırlar. Avrupa Birliği'nin diğer ülkelerinde serbestçe dolaşma, çalışma, öğrenim görme ve yerleşme özgürlüğüne sahiptirler. Bu durumda yerleştikleri ülkenin yerel seçimlerinde oy kullanabilirler."
+  },
+  "geographie-003": {
+    "q": "Fransa Avro'yu (Euro) ne zamandan beri kullanmaktadır ve bu para birimini kaç ülkeyle paylaşmaktadır?",
+    "a": "2000 yılından beri Fransa, Avrupa Birliği'nin diğer 18 üye ülkesiyle ortak bir para birimini paylaşmaktadır: Avro (Euro)."
+  },
+  "geographie-004": {
+    "q": "Fransa'nın ekonomik yeri ve uluslararası örgütlerdeki rolü nedir?",
+    "a": "Fransa, dünyanın altıncı büyük ekonomik gücüdür. Fransa pek çok uluslararası örgüte üyedir. Birleşmiş Milletler Örgütü (BM/ONU) Güvenlik Konseyi'nin daimi üyesidir."
+  },
+  "geographie-005": {
+    "q": "Dünyada kaç kişi Fransızca konuşur ve kaç ülkede yaygındır?",
+    "a": "Fransızca dünyada 200 milyon kişi tarafından akıcı biçimde konuşulmaktadır. Fransızlar dünya nüfusunun yalnızca %1'ini oluşturur, ancak Fransızca konuşanlar 70 ülkeye dağılmıştır."
+  },
+  "geographie-006": {
+    "q": "Turizm Fransız ekonomisinde nasıl bir yer tutar?",
+    "a": "Fransa anıtları ve kültürüyle ünlüdür: dünyanın en çok ziyaret edilen turistik destinasyonudur. Turizm, Fransız ekonomisinin temel unsurlarından biridir."
+  },
+  "geographie-007": {
+    "q": "Fransız ekonomisinin başlıca öne çıkan sektörleri nelerdir?",
+    "a": "Fransa, deniz ve demiryolu taşımacılığında dünya liderlerindendir. Fransa'da 10.000'den fazla çalışanı olan yaklaşık yüz büyük şirket grubu vardır. Bu çok uluslu Fransız şirketleri pek çok ülkede faaliyet göstermektedir. Fransız ekonomisinde havacılık ve lüks sektörü gibi öne çıkan alanlar bulunur; bazı markalar dünya çapında tanınmaktadır."
+  },
+  "geographie-008": {
+    "q": "Eyfel Kulesi'ni kim ve hangi vesileyle inşa etmiştir?",
+    "a": "Eyfel Kulesi, mühendis Gustave Eiffel tarafından 1889 Dünya Sergisi (Exposition universelle) için inşa edilmiştir. Yılda 7 milyondan fazla ziyaretçisiyle çok rağbet gören bir anıttır."
+  },
+  "geographie-009": {
+    "q": "Mont-Saint-Michel nedir?",
+    "a": "Mont-Saint-Michel, Normandiya'da bir körfezde yer alan ve üzerinde bir manastırın yükseldiği kayalık bir adacıktır. UNESCO tarafından Dünya Mirası Listesi'ne dâhil edilmiştir."
+  },
+  "geographie-010": {
+    "q": "Fransa'nın önemli nehirleri nelerdir ve hangisi en uzunudur?",
+    "a": "Fransa önemli nehirlerle kat edilir: Loire, Seine, Garonne, Rhône, Rhin (Ren). Loire, Fransa'nın en uzun nehridir."
+  },
+  "geographie-011": {
+    "q": "Avrupa'nın en yüksek dağı hangisidir ve nerededir?",
+    "a": "Alpler sıradağlarının zirvesi olan Mont-Blanc, Avrupa'nın en yüksek dağıdır (4.810 m)."
+  },
+  "geographie-012": {
+    "q": "Fransa'nın nüfusu ne kadardır ve toprakları ne kadar yüzölçümüne sahiptir?",
+    "a": "2021'de Fransa'nın nüfusu 67,4 milyondur (kaynak: INSEE). Anavatan ve denizaşırı topraklar dâhil 675.000 km² yüzölçümüne sahiptir."
+  },
+  "geographie-013": {
+    "q": "Fransa'nın en önemli on büyük şehri hangileridir?",
+    "a": "Fransa'da nüfusu 500.000'den fazla olan 17 yerleşim alanı vardır. Tüm ülkeye dağılmış olan bu büyük şehirler uluslararası bir boyuta sahiptir. En önemli on büyük şehir şunlardır: Paris, Lyon, Marsilya (Marseille), Toulouse, Lille, Bordeaux, Nice, Nantes, Strazburg (Strasbourg) ve Rennes."
+  },
+  "geographie-014": {
+    "q": "Fransa'nın anavatan üzerindeki 13 bölgesi (région) hangileridir?",
+    "a": "Fransa anavatanın 13 bölgesi şunlardır: Île-de-France, Centre-Val de Loire, Bourgogne-Franche-Comté, Normandiya (Normandie), Hauts-de-France, Grand Est, Pays de la Loire, Brötanya (Bretagne), Nouvelle-Aquitaine, Occitanie, Auvergne-Rhône-Alpes, Provence-Alpes-Côte d'Azur ve Korsika (Corse)."
+  },
+  "geographie-015": {
+    "q": "İllerde (départements) ve bölgelerde (régions) Devlet'i kim temsil eder?",
+    "a": "Anavatan ile denizaşırı illerde ve bölgelerde, Devlet, valiler (préfets) tarafından temsil edilir (bazı denizaşırı topluluklarda yüksek komiserler tarafından). Bölge valisi (préfet de région) ile il valisi (préfet de département) ayırt edilir."
+  },
+  "histoire-001": {
+    "q": "Lascaux Mağarası neden ünlüdür ve hangi döneme aittir?",
+    "a": "Lascaux Mağarası, Fransa'nın en önemli tarih öncesi mağaralarından biridir. Resimlerinin niteliği nedeniyle ünlüdür. M.Ö. 18.000 ile 15.000 yılları arasına tarihlenir."
+  },
+  "histoire-002": {
+    "q": "M.Ö. 50 yılından itibaren Romalıların Galya'daki (Gaule) etkisi neydi?",
+    "a": "M.Ö. 50'li yıllardan itibaren Romalıların yerleşmesi kalıcı bir etki bırakmıştır; çünkü yerel halklar onların yaşam tarzını ve Latin kültürünü benimsemiştir."
+  },
+  "histoire-003": {
+    "q": "Clovis kimdi ve Fransız tarihindeki önemi nedir?",
+    "a": "Clovis (466-511) farklı Frank halklarının krallıklarını birleştirmiştir. Bu, Fransız topraklarının birliğinin oluşumunda önemli bir aşamadır. Hristiyan dinini benimsemiştir."
+  },
+  "histoire-004": {
+    "q": "Jan Dark (Jeanne d'Arc) kimdi ve Yüz Yıl Savaşları sırasında ne yaptı?",
+    "a": "Jan Dark (Jeanne d'Arc, 1412-1431). İngiltere'ye karşı yürütülen Yüz Yıl Savaşları sırasında bu genç köylü kız, Fransız topraklarının bir kısmının kurtarılması için Fransız birliklerini yönetmiştir. Bu millî kahraman, Fransa'ya hizmet uğruna gösterilen cesareti simgeler."
+  },
+  "histoire-005": {
+    "q": "Nantes Fermanı (édit de Nantes) nedir ve onu kim çıkarmıştır?",
+    "a": "IV. Henri (1553-1610), 1598 tarihli Nantes Fermanı ile Protestanlara dinlerini icra etme özgürlüğünü tanımış ve dinî barışı yeniden kurmuştur."
+  },
+  "histoire-006": {
+    "q": "XIV. Louis döneminde Fransa nasıl yönetiliyordu?",
+    "a": "XIV. Louis'nin saltanatı (1643-1715). O dönemde Fransa, mutlakiyetçi bir monarşi (monarchie absolue) tarafından yönetiliyordu. Kral tüm yetkileri elinde toplamıştı. Bu dönemde güçlü ve merkezîleşmiş bir Devlet kurulmaya başlamıştır."
+  },
+  "histoire-007": {
+    "q": "Molière kimdi ve hangi dönemde yaşamıştır?",
+    "a": "Molière (1622-1673). En ünlü Fransız tiyatro yazarıdır; XIV. Louis döneminde yaşamıştır. L'Avare (Cimri) gibi komediler ona aittir."
+  },
+  "histoire-008": {
+    "q": "Aydınlanma filozofları kimlerdir ve neyin uğruna mücadele etmişlerdir?",
+    "a": "Aydınlanma (Lumières) filozofları — Rousseau, Voltaire, Diderot — eserleri aracılığıyla hoşgörü ve düşünce özgürlüğü için mücadele etmişlerdir."
+  },
+  "histoire-009": {
+    "q": "Fransız Devrimi sırasında 1789 ve 1792 yıllarında ne olmuştur?",
+    "a": "1789'da halk mutlakiyetçi monarşiye karşı ayaklanmıştır. 1792'de I. Cumhuriyet (Ière République) ilan edilmiştir. Bu dönem, 1789 İnsan ve Yurttaş Hakları Bildirgesi ile birlikte cumhuriyet değerlerimizin kaynağıdır."
+  },
+  "histoire-010": {
+    "q": "14 Temmuz 1790 Federasyon Bayramı (fête de la Fédération) nedir?",
+    "a": "14 Temmuz 1790 tarihindeki Federasyon Bayramı, Bastille'in alınışını anar ve Millet'in birliğini kutlar."
+  },
+  "histoire-011": {
+    "q": "I. Napolyon (Napoléon Iᵉʳ) kimdi ve ona borçlu olduğumuz büyük hukuki metin nedir?",
+    "a": "I. Napolyon (1769-1821) yaklaşık 15 yıl boyunca Fransa'yı yönetmiştir. Avrupa'da pek çok savaş sürdürmüştür. Özellikle Medeni Kanun (Code civil) ona borçluyuz."
+  },
+  "histoire-012": {
+    "q": "Fransa'da kölelik ne zaman kaldırılmıştır?",
+    "a": "1848: köleliğin kaldırılması."
+  },
+  "histoire-013": {
+    "q": "Fransız sömürge imparatorluğu nasıl oluşmuştur?",
+    "a": "1830'lu yıllardan itibaren Fransa, çoğunlukla fetih savaşları aracılığıyla, başlıca Antiller, Afrika ve Asya'da geniş bir sömürge imparatorluğu kurmuştur."
+  },
+  "histoire-014": {
+    "q": "III. Cumhuriyet ne zaman istikrarlı biçimde kurulmuştur?",
+    "a": "III. Cumhuriyet'in (IIIᵉ République) doğuşu (1875). Hükümetin cumhuriyetçi biçimi o tarihte istikrarlı biçimde kurulmuştur."
+  },
+  "histoire-015": {
+    "q": "Jules Ferry kimdi ve Fransız okul tarihindeki önemi nedir?",
+    "a": "1880'li yılların başında Halk Eğitim Bakanı (ministre de l'Instruction publique) olan Jules Ferry, kamusal, ücretsiz ve laik eğitimin (enseignement public, gratuit et laïc) kurucusudur."
+  },
+  "histoire-016": {
+    "q": "Victor Hugo kimdi ve hangi mücadeleleri yürütmüştür?",
+    "a": "En büyük Fransız yazarlardan biri olan Victor Hugo (1802-1885), toplumsal eşitsizliklere ve idam cezasına karşı mücadele etmiştir. Sefiller (Les Misérables) ve Notre-Dame de Paris adlı eserleri yazmıştır."
+  },
+  "histoire-017": {
+    "q": "Fransa'da 11 Kasım'da ne anılır?",
+    "a": "Birinci Dünya Savaşı (1914-1918) tüm Avrupa'yı, ardından Amerika Birleşik Devletleri'ni etkileyen kitlesel bir çatışma olmuştur. Çatışmalarda 9 milyondan fazla insan hayatını kaybetmiştir. 11 Kasım, Birinci Dünya Savaşı'nın sona ermesinin anılması için resmî tatildir."
+  },
+  "histoire-018": {
+    "q": "Fransa'da 8 Mayıs'ta ne anılır?",
+    "a": "İkinci Dünya Savaşı (1939-1945), Almanya'da iktidardaki Nazi diktatörü Adolf Hitler tarafından başlatılmıştır. Hitler, Fransa dâhil pek çok ülkeyi işgal etmiştir. Naziler siyasi muhaliflere yönelik zulümler yürütmüş ve milyonlarca Yahudi'yi, Çingeneyi, eşcinseli ve engelliyi katletmiştir. Tarihçiler, savaşın çoğunluğu sivil olmak üzere 50 milyondan fazla kişinin ölümüne yol açtığını tahmin etmektedir. 8 Mayıs, İkinci Dünya Savaşı'nın sona ermesinin anılması için resmî tatildir."
+  },
+  "histoire-019": {
+    "q": "Vichy rejimi (1940-1944) nedir?",
+    "a": "Vichy rejimi (1940-1944). Fransa'nın Almanya karşısında yenilgiye uğramasının ardından, Mareşal Pétain başkenti Vichy olan demokratik olmayan bir rejim kurmuştur. Bu rejim Nazi Almanyası ile işbirliği yapmış ve Yahudilerin sürgününde sorumluluk payına sahiptir."
+  },
+  "histoire-020": {
+    "q": "Müttefiklerin Normandiya'ya çıkarması nedir?",
+    "a": "6 Haziran 1944'teki Normandiya Çıkarması, Fransa'nın kurtarılmasında belirleyici bir aşamadır."
+  },
+  "histoire-021": {
+    "q": "Şarl dö Gol (Charles de Gaulle) kimdi?",
+    "a": "Charles de Gaulle (1890-1970), ülkemizi işgal eden Alman ordularına karşı Fransız direnişinin lideridir; Müttefiklerle birlikte Fransa'nın kurtuluşunun mimarıdır. Savaştan çok sonra, 1958'de, mevcut kurumlarımızın (V. Cumhuriyet) kurucusu olmuştur."
+  },
+  "histoire-022": {
+    "q": "Fransız dekolonizasyonu (1950-1962) nedir?",
+    "a": "Fransız dekolonizasyonu (1950-1962). Avrupa sömürge imparatorluklarında halklar bağımsızlıklarını talep etmiştir. Fransız dekolonizasyonu Asya'da başlamış, Afrika'ya yayılmıştır. Bu süreç, Çinhindi (Indochine) ve Cezayir (Algérie) savaşları gibi savaşlara yol açmıştır."
+  },
+  "histoire-023": {
+    "q": "Roma Antlaşması (Traité de Rome, 1957) nedir?",
+    "a": "Roma Antlaşması (1957), Fransa dâhil altı Avrupa ülkesi arasında Avrupa Ekonomik Topluluğu'nu (Communauté économique européenne) kurmuştur. Amacı, Avrupa halkları arasında sıkı bir birlik oluşturmaktır. Avrupa entegrasyonu, Avrupa'da barışın yerleşmesine büyük katkıda bulunmuştur."
+  },
+  "histoire-024": {
+    "q": "Avrupa bayrağı neyi simgeler?",
+    "a": "12 yıldızdan oluşan Avrupa bayrağı, Avrupalılar arasındaki birlik ve uyum ülkülerini simgeler."
+  },
+  "histoire-025": {
+    "q": "Mayıs 68 (Mai 68) nedir?",
+    "a": "Mayıs 68. Toplumsal hareket öğrenciler tarafından başlatılmıştır. Ücretli çalışanlara ve işçi sınıfına yayılmıştır. Bu grevler ve gösteriler 20. yüzyılın en önemli olayları arasındadır."
+  },
+  "histoire-026": {
+    "q": "Fransa'da reşit olma yaşı kaç olarak ve hangi yıl belirlenmiştir?",
+    "a": "Reşit olma yaşı 18 olarak belirlenmiştir (1974)."
+  },
+  "histoire-027": {
+    "q": "Gönüllü Gebelik Sonlandırmasına (interruption volontaire de grossesse) ilişkin 1975 kanunu nedir?",
+    "a": "Simone Veil tarafından hazırlanan Gönüllü Gebelik Sonlandırması Kanunu (1975), kürtajı serbest bırakmıştır."
+  },
+  "histoire-028": {
+    "q": "Fransa'da idam cezası ne zaman kaldırılmıştır?",
+    "a": "Fransa'da idam cezası 1981'de kaldırılmıştır."
+  },
+  "histoire-029": {
+    "q": "Tarih boyunca, Fransa'ya yerleşen kişiler ona ne katkıda bulunur?",
+    "a": "Tarih boyunca pek çok kişi Fransa'ya yerleşmiş ve burada yaşamayı seçmiştir. Birçoğu Fransız vatandaşlığını seçmiştir. Bu kişiler topluluğumuz için bir zenginlik oluşturur. Pek çok büyük isim, yetenekleriyle Fransa'nın itibarına katkıda bulunmuştur."
+  },
+  "histoire-030": {
+    "q": "Katkılarıyla Fransa'da iz bırakmış bazı vatandaşlığa kabul edilmiş şahsiyetleri sayınız.",
+    "a": "Fransa'yı zenginleştiren vatandaşlığa kabul edilmiş şahsiyetler arasında şunlar yer alır: Marie Curie (Polonya doğumlu fizikçi, radyoaktivitenin kâşifi), Romain Gary (Rus asıllı yazar, iki kez Goncourt Ödülü sahibi), Marc Chagall (Rus asıllı ressam), Vassily Kandinsky (Rus ressam, soyut sanatın kurucusu), Joséphine Baker (Amerikalı şarkıcı ve dansçı, direnişçi), Dalida (Mısır asıllı şarkıcı), Georges Moustaki (İtalyan-Yunan asıllı şarkıcı), Georges Charpak (Polonyalı fizikçi, 1992 Nobel ödüllü), Guillaume Apollinaire (şair), Andrée Chedid (Mısır doğumlu edebiyatçı) ve daha pek çoğu."
+  },
+  "histoire-031": {
+    "q": "Göçmen kökenli bazı Fransız yetenekleri sayınız.",
+    "a": "Fransa, göçmen kökenli Fransızlar arasında pek çok yeteneğe sahiptir; Michel Platini, Zinedine Zidane, Jamel Debbouze, Marie N'Diaye gibi..."
+  },
+  "institutions-001": {
+    "q": "Cumhurbaşkanı (Président de la République) nasıl seçilir ve görevi nedir?",
+    "a": "Cumhurbaşkanı, beş yıl için genel oyla (suffrage universel) seçilir. Yasama (législatif) seçimlerinde çoğunluğu kazanan kesimden gelen Başbakan'ın (Premier ministre) yönettiği Hükümet'i atar."
+  },
+  "institutions-002": {
+    "q": "Parlamento hangi iki meclisten oluşur ve görevi nedir?",
+    "a": "Millet Meclisi (Assemblée nationale) ve Senato'dan (Sénat) oluşan Parlamento, kanunları yapar ve Hükümet'i denetler. Millet Meclisi milletvekilleri (députés), beş yılda bir yasama seçimleriyle seçilir. Senatörler, 6 yıllık görev süresi için dolaylı genel oyla seçilir."
+  },
+  "institutions-003": {
+    "q": "Adalet nedir ve neyi yaptırıma bağlar?",
+    "a": "Adalet, hâkimler tarafından dağıtılır. Bireyler veya işletmeler arasındaki ve yurttaşlar ile idare arasındaki uyuşmazlıkları çözer. Hukuk kurallarının ihlallerini, kanunda öngörülen cezalarla (örn. hapis, para cezası vb.) veya düzenleyici metinlerle yaptırıma bağlar."
+  },
+  "institutions-004": {
+    "q": "Bir demokrasi ve hukuk devleti olarak Fransa hangi büyük ilkelere dayanır?",
+    "a": "Fransa, bir demokrasi ve hukuk devletidir (État de droit). İlkesi: halkın yönetimi, halk tarafından ve halk için. Siyasi iktidar yasaya tabidir; yani Anayasa ve kanunda öngörülen kurallara göre işlemelidir. Yasalar bütün yurttaşlara eşit muamele eder. Yargının bağımsızlığı güvence altındadır. Siyasi partiler özgürce kurulur ve faaliyetlerini özgürce yürütür."
+  },
+  "institutions-005": {
+    "q": "Devletin örgütlenmesini hangi metin tanımlar ve tarihi nedir?",
+    "a": "Devlet'in örgütlenmesi bir metin olan Anayasa (Constitution) ile tanımlanır. Mevcut Anayasamız 1958'de kabul edilen V. Cumhuriyet Anayasası'dır."
+  },
+  "institutions-006": {
+    "q": "Fransız Cumhuriyeti hangi büyük kurumsal ilkeye dayanır?",
+    "a": "Kurumlarımız; yürütme (exécutif) ve yasama (législatif) yetkileri ile yargı yetkisinin (autorité judiciaire) ayrılığı ilkesine dayanır: bu yetkiler ve adalet aynı makam tarafından kullanılmamalıdır."
+  },
+  "institutions-007": {
+    "q": "Hükümet'in görevi nedir ve Başbakan'ı kim atar?",
+    "a": "Hükümet, Millet'in siyasetini belirler ve yürütür. Cumhurbaşkanı, Başbakan'ı atar."
+  },
+  "institutions-008": {
+    "q": "Belediye başkanı, il meclisi üyeleri ve bölge meclisi üyeleri ne kadar süreyle seçilir?",
+    "a": "Belediyelerde belediye başkanı (maire) ve belediye meclisi üyeleri 6 yıllığına seçilir. İllerde il meclisi üyeleri (conseillers départementaux) 6 yıllığına seçilir. Bölgelerde bölge meclisi üyeleri (conseillers régionaux) 6 yıllığına seçilir."
+  },
+  "institutions-009": {
+    "q": "Fransa'da kaç belediye (commune) vardır ve başlıca sorumlulukları nelerdir?",
+    "a": "Fransa'da 1 Ocak 2021 itibarıyla 34.965 belediye vardır. Bir belediye başkanı ve belediye meclisi tarafından yönetilirler. Özellikle ana okulları ve ilkokullar, sportif ve kültürel etkinlikler ile belediye yollarının bakımından sorumludurlar. Nüfus kütüklerini tutarlar; yani doğumları, evlilikleri ve ölümleri kaydederler. Belediyeler arası birlikler (communautés de communes, métropoles vb.) çatısı altında bir araya getirilirler."
+  },
+  "institutions-010": {
+    "q": "Fransa'da kaç il (département) vardır ve neyden sorumludurlar?",
+    "a": "Fransa'da 101 il vardır. İl meclisleri (conseils départementaux) tarafından yönetilirler. Özellikle ortaokullardan (collèges), çocuk korumadan ve yaşlılara yardımdan sorumludurlar."
+  },
+  "institutions-011": {
+    "q": "Fransa anavatanın kaç bölgesi (région) vardır ve neyden sorumludurlar?",
+    "a": "Fransa anavatanın 13 bölgesi, bölge meclisleri (conseils régionaux) tarafından yönetilir. Özellikle toplu taşımacılıktan, mesleki eğitimden ve liselerin yapımı ve bakımından sorumludurlar."
+  },
+  "institutions-012": {
+    "q": "Fransa'nın denizaşırı toprakları nelerdir ve oralarda Devlet'i kim temsil eder?",
+    "a": "Fransa'nın 12 denizaşırı toprağı vardır: 5'i hem il hem bölgedir (Guadeloupe, Guyane (Fransız Guyanası), Martinique, Mayotte ve Réunion), 7'si denizaşırı topluluklardır (Yeni Kaledonya/Nouvelle-Calédonie, Fransız Polinezyası/Polynésie française, Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon, Fransız Güney ve Antarktika Toprakları/Terres australes et antarctiques françaises ve Wallis-et-Futuna). Anavatan ile denizaşırı illerde ve bölgelerde Devlet, valiler (préfets) tarafından temsil edilir (bazı denizaşırı topluluklarda yüksek komiserler tarafından)."
+  },
+  "valeurs-001": {
+    "q": "Her şeyi söyleme, her şeyi alenen ifade etme hakkına sahip misiniz?",
+    "a": "Evet, ifade özgürlüğü temel bir haktır. Ancak başkalarının haklarına saygı göstermek için sınırları vardır. Bu çerçevede hakaretler, iftira niteliğindeki sözler, nefret kışkırtmaları yaymak veya insanlığa karşı suçları övmek yasaktır."
+  },
+  "valeurs-002": {
+    "q": "Fransa'da kim genel oyla seçilir ve kaç yaşından itibaren oy verilebilir?",
+    "a": "Cumhurbaşkanı, milletvekilleri ve belediye başkanları genel oyla seçilir: bu, en az 18 yaşında olan ve medeni ve siyasi haklarına sahip bütün yurttaşların — kadın olsun, erkek olsun — kanunda öngörülen koşullarda oy verme ve seçimlere aday olma hakkına sahip olduğu anlamına gelir."
+  },
+  "valeurs-003": {
+    "q": "Cumhuriyet nedir ve neye dayanır?",
+    "a": "Cumhuriyet (République), seçilmiş yöneticilerin halk adına yönettiği bir siyasi rejimdir. Herkesin saygı göstermesi gereken yasalara dayanır. Cumhuriyet'in ortaya çıkışı tedrici olmuştur ve birçok mücadelenin meyvesidir."
+  },
+  "valeurs-004": {
+    "q": "14 Temmuz neden Fransa'nın millî bayramıdır?",
+    "a": "14 Temmuz 1789'da Paris halkı kraliyet hapishanesi Bastille'i ele geçirmiştir. Bir yıl sonra, 14 Temmuz 1790'da Federasyon Bayramı'nda 14 Temmuz tarihi millî bayram günü olmuştur. Bu dönemde millî marş La Marseillaise bestelenmiştir. Marianne, Cumhuriyet'in sembolü olmuştur. Tüm belediyelere yerleştirilen heykeli, Fransız Devrimi'ni hatırlatır. Mavi-beyaz-kırmızı üç renkli bayrak da Devrim dönemine aittir."
+  },
+  "valeurs-005": {
+    "q": "Cumhuriyet'in dili nedir ve özdeyişi (devise) nedir?",
+    "a": "Cumhuriyet'in dili Fransızcadır. Cumhuriyet, özgürlük, eşitlik ve kardeşlik (liberté, égalité, fraternité) ilkelerine saygıyı güvence altına alır. Bu üç sözcük Cumhuriyet'in özdeyişini oluşturur."
+  },
+  "valeurs-006": {
+    "q": "Cumhuriyet'in güvence altına aldığı temel özgürlükler nelerdir?",
+    "a": "Temel özgürlükler güvence altına alınmıştır: düşünce özgürlüğü, inanç özgürlüğü, ifade özgürlüğü, toplanma özgürlüğü... Cumhuriyet 1875'te istikrarlı biçimde kurulmuştur. 1880'lerde bir kanun basın özgürlüğünü güvence altına almıştır. İlköğretim zorunlu, kamusal okul ücretsiz ve laik hâle gelmiştir."
+  },
+  "valeurs-007": {
+    "q": "İdare, kadın-erkek eşitliğine saygı göstermeyen bir kişiye Fransız vatandaşlığını reddedebilir mi?",
+    "a": "Evet, bu kişi bir Fransız erkek/kadınla evli olsa bile. Kadınlar ve erkekler arasındaki eşitlik, Cumhuriyet'in temel değerlerindendir. Bu değerlere bağlılık, yasal görüşme (entretien réglementaire) sırasında değerlendirilir."
+  },
+  "valeurs-008": {
+    "q": "Eşitlik ilkesi Fransız Cumhuriyeti'nde neyi güvence altına alır?",
+    "a": "Bütün yurttaşlar; cinsiyet, köken, din, görüş veya cinsel yönelim ne olursa olsun aynı haklara ve aynı ödevlere sahiptir. İnsan ve Yurttaş Hakları Bildirgesi (kitapçığın sonuna bakınız) 1789 Fransız Devrimi tarihlidir. Bütün yurttaşların özgürlüğünü ve eşitliğini güvence altına alır. Yasa, kadınlar ve erkekler için aynı hakları tanır."
+  },
+  "valeurs-009": {
+    "q": "Bir işveren, bir çalışanı işe almayı hangi gerekçelerle reddedemez ve ayrımcılık (discrimination) nedir?",
+    "a": "Bir işveren bir çalışanı, kökeni, yaşı, engellilik durumu, etnik ya da dinî mensubiyeti, cinsiyeti veya cinsel yönelimi nedeniyle işe almayı reddedemez. İşverenin her kararı (işe alım, terfi vb.) kişisel değil, mesleki gerekçelere dayanmalıdır. Birine kökeni, dini veya cinsiyeti nedeniyle daha az lehte muamele etmek bir ayrımcılıktır."
+  },
+  "valeurs-010": {
+    "q": "Kardeşlik (fraternité) nedir ve Fransız toplumunda kendisini nasıl gösterir?",
+    "a": "Fransa, Fransız yurttaşlarının birlikte yaşama iradesine dayanır. Bu irade, yurttaşlar arasındaki dayanışmada kendisini gösterir. 1945'ten beri Fransa'da işverenler, ücretliler ve serbest çalışanlar tarafından ödenen sosyal primlerle ve vergilerle finanse edilen sosyal güvenlik sistemi (sécurité sociale), bu kardeşlik ilkesinin bir örneğidir. Fransa, kanunda öngörülen bir gerekçeye dayanan ve farklı muameleye yol açan ayrımcılıkları kınar. Sözler veya eylemler aracılığıyla ırkçı görüşler ifade etmek cezalandırılabilir."
+  },
+  "valeurs-011": {
+    "q": "İlkokul, ortaokul ve lise öğrencileri okul kurumlarında neden çok belirgin dinî semboller takma hakkına sahip değildir?",
+    "a": "15 Mart 2004 tarihli kanun, okulda bir dine mensubiyeti açıkça (çok belirgin biçimde) ortaya koyan sembollerin veya kıyafetlerin giyilmesini yasaklamaktadır. Zira okul, bütün yurttaşları yetiştiren bir kamu kurumudur: dolayısıyla dinler karşısında tarafsız olmalıdır. Belirgin dinî sembollerin yasaklanması, küçüklerin okul içinde arkadaşlarından görebilecekleri baskılara karşı korunmasına katkıda bulunur."
+  },
+  "valeurs-012": {
+    "q": "Laiklik (laïcité) nedir?",
+    "a": "Laiklik, Cumhuriyet'in temel ilkelerindendir. Dinî işlerin ve kamusal işlerin açıkça birbirinden ayrı olduğu anlamına gelir. Bu ilke eskidir: Kiliseleri Devlet'ten ayıran 1905 kanunuyla benimsenmiştir. Ancak kamu düzenini korumak için Devlet, dini alenen ifade etme hakkını kısıtlayabilir. Devlet ayrıca dinî özgürlüğü de güvence altına alır. Herkes inanmakta veya inanmamakta ve dilediği dini benimsemekte özgürdür."
+  },
+  "valeurs-013": {
+    "q": "Yurttaşların uyması gereken kuralları hangi metinler tanımlar?",
+    "a": "Yurttaşların hakları ve ödevleri vardır. Herkes yasalara ve düzenlemelere uymak zorundadır. Kişiler arasında uygulanan temel kurallar Medeni Kanun (code civil) tarafından tanımlanır. Bunun yanı sıra toplumsal yaşama ilişkin ve kanunda yer alan kolektif kurallar da vardır. Örneğin Ceza Kanunu (code pénal), suçları ve bunlara karşılık gelen cezaları tanımlar."
+  }
+}

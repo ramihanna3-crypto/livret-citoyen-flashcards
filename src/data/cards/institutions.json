@@ -9,6 +9,26 @@
       "ar": {
         "q": "كيف يُنتخب رئيس الجمهورية وما هو دوره؟",
         "a": "يُنتخب رئيس الجمهورية بالاقتراع العام لمدة خمس سنوات. وهو يُعيِّن الحكومة، التي يقودها رئيس الوزراء (Premier ministre) المنبثق عن الأغلبية في الانتخابات التشريعية."
+      },
+      "uk": {
+        "q": "Як обирається Президент Республіки і яка його роль?",
+        "a": "Президент Республіки обирається загальним голосуванням на п'ять років. Він призначає Уряд на чолі з Прем'єр-міністром, який походить з більшості за результатами законодавчих виборів."
+      },
+      "fa": {
+        "q": "رئیس‌جمهور چگونه انتخاب می‌شود و نقش او چیست؟",
+        "a": "رئیس‌جمهور به‌واسطهٔ اقتراع عمومی برای پنج سال انتخاب می‌شود. او دولت را، که توسط نخست‌وزیر برخاسته از اکثریت در انتخابات قانون‌گذاری اداره می‌شود، منصوب می‌کند."
+      },
+      "ps": {
+        "q": "د جمهوریت رئیس څنګه ټاکل کیږي او د هغه رول څه دی؟",
+        "a": "د جمهوریت رئیس د عمومي رایې له لارې د پنځو کلونو لپاره ټاکل کیږي. هغه د لومړي وزیر په سلاکارۍ سره چې د قانوني ټاکنو د اکثریت څخه راپورته شوی، حکومت ټاکي."
+      },
+      "ht": {
+        "q": "Kòman Prezidan Repiblik la eli e ki wòl li?",
+        "a": "Prezidan Repiblik la eli pa sifraj inivèsèl pou senk an. Li nome Gouvènman an, dirije pa Premye minis (Premier ministre) la, ki soti nan majorite eleksyon lejislatif yo."
+      },
+      "tr": {
+        "q": "Cumhurbaşkanı (Président de la République) nasıl seçilir ve görevi nedir?",
+        "a": "Cumhurbaşkanı, beş yıl için genel oyla (suffrage universel) seçilir. Yasama (législatif) seçimlerinde çoğunluğu kazanan kesimden gelen Başbakan'ın (Premier ministre) yönettiği Hükümet'i atar."
       }
     },
     "audio": {
@@ -26,6 +46,26 @@
       "ar": {
         "q": "ممَّ يتألف البرلمان من غرفتيه، وما دوره؟",
         "a": "يتألف البرلمان من الجمعية الوطنية (Assemblée nationale) ومجلس الشيوخ (Sénat)، وهو يصوِّت على القوانين ويراقب الحكومة. ويُنتخب نواب الجمعية الوطنية كل خمس سنوات في الانتخابات التشريعية. أما أعضاء مجلس الشيوخ فيُنتخبون بالاقتراع العام غير المباشر لولاية مدتها ست سنوات."
+      },
+      "uk": {
+        "q": "З яких двох палат складається Парламент і яка його роль?",
+        "a": "Парламент, що складається з Національних Зборів і Сенату, ухвалює закони і контролює Уряд. Депутати Національних Зборів обираються кожні п'ять років на законодавчих виборах. Сенаторів обирають загальним непрямим голосуванням на 6-річний строк."
+      },
+      "fa": {
+        "q": "پارلمان از کدام دو مجلس تشکیل شده و نقش آن چیست؟",
+        "a": "پارلمان که از مجلس ملی (Assemblée nationale) و سنا تشکیل شده است، قوانین را به تصویب می‌رساند و بر دولت نظارت می‌کند. نمایندگان مجلس ملی هر پنج سال یک بار در انتخابات قانون‌گذاری انتخاب می‌شوند. سناتورها از طریق اقتراع عمومی غیرمستقیم برای دورهٔ ۶ ساله انتخاب می‌شوند."
+      },
+      "ps": {
+        "q": "پارلمان له کومو دوو خونو څخه جوړ شوی او رول يې څه دی؟",
+        "a": "پارلمان، چې د ملي اسامبلې (Assemblée nationale) او سنا (Sénat) څخه جوړ شوی، قوانین تصویبوي او د حکومت څارنه کوي. د ملي اسامبلې مشاورین (députés) هر پنځه کاله د قانوني ټاکنو په جریان کې ټاکل کیږي. سناتوران د غیر مستقیم عمومي رایې له لارې د ۶ کلنې مودې لپاره ټاکل کیږي."
+      },
+      "ht": {
+        "q": "Ak ki de chanm Palman an konpoze e ki wòl li?",
+        "a": "Palman an, konpoze ak Asanble nasyonal (Assemblée nationale) ak Sena (Sénat), vote lwa yo epi kontwole Gouvènman an. Depite Asanble nasyonal yo eli chak senk an pandan eleksyon lejislatif yo. Senatè yo eli pa sifraj inivèsèl endirèk pou yon manda 6 an."
+      },
+      "tr": {
+        "q": "Parlamento hangi iki meclisten oluşur ve görevi nedir?",
+        "a": "Millet Meclisi (Assemblée nationale) ve Senato'dan (Sénat) oluşan Parlamento, kanunları yapar ve Hükümet'i denetler. Millet Meclisi milletvekilleri (députés), beş yılda bir yasama seçimleriyle seçilir. Senatörler, 6 yıllık görev süresi için dolaylı genel oyla seçilir."
       }
     },
     "audio": {
@@ -43,6 +83,26 @@
       "ar": {
         "q": "ما هو القضاء وماذا يعاقب؟",
         "a": "يصدر القضاء عن القضاة. وهو يفصل في النزاعات بين الأفراد أو المؤسسات، وبين المواطنين والإدارة. ويعاقب على مخالفات القواعد القانونية بعقوباتٍ ينص عليها القانون (مثل السجن أو الغرامة…) أو النصوص التنظيمية."
+      },
+      "uk": {
+        "q": "Що таке правосуддя і що воно карає?",
+        "a": "Правосуддя здійснюється суддями. Воно вирішує спори між приватними особами або підприємствами, а також між громадянами та адміністрацією. Воно карає порушення норм права покараннями, передбаченими законом (наприклад: ув'язнення, штраф…) або підзаконними актами."
+      },
+      "fa": {
+        "q": "عدالت چیست و چه چیزی را مجازات می‌کند؟",
+        "a": "عدالت توسط قضات اجرا می‌شود. این نهاد به اختلافات میان اشخاص یا شرکت‌ها، و میان شهروندان و اداره رسیدگی می‌کند. عدالت، تخلف از قواعد حقوقی را با مجازات‌های پیش‌بینی‌شده در قانون (مانند زندان، جریمهٔ نقدی...) یا متون آیین‌نامه‌ای کیفر می‌دهد."
+      },
+      "ps": {
+        "q": "عدلیه څه ده او څه شی سزا ورکوي؟",
+        "a": "عدلیه د قاضیانو لخوا اجراء کیږي. هغه د افرادو یا شرکتونو ترمنځ، او د اتباعو او ادارې ترمنځ شخړې حلوي. هغه د حقوقي مقرراتو سرغړونې د قانون لخوا وړاندې شوي سزاوې (د بیلګې په توګه: زندان، جریمه...) یا د تنظیمي متونو لخوا سزا ورکوي."
+      },
+      "ht": {
+        "q": "Kisa lajistis e kisa li sanksyone?",
+        "a": "Lajistis rann pa jij yo. Li regle litij ant patikilye oswa antrepriz, ak ant sitwayen ak administrasyon. Li sanksyone enfraksyon ak règ dwa pa penalite ki prevwa pa lalwa (eg.: anprizonnman, amann...) oswa tèks reglemantè yo."
+      },
+      "tr": {
+        "q": "Adalet nedir ve neyi yaptırıma bağlar?",
+        "a": "Adalet, hâkimler tarafından dağıtılır. Bireyler veya işletmeler arasındaki ve yurttaşlar ile idare arasındaki uyuşmazlıkları çözer. Hukuk kurallarının ihlallerini, kanunda öngörülen cezalarla (örn. hapis, para cezası vb.) veya düzenleyici metinlerle yaptırıma bağlar."
       }
     },
     "audio": {
@@ -60,6 +120,26 @@
       "ar": {
         "q": "ما المبادئ الكبرى التي تقوم عليها فرنسا بوصفها ديمقراطية ودولة قانون؟",
         "a": "فرنسا ديمقراطية ودولة قانون. ومبدؤها: حكم الشعب، من الشعب ومن أجل الشعب. والسلطة السياسية خاضعة للقانون، أي أنها تعمل وفق قواعد ينص عليها الدستور والقانون. والقوانين تعامل جميع المواطنين على قدم المساواة. واستقلال القضاء مكفول. وتتشكل الأحزاب السياسية وتمارس نشاطها بحرية."
+      },
+      "uk": {
+        "q": "На яких великих принципах ґрунтується Франція як демократія та правова держава?",
+        "a": "Франція є демократією та правовою державою. Її принципом є: правління народу, через народ і для народу. Політична влада підпорядкована закону, тобто вона повинна функціонувати згідно з правилами, передбаченими Конституцією та законом. Закони ставляться до всіх громадян однаково. Незалежність правосуддя є гарантованою. Політичні партії вільно утворюються та здійснюють свою діяльність."
+      },
+      "fa": {
+        "q": "فرانسه به‌عنوان دموکراسی و دولت قانون بر چه اصول بزرگی استوار است؟",
+        "a": "فرانسه دموکراسی و دولت قانون است. اصل آن این است: حکومت مردم، توسط مردم و برای مردم. قدرت سیاسی تابع قانون است، یعنی باید بر اساس قواعدی که قانون اساسی و قانون پیش‌بینی کرده‌اند عمل کند. قوانین با همهٔ شهروندان به‌طور برابر برخورد می‌کنند. استقلال قضایی تضمین شده است. احزاب سیاسی آزادانه شکل می‌گیرند و فعالیت می‌کنند."
+      },
+      "ps": {
+        "q": "فرانسه د ډیموکراسۍ او د قانون دولت په توګه په کومو لویو اصولو ولاړه ده؟",
+        "a": "فرانسه یوه دیموکراسي او د قانون دولت دی. اصل يې دا دی: د ولس له خوا حکومت، د ولس لخوا او د ولس لپاره. سیاسي قدرت قانون ته تابع دی، یعنې هغه باید د اساسي قانون او عادي قانون لخوا وړاندې شویو قواعدو مطابق فعالیت وکړي. قوانین ټول اتباع په برابره توګه چلند کوي. د عدلیې خپلواکي تضمین شوې. سیاسي ګوندونه ازادانه جوړیږي او خپل فعالیت کوي."
+      },
+      "ht": {
+        "q": "Sou ki gwo prensip Lafrans fonde kòm yon demokrasi ak Eta dwa?",
+        "a": "Lafrans se yon demokrasi e yon Eta dwa. Prensip li se: Gouvènman pèp la, pa pèp la e pou pèp la. Pouvwa politik la soumèt a lalwa, sa vle di li dwe fonksyone dapre règ Konstitisyon ak lalwa prevwa. Lwa yo trete tout sitwayen yon fason egal. Endepandans lajistis garanti. Pati politik yo fòme epi egzèse aktivite yo libreman."
+      },
+      "tr": {
+        "q": "Bir demokrasi ve hukuk devleti olarak Fransa hangi büyük ilkelere dayanır?",
+        "a": "Fransa, bir demokrasi ve hukuk devletidir (État de droit). İlkesi: halkın yönetimi, halk tarafından ve halk için. Siyasi iktidar yasaya tabidir; yani Anayasa ve kanunda öngörülen kurallara göre işlemelidir. Yasalar bütün yurttaşlara eşit muamele eder. Yargının bağımsızlığı güvence altındadır. Siyasi partiler özgürce kurulur ve faaliyetlerini özgürce yürütür."
       }
     },
     "audio": {
@@ -77,6 +157,26 @@
       "ar": {
         "q": "ما النص الذي يُحدِّد تنظيم الدولة، وما تاريخه؟",
         "a": "يُحدِّد تنظيمَ الدولة نصٌّ هو الدستور (Constitution). ودستورنا الحالي هو دستور الجمهورية الخامسة (Ve République)، الذي اعتُمد عام 1958."
+      },
+      "uk": {
+        "q": "Який текст визначає організацію Держави і коли він датується?",
+        "a": "Організацію Держави визначає текст — Конституція. Наша нинішня Конституція — це Конституція П'ятої Республіки, ухвалена у 1958 році."
+      },
+      "fa": {
+        "q": "کدام متن، تشکیلات دولت را تعیین می‌کند و این متن به چه زمانی بازمی‌گردد؟",
+        "a": "تشکیلات دولت توسط متنی به نام قانون اساسی تعیین شده است. قانون اساسی کنونی ما، قانون اساسی جمهوری پنجم است که در سال ۱۹۵۸ تصویب شده است."
+      },
+      "ps": {
+        "q": "کوم متن د دولت سازمان تعریفوي، او په کوم کال کې دی؟",
+        "a": "د دولت سازمان د یو متن لخوا تعریف شوی، اساسي قانون. زموږ اوسنی اساسي قانون د پنځمې جمهوریت دی، چې په ۱۹۵۸ کې تصویب شو."
+      },
+      "ht": {
+        "q": "Ki tèks defini òganizasyon Eta a, e ki dat li?",
+        "a": "Òganizasyon Eta a defini pa yon tèks, Konstitisyon an. Konstitisyon aktyèl nou an se Senkyèm Repiblik la, adopte an 1958."
+      },
+      "tr": {
+        "q": "Devletin örgütlenmesini hangi metin tanımlar ve tarihi nedir?",
+        "a": "Devlet'in örgütlenmesi bir metin olan Anayasa (Constitution) ile tanımlanır. Mevcut Anayasamız 1958'de kabul edilen V. Cumhuriyet Anayasası'dır."
       }
     },
     "audio": {
@@ -94,6 +194,26 @@
       "ar": {
         "q": "على أي مبدأ مؤسسي كبير تقوم الجمهورية الفرنسية؟",
         "a": "تقوم مؤسساتنا على الفصل بين السلطتين التنفيذية والتشريعية، وبين السلطة القضائية: فلا يجوز أن تمارس هذه السلطات والقضاء جميعَها سلطةٌ واحدة."
+      },
+      "uk": {
+        "q": "На якому великому інституційному принципі ґрунтується Французька Республіка?",
+        "a": "Наші інституції ґрунтуються на розподілі виконавчої та законодавчої влади і судової влади: ці влади та Правосуддя не повинні здійснюватися одним і тим самим органом."
+      },
+      "fa": {
+        "q": "جمهوری فرانسه بر کدام اصل بزرگ نهادی استوار است؟",
+        "a": "نهادهای ما بر تفکیک قوای مجریه و مقننه و قوهٔ قضائیه استوارند: این قوا و قوهٔ قضائیه نباید توسط یک مرجع واحد اِعمال شوند."
+      },
+      "ps": {
+        "q": "فرانسوي جمهوریت په کوم لوی موسساتي اصل ولاړ دی؟",
+        "a": "زموږ موسسات د اجرایي او مقننه قواوو او د قضایي واک د بېلتون پر بنسټ ولاړ دي: دا قواوې او عدلیه باید د ورته چارواکي لخوا اجراء نه شي."
+      },
+      "ht": {
+        "q": "Sou ki gwo prensip enstitisyonèl Repiblik franse a fonde?",
+        "a": "Enstitisyon nou yo fonde sou separasyon pouvwa egzekitif ak lejislatif e otorite jidisyè a: pouvwa sa yo ak Lajistis pa dwe egzèse pa menm otorite a."
+      },
+      "tr": {
+        "q": "Fransız Cumhuriyeti hangi büyük kurumsal ilkeye dayanır?",
+        "a": "Kurumlarımız; yürütme (exécutif) ve yasama (législatif) yetkileri ile yargı yetkisinin (autorité judiciaire) ayrılığı ilkesine dayanır: bu yetkiler ve adalet aynı makam tarafından kullanılmamalıdır."
       }
     },
     "audio": {
@@ -111,6 +231,26 @@
       "ar": {
         "q": "ما دور الحكومة، ومن الذي يعين رئيس الوزراء؟",
         "a": "تحدِّد الحكومةُ سياسة الأمة وتقودُها. ويُعيِّن رئيسُ الجمهورية رئيسَ الوزراء."
+      },
+      "uk": {
+        "q": "Яка роль Уряду і хто призначає Прем'єр-міністра?",
+        "a": "Уряд визначає та проводить політику Нації. Президент Республіки призначає Прем'єр-міністра."
+      },
+      "fa": {
+        "q": "نقش دولت چیست و چه کسی نخست‌وزیر را منصوب می‌کند؟",
+        "a": "دولت سیاست ملت را تعیین و رهبری می‌کند. رئیس‌جمهور، نخست‌وزیر را منصوب می‌نماید."
+      },
+      "ps": {
+        "q": "د حکومت رول څه دی او لومړی وزیر څوک ټاکي؟",
+        "a": "حکومت د ملت سیاست ټاکي او پرمخ وړي. د جمهوریت رئیس لومړی وزیر ټاکي."
+      },
+      "ht": {
+        "q": "Ki wòl Gouvènman an e ki moun ki nome Premye minis la?",
+        "a": "Gouvènman an detèmine epi kondi politik Nasyon an. Prezidan Repiblik la nome Premye minis la."
+      },
+      "tr": {
+        "q": "Hükümet'in görevi nedir ve Başbakan'ı kim atar?",
+        "a": "Hükümet, Millet'in siyasetini belirler ve yürütür. Cumhurbaşkanı, Başbakan'ı atar."
       }
     },
     "audio": {
@@ -128,6 +268,26 @@
       "ar": {
         "q": "ما هي مدة انتخاب رؤساء البلديات وأعضاء المجالس المحلية والإقليمية؟",
         "a": "في البلديات (communes)، يُنتخب رئيس البلدية (maire) وأعضاء المجلس البلدي لمدة ست سنوات. وفي المحافظات (départements)، يُنتخب أعضاء المجالس المحلية لمدة ست سنوات. وفي الأقاليم (régions)، يُنتخب أعضاء المجالس الإقليمية لمدة ست سنوات."
+      },
+      "uk": {
+        "q": "На який строк обираються мер, члени департаментської ради та члени регіональної ради?",
+        "a": "У комунах мер та члени муніципальної ради обираються на 6 років. У департаментах члени департаментської ради обираються на 6 років. У регіонах члени регіональної ради обираються на 6 років."
+      },
+      "fa": {
+        "q": "شهردار، مشاوران ولایتی و مشاوران منطقه‌ای برای چه مدتی انتخاب می‌شوند؟",
+        "a": "در شهرداری‌ها، شهردار و اعضای شورای شهرداری برای ۶ سال انتخاب می‌شوند. در ولایات، مشاوران ولایتی برای ۶ سال انتخاب می‌شوند. در مناطق، مشاوران منطقه‌ای برای ۶ سال انتخاب می‌شوند."
+      },
+      "ps": {
+        "q": "ښاروال (maire)، د محافظې مشاورین (conseillers départementaux) او د سیمې مشاورین (conseillers régionaux) د څومره مودې لپاره ټاکل کیږي؟",
+        "a": "په کلیو/ښارګوټو (communes) کې، ښاروال او د ښاروالۍ مشاورین د ۶ کلونو لپاره ټاکل کیږي. په محافظو کې، د محافظې مشاورین د ۶ کلونو لپاره ټاکل کیږي. په سیمو کې، د سیمې مشاورین د ۶ کلونو لپاره ټاکل کیږي."
+      },
+      "ht": {
+        "q": "Pou ki dire majò, konseye depatmantal ak konseye rejyonal yo eli?",
+        "a": "Nan komin yo, majò a ak konseye minisipal yo eli pou 6 an. Nan depatman yo, konseye depatmantal yo eli pou 6 an. Nan rejyon yo, konseye rejyonal yo eli pou 6 an."
+      },
+      "tr": {
+        "q": "Belediye başkanı, il meclisi üyeleri ve bölge meclisi üyeleri ne kadar süreyle seçilir?",
+        "a": "Belediyelerde belediye başkanı (maire) ve belediye meclisi üyeleri 6 yıllığına seçilir. İllerde il meclisi üyeleri (conseillers départementaux) 6 yıllığına seçilir. Bölgelerde bölge meclisi üyeleri (conseillers régionaux) 6 yıllığına seçilir."
       }
     },
     "audio": {
@@ -145,6 +305,26 @@
       "ar": {
         "q": "كم بلدية في فرنسا، وما مسؤولياتها الرئيسية؟",
         "a": "تضم فرنسا 34965 بلدية في الأول من يناير 2021. ويديرها رئيس بلدية ومجلس بلدي. وتتولى البلديات مسؤولياتٍ من بينها: مدارس الحضانة والابتدائية، والأنشطة الرياضية والثقافية، وصيانة الطرق البلدية. كما تتولى مسك السجلات المدنية (état civil)، أي تسجيل المواليد والزيجات والوفيات. وتتجمَّع البلديات في كياناتٍ مشتركة بين البلديات (intercommunalités) كاتحادات البلديات والمدن الكبرى (métropoles)."
+      },
+      "uk": {
+        "q": "Скільки комун налічує Франція і якими є їхні основні обов'язки?",
+        "a": "Франція налічує 34 965 комун станом на 1 січня 2021 року. Ними керують мер і муніципальна рада. Вони відповідають, зокрема, за дитячі садки та початкові школи, спортивну і культурну діяльність, утримання комунальних доріг. Вони ведуть актовий стан, тобто реєструють народження, шлюби, смерті. Вони об'єднуються в міжкомунальні спільноти (спільноти комун, метрополії тощо)."
+      },
+      "fa": {
+        "q": "فرانسه چند شهرداری دارد و مسؤولیت‌های اصلی آن‌ها چیست؟",
+        "a": "فرانسه در اول جنوری ۲۰۲۱ دارای ۳۴٬۹۶۵ شهرداری است. این شهرداری‌ها توسط یک شهردار و یک شورای شهرداری اداره می‌شوند. شهرداری‌ها به‌ویژه مسؤول کودکستان‌ها و مدارس ابتدایی، فعالیت‌های ورزشی و فرهنگی، و نگهداری راه‌های شهری هستند. آن‌ها ثبت احوال را در اختیار دارند، یعنی تولدها، ازدواج‌ها و وفات‌ها را به ثبت می‌رسانند. این شهرداری‌ها در قالب «بَین‌شهرداری‌ها» (مجموعه‌های شهرداری، کلان‌شهرها و غیره) گرد هم می‌آیند."
+      },
+      "ps": {
+        "q": "فرانسه څو کلي/ښارګوټي (communes) لري، او د هغوی اصلي مسؤلیتونه څه دي؟",
+        "a": "فرانسه د ۲۰۲۱ کال د جنوري په لومړۍ نېټه ۳۴۹۶۵ کلي/ښارګوټي لري. هغوی د یوه ښاروال او د ښاروالۍ شورا لخوا اداره کیږي. هغوی په ځانګړې توګه د ماهد کودکانو او لومړنیو ښوونځیو، د سپورت او کلتور فعالیتونو، او د ښاروالۍ سرکونو ساتنې مسؤول دي. هغوی مدني حالت ساتي، یعنې د زیږونونو، واده‌ګانو، او وفاتونو ثبتولو کار کوي. هغوی په بین-کلیو ادارو (د کلیو ټولنې، لوی ښارونه، او نور) کې راټول شوي دي."
+      },
+      "ht": {
+        "q": "Konbyen komin Lafrans gen, e ki responsablite prensipal yo?",
+        "a": "Lafrans konte 34 965 komin nan 1ye janvye 2021. Yo administre pa yon majò ak yon konsèy minisipal. Yo responsab, notamman, lekòl matènèl ak primè, aktivite spòtif ak kiltirèl, antretyen wout komin yo. Yo kenbe eta sivil la, sa vle di yo anrejistre nesans, maryaj, lanmò. Yo regwoupe nan entèkominalite (kominote komin, metwopòl, eltr.)."
+      },
+      "tr": {
+        "q": "Fransa'da kaç belediye (commune) vardır ve başlıca sorumlulukları nelerdir?",
+        "a": "Fransa'da 1 Ocak 2021 itibarıyla 34.965 belediye vardır. Bir belediye başkanı ve belediye meclisi tarafından yönetilirler. Özellikle ana okulları ve ilkokullar, sportif ve kültürel etkinlikler ile belediye yollarının bakımından sorumludurlar. Nüfus kütüklerini tutarlar; yani doğumları, evlilikleri ve ölümleri kaydederler. Belediyeler arası birlikler (communautés de communes, métropoles vb.) çatısı altında bir araya getirilirler."
       }
     },
     "audio": {
@@ -162,6 +342,26 @@
       "ar": {
         "q": "كم محافظة في فرنسا، وعمَّ تتحمَّل المسؤولية؟",
         "a": "تضم فرنسا 101 محافظة. وتديرها المجالس المحلية للمحافظات. وتتحمل المحافظات مسؤولياتٍ من بينها: المدارس الإعدادية (collèges)، وحماية الطفولة، ومساعدة المسنين."
+      },
+      "uk": {
+        "q": "Скільки департаментів налічує Франція і за що вони відповідають?",
+        "a": "Франція налічує 101 департамент. Ними керують департаментські ради. Вони відповідають, зокрема, за коледжі, захист дитинства, допомогу літнім особам."
+      },
+      "fa": {
+        "q": "فرانسه چند ولایت دارد و این ولایات مسؤول چه چیز هستند؟",
+        "a": "فرانسه ۱۰۱ ولایت دارد. این ولایات توسط شوراهای ولایتی اداره می‌شوند. آن‌ها به‌ویژه مسؤول دبیرستان‌های دورهٔ اول (collèges)، حمایت از کودکان و کمک به سالخوردگان هستند."
+      },
+      "ps": {
+        "q": "فرانسه څومره محافظې (départements) لري، او د څه مسؤول دي؟",
+        "a": "فرانسه ۱۰۱ محافظې لري. هغوی د محافظو شوراګانو لخوا اداره کیږي. هغوی په ځانګړې توګه د ښوونځیو (collèges) د ماشوم ساتنې، د عمر زلمو خلکو ته د مرستې مسؤول دي."
+      },
+      "ht": {
+        "q": "Konbyen depatman Lafrans gen, e pou kisa yo responsab?",
+        "a": "Lafrans konte 101 depatman. Yo administre pa konsèy depatmantal yo. Yo responsab, notamman, kolèj yo, pwoteksyon timoun yo, èd ak granmoun yo."
+      },
+      "tr": {
+        "q": "Fransa'da kaç il (département) vardır ve neyden sorumludurlar?",
+        "a": "Fransa'da 101 il vardır. İl meclisleri (conseils départementaux) tarafından yönetilirler. Özellikle ortaokullardan (collèges), çocuk korumadan ve yaşlılara yardımdan sorumludurlar."
       }
     },
     "audio": {
@@ -179,6 +379,26 @@
       "ar": {
         "q": "كم إقليماً في فرنسا القارية، وما هي اختصاصاتها؟",
         "a": "يُدير الأقاليم الثلاثة عشر في فرنسا القارية مجالسُها الإقليمية. وتتحمل مسؤولياتٍ من بينها: النقل العمومي، والتدريب المهني، وبناء الثانويات (lycées) وصيانتها."
+      },
+      "uk": {
+        "q": "Скільки регіонів метрополії налічує Франція і за що вони відповідають?",
+        "a": "13 регіонів метрополії керуються регіональними радами. Вони відповідають, зокрема, за громадський транспорт, професійну освіту, будівництво та утримання ліцеїв."
+      },
+      "fa": {
+        "q": "فرانسه چند منطقهٔ قاره‌ای دارد و این مناطق متصدی چه اموری هستند؟",
+        "a": "۱۳ منطقهٔ قاره‌ای فرانسه توسط شوراهای منطقه‌ای اداره می‌شوند. این مناطق به‌ویژه متصدی حمل‌ونقل عمومی، آموزش حرفه‌ای، و ساخت و نگهداری دبیرستان‌های دورهٔ دوم (lycées) هستند."
+      },
+      "ps": {
+        "q": "فرانسه څومره قاري سیمې (régions métropolitaines) لري، او د څه مسؤول دي؟",
+        "a": "د قاري ۱۳ سیمې د سیمو شوراګانو لخوا اداره کیږي. هغوی په ځانګړې توګه د عامه ترانسپورت، مسلکي ښوونې، د دولتي لیسو (lycées) جوړونې او ساتنې مسؤول دي."
+      },
+      "ht": {
+        "q": "Konbyen rejyon metwopolitèn Lafrans gen, e pou kisa yo chaje?",
+        "a": "13 rejyon metwopolitèn yo administre pa konsèy rejyonal yo. Yo chaje notamman ak transpò piblik, fòmasyon pwofesyonèl, konstriksyon ak antretyen lise yo."
+      },
+      "tr": {
+        "q": "Fransa anavatanın kaç bölgesi (région) vardır ve neyden sorumludurlar?",
+        "a": "Fransa anavatanın 13 bölgesi, bölge meclisleri (conseils régionaux) tarafından yönetilir. Özellikle toplu taşımacılıktan, mesleki eğitimden ve liselerin yapımı ve bakımından sorumludurlar."
       }
     },
     "audio": {
@@ -196,6 +416,26 @@
       "ar": {
         "q": "ما هي أقاليم ما وراء البحار التابعة لفرنسا، ومن يمثل الدولة فيها؟",
         "a": "تضم فرنسا 12 إقليماً وراء البحار: خمسة منها محافظاتٌ وأقاليم في آنٍ معاً (غوادلوب، غويانا، مارتينيك، مايوت، ولا ريونيون)، وسبعة منها جماعات وراء البحار (كاليدونيا الجديدة، بولينيزيا الفرنسية، سان-بارتيليمي، سان-مارتان، سان-بيير وميكلون، الأراضي الفرنسية الجنوبية والقطبية، ووالِّيس وفوتونا). وفي المحافظات والأقاليم في فرنسا القارية وما وراء البحار، يمثل الدولةَ المحافظون (préfets) — أو المفوَّضون السامون (hauts-commissaires) في بعض جماعات ما وراء البحار."
+      },
+      "uk": {
+        "q": "Якими є заморські території Франції і хто там представляє Державу?",
+        "a": "Франція налічує 12 заморських територій: 5 одночасно є департаментами та регіонами (Гваделупа, Гвіана, Мартиніка, Майотта та Реюньйон), 7 є заморськими колективностями (Нова Каледонія, Французька Полінезія, Сен-Бартельмі, Сен-Мартен, Сен-П'єр і Мікелон, Французькі південні та антарктичні території та Уолліс і Футуна). У департаментах і регіонах метрополії та заморських володінь Державу представляють префекти (або верховні комісари в деяких заморських колективностях)."
+      },
+      "fa": {
+        "q": "قلمروهای ماورای بحار فرانسه کدام‌اند و چه کسی در آن‌ها نمایندگی دولت را بر عهده دارد؟",
+        "a": "فرانسه ۱۲ قلمرو ماورای بحار دارد: ۵ مورد آن‌ها هم‌زمان ولایت و منطقه به شمار می‌روند (گوادلوپ، گویان، مارتینیک، مایوت و رِئونیون)؛ ۷ مورد دیگر، مجموعه‌های ماورای بحار هستند (نیوکالدونیا، پلی‌نزی فرانسه، سَن-بارتلمی، سَن-مارتن، سَن-پیر-ا-میکلون، سرزمین‌های جنوبی و قطبی فرانسه و والیس-اِ-فوتونا). در ولایات و مناطق فرانسهٔ قاره‌ای و ماورای بحار، دولت توسط والیان (préfets) (یا در برخی از مجموعه‌های ماورای بحار توسط کمیسران عالی) نمایندگی می‌شود."
+      },
+      "ps": {
+        "q": "د فرانسې بحر-ماورا (outre-mer) ساحات کوم دي، او دولت په کې څوک نمایندګي کوي؟",
+        "a": "فرانسه د بحر-ماورا ۱۲ ساحات لري: ۵ يې هم محافظې او هم سیمې دي (ګوادلوپ، ګویان، مارتینیک، مایوت او ریونیون)، ۷ يې د بحر-ماورا ادارې دي (نوې کالیډونیا، فرانسوي پولینیزیا، سن-بارتلیمي، سن-مارتن، سن-پیر-او-میکلون، فرانسوي جنوبي او انتارکتیکي خاورې، او والیس-فوتونا). په قاري او بحر-ماورا محافظو او سیمو کې، دولت د والیانو (préfets) لخوا استازولي کیږي (یا په ځینو د بحر-ماورا ادارو کې د عالي کمیشنرانو لخوا)."
+      },
+      "ht": {
+        "q": "Ki teritwa ander-mè Lafrans yo, e ki moun ki reprezante Eta a la?",
+        "a": "Lafrans konte 12 teritwa ander-mè (outre-mer): 5 se ansanm depatman ak rejyon (Guadeloupe, Guyane, Martinique, Mayotte ak la Réunion), 7 se kolektivite ander-mè (Nouvelle-Calédonie, Polynésie française, Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon, Terres australes et antarctiques françaises ak Wallis-et-Futuna). Nan depatman ak rejyon metwopòl ak ander-mè yo, Eta a reprezante pa prefè yo (oswa pa wo komisè nan sèten kolektivite ander-mè)."
+      },
+      "tr": {
+        "q": "Fransa'nın denizaşırı toprakları nelerdir ve oralarda Devlet'i kim temsil eder?",
+        "a": "Fransa'nın 12 denizaşırı toprağı vardır: 5'i hem il hem bölgedir (Guadeloupe, Guyane (Fransız Guyanası), Martinique, Mayotte ve Réunion), 7'si denizaşırı topluluklardır (Yeni Kaledonya/Nouvelle-Calédonie, Fransız Polinezyası/Polynésie française, Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon, Fransız Güney ve Antarktika Toprakları/Terres australes et antarctiques françaises ve Wallis-et-Futuna). Anavatan ile denizaşırı illerde ve bölgelerde Devlet, valiler (préfets) tarafından temsil edilir (bazı denizaşırı topluluklarda yüksek komiserler tarafından)."
       }
     },
     "audio": {
