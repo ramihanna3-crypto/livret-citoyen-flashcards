@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ddhc-001",
+    "theme": "ddhc",
+    "fr_q": "Que dit l'Article 1 de la Déclaration des Droits de l'Homme ?",
+    "ar_q": "[AR-DRAFT] ماذا تقول المادة الأولى من إعلان حقوق الإنسان؟",
+    "fr_a": "Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune.",
+    "ar_a": "[AR-DRAFT] يولد الناس ويظلّون أحراراً ومتساوين في الحقوق. ولا يمكن أن تكون التمييزات الاجتماعية إلاّ مبنيّة على المنفعة المشتركة.",
+    "source": "Livret p.24 — DDHC Art. 1",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000031",
+      "fr_a_sha1": "0000000000000000000000000000000000000032"
+    }
+  },
+  {
+    "id": "ddhc-002",
+    "theme": "ddhc",
+    "fr_q": "Quel est le but de toute association politique selon l'Article 2 ?",
+    "ar_q": "[AR-DRAFT] ما هي غاية كل اجتماع سياسي حسب المادة الثانية؟",
+    "fr_a": "Le but de toute association politique est la conservation des droits naturels et imprescriptibles de l'Homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l'oppression.",
+    "ar_a": "[AR-DRAFT] غاية كل اجتماع سياسي هي صون حقوق الإنسان الطبيعية وغير القابلة للتقادم. وهذه الحقوق هي الحرية والملكية والأمن ومقاومة الظلم.",
+    "source": "Livret p.24 — DDHC Art. 2",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000033",
+      "fr_a_sha1": "0000000000000000000000000000000000000034"
+    }
+  },
+  {
+    "id": "ddhc-003",
+    "theme": "ddhc",
+    "fr_q": "Que dit l'Article 4 sur la liberté ?",
+    "ar_q": "[AR-DRAFT] ماذا تقول المادة الرابعة عن الحرية؟",
+    "fr_a": "La liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui : ainsi, l'exercice des droits naturels de chaque homme n'a de bornes que celles qui assurent aux autres Membres de la Société la jouissance de ces mêmes droits. Ces bornes ne peuvent être déterminées que par la Loi.",
+    "ar_a": "[AR-DRAFT] الحرية هي القدرة على فعل كل ما لا يضرّ الآخرين: وعلى ذلك فإن ممارسة كل إنسان لحقوقه الطبيعية ليس لها حدود إلاّ تلك التي تكفل لباقي أعضاء المجتمع التمتع بهذه الحقوق نفسها. ولا يمكن تحديد هذه الحدود إلاّ بموجب القانون.",
+    "source": "Livret p.24 — DDHC Art. 4",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000035",
+      "fr_a_sha1": "0000000000000000000000000000000000000036"
+    }
+  }
+]

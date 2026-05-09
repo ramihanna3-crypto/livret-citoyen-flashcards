@@ -11,7 +11,7 @@
 
 A free, ad-free, account-free web app that drills the verbatim contents of the official French study materials for naturalization, with Arabic translations as a comprehension aid. Users flip cards (French question on the front, French answer on the back), see an Arabic translation beneath each side, and listen to the French audio so they can hear and read together.
 
-**Problem solved:** Arabic-speaking candidates often have access to the *Livret du citoyen* PDF but no good way to memorize it actively, no audio support to train listening, and no translation aid for civic terms (*laïcité*, *suffrage indirect*, *déchu de la nationalité*, …). This app turns the PDFs into a practice tool that runs on any phone for free.
+**Problem solved:** Arabic-speaking candidates often have access to the _Livret du citoyen_ PDF but no good way to memorize it actively, no audio support to train listening, and no translation aid for civic terms (_laïcité_, _suffrage indirect_, _déchu de la nationalité_, …). This app turns the PDFs into a practice tool that runs on any phone for free.
 
 **Non-goals:** This is not a course, not a translation reference, not a mock interview. It is a memorization tool for the verbatim source text.
 
@@ -19,10 +19,10 @@ A free, ad-free, account-free web app that drills the verbatim contents of the o
 
 ## 2. Source materials
 
-| Document | Pages | Status | Use |
-|---|---|---|---|
-| `Livret-du-citoyen-accessible.pdf` (Ministère de l'Intérieur, février 2022) | 28 | Text extracted via `pypdf` to `raw/livret.txt` | Primary corpus. Verbatim French answers + 8 official Q&A pairs. |
-| `Charte-des-droits-et-devoirs-du-citoyen-francais.pdf` | 2 | Image-only PDF; OCRed via macOS Vision framework to `raw/charte.txt` | Secondary corpus. Verbatim French answers, principally feeding the **Droits & devoirs** theme. |
+| Document                                                                    | Pages | Status                                                               | Use                                                                                            |
+| --------------------------------------------------------------------------- | ----- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `Livret-du-citoyen-accessible.pdf` (Ministère de l'Intérieur, février 2022) | 28    | Text extracted via `pypdf` to `raw/livret.txt`                       | Primary corpus. Verbatim French answers + 8 official Q&A pairs.                                |
+| `Charte-des-droits-et-devoirs-du-citoyen-francais.pdf`                      | 2     | Image-only PDF; OCRed via macOS Vision framework to `raw/charte.txt` | Secondary corpus. Verbatim French answers, principally feeding the **Droits & devoirs** theme. |
 
 The DDHC of 1789 (17 articles) is contained inside the Livret on pages 24–25 and forms its own theme.
 
@@ -32,26 +32,26 @@ The DDHC of 1789 (17 articles) is contained inside the Livret on pages 24–25 a
 
 These are locked decisions from the brainstorm. Implementation must not deviate without re-opening the question with the user.
 
-| # | Decision | Locked value |
-|---|---|---|
-| D1 | Source set | Livret + Charte (both via OCR / text extract) + DDHC extracted from Livret pp. 24–25 |
-| D2 | Authoring approach | **Hybrid** — keep 8 official Livret Q&A boxes verbatim; AI-draft remaining Q's and **all** Arabic translations from the verbatim French answer; user reviews the Arabic before merging |
-| D3 | Audio | Pre-generated **at build time** via ElevenLabs; **French only**, no Arabic audio |
-| D4 | Progress model | Light SRS: per-card `Je sais ✓` / `À revoir ✗`, persisted in `localStorage`, no accounts |
-| D5 | Deck organization | Six themed decks + one "Tout mélanger" mode |
-| D6 | Tech stack | Vite + React 18 + TypeScript + Tailwind v4 + shadcn/ui |
-| D7 | Mobile-first | Yes; responsive up to desktop (≤ 1280 px design width) |
-| D8 | Hosting | Cloudflare Pages, free tier, free `*.pages.dev` subdomain for v1 |
-| D9 | Theme tokens | User-supplied indigo/slate Tailwind v4 token sheet, dark mode included |
-| D10 | French flag treatment | Vertical tricolor strip on left edge of every card; tiny tricolor underline beneath the app title; tricolor accent on favicon. No bigger flag presence. |
-| D11 | Auto-advance | After **`Je sais ✓` only**. After `À revoir ✗`, stay on the card. |
-| D12 | Tap-to-flip | Entire card surface flips on tap (Space on keyboard) |
-| D13 | License — code | MIT |
-| D14 | License — translations | CC BY-SA 4.0 (Arabic translations are original work) |
-| D15 | License — French content | Cited as © Ministère de l'Intérieur public administrative document |
-| D16 | Footer attribution | "Contenu original © Ministère de l'Intérieur. Traduction arabe et application : Rami Hanna, CC BY-SA 4.0. Application non officielle." |
-| D17 | PWA / offline | **Out of v1.** Re-evaluate as v1.1. |
-| D18 | Out-of-scope (no debate) | Accounts, server, database, full SM-2 SRS, quiz mode, social, notifications, print/export, custom cards, additional languages |
+| #   | Decision                 | Locked value                                                                                                                                                                           |
+| --- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| D1  | Source set               | Livret + Charte (both via OCR / text extract) + DDHC extracted from Livret pp. 24–25                                                                                                   |
+| D2  | Authoring approach       | **Hybrid** — keep 8 official Livret Q&A boxes verbatim; AI-draft remaining Q's and **all** Arabic translations from the verbatim French answer; user reviews the Arabic before merging |
+| D3  | Audio                    | Pre-generated **at build time** via ElevenLabs; **French only**, no Arabic audio                                                                                                       |
+| D4  | Progress model           | Light SRS: per-card `Je sais ✓` / `À revoir ✗`, persisted in `localStorage`, no accounts                                                                                               |
+| D5  | Deck organization        | Six themed decks + one "Tout mélanger" mode                                                                                                                                            |
+| D6  | Tech stack               | Vite + React 18 + TypeScript + Tailwind v4 + shadcn/ui                                                                                                                                 |
+| D7  | Mobile-first             | Yes; responsive up to desktop (≤ 1280 px design width)                                                                                                                                 |
+| D8  | Hosting                  | Cloudflare Pages, free tier, free `*.pages.dev` subdomain for v1                                                                                                                       |
+| D9  | Theme tokens             | User-supplied indigo/slate Tailwind v4 token sheet, dark mode included                                                                                                                 |
+| D10 | French flag treatment    | Vertical tricolor strip on left edge of every card; tiny tricolor underline beneath the app title; tricolor accent on favicon. No bigger flag presence.                                |
+| D11 | Auto-advance             | After **`Je sais ✓` only**. After `À revoir ✗`, stay on the card.                                                                                                                      |
+| D12 | Tap-to-flip              | Entire card surface flips on tap (Space on keyboard)                                                                                                                                   |
+| D13 | License — code           | MIT                                                                                                                                                                                    |
+| D14 | License — translations   | CC BY-SA 4.0 (Arabic translations are original work)                                                                                                                                   |
+| D15 | License — French content | Cited as © Ministère de l'Intérieur public administrative document                                                                                                                     |
+| D16 | Footer attribution       | "Contenu original © Ministère de l'Intérieur. Traduction arabe et application : Rami Hanna, CC BY-SA 4.0. Application non officielle."                                                 |
+| D17 | PWA / offline            | **Out of v1.** Re-evaluate as v1.1.                                                                                                                                                    |
+| D18 | Out-of-scope (no debate) | Accounts, server, database, full SM-2 SRS, quiz mode, social, notifications, print/export, custom cards, additional languages                                                          |
 
 ---
 
@@ -171,13 +171,13 @@ export const ThemeId = z.enum([
 export type ThemeId = z.infer<typeof ThemeId>;
 
 export const Card = z.object({
-  id:     z.string().regex(/^[a-z-]+-\d{3}$/),    // e.g. "valeurs-001"
-  theme:  ThemeId,
-  fr_q:   z.string().min(3).max(400),
-  ar_q:   z.string().min(3).max(400),
-  fr_a:   z.string().min(3).max(2000),            // verbatim from source
-  ar_a:   z.string().min(3).max(2000),
-  source: z.string().min(3),                      // e.g. "Livret p.4" or "Charte §Liberté"
+  id: z.string().regex(/^[a-z-]+-\d{3}$/), // e.g. "valeurs-001"
+  theme: ThemeId,
+  fr_q: z.string().min(3).max(400),
+  ar_q: z.string().min(3).max(400),
+  fr_a: z.string().min(3).max(2000), // verbatim from source
+  ar_a: z.string().min(3).max(2000),
+  source: z.string().min(3), // e.g. "Livret p.4" or "Charte §Liberté"
   audio: z.object({
     fr_q_sha1: z.string().regex(/^[a-f0-9]{40}$/),
     fr_a_sha1: z.string().regex(/^[a-f0-9]{40}$/),
@@ -207,34 +207,64 @@ export type Theme = {
   description_fr: string;
   description_ar: string;
   icon: typeof Scale;
-  accentClass: string;   // Tailwind class for the tile bg tint
+  accentClass: string; // Tailwind class for the tile bg tint
 };
 
 export const themes: Theme[] = [
-  { id: "valeurs",         label_fr: "Valeurs & principes",
-    label_ar: "القيم والمبادئ",            icon: Scale,        accentClass: "bg-indigo-50 dark:bg-indigo-950/30",
+  {
+    id: "valeurs",
+    label_fr: "Valeurs & principes",
+    label_ar: "القيم والمبادئ",
+    icon: Scale,
+    accentClass: "bg-indigo-50 dark:bg-indigo-950/30",
     description_fr: "Liberté, égalité, fraternité, laïcité.",
-    description_ar: "الحرية، المساواة، الإخاء، العلمانية." },
-  { id: "droits-devoirs",  label_fr: "Droits & devoirs",
-    label_ar: "الحقوق والواجبات",          icon: ShieldCheck,  accentClass: "bg-violet-50 dark:bg-violet-950/30",
+    description_ar: "الحرية، المساواة، الإخاء، العلمانية.",
+  },
+  {
+    id: "droits-devoirs",
+    label_fr: "Droits & devoirs",
+    label_ar: "الحقوق والواجبات",
+    icon: ShieldCheck,
+    accentClass: "bg-violet-50 dark:bg-violet-950/30",
     description_fr: "Ce que le citoyen doit faire et ne doit pas faire.",
-    description_ar: "ما يجب على المواطن فعله وما لا يجب فعله." },
-  { id: "institutions",    label_fr: "Institutions politiques",
-    label_ar: "المؤسسات السياسية",        icon: Building2,    accentClass: "bg-purple-50 dark:bg-purple-950/30",
+    description_ar: "ما يجب على المواطن فعله وما لا يجب فعله.",
+  },
+  {
+    id: "institutions",
+    label_fr: "Institutions politiques",
+    label_ar: "المؤسسات السياسية",
+    icon: Building2,
+    accentClass: "bg-purple-50 dark:bg-purple-950/30",
     description_fr: "Président, Parlement, justice, collectivités.",
-    description_ar: "الرئيس، البرلمان، العدالة، الجماعات المحلية." },
-  { id: "histoire",        label_fr: "Histoire de France",
-    label_ar: "تاريخ فرنسا",              icon: Landmark,     accentClass: "bg-fuchsia-50 dark:bg-fuchsia-950/30",
+    description_ar: "الرئيس، البرلمان، العدالة، الجماعات المحلية.",
+  },
+  {
+    id: "histoire",
+    label_fr: "Histoire de France",
+    label_ar: "تاريخ فرنسا",
+    icon: Landmark,
+    accentClass: "bg-fuchsia-50 dark:bg-fuchsia-950/30",
     description_fr: "Préhistoire au XXᵉ siècle.",
-    description_ar: "من عصور ما قبل التاريخ إلى القرن العشرين." },
-  { id: "geographie",      label_fr: "Géographie & place de la France",
-    label_ar: "الجغرافيا ومكانة فرنسا",  icon: Map,          accentClass: "bg-pink-50 dark:bg-pink-950/30",
+    description_ar: "من عصور ما قبل التاريخ إلى القرن العشرين.",
+  },
+  {
+    id: "geographie",
+    label_fr: "Géographie & place de la France",
+    label_ar: "الجغرافيا ومكانة فرنسا",
+    icon: Map,
+    accentClass: "bg-pink-50 dark:bg-pink-950/30",
     description_fr: "Régions, fleuves, Europe, économie.",
-    description_ar: "المناطق، الأنهار، أوروبا، الاقتصاد." },
-  { id: "ddhc",            label_fr: "Droits de l'Homme 1789",
-    label_ar: "إعلان حقوق الإنسان 1789",  icon: ScrollText,   accentClass: "bg-rose-50 dark:bg-rose-950/30",
+    description_ar: "المناطق، الأنهار، أوروبا، الاقتصاد.",
+  },
+  {
+    id: "ddhc",
+    label_fr: "Droits de l'Homme 1789",
+    label_ar: "إعلان حقوق الإنسان 1789",
+    icon: ScrollText,
+    accentClass: "bg-rose-50 dark:bg-rose-950/30",
     description_fr: "Les 17 articles fondateurs.",
-    description_ar: "المواد السبعة عشر التأسيسية." },
+    description_ar: "المواد السبعة عشر التأسيسية.",
+  },
 ];
 ```
 
@@ -244,18 +274,21 @@ export const themes: Theme[] = [
 // key: "lc.progress.v1"
 type ProgressV1 = {
   v: 1;
-  cards: Record<string /* cardId */, {
-    status: "known" | "review";
-    lastSeenAt: number;          // epoch ms
-  }>;
+  cards: Record<
+    string /* cardId */,
+    {
+      status: "known" | "review";
+      lastSeenAt: number; // epoch ms
+    }
+  >;
   prefs: {
     darkMode: "system" | "light" | "dark";
-    autoAdvance: boolean;        // default true
+    autoAdvance: boolean; // default true
   };
 };
 ```
 
-Migration policy: unknown `v` → reset to defaults, surface a one-time toast: *"Données de progrès réinitialisées après mise à jour de l'application."* / *"تمت إعادة ضبط بيانات التقدم بعد تحديث التطبيق."*
+Migration policy: unknown `v` → reset to defaults, surface a one-time toast: _"Données de progrès réinitialisées après mise à jour de l'application."_ / _"تمت إعادة ضبط بيانات التقدم بعد تحديث التطبيق."_
 
 ---
 
@@ -280,7 +313,7 @@ Three scripts. All live in `scripts/`. They are run **only during initial card c
 - **Logic per chunk:**
   - If `verbatim_question: true` → keep `fr_q` as-is, only generate `ar_q` and `ar_a` via Claude.
   - Else → generate `fr_q` (a short prompt that elicits the chunk as its answer), `ar_q`, `ar_a`.
-  - System prompt instructs the model: *"You are translating French civic education content for Arabic-speaking citizenship applicants. Preserve French legal/historical terms in parentheses on first mention. Use Modern Standard Arabic (فصحى). Do not abridge. Do not interpret — translate."*
+  - System prompt instructs the model: _"You are translating French civic education content for Arabic-speaking citizenship applicants. Preserve French legal/historical terms in parentheses on first mention. Use Modern Standard Arabic (فصحى). Do not abridge. Do not interpret — translate."_
   - Each draft card is run through Zod before being written. Malformed → log + skip.
 
 ### 7.3 Manual review
@@ -293,15 +326,15 @@ The 8 Ministry Q&A boxes are flagged in a comment header so the user knows not t
 
 Based on the source page counts and natural paragraph density:
 
-| Theme | Target cards |
-|---|---|
-| valeurs | 12–18 |
+| Theme          | Target cards                     |
+| -------------- | -------------------------------- |
+| valeurs        | 12–18                            |
 | droits-devoirs | 18–25 (Livret + Charte combined) |
-| institutions | 12–16 |
-| histoire | 18–24 |
-| geographie | 8–12 |
-| ddhc | 17 (one per article, fixed) |
-| **Total** | **85–112** |
+| institutions   | 12–16                            |
+| histoire       | 18–24                            |
+| geographie     | 8–12                             |
+| ddhc           | 17 (one per article, fixed)      |
+| **Total**      | **85–112**                       |
 
 ---
 
@@ -374,21 +407,27 @@ User-supplied Tailwind v4 token sheet is used **verbatim**, mapped through `inde
 }
 
 @layer base {
-  body { @apply bg-background text-foreground font-sans antialiased; }
-  .font-serif { font-family: var(--font-serif); }
-  .font-mono  { font-family: var(--font-mono); }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
 }
 ```
 
 ### 9.2 Typography
 
-| Use | Family | Why |
-|---|---|---|
-| UI chrome (buttons, nav, labels) | **Inter** | Friendly, dense, supports Latin-Ext |
-| French questions | Inter, semi-bold, 22–24 px | Visual hierarchy — the prompt |
-| French answers (verbatim Ministry text) | **Merriweather**, 18–20 px | Serif "reading" register fits the formal civic register |
-| Arabic (all sizes) | **Noto Sans Arabic**, 16–18 px | Best on-screen Arabic, free, broad coverage |
-| Source citations on About | **JetBrains Mono**, 14 px | Tiny, factual feel |
+| Use                                     | Family                         | Why                                                     |
+| --------------------------------------- | ------------------------------ | ------------------------------------------------------- |
+| UI chrome (buttons, nav, labels)        | **Inter**                      | Friendly, dense, supports Latin-Ext                     |
+| French questions                        | Inter, semi-bold, 22–24 px     | Visual hierarchy — the prompt                           |
+| French answers (verbatim Ministry text) | **Merriweather**, 18–20 px     | Serif "reading" register fits the formal civic register |
+| Arabic (all sizes)                      | **Noto Sans Arabic**, 16–18 px | Best on-screen Arabic, free, broad coverage             |
+| Source citations on About               | **JetBrains Mono**, 14 px      | Tiny, factual feel                                      |
 
 All fonts shipped via `@fontsource` (subsetted Latin and Arabic ranges) and self-hosted from `/public/fonts/`. No Google Fonts CDN at runtime. `font-display: swap`.
 
@@ -464,15 +503,31 @@ All fonts shipped via `@fontsource` (subsetted Latin and Arabic ranges) and self
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
-.flashcard-inner.flipped { transform: rotateY(180deg); }
-.face { backface-visibility: hidden; }
-.face-back { transform: rotateY(180deg); }
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+.face {
+  backface-visibility: hidden;
+}
+.face-back {
+  transform: rotateY(180deg);
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .flashcard-inner { transition: opacity 200ms ease; transform: none !important; }
-  .face-back { display: none; }
-  .flipped .face-front { display: none; }
-  .flipped .face-back { display: block; transform: none; }
+  .flashcard-inner {
+    transition: opacity 200ms ease;
+    transform: none !important;
+  }
+  .face-back {
+    display: none;
+  }
+  .flipped .face-front {
+    display: none;
+  }
+  .flipped .face-back {
+    display: block;
+    transform: none;
+  }
 }
 ```
 
@@ -487,7 +542,7 @@ All fonts shipped via `@fontsource` (subsetted Latin and Arabic ranges) and self
 ### 9.9 Home screen (deck picker)
 
 - Header: app title bilingual + tricolor underline + dark-mode toggle + About link.
-- Subhead: *"Choisissez un thème · اختر موضوعًا"*.
+- Subhead: _"Choisissez un thème · اختر موضوعًا"_.
 - 6 deck tiles, **2 cols mobile, 3 cols desktop**:
   - Theme icon (32 px lucide).
   - Label French (Inter 16 px semibold) + label Arabic (Noto 14 px below, RTL).
@@ -504,12 +559,12 @@ All fonts shipped via `@fontsource` (subsetted Latin and Arabic ranges) and self
 - Bottom: `← Précédent` / `Carte 3 / 18` / `Suivant →`. Hidden once the user has clicked Je sais on the back (auto-advance fires).
 - **Keyboard shortcuts (desktop):** `Space` flip, `←` `→` navigate, `1` Je sais, `2` À revoir, `S` shuffle.
 - **Touch (mobile):** swipe left/right for prev/next, tap to flip.
-- When the deck is finished (every card answered at least once): show a celebratory screen *"Bravo ! Vous avez parcouru toutes les cartes."* with options to restart or revisit only `À revoir` cards.
+- When the deck is finished (every card answered at least once): show a celebratory screen _"Bravo ! Vous avez parcouru toutes les cartes."_ with options to restart or revisit only `À revoir` cards.
 
 ### 9.11 About screen (`/about`)
 
 - Sources block: links to the original Ministry PDFs, with explanatory text.
-- Privacy block: *"Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur."*
+- Privacy block: _"Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur."_
 - License block: D16 attribution + GitHub repo link.
 - "Réinitialiser le progrès" button (with confirmation Dialog).
 - Settings: dark mode (system / light / dark), auto-advance after Je sais (toggle).
@@ -523,21 +578,21 @@ All fonts shipped via `@fontsource` (subsetted Latin and Arabic ranges) and self
 
 ## 10. Component breakdown
 
-| Component | Responsibility | Inputs | Notes |
-|---|---|---|---|
-| `<App>` | Mount router, providers | — | Wraps `<ThemeProvider>` and `<ProgressProvider>` |
-| `<Header>` | Title, tricolor, dark-mode toggle | — | Sticky on mobile |
-| `<Footer>` | Attribution | — | |
-| `<DeckPicker>` | Renders 6 `<DeckTile>`s | `themes` registry | Reads progress to compute counts |
-| `<DeckTile>` | One theme card | `theme`, `progress: {known, total}` | Click navigates to `/study/:theme` |
-| `<DeckProgressRing>` | SVG ring | `value`, `max` | Pure |
-| `<StudySession>` | Owns reducer, renders `<Flashcard>` + nav | `cards: Card[]`, `themeId` | Handles keyboard + swipe |
-| `<Flashcard>` | The flippable card, owns flip state | `card: Card`, `position`, `total`, `flipped`, `onFlip`, `onResponse` | Pure presentational |
-| `<CardFront>` / `<CardBack>` | Side content layout | `card`, derived flags | |
-| `<AudioButton>` | Play/stop one MP3 | `sha1`, `lang="fr"` | Uses the shared `useAudioPlayer` hook |
-| `<ResponseButtons>` | Je sais / À revoir | `onKnown`, `onReview` | Bilingual labels, large hit targets |
-| `<FlagAccent>` | The vertical tricolor | — | Pure CSS, ~10 lines |
-| `<DarkModeToggle>` | Sun/moon button | — | Reads/writes `lc.progress.v1.prefs.darkMode` |
+| Component                    | Responsibility                            | Inputs                                                               | Notes                                            |
+| ---------------------------- | ----------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------ |
+| `<App>`                      | Mount router, providers                   | —                                                                    | Wraps `<ThemeProvider>` and `<ProgressProvider>` |
+| `<Header>`                   | Title, tricolor, dark-mode toggle         | —                                                                    | Sticky on mobile                                 |
+| `<Footer>`                   | Attribution                               | —                                                                    |                                                  |
+| `<DeckPicker>`               | Renders 6 `<DeckTile>`s                   | `themes` registry                                                    | Reads progress to compute counts                 |
+| `<DeckTile>`                 | One theme card                            | `theme`, `progress: {known, total}`                                  | Click navigates to `/study/:theme`               |
+| `<DeckProgressRing>`         | SVG ring                                  | `value`, `max`                                                       | Pure                                             |
+| `<StudySession>`             | Owns reducer, renders `<Flashcard>` + nav | `cards: Card[]`, `themeId`                                           | Handles keyboard + swipe                         |
+| `<Flashcard>`                | The flippable card, owns flip state       | `card: Card`, `position`, `total`, `flipped`, `onFlip`, `onResponse` | Pure presentational                              |
+| `<CardFront>` / `<CardBack>` | Side content layout                       | `card`, derived flags                                                |                                                  |
+| `<AudioButton>`              | Play/stop one MP3                         | `sha1`, `lang="fr"`                                                  | Uses the shared `useAudioPlayer` hook            |
+| `<ResponseButtons>`          | Je sais / À revoir                        | `onKnown`, `onReview`                                                | Bilingual labels, large hit targets              |
+| `<FlagAccent>`               | The vertical tricolor                     | —                                                                    | Pure CSS, ~10 lines                              |
+| `<DarkModeToggle>`           | Sun/moon button                           | —                                                                    | Reads/writes `lc.progress.v1.prefs.darkMode`     |
 
 Every component has a Vitest unit test for its primary behavior. No component exceeds ~120 lines including imports.
 
@@ -566,12 +621,13 @@ type SessionState = {
 
 type SessionAction =
   | { type: "FLIP" }
-  | { type: "MARK_KNOWN" }     // persists progress + advances if autoAdvance
-  | { type: "MARK_REVIEW" }    // persists progress, stays on card
-  | { type: "PREV" } | { type: "NEXT" }
-  | { type: "JUMP", to: number }
+  | { type: "MARK_KNOWN" } // persists progress + advances if autoAdvance
+  | { type: "MARK_REVIEW" } // persists progress, stays on card
+  | { type: "PREV" }
+  | { type: "NEXT" }
+  | { type: "JUMP"; to: number }
   | { type: "SHUFFLE" }
-  | { type: "RESTART", onlyReview?: boolean };
+  | { type: "RESTART"; onlyReview?: boolean };
 ```
 
 `MARK_KNOWN` always calls `progress.markKnown(card.id)`. If `prefs.autoAdvance === true`, it dispatches `NEXT` immediately. (D11)
@@ -584,20 +640,20 @@ type SessionAction =
 
 `react-router-dom@6` with `HashRouter` (per D8 — no server config needed, works under any subpath).
 
-| Path | Component | Description |
-|---|---|---|
-| `/` | `<Home>` → `<DeckPicker>` | The deck picker landing |
-| `/study/:theme` | `<Study>` → `<StudySession>` | One theme; param validated against `ThemeId.enum` |
-| `/study/all` | `<Study>` with all decks merged | Tout mélanger |
-| `/about` | `<About>` | Sources, privacy, license, settings, reset |
-| `*` | redirect to `/` | Unknown paths bounce home |
+| Path            | Component                       | Description                                       |
+| --------------- | ------------------------------- | ------------------------------------------------- |
+| `/`             | `<Home>` → `<DeckPicker>`       | The deck picker landing                           |
+| `/study/:theme` | `<Study>` → `<StudySession>`    | One theme; param validated against `ThemeId.enum` |
+| `/study/all`    | `<Study>` with all decks merged | Tout mélanger                                     |
+| `/about`        | `<About>`                       | Sources, privacy, license, settings, reset        |
+| `*`             | redirect to `/`                 | Unknown paths bounce home                         |
 
 ---
 
 ## 13. Accessibility
 
 - Color contrast: every text/background pair ≥ 4.5:1 (WCAG AA), verified manually + Playwright visual snapshot in CI.
-- Card flip announces side change to screen readers via `aria-live="polite"` region: *"Réponse révélée"* / *"تم كشف الإجابة"*.
+- Card flip announces side change to screen readers via `aria-live="polite"` region: _"Réponse révélée"_ / _"تم كشف الإجابة"_.
 - All interactive elements reachable by keyboard (`Tab`), with a visible focus ring (`--ring` token).
 - Audio buttons have `aria-label` and visible focus state. They expose play/pause state via `aria-pressed`.
 - `prefers-reduced-motion: reduce` honored: flip → crossfade, deck transitions instant.
@@ -619,14 +675,14 @@ type SessionAction =
 
 ## 15. Testing strategy (right-sized)
 
-| Layer | Tool | Coverage |
-|---|---|---|
-| **Unit** | Vitest | `progress.ts` get/mark/reset round-trip; `shuffle.ts` Fisher–Yates correctness; `audio.ts` sha1 helper; `card.ts` Zod accepts valid + rejects invalid samples |
-| **Component** | Vitest + RTL + jsdom | Flashcard flips on tap and on Space; AudioButton calls play; ResponseButtons fire correct callbacks; CardBack renders Arabic with `dir="rtl"`; FlagAccent renders three colored segments; DeckTile shows correct progress |
-| **Integration / E2E** | Playwright | Pick deck → flip 3 cards → mark mixed → reload → progress survives → reset progress → progress empty. Tested on 1 desktop viewport (1280×800) + 1 mobile (iPhone SE 375×667) + 1 tablet (iPad 820×1180). RTL Arabic text is asserted to render right-aligned. Reduced-motion variant tested via Playwright `reducedMotion: "reduce"`. |
-| **Schema** | `pnpm validate:cards` in CI | Zod parses every JSON; every audio sha1 has a matching MP3 file in `public/audio/` |
-| **Lint / Types** | ESLint + `tsc --noEmit` | Pre-commit + CI |
-| **Visual regression** | Playwright screenshots | Front + back of one sample card per theme, light + dark, mobile + desktop. Diffs blocked at >0.1% pixel delta. |
+| Layer                 | Tool                        | Coverage                                                                                                                                                                                                                                                                                                                              |
+| --------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Unit**              | Vitest                      | `progress.ts` get/mark/reset round-trip; `shuffle.ts` Fisher–Yates correctness; `audio.ts` sha1 helper; `card.ts` Zod accepts valid + rejects invalid samples                                                                                                                                                                         |
+| **Component**         | Vitest + RTL + jsdom        | Flashcard flips on tap and on Space; AudioButton calls play; ResponseButtons fire correct callbacks; CardBack renders Arabic with `dir="rtl"`; FlagAccent renders three colored segments; DeckTile shows correct progress                                                                                                             |
+| **Integration / E2E** | Playwright                  | Pick deck → flip 3 cards → mark mixed → reload → progress survives → reset progress → progress empty. Tested on 1 desktop viewport (1280×800) + 1 mobile (iPhone SE 375×667) + 1 tablet (iPad 820×1180). RTL Arabic text is asserted to render right-aligned. Reduced-motion variant tested via Playwright `reducedMotion: "reduce"`. |
+| **Schema**            | `pnpm validate:cards` in CI | Zod parses every JSON; every audio sha1 has a matching MP3 file in `public/audio/`                                                                                                                                                                                                                                                    |
+| **Lint / Types**      | ESLint + `tsc --noEmit`     | Pre-commit + CI                                                                                                                                                                                                                                                                                                                       |
+| **Visual regression** | Playwright screenshots      | Front + back of one sample card per theme, light + dark, mobile + desktop. Diffs blocked at >0.1% pixel delta.                                                                                                                                                                                                                        |
 
 `build:audio` is **not** in CI (costs money + needs key). Run locally before each release.
 
@@ -729,17 +785,17 @@ Per D18:
 
 ## 20. Glossary
 
-| Term | Meaning |
-|---|---|
-| **Livret** | The 28-page Ministry-published study guide (*Livret du citoyen*) |
-| **Charte** | The 2-page Charter of Rights and Duties of the French Citizen, signed at naturalization |
-| **DDHC** | Déclaration des Droits de l'Homme et du Citoyen of 1789 |
-| **Theme / deck** | One of the six categories of cards (D5) |
-| **Card** | A single Q&A pair in French + Arabic, with two French audio clips |
+| Term                                  | Meaning                                                                                         |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Livret**                            | The 28-page Ministry-published study guide (_Livret du citoyen_)                                |
+| **Charte**                            | The 2-page Charter of Rights and Duties of the French Citizen, signed at naturalization         |
+| **DDHC**                              | Déclaration des Droits de l'Homme et du Citoyen of 1789                                         |
+| **Theme / deck**                      | One of the six categories of cards (D5)                                                         |
+| **Card**                              | A single Q&A pair in French + Arabic, with two French audio clips                               |
 | **`fr_q` / `fr_a` / `ar_q` / `ar_a`** | The four text fields of a card (French question, French answer, Arabic question, Arabic answer) |
-| **Content-addressed audio** | Audio MP3 named by `sha1(text)` so changing the text auto-triggers regeneration |
-| **Verbatim** | Word-for-word from the source PDF, with no paraphrasing |
-| **Hybrid authoring** | 8 official Q&A boxes preserved verbatim; AI drafts the rest; user reviews Arabic only (D2) |
+| **Content-addressed audio**           | Audio MP3 named by `sha1(text)` so changing the text auto-triggers regeneration                 |
+| **Verbatim**                          | Word-for-word from the source PDF, with no paraphrasing                                         |
+| **Hybrid authoring**                  | 8 official Q&A boxes preserved verbatim; AI drafts the rest; user reviews Arabic only (D2)      |
 
 ---
 

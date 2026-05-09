@@ -1,0 +1,41 @@
+[
+  {
+    "id": "geographie-001",
+    "theme": "geographie",
+    "fr_q": "Combien d'habitants compte la France en 2021 ?",
+    "ar_q": "[AR-DRAFT] كم بلغ عدد سكان فرنسا في عام 2021؟",
+    "fr_a": "En 2021, la France compte 67,4 millions d'habitants (source INSEE). Son territoire s'étend sur 675 000 km², en métropole et outre-mer.",
+    "ar_a": "[AR-DRAFT] في عام 2021، بلغ عدد سكان فرنسا 67.4 مليون نسمة (المصدر: المعهد الوطني للإحصاء INSEE). وتمتد أراضيها على 675000 كم² في القارة الأم وما وراء البحار.",
+    "source": "Livret p.22",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000051",
+      "fr_a_sha1": "0000000000000000000000000000000000000052"
+    }
+  },
+  {
+    "id": "geographie-002",
+    "theme": "geographie",
+    "fr_q": "Quel est le plus long fleuve de France ?",
+    "ar_q": "[AR-DRAFT] ما هو أطول نهر في فرنسا؟",
+    "fr_a": "La France est parcourue par des fleuves importants : la Loire, la Seine, la Garonne, le Rhône, le Rhin. La Loire est le plus long fleuve français.",
+    "ar_a": "[AR-DRAFT] تعبر فرنسا أنهارٌ مهمّة: نهر اللوار، السين، الغارون، الرون، والراين. ونهر اللوار هو أطول نهر فرنسي.",
+    "source": "Livret p.22",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000053",
+      "fr_a_sha1": "0000000000000000000000000000000000000054"
+    }
+  },
+  {
+    "id": "geographie-003",
+    "theme": "geographie",
+    "fr_q": "Quelle est la place de la France dans l'Union européenne ?",
+    "ar_q": "[AR-DRAFT] ما هي مكانة فرنسا في الاتحاد الأوروبي؟",
+    "fr_a": "La France est l'un des pionniers de la construction européenne. En 1957, elle est l'un des membres fondateurs de la Communauté économique européenne. En 1992, l'Union européenne est créée, qui associe plus étroitement les États membres. Aujourd'hui, l'Union compte 27 États membres, qui partagent des principes démocratiques.",
+    "ar_a": "[AR-DRAFT] فرنسا من روّاد البناء الأوروبي. ففي عام 1957 كانت من الأعضاء المؤسسين للمجموعة الاقتصادية الأوروبية. وفي عام 1992 تأسّس الاتحاد الأوروبي الذي يربط الدول الأعضاء ربطًا أوثق. واليوم يضم الاتحاد 27 دولة عضوًا تتقاسم مبادئ ديمقراطية.",
+    "source": "Livret p.20",
+    "audio": {
+      "fr_q_sha1": "0000000000000000000000000000000000000055",
+      "fr_a_sha1": "0000000000000000000000000000000000000056"
+    }
+  }
+]

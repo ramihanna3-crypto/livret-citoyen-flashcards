@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#6366f1"/>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="#fff">LC</text>
+  <rect x="14" y="48" width="12" height="3" fill="#0055A4"/>
+  <rect x="26" y="48" width="12" height="3" fill="#FFFFFF"/>
+  <rect x="38" y="48" width="12" height="3" fill="#EF4135"/>
+</svg>
