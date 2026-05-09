@@ -16,14 +16,17 @@ export function LanguagePicker() {
         "focus-within:outline-none focus-within:ring-2 focus-within:ring-[var(--color-ring)] focus-within:ring-offset-2",
       )}
     >
-      <Languages className="h-4 w-4" aria-hidden="true" />
+      <Languages className="h-4 w-4 shrink-0" aria-hidden="true" />
+      <span className="text-sm font-medium" aria-hidden="true">
+        Langue
+      </span>
       <span className="sr-only">Choisir la langue de traduction</span>
       <select
         value={prefs.language}
         onChange={(e) => setPref("language", e.target.value as LanguageId)}
         className={cn(
           "appearance-none bg-transparent border-0 outline-none",
-          "text-sm font-medium pr-1",
+          "text-sm font-medium pr-1 max-w-[7rem]",
         )}
         aria-label="Langue de traduction"
       >
