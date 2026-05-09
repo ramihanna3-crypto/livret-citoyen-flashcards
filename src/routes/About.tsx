@@ -1,12 +1,21 @@
 import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
+import { uiStrings } from "@/lib/ui-strings";
 
 export function About() {
   const { prefs, setPref, reset } = useProgress();
+  const lang = languageById(prefs.language);
+  const ui = uiStrings(prefs.language);
 
   return (
     <article className="prose prose-sm max-w-none space-y-6">
       <section>
-        <h2 className="text-xl font-semibold">Sources · المصادر</h2>
+        <h2 className="text-xl font-semibold">
+          Sources ·{" "}
+          <span dir={lang.dir} lang={lang.lang}>
+            {ui.sources}
+          </span>
+        </h2>
         <ul className="list-disc pl-5 space-y-1">
           <li>
             <a href="https://www.immigration.interieur.gouv.fr" target="_blank" rel="noreferrer">
@@ -18,18 +27,28 @@ export function About() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold">Confidentialité · الخصوصية</h2>
+        <h2 className="text-xl font-semibold">
+          Confidentialité ·{" "}
+          <span dir={lang.dir} lang={lang.lang}>
+            {ui.privacy}
+          </span>
+        </h2>
         <p className="text-[var(--color-muted-foreground)]">
           Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur
           (localStorage).
         </p>
-        <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">
-          لا حساب. لا ملفات تعريف ارتباط. لا متعقّبات. يبقى تقدّمك في متصفّحك.
+        <p dir={lang.dir} lang={lang.lang} className="text-[var(--color-muted-foreground)]">
+          {ui.privacy_text}
         </p>
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold">Réglages · الإعدادات</h2>
+        <h2 className="text-xl font-semibold">
+          Réglages ·{" "}
+          <span dir={lang.dir} lang={lang.lang}>
+            {ui.settings}
+          </span>
+        </h2>
         <label className="flex items-center justify-between py-2">
           <span>Avancement automatique après « Je sais »</span>
           <input
@@ -57,7 +76,7 @@ export function About() {
       <section>
         <h2 className="text-xl font-semibold">Licence</h2>
         <p className="text-[var(--color-muted-foreground)]">
-          Code : MIT. Traductions arabes : CC BY-SA 4.0. Contenu source français : © Ministère de
+          Code : MIT. Traductions : CC BY-SA 4.0. Contenu source français : © Ministère de
           l'Intérieur (document public).
         </p>
       </section>

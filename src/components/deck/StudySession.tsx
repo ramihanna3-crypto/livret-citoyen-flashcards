@@ -5,6 +5,8 @@ import type { Card } from "@/lib/card";
 import { Flashcard } from "@/components/flashcard/Flashcard";
 import { initSession, sessionReducer } from "@/components/deck/sessionReducer";
 import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
+import { uiStrings } from "@/lib/ui-strings";
 import { cn } from "@/lib/utils";
 
 type Props = { cards: Card[]; backHref: string; themeLabel: string };
@@ -66,12 +68,15 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     else dispatch({ type: "PREV" });
   }
 
+  const lang = languageById(prefs.language);
+  const ui = uiStrings(prefs.language);
+
   if (state.finished) {
     return (
       <div className="text-center space-y-4 py-8">
         <h2 className="text-xl font-semibold">Bravo ! Vous avez parcouru toutes les cartes.</h2>
-        <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">
-          أحسنت! لقد أنهيت جميع البطاقات.
+        <p dir={lang.dir} lang={lang.lang} className="text-[var(--color-muted-foreground)]">
+          {ui.finished}
         </p>
         <div className="flex justify-center gap-3">
           <button

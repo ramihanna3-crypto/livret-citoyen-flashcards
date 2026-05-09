@@ -3,12 +3,16 @@ import { themes } from "@/data/themes";
 import { DeckTile } from "@/components/deck/DeckTile";
 import { cardsByTheme } from "@/data";
 import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
+import { uiStrings } from "@/lib/ui-strings";
 import { Shuffle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function DeckPicker() {
   const navigate = useNavigate();
-  const { knownCount } = useProgress();
+  const { knownCount, prefs } = useProgress();
+  const lang = languageById(prefs.language);
+  const ui = uiStrings(prefs.language);
 
   return (
     <div className="space-y-6">
@@ -40,8 +44,8 @@ export function DeckPicker() {
         >
           <Shuffle className="h-4 w-4" aria-hidden="true" />
           Tout mélanger ·{" "}
-          <span dir="rtl" lang="ar">
-            خلط الكل
+          <span dir={lang.dir} lang={lang.lang}>
+            {ui.shuffle_all}
           </span>
         </button>
       </div>

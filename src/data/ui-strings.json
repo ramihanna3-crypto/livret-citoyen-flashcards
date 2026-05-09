@@ -1,0 +1,230 @@
+{
+  "ar": {
+    "ui": {
+      "pick_theme": "اختر موضوعًا",
+      "shuffle_all": "خلط الكل",
+      "finished": "أحسنت! لقد أنهيت جميع البطاقات.",
+      "sources": "المصادر",
+      "privacy": "الخصوصية",
+      "privacy_text": "لا حساب. لا ملفات تعريف ارتباط. لا متعقّبات. يبقى تقدّمك في متصفّحك.",
+      "settings": "الإعدادات",
+      "footer_attribution": "المحتوى الأصلي © وزارة الداخلية الفرنسية. الترجمة العربية والتطبيق: رامي حنا، رخصة CC BY-SA 4.0. تطبيق غير رسمي."
+    },
+    "themes": {
+      "valeurs": {
+        "label": "القيم والمبادئ",
+        "description": "الحرية، المساواة، الإخاء، العلمانية."
+      },
+      "droits-devoirs": {
+        "label": "الحقوق والواجبات",
+        "description": "ما يجب على المواطن فعله وما لا يجب فعله."
+      },
+      "institutions": {
+        "label": "المؤسسات السياسية",
+        "description": "الرئيس، البرلمان، العدالة، الجماعات المحلية."
+      },
+      "histoire": {
+        "label": "تاريخ فرنسا",
+        "description": "من عصور ما قبل التاريخ إلى القرن العشرين."
+      },
+      "geographie": {
+        "label": "الجغرافيا ومكانة فرنسا",
+        "description": "المناطق، الأنهار، أوروبا، الاقتصاد."
+      },
+      "ddhc": {
+        "label": "إعلان حقوق الإنسان 1789",
+        "description": "المواد السبعة عشر التأسيسية."
+      }
+    }
+  },
+  "uk": {
+    "ui": {
+      "pick_theme": "Виберіть тему",
+      "shuffle_all": "Перемішати всі",
+      "finished": "Чудово! Ви пройшли всі картки.",
+      "sources": "Джерела",
+      "privacy": "Конфіденційність",
+      "privacy_text": "Без облікового запису. Без файлів cookie. Без трекерів. Ваш прогрес зберігається у вашому браузері.",
+      "settings": "Налаштування",
+      "footer_attribution": "Оригінальний вміст © Міністерство внутрішніх справ Франції. Український переклад і застосунок: Рамі Ханна, ліцензія CC BY-SA 4.0. Неофіційний застосунок."
+    },
+    "themes": {
+      "valeurs": {
+        "label": "Цінності та принципи",
+        "description": "Свобода, рівність, братерство, світськість."
+      },
+      "droits-devoirs": {
+        "label": "Права та обов’язки",
+        "description": "Що громадянин має робити і чого робити не повинен."
+      },
+      "institutions": {
+        "label": "Політичні інституції",
+        "description": "Президент, Парламент, правосуддя, місцеві органи влади."
+      },
+      "histoire": {
+        "label": "Історія Франції",
+        "description": "Від доісторичних часів до XX століття."
+      },
+      "geographie": {
+        "label": "Географія та місце Франції",
+        "description": "Регіони, річки, Європа, економіка."
+      },
+      "ddhc": {
+        "label": "Декларація прав людини 1789 року",
+        "description": "Сімнадцять основоположних статей."
+      }
+    }
+  },
+  "fa": {
+    "ui": {
+      "pick_theme": "یک موضوع انتخاب کنید",
+      "shuffle_all": "بُر زدن همه",
+      "finished": "آفرین! همهٔ کارت‌ها را به پایان رساندید.",
+      "sources": "منابع",
+      "privacy": "حریم خصوصی",
+      "privacy_text": "بدون حساب کاربری. بدون کوکی. بدون ردیاب. پیشرفت شما در مرورگرتان باقی می‌ماند.",
+      "settings": "تنظیمات",
+      "footer_attribution": "محتوای اصلی © وزارت کشور فرانسه. ترجمهٔ دری و برنامه: رامی حنا، مجوز CC BY-SA 4.0. برنامهٔ غیررسمی."
+    },
+    "themes": {
+      "valeurs": {
+        "label": "ارزش‌ها و اصول",
+        "description": "آزادی، برابری، برادری، سکولاریسم."
+      },
+      "droits-devoirs": {
+        "label": "حقوق و وظایف",
+        "description": "آنچه شهروند باید انجام دهد و آنچه نباید انجام دهد."
+      },
+      "institutions": {
+        "label": "نهادهای سیاسی",
+        "description": "رئیس‌جمهور، پارلمان، عدالت، نهادهای محلی."
+      },
+      "histoire": {
+        "label": "تاریخ فرانسه",
+        "description": "از دوران پیش از تاریخ تا قرن بیستم."
+      },
+      "geographie": {
+        "label": "جغرافیا و جایگاه فرانسه",
+        "description": "مناطق، رودخانه‌ها، اروپا، اقتصاد."
+      },
+      "ddhc": {
+        "label": "اعلامیهٔ حقوق بشر ۱۷۸۹",
+        "description": "هفده مادهٔ بنیادین."
+      }
+    }
+  },
+  "ps": {
+    "ui": {
+      "pick_theme": "یوه موضوع وټاکئ",
+      "shuffle_all": "ټول ګډوډ کړئ",
+      "finished": "ښه دې وکړل! تاسو ټول کارتونه پای ته ورسول.",
+      "sources": "سرچینې",
+      "privacy": "محرمیت",
+      "privacy_text": "هیڅ حساب نشته. هیڅ کوکیز نشته. هیڅ څارونکي نشته. ستاسو پرمختګ ستاسو په براوزر کې پاتې کیږي.",
+      "settings": "تنظیمات",
+      "footer_attribution": "اصلي محتوا © د فرانسې د کورنیو چارو وزارت. پښتو ژباړه او اپلیکیشن: رامي حنا، د CC BY-SA 4.0 جواز. غیررسمي اپلیکیشن."
+    },
+    "themes": {
+      "valeurs": {
+        "label": "ارزښتونه او اصول",
+        "description": "آزادي، برابري، ورورولي، سیکولریزم."
+      },
+      "droits-devoirs": {
+        "label": "حقوق او دندې",
+        "description": "هغه څه چې اتباع یې باید وکړي او هغه څه چې نه باید وکړي."
+      },
+      "institutions": {
+        "label": "سیاسي بنسټونه",
+        "description": "ولسمشر، پارلمان، عدلیه، محلي ادارې."
+      },
+      "histoire": {
+        "label": "د فرانسې تاریخ",
+        "description": "د تاریخ څخه مخکې دورو څخه تر شلمې پیړۍ پورې."
+      },
+      "geographie": {
+        "label": "جغرافیه او د فرانسې ځای",
+        "description": "سیمې، سیندونه، اروپا، اقتصاد."
+      },
+      "ddhc": {
+        "label": "د ۱۷۸۹ کال د بشري حقونو اعلامیه",
+        "description": "اوه‌لس بنسټیزې مادې."
+      }
+    }
+  },
+  "ht": {
+    "ui": {
+      "pick_theme": "Chwazi yon tèm",
+      "shuffle_all": "Melanje tout",
+      "finished": "Bravo! Ou fini tout kat yo.",
+      "sources": "Sous",
+      "privacy": "Konfidansyalite",
+      "privacy_text": "Pa gen kont. Pa gen cookies. Pa gen suivi. Pwogrè ou rete nan navigatè ou.",
+      "settings": "Paramèt",
+      "footer_attribution": "Kontni orijinal © Ministè Enteryè Franse a. Tradiksyon kreyòl ayisyen ak aplikasyon: Rami Hanna, lisans CC BY-SA 4.0. Aplikasyon ki pa ofisyèl."
+    },
+    "themes": {
+      "valeurs": {
+        "label": "Valè ak prensip",
+        "description": "Libète, egalite, fratènite, leyisite."
+      },
+      "droits-devoirs": {
+        "label": "Dwa ak devwa",
+        "description": "Sa yon sitwayen dwe fè ak sa li pa dwe fè."
+      },
+      "institutions": {
+        "label": "Enstitisyon politik",
+        "description": "Prezidan, Palman, jistis, kolektivite lokal yo."
+      },
+      "histoire": {
+        "label": "Istwa Lafrans",
+        "description": "Depi prehistwa rive nan ventyèm syèk la."
+      },
+      "geographie": {
+        "label": "Jeyografi ak plas Lafrans",
+        "description": "Rejyon, rivyè, Ewòp, ekonomi."
+      },
+      "ddhc": {
+        "label": "Deklarasyon Dwa Moun 1789",
+        "description": "Disèt atik fondamantal yo."
+      }
+    }
+  },
+  "tr": {
+    "ui": {
+      "pick_theme": "Bir tema seçin",
+      "shuffle_all": "Tümünü karıştır",
+      "finished": "Tebrikler! Tüm kartları tamamladınız.",
+      "sources": "Kaynaklar",
+      "privacy": "Gizlilik",
+      "privacy_text": "Hesap yok. Çerez yok. İzleyici yok. İlerlemeniz tarayıcınızda kalır.",
+      "settings": "Ayarlar",
+      "footer_attribution": "Özgün içerik © Fransa İçişleri Bakanlığı. Türkçe çeviri ve uygulama: Rami Hanna, CC BY-SA 4.0 lisansı. Resmi olmayan uygulama."
+    },
+    "themes": {
+      "valeurs": {
+        "label": "Değerler ve ilkeler",
+        "description": "Özgürlük, eşitlik, kardeşlik, laiklik."
+      },
+      "droits-devoirs": {
+        "label": "Haklar ve yükümlülükler",
+        "description": "Bir vatandaşın yapması gerekenler ve yapmaması gerekenler."
+      },
+      "institutions": {
+        "label": "Siyasi kurumlar",
+        "description": "Cumhurbaşkanı, Parlamento, yargı, yerel yönetimler."
+      },
+      "histoire": {
+        "label": "Fransa tarihi",
+        "description": "Tarih öncesi dönemlerden yirminci yüzyıla."
+      },
+      "geographie": {
+        "label": "Coğrafya ve Fransa'nın yeri",
+        "description": "Bölgeler, nehirler, Avrupa, ekonomi."
+      },
+      "ddhc": {
+        "label": "1789 İnsan Hakları Bildirgesi",
+        "description": "On yedi temel madde."
+      }
+    }
+  }
+}

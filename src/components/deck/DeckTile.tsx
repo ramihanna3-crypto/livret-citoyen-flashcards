@@ -1,11 +1,18 @@
 import type { Theme } from "@/data/themes";
 import { DeckProgressRing } from "@/components/deck/DeckProgressRing";
 import { cn } from "@/lib/utils";
+import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
+import { themeI18n } from "@/lib/ui-strings";
 
 type Props = { theme: Theme; known: number; total: number; onClick: () => void };
 
 export function DeckTile({ theme, known, total, onClick }: Props) {
   const Icon = theme.icon;
+  const { prefs } = useProgress();
+  const lang = languageById(prefs.language);
+  const tr = themeI18n(prefs.language, theme.id);
+
   return (
     <button
       type="button"
@@ -24,8 +31,12 @@ export function DeckTile({ theme, known, total, onClick }: Props) {
             <Icon className="h-5 w-5 text-[var(--color-primary)]" aria-hidden="true" />
             <h3 className="font-semibold text-base sm:text-lg">{theme.label_fr}</h3>
           </div>
-          <p className="mt-1 text-sm text-[var(--color-muted-foreground)]" dir="rtl" lang="ar">
-            {theme.label_ar}
+          <p
+            className="mt-1 text-sm text-[var(--color-muted-foreground)]"
+            dir={lang.dir}
+            lang={lang.lang}
+          >
+            {tr.label}
           </p>
           <p className="mt-2 text-xs text-[var(--color-muted-foreground)] line-clamp-2">
             {theme.description_fr}
