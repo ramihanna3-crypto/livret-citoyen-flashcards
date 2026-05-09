@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { ThemeId } from "../src/lib/card.ts";
 import { splitPages, splitParagraphs, themeForPage, detectQABox } from "./lib/chunk.ts";
+import { reportChunks, printReport } from "./lib/chunkReport.ts";
 
 export type Chunk = {
   chunk_id: string;
@@ -68,7 +69,10 @@ import { pathToFileURL } from "node:url";
 const isMain = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isMain) {
   extractSource()
-    .then((r) => console.log(`Extracted ${r.count} chunks → raw/chunks.json`))
+    .then((r) => {
+      console.log(`Extracted ${r.count} chunks → raw/chunks.json`);
+      printReport(reportChunks(r.chunks));
+    })
     .catch((e) => {
       console.error(e);
       process.exit(1);
