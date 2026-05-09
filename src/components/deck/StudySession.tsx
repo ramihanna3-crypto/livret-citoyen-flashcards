@@ -14,6 +14,21 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
   const { markKnown, markReview, prefs, statusOf } = useProgress();
   const touchStartX = useRef<number | null>(null);
   const [announce, setAnnounce] = useState("");
+  const [toast, setToast] = useState<{ kind: "known" | "review"; text: string } | null>(null);
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function showToast(kind: "known" | "review", text: string) {
+    if (toastTimer.current) clearTimeout(toastTimer.current);
+    setToast({ kind, text });
+    setAnnounce(text);
+    toastTimer.current = setTimeout(() => setToast(null), 1600);
+  }
+  useEffect(
+    () => () => {
+      if (toastTimer.current) clearTimeout(toastTimer.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -113,12 +128,12 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           onFlip={() => dispatch({ type: "FLIP" })}
           onKnown={() => {
             markKnown(card.id);
-            setAnnounce("Carte marquée comme connue");
+            showToast("known", "✓ Carte marquée comme connue");
             if (prefs.autoAdvance) dispatch({ type: "NEXT" });
           }}
           onReview={() => {
             markReview(card.id);
-            setAnnounce("Carte marquée à revoir");
+            showToast("review", "✗ Carte ajoutée à revoir");
           }}
         />
       </div>
@@ -144,6 +159,21 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
       <div aria-live="polite" className="sr-only">
         {announce}
       </div>
+      {toast && (
+        <div
+          className={cn(
+            "fixed bottom-6 left-1/2 -translate-x-1/2 z-20",
+            "px-4 py-2 rounded-full text-sm font-medium shadow-lg pointer-events-none",
+            "transition-opacity duration-200",
+            toast.kind === "known"
+              ? "bg-[var(--color-primary)] text-[var(--color-primary-foreground)]"
+              : "bg-[var(--color-secondary)] text-[var(--color-secondary-foreground)] border border-[var(--color-border)]",
+          )}
+          role="status"
+        >
+          {toast.text}
+        </div>
+      )}
     </div>
   );
 }
