@@ -2,40 +2,404 @@
   {
     "id": "histoire-001",
     "theme": "histoire",
-    "fr_q": "Que s'est-il passé le 14 juillet 1789 ?",
-    "ar_q": "[AR-DRAFT] ماذا حدث في 14 يوليو 1789؟",
-    "fr_a": "Le 14 juillet 1789, le peuple de Paris s'empare de la prison royale de la Bastille. Un an plus tard, le 14 juillet 1790, lors de la fête de la Fédération, cette date du 14 juillet est devenue la date de la fête nationale.",
-    "ar_a": "[AR-DRAFT] في 14 يوليو 1789، استولى أهل باريس على سجن الباستيل الملكي. وبعد عام، في 14 يوليو 1790، خلال عيد الاتحاد، أصبح هذا التاريخ هو تاريخ العيد الوطني.",
-    "source": "Livret p.4",
+    "fr_q": "Pourquoi la grotte de Lascaux est-elle célèbre, et de quelle époque date-t-elle ?",
+    "ar_q": "لماذا تشتهر مغارة لاسكو، وإلى أي حقبةٍ تعود؟",
+    "fr_a": "La grotte de Lascaux est l’une des plus importantes grottes préhistoriques en France. Elle est connue pour la qualité de ses peintures. Elle date d’entre 18 000 et 15 000 ans avant J.-C.",
+    "ar_a": "مغارة لاسكو (Lascaux) من أهم المغارات في العصر الحجري في فرنسا. وتشتهر بجودة رسوماتها. وتعود إلى ما بين 18000 و15000 قبل الميلاد.",
+    "source": "Livret p.12",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000041",
-      "fr_a_sha1": "0000000000000000000000000000000000000042"
+      "fr_q_sha1": "9e6290edeccff35dba25aa26a44abf43e166d6db",
+      "fr_a_sha1": "81912f90ecf926a3d3acee5e7e2f511a6be40743"
     }
   },
   {
     "id": "histoire-002",
     "theme": "histoire",
-    "fr_q": "Quand la IIIe République a-t-elle été établie de façon stable ?",
-    "ar_q": "[AR-DRAFT] متى استقرّت الجمهورية الثالثة؟",
-    "fr_a": "Naissance de la IIIe République (1875). La forme républicaine du Gouvernement est alors établie de façon stable.",
-    "ar_a": "[AR-DRAFT] قيام الجمهورية الثالثة (1875). عندئذٍ تأسّس الشكل الجمهوري للحكم بصورة مستقرّة.",
-    "source": "Livret p.15",
+    "fr_q": "Quelle a été l’influence des Romains en Gaule à partir de 50 avant J.-C. ?",
+    "ar_q": "ما هو تأثير الرومان في بلاد الغال ابتداءً من عام 50 قبل الميلاد؟",
+    "fr_a": "À partir des années 50 avant J.-C., l’installation des Romains a eu une influence durable car les populations locales adoptent leur mode de vie et la culture latine.",
+    "ar_a": "ابتداءً من سنوات الخمسينات قبل الميلاد، كان لاستقرار الرومان تأثيرٌ دائم، إذ تبنَّى السكان المحليون نمط عيشهم والثقافة اللاتينية.",
+    "source": "Livret p.12",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000043",
-      "fr_a_sha1": "0000000000000000000000000000000000000044"
+      "fr_q_sha1": "7ea0f213949387429120c08329280f747f8bd150",
+      "fr_a_sha1": "1ed71511ac8a8e130c3e881406c3801ba0da8576"
     }
   },
   {
     "id": "histoire-003",
     "theme": "histoire",
-    "fr_q": "Qui était Charles de Gaulle ?",
-    "ar_q": "[AR-DRAFT] من هو شارل ديغول؟",
-    "fr_a": "Charles de Gaulle (1890-1970), chef de la résistance française contre les armées allemandes qui occupent notre pays, il est l'artisan, avec les alliés, de la libération de la France. Bien après la guerre, en 1958, il est à l'origine de nos institutions actuelles (la Ve République).",
-    "ar_a": "[AR-DRAFT] شارل ديغول (1890-1970)، قائد المقاومة الفرنسية ضد الجيوش الألمانية التي احتلّت البلاد، وهو من صانعي تحرير فرنسا إلى جانب الحلفاء. وبعد الحرب بفترة طويلة، عام 1958، كان الباني لمؤسساتنا الحالية (الجمهورية الخامسة).",
+    "fr_q": "Qui était Clovis, et quelle est son importance dans l’histoire de France ?",
+    "ar_q": "من هو كلوفيس، وما أهميته في تاريخ فرنسا؟",
+    "fr_a": "Clovis (466-511) unifie les royaumes de différents peuples francs. C’est une étape importante dans la construction de l’unité du territoire français. Il adopte la religion chrétienne.",
+    "ar_a": "كلوفيس (Clovis) (466-511) وحَّد ممالك مختلف الشعوب الفرنجية. وهي مرحلة مهمة في بناء وحدة الأراضي الفرنسية. وقد اعتنق الديانة المسيحية.",
+    "source": "Livret p.13",
+    "audio": {
+      "fr_q_sha1": "c7f99c1ee7184a350d5b65aa376fa567c3d195d7",
+      "fr_a_sha1": "a7ffc0161c132ec8df33ce657ac6d5f182c6420b"
+    }
+  },
+  {
+    "id": "histoire-004",
+    "theme": "histoire",
+    "fr_q": "Qui était Jeanne d’Arc et qu’a-t-elle fait pendant la guerre de Cent-Ans ?",
+    "ar_q": "من هي جان دارك، وماذا فعلت خلال حرب المئة عام؟",
+    "fr_a": "Jeanne d’Arc (1412-1431). Pendant la guerre de Cent-Ans contre l’Angleterre, cette jeune paysanne conduit les troupes françaises à la libération d’une partie du territoire français. Cette héroïne nationale incarne le courage au service de la France.",
+    "ar_a": "جان دارك (Jeanne d’Arc) (1412-1431). خلال حرب المئة عام ضد إنكلترا، قادت هذه الفتاة الفلاحية الشابة الجيوش الفرنسية إلى تحرير جزءٍ من الأراضي الفرنسية. وهذه البطلة الوطنية تجسِّد الشجاعة في خدمة فرنسا.",
+    "source": "Livret p.13",
+    "audio": {
+      "fr_q_sha1": "78544898941d153e343767d222139bbcdf5ba9cc",
+      "fr_a_sha1": "56dd531007b177a8274db5e90392216ada3a8328"
+    }
+  },
+  {
+    "id": "histoire-005",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que l’édit de Nantes, et qui l’a accordé ?",
+    "ar_q": "ما هو مرسوم نانت، ومن الذي أصدره؟",
+    "fr_a": "Henri IV (1553-1610), par l’édit de Nantes de 1598, accorde aux protestants la liberté d’exercer leur religion et rétablit la paix religieuse.",
+    "ar_a": "هنري الرابع (Henri IV) (1553-1610) أصدر مرسوم نانت (édit de Nantes) عام 1598، فمنح البروتستانت حرية ممارسة دينهم وأعاد السلام الديني.",
+    "source": "Livret p.13",
+    "audio": {
+      "fr_q_sha1": "30ea80c1ae6ee7cb772f84e53a80dc9597824994",
+      "fr_a_sha1": "946eba1c8421e4f96982d6d3763aa22ce07f5e9c"
+    }
+  },
+  {
+    "id": "histoire-006",
+    "theme": "histoire",
+    "fr_q": "Comment la France était-elle gouvernée sous le règne de Louis XIV ?",
+    "ar_q": "كيف كانت تُحكَم فرنسا في عهد لويس الرابع عشر؟",
+    "fr_a": "Règne de Louis XIV (1643-1715). La France est alors dirigée par une monarchie absolue. Le roi concentre tous les pouvoirs. À cette époque, se met en place un État puissant et centralisé.",
+    "ar_a": "في عهد لويس الرابع عشر (Louis XIV) (1643-1715)، كانت فرنسا تُحكَم بنظام ملكية مطلقة. وكان الملك يجمع كل السلطات. وفي هذه الحقبة تأسست دولة قوية ومركزية.",
+    "source": "Livret p.14",
+    "audio": {
+      "fr_q_sha1": "49df7933559af55d954f6b3283a136a9715fc594",
+      "fr_a_sha1": "d03c7b9c2742d94c2b3c86c7e8c0d3853e999bac"
+    }
+  },
+  {
+    "id": "histoire-007",
+    "theme": "histoire",
+    "fr_q": "Qui était Molière et à quelle époque a-t-il vécu ?",
+    "ar_q": "من هو موليير وفي أي عصرٍ عاش؟",
+    "fr_a": "Molière (1622-1673). Le plus célèbre auteur de théâtre français, a vécu au temps de Louis XIV. On lui doit des comédies comme L’Avare.",
+    "ar_a": "موليير (Molière) (1622-1673). أشهر كاتب مسرحي فرنسي، عاش في زمن لويس الرابع عشر. ومن أعماله مسرحيات هزلية مثل «البخيل» (L’Avare).",
+    "source": "Livret p.14",
+    "audio": {
+      "fr_q_sha1": "ed985cbb465844522cb3c786bc0adae2ffccba2c",
+      "fr_a_sha1": "ffd6d91768aa0fe9ecadcb174e930965e086d0c4"
+    }
+  },
+  {
+    "id": "histoire-008",
+    "theme": "histoire",
+    "fr_q": "Qui sont les philosophes des Lumières et pour quoi se sont-ils battus ?",
+    "ar_q": "من هم فلاسفة عصر الأنوار، ومن أجل ماذا ناضلوا؟",
+    "fr_a": "Les philosophes des Lumières — Rousseau, Voltaire, Diderot — combattent à travers leurs œuvres pour la tolérance et la liberté de pensée.",
+    "ar_a": "ناضل فلاسفة عصر الأنوار (les Lumières) — روسو وفولتير وديدرو (Rousseau, Voltaire, Diderot) — من خلال أعمالهم في سبيل التسامح وحرية الفكر.",
+    "source": "Livret p.14",
+    "audio": {
+      "fr_q_sha1": "3219716d5c22753fb6fed1195a204a8427c53ec4",
+      "fr_a_sha1": "eba9a247e04ab83ca663b6b6d506e9374913df65"
+    }
+  },
+  {
+    "id": "histoire-009",
+    "theme": "histoire",
+    "fr_q": "Que s’est-il passé en 1789 et 1792 lors de la Révolution française ?",
+    "ar_q": "ماذا حدث عامَي 1789 و1792 خلال الثورة الفرنسية؟",
+    "fr_a": "En 1789, le peuple se révolte contre la monarchie absolue. En 1792, la Ière République est proclamée. Cette période est à l’origine de nos valeurs républicaines, avec la Déclaration des Droits de l’Homme et du Citoyen de 1789.",
+    "ar_a": "في عام 1789، ثار الشعب ضد الملكية المطلقة. وفي عام 1792، أُعلنت الجمهورية الأولى (Ière République). وهذه الحقبة هي مَنشأ قيمنا الجمهورية، مع إعلان حقوق الإنسان والمواطن (Déclaration des Droits de l’Homme et du Citoyen) لعام 1789.",
+    "source": "Livret p.14",
+    "audio": {
+      "fr_q_sha1": "c995203f785e41af07bacfaf5c8dfa1f004bf185",
+      "fr_a_sha1": "9b77e3a76eeea6d8a77a710dd25a9a1619ecc34c"
+    }
+  },
+  {
+    "id": "histoire-010",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que la fête de la Fédération du 14 juillet 1790 ?",
+    "ar_q": "ما هو عيد الاتحاد في 14 يوليو 1790؟",
+    "fr_a": "La fête de la Fédération, le 14 juillet 1790, commémore la prise de la Bastille et célèbre l’unité de la Nation.",
+    "ar_a": "عيد الاتحاد (la fête de la Fédération)، في الرابع عشر من يوليو 1790، يحيي ذكرى اقتحام الباستيل ويحتفل بوحدة الأمة.",
+    "source": "Livret p.14",
+    "audio": {
+      "fr_q_sha1": "c5f4226f235b96fdca17088e0603f516ec9b66fa",
+      "fr_a_sha1": "31fca2958fb771eec53a1c42a74e964cf780045a"
+    }
+  },
+  {
+    "id": "histoire-011",
+    "theme": "histoire",
+    "fr_q": "Qui était Napoléon Iᵉʳ, et quel grand texte juridique lui doit-on ?",
+    "ar_q": "من هو نابليون الأول، وأي نصٍّ قانوني كبير ندين له به؟",
+    "fr_a": "Napoléon Iᵉʳ (1769-1821) dirige la France pendant près de 15 ans. Il mène de nombreuses guerres en Europe. On lui doit notamment le Code civil.",
+    "ar_a": "حكم نابليون الأول (Napoléon Iᵉʳ) (1769-1821) فرنسا قرابة خمس عشرة سنة. وخاض حروباً عديدة في أوروبا. وندين له بشكلٍ خاص بالقانون المدني (Code civil).",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "94d7102df958bf835abe57d4a43ab19e04845e25",
+      "fr_a_sha1": "73a7fd83e43bf9a3962f6debf34de1c8c3cf4c7e"
+    }
+  },
+  {
+    "id": "histoire-012",
+    "theme": "histoire",
+    "fr_q": "Quand l’esclavage a-t-il été aboli en France ?",
+    "ar_q": "متى أُلغيَ نظام العبودية في فرنسا؟",
+    "fr_a": "1848 : abolition de l’esclavage.",
+    "ar_a": "عام 1848: إلغاء نظام العبودية.",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "5328df624fa61f905c3539986822918663a1f3a8",
+      "fr_a_sha1": "c5e6dd53b0cd9309708f51e5389ac1771344d5ad"
+    }
+  },
+  {
+    "id": "histoire-013",
+    "theme": "histoire",
+    "fr_q": "Comment s’est constitué l’empire colonial français ?",
+    "ar_q": "كيف تشكَّلت الإمبراطورية الاستعمارية الفرنسية؟",
+    "fr_a": "À partir des années 1830, la France a constitué un vaste empire colonial, souvent par des guerres de conquêtes, principalement aux Antilles, en Afrique et en Asie.",
+    "ar_a": "ابتداءً من ثلاثينيات القرن التاسع عشر، أنشأت فرنسا إمبراطوريةً استعمارية واسعة، في الغالب عبر حروب الفتح، وبصورة رئيسية في جزر الأنتيل وفي أفريقيا وآسيا.",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "78489fc133afb5c46b8bb01977b4dc48b5183643",
+      "fr_a_sha1": "90758b9466612b001a63f2bdd97a5ec844530e98"
+    }
+  },
+  {
+    "id": "histoire-014",
+    "theme": "histoire",
+    "fr_q": "Quand la IIIᵉ République a-t-elle été établie de façon stable ?",
+    "ar_q": "متى استقرَّت الجمهورية الثالثة في فرنسا؟",
+    "fr_a": "Naissance de la IIIᵉ République (1875). La forme républicaine du Gouvernement est alors établie de façon stable.",
+    "ar_a": "قيام الجمهورية الثالثة (IIIᵉ République) عام 1875. وعندئذٍ تأسَّس الشكل الجمهوري للحكم بصورةٍ مستقرة.",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "4c0955be9a39888cee9a247fd2452f833613a252",
+      "fr_a_sha1": "ba2469274d01eccf62c5a0f07f2e5ed46040cd79"
+    }
+  },
+  {
+    "id": "histoire-015",
+    "theme": "histoire",
+    "fr_q": "Qui était Jules Ferry et quelle est son importance dans l’histoire scolaire française ?",
+    "ar_q": "من هو جول فيري وما أهميته في تاريخ المدرسة الفرنسية؟",
+    "fr_a": "Jules Ferry, ministre de l’Instruction publique au début des années 1880, est à l’origine de l’enseignement public, gratuit et laïc.",
+    "ar_a": "جول فيري (Jules Ferry)، وزير التعليم العام في مطلع ثمانينيات القرن التاسع عشر، هو الباني للتعليم العمومي المجاني والعلماني.",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "3d3b85a1a8aff4b2867c1f343a4c82caedd20be6",
+      "fr_a_sha1": "e3b102cd9f47cdf68ad272509fb52258001ca7f3"
+    }
+  },
+  {
+    "id": "histoire-016",
+    "theme": "histoire",
+    "fr_q": "Qui était Victor Hugo et quels combats a-t-il menés ?",
+    "ar_q": "من هو فيكتور هيغو وما القضايا التي دافع عنها؟",
+    "fr_a": "Victor Hugo (1802-1885), l’un des plus grands écrivains français, s’est engagé contre les inégalités sociales et la peine de mort. Il a écrit Les Misérables et Notre-Dame de Paris.",
+    "ar_a": "فيكتور هيغو (Victor Hugo) (1802-1885)، أحد أعظم الكُتَّاب الفرنسيين، التزم بالنضال ضد التفاوتات الاجتماعية وضد عقوبة الإعدام. ومن مؤلفاته «البؤساء» (Les Misérables) و«أحدب نوتردام» (Notre-Dame de Paris).",
+    "source": "Livret p.15",
+    "audio": {
+      "fr_q_sha1": "78f64c779fdcf1aba630dc7a87e533ed78afae95",
+      "fr_a_sha1": "34d419083b86d843097d2ff20a5bbf075811e681"
+    }
+  },
+  {
+    "id": "histoire-017",
+    "theme": "histoire",
+    "fr_q": "Que commémore le 11 novembre en France ?",
+    "ar_q": "ماذا يحيي الحادي عشر من نوفمبر في فرنسا؟",
+    "fr_a": "La Première Guerre mondiale (1914-1918) a été un affrontement de masse touchant toute l’Europe puis les États-Unis. Les combats ont fait plus de 9 millions de morts. Le 11 novembre est un jour férié en commémoration de la fin de la Première Guerre mondiale.",
+    "ar_a": "كانت الحرب العالمية الأولى (1914-1918) مواجهةً واسعة شملت أوروبا كلها ثم الولايات المتحدة. وأودَت المعارك بحياة أكثر من تسعة ملايين قتيل. والحادي عشر من نوفمبر يومٌ عطلةٌ رسمية إحياءً لذكرى انتهاء الحرب العالمية الأولى.",
     "source": "Livret p.16",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000045",
-      "fr_a_sha1": "0000000000000000000000000000000000000046"
+      "fr_q_sha1": "bb9949da560a66332ff6f801c266c50d6e042ac6",
+      "fr_a_sha1": "bd80aded068f77546e406cd2494373bdf977edb7"
+    }
+  },
+  {
+    "id": "histoire-018",
+    "theme": "histoire",
+    "fr_q": "Que commémore le 8 mai en France ?",
+    "ar_q": "ماذا يحيي الثامن من مايو في فرنسا؟",
+    "fr_a": "La Seconde Guerre mondiale (1939-1945) a été déclenchée par Adolf Hitler, dictateur nazi au pouvoir en Allemagne. Il envahit notamment la France. Les nazis mènent des persécutions contre des opposants politiques, et exterminent des millions de Juifs, Tziganes, homosexuels et handicapés. Les historiens estiment que la guerre a fait plus de 50 millions de morts, dont une majorité de civils. Le 8 mai est un jour férié en commémoration de la fin de la Seconde Guerre mondiale.",
+    "ar_a": "اندلعت الحرب العالمية الثانية (1939-1945) بإيعازٍ من أدولف هتلر (Adolf Hitler)، الديكتاتور النازي الحاكم في ألمانيا. وقد غزا فرنسا تحديداً. وارتكب النازيون اضطهادات بحق المعارضين السياسيين، وأبادوا ملايين اليهود والغجر والمثليين وذوي الإعاقة. ويقدِّر المؤرخون أن الحرب أودت بأكثر من خمسين مليون قتيل، أغلبهم من المدنيين. والثامن من مايو يومٌ عطلةٌ رسمية إحياءً لذكرى انتهاء الحرب العالمية الثانية.",
+    "source": "Livret p.16",
+    "audio": {
+      "fr_q_sha1": "f584ff0b85497fc2140fc324fcff0b9c6388c66b",
+      "fr_a_sha1": "bc1200ebed794aa0bc4a3677b7bddec1b2b9839a"
+    }
+  },
+  {
+    "id": "histoire-019",
+    "theme": "histoire",
+    "fr_q": "Qu’a été le régime de Vichy (1940-1944) ?",
+    "ar_q": "ما هو نظام فيشي (1940-1944)؟",
+    "fr_a": "Le régime de Vichy (1940-1944). Suite à la défaite française face à l’Allemagne, le maréchal Pétain met en place un régime non démocratique dont la capitale est Vichy. Le régime collabore avec l’Allemagne nazie et porte donc une part de responsabilité dans la déportation des Juifs.",
+    "ar_a": "نظام فيشي (le régime de Vichy) (1940-1944). إثر الهزيمة الفرنسية أمام ألمانيا، أقام الماريشال بيتان (le maréchal Pétain) نظاماً غير ديمقراطي عاصمته فيشي. وتعاون هذا النظام مع ألمانيا النازية، وبذلك يتحمَّل جزءاً من المسؤولية عن ترحيل اليهود.",
+    "source": "Livret p.16",
+    "audio": {
+      "fr_q_sha1": "1aeced47d543dca2f745f1ed009bb1250a89910f",
+      "fr_a_sha1": "d88d20b836b4adb364fb6eaf547d640405df62bd"
+    }
+  },
+  {
+    "id": "histoire-020",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que le débarquement allié en Normandie ?",
+    "ar_q": "ما هو إنزال الحلفاء في نورماندي؟",
+    "fr_a": "Le débarquement des alliés en Normandie, le 6 juin 1944, est une étape décisive dans la libération de la France.",
+    "ar_a": "إنزال الحلفاء في نورماندي (Normandie)، في السادس من يونيو 1944، مرحلةٌ حاسمة في تحرير فرنسا.",
+    "source": "Livret p.16",
+    "audio": {
+      "fr_q_sha1": "b7b2b7b1a094acf88910a52d421bed6d1bcc232f",
+      "fr_a_sha1": "9cddb58d0164c6e3270742cd3fb6d3fa9b5b5220"
+    }
+  },
+  {
+    "id": "histoire-021",
+    "theme": "histoire",
+    "fr_q": "Qui était Charles de Gaulle ?",
+    "ar_q": "من هو شارل ديغول؟",
+    "fr_a": "Charles de Gaulle (1890-1970), chef de la résistance française contre les armées allemandes qui occupent notre pays, il est l’artisan, avec les alliés, de la libération de la France. Bien après la guerre, en 1958, il est à l’origine de nos institutions actuelles (la Vᵉ République).",
+    "ar_a": "شارل ديغول (Charles de Gaulle) (1890-1970)، قائد المقاومة الفرنسية ضد الجيوش الألمانية التي احتلت بلادنا، وهو من صانعي تحرير فرنسا إلى جانب الحلفاء. وبعد الحرب بزمنٍ طويل، عام 1958، كان الباني لمؤسساتنا الحالية (الجمهورية الخامسة).",
+    "source": "Livret p.16",
+    "audio": {
+      "fr_q_sha1": "d43c18fb0a67972d95e966efb7e55c5e511d616b",
+      "fr_a_sha1": "8f04080b47297ae428f94d0ea84a82f30b4deb81"
+    }
+  },
+  {
+    "id": "histoire-022",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que la décolonisation française (1950-1962) ?",
+    "ar_q": "ما هي مرحلة إنهاء الاستعمار الفرنسي (1950-1962)؟",
+    "fr_a": "Décolonisation française (1950-1962). Dans les empires coloniaux européens, les peuples revendiquent leur indépendance. La décolonisation française débute en Asie et s’étend à l’Afrique. Ce processus a donné lieu à des guerres comme celles d’Indochine et d’Algérie.",
+    "ar_a": "إنهاء الاستعمار الفرنسي (1950-1962). في الإمبراطوريات الاستعمارية الأوروبية، طالبت الشعوب باستقلالها. وبدأت مرحلة إنهاء الاستعمار الفرنسي في آسيا، ثم امتدت إلى أفريقيا. وأفضت هذه العملية إلى حروبٍ كحرب الهند الصينية وحرب الجزائر.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "fdb28ef6331443c175844930ea948e9a301a127e",
+      "fr_a_sha1": "d29b1d97c57658ca55247aa0c21305b746e7bba2"
+    }
+  },
+  {
+    "id": "histoire-023",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que le Traité de Rome (1957) ?",
+    "ar_q": "ما هي معاهدة روما (1957)؟",
+    "fr_a": "Le Traité de Rome (1957) instaure la Communauté économique européenne entre six pays d’Europe, dont la France. Son objectif est d’établir une union étroite entre les peuples européens. La construction européenne a fortement contribué à installer la paix en Europe.",
+    "ar_a": "أنشأت معاهدة روما (Traité de Rome) عام 1957 المجموعةَ الاقتصادية الأوروبية بين ست دول أوروبية، من بينها فرنسا. وهدفها إقامة اتحادٍ وثيق بين الشعوب الأوروبية. وقد أسهم البناء الأوروبي إسهاماً كبيراً في إرساء السلام في أوروبا.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "09acc15156ffbcd4ecd92b41978b7ddb5cb77cc6",
+      "fr_a_sha1": "61a22a22d2e3984701e58af1bfeb14a59ab9c578"
+    }
+  },
+  {
+    "id": "histoire-024",
+    "theme": "histoire",
+    "fr_q": "Que symbolise le drapeau européen ?",
+    "ar_q": "ماذا يرمز العَلَم الأوروبي؟",
+    "fr_a": "Le drapeau européen, constitué de 12 étoiles, symbolise les idéaux d’unité et d’harmonie entre les Européens.",
+    "ar_a": "العَلَم الأوروبي، المؤلَّف من اثنتي عشرة نجمة، يرمز إلى مُثل الوحدة والوئام بين الأوروبيين.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "7456620fcfd7c3027c8bf2ed110a6c95247db45b",
+      "fr_a_sha1": "70767f1727eb8d7a0236f302e4861b004ddd9a42"
+    }
+  },
+  {
+    "id": "histoire-025",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que Mai 68 ?",
+    "ar_q": "ما هي حركة مايو 1968؟",
+    "fr_a": "Mai 68. Le mouvement social est initié par des étudiants. Il s’étend aux salariés et au monde ouvrier. Ces grèves et ces manifestations sont parmi les plus importantes du 20ᵉ siècle.",
+    "ar_a": "مايو 68 (Mai 68). أطلق هذه الحركةَ الاجتماعية الطلاب، ثم امتدت إلى الأجراء والعمال. وكانت إضراباتها وتظاهراتها من بين الأهم في القرن العشرين.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "e6e044f06bbd2193bceb6a61b7e1f1bc95eeae35",
+      "fr_a_sha1": "c47c640c3661d35435d40b28e0a74bda701dc46a"
+    }
+  },
+  {
+    "id": "histoire-026",
+    "theme": "histoire",
+    "fr_q": "À quel âge la majorité a-t-elle été fixée en France et en quelle année ?",
+    "ar_q": "في أي سنٍّ حُدِّد سن الرشد في فرنسا، وفي أي عام؟",
+    "fr_a": "L’âge de la majorité est fixé à 18 ans (1974).",
+    "ar_a": "حُدِّد سن الرشد بثمانية عشر عاماً سنة 1974.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "b76f068f7b70e2dce48c195477c5bf0c2dd9125c",
+      "fr_a_sha1": "ff3f209f0add1eaa7d7929ed470e1da2f85c6ee8"
+    }
+  },
+  {
+    "id": "histoire-027",
+    "theme": "histoire",
+    "fr_q": "Qu’est-ce que la loi de 1975 sur l’interruption volontaire de grossesse ?",
+    "ar_q": "ما هو قانون 1975 المتعلق بالإجهاض الإرادي؟",
+    "fr_a": "Loi sur l’interruption volontaire de grossesse (1975), préparée par Simone Veil. Elle autorise l’avortement.",
+    "ar_a": "قانون الإجهاض الإرادي (interruption volontaire de grossesse) عام 1975، أعدَّته سيمون فيي (Simone Veil). وهو يُجيز الإجهاض.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "006ce67d39b04a9b3d1b1f7cf8ccd7016caefa5c",
+      "fr_a_sha1": "656a49d6712de3d6717339aa94838671072738f0"
+    }
+  },
+  {
+    "id": "histoire-028",
+    "theme": "histoire",
+    "fr_q": "Quand la peine de mort a-t-elle été abolie en France ?",
+    "ar_q": "متى أُلغيت عقوبة الإعدام في فرنسا؟",
+    "fr_a": "Abolition de la peine de mort en France en 1981.",
+    "ar_a": "إلغاء عقوبة الإعدام في فرنسا عام 1981.",
+    "source": "Livret p.17",
+    "audio": {
+      "fr_q_sha1": "8e571c6f09476e24a63d1fe96f1a423e8fa0bab8",
+      "fr_a_sha1": "838fa03f45d6d7f1187d70ac08082241cf97bfe4"
+    }
+  },
+  {
+    "id": "histoire-029",
+    "theme": "histoire",
+    "fr_q": "Au fil de son histoire, qu’apportent à la France les personnes qui s’y installent ?",
+    "ar_q": "على مرِّ تاريخها، ماذا يضيف إلى فرنسا الأشخاصُ الذين يستقرون فيها؟",
+    "fr_a": "Au fil de son histoire, de nombreuses personnes sont venues s’installer et vivre en France. Beaucoup ont fait le choix de la nationalité française. Elles représentent une richesse pour notre communauté. Nombre de grands noms ont ainsi contribué, par leur talent, au rayonnement de la France.",
+    "ar_a": "على مرِّ تاريخها، جاء كثيرٌ من الناس واستقروا في فرنسا. وقد اختار كثيرون منهم الجنسية الفرنسية. وهم يمثِّلون ثروةً لمجتمعنا. وقد أسهم كثيرٌ من الأسماء الكبيرة، بفضل مواهبهم، في إشعاع فرنسا.",
+    "source": "Livret p.18",
+    "audio": {
+      "fr_q_sha1": "05a4be463d5791d75069087e6f5033be010671af",
+      "fr_a_sha1": "8bed2507b5e8d92c17439940ce16c8038e19fcda"
+    }
+  },
+  {
+    "id": "histoire-030",
+    "theme": "histoire",
+    "fr_q": "Citez quelques personnalités naturalisées qui ont marqué la France par leurs apports.",
+    "ar_q": "اذكر بعض الشخصيات المتجنِّسة التي ميَّزت فرنسا بإسهاماتها.",
+    "fr_a": "Parmi les personnalités naturalisées qui ont enrichi la France figurent : Marie Curie (physicienne née en Pologne, découverte de la radioactivité), Romain Gary (écrivain d’origine russe, deux fois prix Goncourt), Marc Chagall (peintre d’origine russe), Vassily Kandinsky (peintre russe, fondateur de l’art abstrait), Joséphine Baker (chanteuse et danseuse américaine, résistante), Dalida (chanteuse d’origine égyptienne), Georges Moustaki (chanteur italo-grec), Georges Charpak (physicien polonais, prix Nobel 1992), Guillaume Apollinaire (poète), Andrée Chedid (femme de lettres née en Égypte), et beaucoup d’autres.",
+    "ar_a": "من بين الشخصيات المتجنِّسة التي أَثْرَت فرنسا: ماري كوري (فيزيائية وُلدت في بولندا، اكتشفت النشاط الإشعاعي)، روماين غاري (روائي روسي الأصل، نال جائزة غونكور مرتين)، مارك شاغال (رسام روسي الأصل)، فاسيلي كاندينسكي (رسام روسي، من مؤسسي الفن التجريدي)، جوزفين بيكر (مغنية وراقصة أميركية، شاركت في المقاومة)، داليدا (مغنية مصرية الأصل)، جورج موستاكي (مغنٍّ إيطالي-يوناني)، جورج شارباك (فيزيائي بولندي، نال جائزة نوبل عام 1992)، غيوم أبولينير (شاعر)، وأندريه شديد (أديبة وُلدت في مصر)، وآخرون كثيرون.",
+    "source": "Livret p.18-19",
+    "audio": {
+      "fr_q_sha1": "5e50495a74f21c1f81af633e17f38b1a6ec0e13a",
+      "fr_a_sha1": "7ee1accb7dbcce303acf3a7139c21a9973184748"
+    }
+  },
+  {
+    "id": "histoire-031",
+    "theme": "histoire",
+    "fr_q": "Citez quelques talents français issus de l’immigration.",
+    "ar_q": "اذكر بعض المواهب الفرنسية ذات الأصول المهاجرة.",
+    "fr_a": "La France connaît de nombreux talents parmi des Français issus de l’immigration comme Michel Platini, Zinedine Zidane, Jamel Debbouze, Marie N’Diaye...",
+    "ar_a": "تعرف فرنسا مواهب كثيرة بين الفرنسيين ذوي الأصول المهاجرة، مثل ميشال بلاتيني، وزين الدين زيدان، وجمال دبوز، وماري ندياي...",
+    "source": "Livret p.19",
+    "audio": {
+      "fr_q_sha1": "d5926ee5a8dec24d69a053391ef4675b8dc1fd21",
+      "fr_a_sha1": "e5d41fff3c457e7cc99fce6fb7a8877ff03047f5"
     }
   }
 ]

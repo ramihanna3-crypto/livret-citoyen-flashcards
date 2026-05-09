@@ -1,4 +1,7 @@
-import "dotenv/config";
+import { config } from "dotenv";
+// Load .env.local first (developer-local secrets, git-ignored), then .env (committed defaults).
+config({ path: ".env.local" });
+config({ path: ".env" });
 
 function required(name: string): string {
   const v = process.env[name];

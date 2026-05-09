@@ -2,40 +2,157 @@
   {
     "id": "institutions-001",
     "theme": "institutions",
-    "fr_q": "Qui est élu au suffrage universel pour cinq ans ?",
-    "ar_q": "[AR-DRAFT] من يُنتخب بالاقتراع العام لمدة خمس سنوات؟",
+    "fr_q": "Comment le Président de la République est-il élu et quel est son rôle ?",
+    "ar_q": "كيف يُنتخب رئيس الجمهورية وما هو دوره؟",
     "fr_a": "Le Président de la République est élu au suffrage universel pour cinq ans. Il nomme le Gouvernement, dirigé par le Premier ministre, issu de la majorité aux élections législatives.",
-    "ar_a": "[AR-DRAFT] يُنتخب رئيس الجمهورية بالاقتراع العام لمدة خمس سنوات. وهو يعيّن الحكومة التي يقودها رئيس الوزراء المنبثق عن الأغلبية في الانتخابات التشريعية.",
+    "ar_a": "يُنتخب رئيس الجمهورية بالاقتراع العام لمدة خمس سنوات. وهو يُعيِّن الحكومة، التي يقودها رئيس الوزراء (Premier ministre) المنبثق عن الأغلبية في الانتخابات التشريعية.",
     "source": "Livret p.9",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000021",
-      "fr_a_sha1": "0000000000000000000000000000000000000022"
+      "fr_q_sha1": "8538a6456d37a29232b59b05d1aa75984144800c",
+      "fr_a_sha1": "fea62712fdefec2ac05ecdaf977cd8bcaf738a15"
     }
   },
   {
     "id": "institutions-002",
     "theme": "institutions",
-    "fr_q": "De quelles deux chambres est composé le Parlement ?",
-    "ar_q": "[AR-DRAFT] ممَّ يتألف البرلمان الفرنسي من غرفتيه؟",
-    "fr_a": "Le Parlement, composé de l'Assemblée nationale et du Sénat, vote les lois et contrôle le Gouvernement. Les députés à l'Assemblée nationale sont élus tous les cinq ans lors des élections législatives. Les sénateurs sont élus au suffrage universel indirect pour un mandat de 6 ans.",
-    "ar_a": "[AR-DRAFT] يتألف البرلمان من الجمعية الوطنية ومجلس الشيوخ، ويصوّت على القوانين ويراقب الحكومة. ويُنتخب نواب الجمعية الوطنية كل خمس سنوات عبر الانتخابات التشريعية. أمّا أعضاء مجلس الشيوخ فيُنتخبون بالاقتراع العام غير المباشر لولاية مدتها ست سنوات.",
+    "fr_q": "De quelles deux chambres est composé le Parlement et quel est son rôle ?",
+    "ar_q": "ممَّ يتألف البرلمان من غرفتيه، وما دوره؟",
+    "fr_a": "Le Parlement, composé de l’Assemblée nationale et du Sénat, vote les lois et contrôle le Gouvernement. Les députés à l’Assemblée nationale sont élus tous les cinq ans lors des élections législatives. Les sénateurs sont élus au suffrage universel indirect pour un mandat de 6 ans.",
+    "ar_a": "يتألف البرلمان من الجمعية الوطنية (Assemblée nationale) ومجلس الشيوخ (Sénat)، وهو يصوِّت على القوانين ويراقب الحكومة. ويُنتخب نواب الجمعية الوطنية كل خمس سنوات في الانتخابات التشريعية. أما أعضاء مجلس الشيوخ فيُنتخبون بالاقتراع العام غير المباشر لولاية مدتها ست سنوات.",
     "source": "Livret p.9",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000023",
-      "fr_a_sha1": "0000000000000000000000000000000000000024"
+      "fr_q_sha1": "7e8baa89568fc4ea940fa213aab85883379b097a",
+      "fr_a_sha1": "8fe976f1720fabed82e443c12dfc53f06e0f2394"
     }
   },
   {
     "id": "institutions-003",
     "theme": "institutions",
-    "fr_q": "Quelles sont les trois collectivités locales en France ?",
-    "ar_q": "[AR-DRAFT] ما هي الجماعات الثلاث المحلية في فرنسا؟",
-    "fr_a": "Au niveau local, trois collectivités exercent des compétences en application des lois de décentralisation : la commune, le département et la région.",
-    "ar_a": "[AR-DRAFT] على المستوى المحلي، تمارس ثلاث جماعات صلاحيّات تطبيقًا لقوانين اللامركزية: البلدية، والمقاطعة (المحافظة)، والمنطقة.",
+    "fr_q": "Qu’est-ce que la justice et que sanctionne-t-elle ?",
+    "ar_q": "ما هو القضاء وماذا يعاقب؟",
+    "fr_a": "La justice est rendue par les juges. Elle règle les litiges entre les particuliers ou les entreprises, et entre les citoyens et l’administration. Elle sanctionne les infractions aux règles de droit par des peines prévues par la loi (ex. : emprisonnement, amende…) ou les textes réglementaires.",
+    "ar_a": "يصدر القضاء عن القضاة. وهو يفصل في النزاعات بين الأفراد أو المؤسسات، وبين المواطنين والإدارة. ويعاقب على مخالفات القواعد القانونية بعقوباتٍ ينص عليها القانون (مثل السجن أو الغرامة…) أو النصوص التنظيمية.",
+    "source": "Livret p.9",
+    "audio": {
+      "fr_q_sha1": "85fe42e088e35d83eb17fd5eb032ee01f6e97700",
+      "fr_a_sha1": "352996597910ffaa7b0382602ee7ae84a5a89dde"
+    }
+  },
+  {
+    "id": "institutions-004",
+    "theme": "institutions",
+    "fr_q": "Sur quels grands principes la France est-elle fondée comme démocratie et État de droit ?",
+    "ar_q": "ما المبادئ الكبرى التي تقوم عليها فرنسا بوصفها ديمقراطية ودولة قانون؟",
+    "fr_a": "La France est une démocratie et un État de droit. Son principe est : le Gouvernement du peuple, par le peuple et pour le peuple. Le pouvoir politique est soumis à la loi, c’est-à-dire qu’il doit fonctionner selon des règles prévues par la Constitution et la loi. Les lois traitent tous les citoyens de façon égale. L’indépendance de la justice est garantie. Les partis politiques se forment et exercent leur activité librement.",
+    "ar_a": "فرنسا ديمقراطية ودولة قانون. ومبدؤها: حكم الشعب، من الشعب ومن أجل الشعب. والسلطة السياسية خاضعة للقانون، أي أنها تعمل وفق قواعد ينص عليها الدستور والقانون. والقوانين تعامل جميع المواطنين على قدم المساواة. واستقلال القضاء مكفول. وتتشكل الأحزاب السياسية وتمارس نشاطها بحرية.",
+    "source": "Livret p.9",
+    "audio": {
+      "fr_q_sha1": "19d5deb23e4b4558836f2d8b5f063b9681c1568a",
+      "fr_a_sha1": "7f07ee085304ac0560c16172ef894118b89f4876"
+    }
+  },
+  {
+    "id": "institutions-005",
+    "theme": "institutions",
+    "fr_q": "Quel texte définit l’organisation de l’État, et de quand date-t-il ?",
+    "ar_q": "ما النص الذي يُحدِّد تنظيم الدولة، وما تاريخه؟",
+    "fr_a": "L’organisation de l’État est définie par un texte, la Constitution. Notre Constitution actuelle est celle de la Ve République, adoptée en 1958.",
+    "ar_a": "يُحدِّد تنظيمَ الدولة نصٌّ هو الدستور (Constitution). ودستورنا الحالي هو دستور الجمهورية الخامسة (Ve République)، الذي اعتُمد عام 1958.",
+    "source": "Livret p.9",
+    "audio": {
+      "fr_q_sha1": "5ce9b4dfb6ba1db37424fed994a53e2b2db302ba",
+      "fr_a_sha1": "aa2e99678b584f4b8c2064a8d8fca624486b32f6"
+    }
+  },
+  {
+    "id": "institutions-006",
+    "theme": "institutions",
+    "fr_q": "Sur quel grand principe institutionnel la République française est-elle fondée ?",
+    "ar_q": "على أي مبدأ مؤسسي كبير تقوم الجمهورية الفرنسية؟",
+    "fr_a": "Nos institutions sont fondées sur la séparation des pouvoirs exécutif et législatif et de l’autorité judiciaire : ces pouvoirs et la Justice ne doivent pas être exercés par la même autorité.",
+    "ar_a": "تقوم مؤسساتنا على الفصل بين السلطتين التنفيذية والتشريعية، وبين السلطة القضائية: فلا يجوز أن تمارس هذه السلطات والقضاء جميعَها سلطةٌ واحدة.",
+    "source": "Livret p.9",
+    "audio": {
+      "fr_q_sha1": "27577508ac984caae6ec123a593e4a32cd280f5a",
+      "fr_a_sha1": "232794727793f541b77de363a50accbbafac28d3"
+    }
+  },
+  {
+    "id": "institutions-007",
+    "theme": "institutions",
+    "fr_q": "Quel est le rôle du Gouvernement et qui nomme le Premier ministre ?",
+    "ar_q": "ما دور الحكومة، ومن الذي يعين رئيس الوزراء؟",
+    "fr_a": "Le Gouvernement détermine et conduit la politique de la Nation. Le Président de la République nomme le Premier ministre.",
+    "ar_a": "تحدِّد الحكومةُ سياسة الأمة وتقودُها. ويُعيِّن رئيسُ الجمهورية رئيسَ الوزراء.",
+    "source": "Livret p.10",
+    "audio": {
+      "fr_q_sha1": "86da4a6947fa062056648dde36f038fb8dda2b2d",
+      "fr_a_sha1": "91c64dce3924048e7ee98d9a96246e1dbe53546e"
+    }
+  },
+  {
+    "id": "institutions-008",
+    "theme": "institutions",
+    "fr_q": "Pour quelle durée sont élus le maire, les conseillers départementaux et les conseillers régionaux ?",
+    "ar_q": "ما هي مدة انتخاب رؤساء البلديات وأعضاء المجالس المحلية والإقليمية؟",
+    "fr_a": "Dans les communes, le maire et les conseillers municipaux sont élus pour 6 ans. Dans les départements, les conseillers départementaux sont élus pour 6 ans. Dans les régions, les conseillers régionaux sont élus pour 6 ans.",
+    "ar_a": "في البلديات (communes)، يُنتخب رئيس البلدية (maire) وأعضاء المجلس البلدي لمدة ست سنوات. وفي المحافظات (départements)، يُنتخب أعضاء المجالس المحلية لمدة ست سنوات. وفي الأقاليم (régions)، يُنتخب أعضاء المجالس الإقليمية لمدة ست سنوات.",
+    "source": "Livret p.10",
+    "audio": {
+      "fr_q_sha1": "18382a1eea7777b9582c460a9c816c325a78e8f8",
+      "fr_a_sha1": "18ffa6a31b00995f36908cc4acf74537ca7dd471"
+    }
+  },
+  {
+    "id": "institutions-009",
+    "theme": "institutions",
+    "fr_q": "Combien de communes la France compte-t-elle, et quelles sont leurs principales responsabilités ?",
+    "ar_q": "كم بلدية في فرنسا، وما مسؤولياتها الرئيسية؟",
+    "fr_a": "La France compte 34 965 communes au 1er janvier 2021. Elles sont administrées par un maire et un conseil municipal. Elles sont responsables, notamment, des écoles maternelles et primaires, des activités sportives et culturelles, de l’entretien de la voierie communale. Elles tiennent l’état civil, c’est-à-dire qu’elles enregistrent les naissances, les mariages, les décès. Elles sont regroupées en intercommunalités (communautés de communes, métropoles, etc.).",
+    "ar_a": "تضم فرنسا 34965 بلدية في الأول من يناير 2021. ويديرها رئيس بلدية ومجلس بلدي. وتتولى البلديات مسؤولياتٍ من بينها: مدارس الحضانة والابتدائية، والأنشطة الرياضية والثقافية، وصيانة الطرق البلدية. كما تتولى مسك السجلات المدنية (état civil)، أي تسجيل المواليد والزيجات والوفيات. وتتجمَّع البلديات في كياناتٍ مشتركة بين البلديات (intercommunalités) كاتحادات البلديات والمدن الكبرى (métropoles).",
     "source": "Livret p.11",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000025",
-      "fr_a_sha1": "0000000000000000000000000000000000000026"
+      "fr_q_sha1": "33c65c153c4f56c72713d67ff46e36db634bff51",
+      "fr_a_sha1": "59aee55524ac10edb2fdf19d88250ada26b6d752"
+    }
+  },
+  {
+    "id": "institutions-010",
+    "theme": "institutions",
+    "fr_q": "Combien de départements la France compte-t-elle, et de quoi sont-ils responsables ?",
+    "ar_q": "كم محافظة في فرنسا، وعمَّ تتحمَّل المسؤولية؟",
+    "fr_a": "La France compte 101 départements. Ils sont administrés par les conseils départementaux. Ils sont responsables, notamment, des collèges, de la protection de l’enfance, de l’aide aux personnes âgées.",
+    "ar_a": "تضم فرنسا 101 محافظة. وتديرها المجالس المحلية للمحافظات. وتتحمل المحافظات مسؤولياتٍ من بينها: المدارس الإعدادية (collèges)، وحماية الطفولة، ومساعدة المسنين.",
+    "source": "Livret p.11",
+    "audio": {
+      "fr_q_sha1": "013ab5fb2a40c7c6af38f27580e2ea4f29a36239",
+      "fr_a_sha1": "6e8990bf7eab1ade182f74ccbb838a750367194c"
+    }
+  },
+  {
+    "id": "institutions-011",
+    "theme": "institutions",
+    "fr_q": "Combien de régions métropolitaines la France compte-t-elle, et de quoi sont-elles chargées ?",
+    "ar_q": "كم إقليماً في فرنسا القارية، وما هي اختصاصاتها؟",
+    "fr_a": "Les 13 régions métropolitaines sont administrées par les conseils régionaux. Elles sont chargées notamment des transports publics, de la formation professionnelle, de la construction et de l’entretien des lycées.",
+    "ar_a": "يُدير الأقاليم الثلاثة عشر في فرنسا القارية مجالسُها الإقليمية. وتتحمل مسؤولياتٍ من بينها: النقل العمومي، والتدريب المهني، وبناء الثانويات (lycées) وصيانتها.",
+    "source": "Livret p.11",
+    "audio": {
+      "fr_q_sha1": "45dd0bc27bc3fef13caf64e64195db25f593a5cc",
+      "fr_a_sha1": "3098b65095d7abe5e30fd2acc9689db4b8d3939a"
+    }
+  },
+  {
+    "id": "institutions-012",
+    "theme": "institutions",
+    "fr_q": "Quels sont les territoires d’outre-mer de la France, et qui y représente l’État ?",
+    "ar_q": "ما هي أقاليم ما وراء البحار التابعة لفرنسا، ومن يمثل الدولة فيها؟",
+    "fr_a": "La France compte 12 territoires d’outre-mer : 5 sont à la fois des départements et des régions (Guadeloupe, Guyane, Martinique, Mayotte et la Réunion), 7 sont des collectivités d’outre-mer (Nouvelle-Calédonie, Polynésie française, Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon, Terres australes et antarctiques françaises et Wallis-et-Futuna). Dans les départements et les régions de métropole et d’outre-mer, l’État est représenté par les préfets (ou par les hauts-commissaires dans certaines collectivités d’outre-mer).",
+    "ar_a": "تضم فرنسا 12 إقليماً وراء البحار: خمسة منها محافظاتٌ وأقاليم في آنٍ معاً (غوادلوب، غويانا، مارتينيك، مايوت، ولا ريونيون)، وسبعة منها جماعات وراء البحار (كاليدونيا الجديدة، بولينيزيا الفرنسية، سان-بارتيليمي، سان-مارتان، سان-بيير وميكلون، الأراضي الفرنسية الجنوبية والقطبية، ووالِّيس وفوتونا). وفي المحافظات والأقاليم في فرنسا القارية وما وراء البحار، يمثل الدولةَ المحافظون (préfets) — أو المفوَّضون السامون (hauts-commissaires) في بعض جماعات ما وراء البحار.",
+    "source": "Livret p.11",
+    "audio": {
+      "fr_q_sha1": "635c4e1678b25a6f9cb38e9a7b5bf95e9791c588",
+      "fr_a_sha1": "5362fdb2828849565d375a40635e7df36f842f24"
     }
   }
 ]

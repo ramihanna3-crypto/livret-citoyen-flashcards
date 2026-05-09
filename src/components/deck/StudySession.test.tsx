@@ -26,10 +26,10 @@ describe("StudySession", () => {
     render(
       wrap(<StudySession cards={cardsByTheme("valeurs")} backHref="/" themeLabel="Valeurs" />),
     );
-    expect(screen.getAllByText(/1 \/ 3/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/1 \/ \d+/).length).toBeGreaterThan(0);
     await user.click(screen.getByTestId("flashcard"));
     await user.click(screen.getByRole("button", { name: /je sais/i }));
-    expect(screen.getAllByText(/2 \/ 3/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/2 \/ \d+/).length).toBeGreaterThan(0);
   });
 
   it("flip → À revoir stays on the same card", async () => {
@@ -39,6 +39,6 @@ describe("StudySession", () => {
     );
     await user.click(screen.getByTestId("flashcard"));
     await user.click(screen.getByRole("button", { name: /à revoir/i }));
-    expect(screen.getAllByText(/1 \/ 3/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/1 \/ \d+/).length).toBeGreaterThan(0);
   });
 });

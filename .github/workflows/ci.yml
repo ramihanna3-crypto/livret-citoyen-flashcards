@@ -16,7 +16,7 @@ jobs:
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test
-      - run: SKIP_AUDIO_CHECK=1 pnpm validate:cards
+      - run: pnpm validate:cards
       - run: pnpm build
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm test:e2e

@@ -2,40 +2,222 @@
   {
     "id": "ddhc-001",
     "theme": "ddhc",
-    "fr_q": "Que dit l'Article 1 de la Déclaration des Droits de l'Homme ?",
-    "ar_q": "[AR-DRAFT] ماذا تقول المادة الأولى من إعلان حقوق الإنسان؟",
-    "fr_a": "Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune.",
-    "ar_a": "[AR-DRAFT] يولد الناس ويظلّون أحراراً ومتساوين في الحقوق. ولا يمكن أن تكون التمييزات الاجتماعية إلاّ مبنيّة على المنفعة المشتركة.",
+    "fr_q": "Que dit l’Article 1ᵉʳ de la Déclaration des Droits de l’Homme et du Citoyen de 1789 ?",
+    "ar_q": "ماذا تقول المادة الأولى من إعلان حقوق الإنسان والمواطن لعام 1789؟",
+    "fr_a": "Art. 1ᵉʳ. Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.",
+    "ar_a": "المادة 1. يولد الناس ويظلُّون أحراراً ومتساوين في الحقوق. ولا يمكن أن تقوم التمييزات الاجتماعية إلاّ على أساس المنفعة المشتركة.",
     "source": "Livret p.24 — DDHC Art. 1",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000031",
-      "fr_a_sha1": "0000000000000000000000000000000000000032"
+      "fr_q_sha1": "5bf4ffe86c8e94ffb737a685dbb576cb71850a95",
+      "fr_a_sha1": "154cfbc1a2a3306a265a20413113ce142eb8bfd2"
     }
   },
   {
     "id": "ddhc-002",
     "theme": "ddhc",
-    "fr_q": "Quel est le but de toute association politique selon l'Article 2 ?",
-    "ar_q": "[AR-DRAFT] ما هي غاية كل اجتماع سياسي حسب المادة الثانية؟",
-    "fr_a": "Le but de toute association politique est la conservation des droits naturels et imprescriptibles de l'Homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l'oppression.",
-    "ar_a": "[AR-DRAFT] غاية كل اجتماع سياسي هي صون حقوق الإنسان الطبيعية وغير القابلة للتقادم. وهذه الحقوق هي الحرية والملكية والأمن ومقاومة الظلم.",
+    "fr_q": "Quel est le but de toute association politique selon l’Article 2 ?",
+    "ar_q": "ما هي غاية كلِّ تجمُّعٍ سياسي وفقاً للمادة الثانية؟",
+    "fr_a": "Art. 2. Le but de toute association politique est la conservation des droits naturels et imprescriptibles de l’Homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l’oppression.",
+    "ar_a": "المادة 2. غاية كلِّ تجمُّعٍ سياسي هي صون حقوق الإنسان الطبيعية وغير القابلة للتقادم. وهذه الحقوق هي: الحرية، والملكية، والأمن، ومقاومة الظلم.",
     "source": "Livret p.24 — DDHC Art. 2",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000033",
-      "fr_a_sha1": "0000000000000000000000000000000000000034"
+      "fr_q_sha1": "9a4c3f4728aec87427fcd8caf3b5215d028195b3",
+      "fr_a_sha1": "6e0f372f4110ab36c6eac29650ce85195444f75c"
     }
   },
   {
     "id": "ddhc-003",
     "theme": "ddhc",
-    "fr_q": "Que dit l'Article 4 sur la liberté ?",
-    "ar_q": "[AR-DRAFT] ماذا تقول المادة الرابعة عن الحرية؟",
-    "fr_a": "La liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui : ainsi, l'exercice des droits naturels de chaque homme n'a de bornes que celles qui assurent aux autres Membres de la Société la jouissance de ces mêmes droits. Ces bornes ne peuvent être déterminées que par la Loi.",
-    "ar_a": "[AR-DRAFT] الحرية هي القدرة على فعل كل ما لا يضرّ الآخرين: وعلى ذلك فإن ممارسة كل إنسان لحقوقه الطبيعية ليس لها حدود إلاّ تلك التي تكفل لباقي أعضاء المجتمع التمتع بهذه الحقوق نفسها. ولا يمكن تحديد هذه الحدود إلاّ بموجب القانون.",
+    "fr_q": "Où réside le principe de toute Souveraineté selon l’Article 3 ?",
+    "ar_q": "أين يكمن مبدأ كلِّ سيادة وفقاً للمادة الثالثة؟",
+    "fr_a": "Art. 3. Le principe de toute Souveraineté réside essentiellement dans la Nation. Nul corps, nul individu ne peut exercer d’autorité qui n’en émane expressément.",
+    "ar_a": "المادة 3. يكمن مبدأ كل سيادةٍ في جوهره في الأمَّة. ولا يجوز لأي هيئةٍ ولا لأي فردٍ أن يمارس سلطةً لا تنبثق منها صراحةً.",
+    "source": "Livret p.24 — DDHC Art. 3",
+    "audio": {
+      "fr_q_sha1": "a79009dca408005c3b8e82b8db6b102f5e7543a7",
+      "fr_a_sha1": "4efa5cef4d8af9feae17d1846bca3d45590f66be"
+    }
+  },
+  {
+    "id": "ddhc-004",
+    "theme": "ddhc",
+    "fr_q": "En quoi consiste la liberté selon l’Article 4 ?",
+    "ar_q": "في ماذا تتمثل الحرية وفقاً للمادة الرابعة؟",
+    "fr_a": "Art. 4. La liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui : ainsi, l’exercice des droits naturels de chaque homme n’a de bornes que celles qui assurent aux autres Membres de la Société la jouissance de ces mêmes droits. Ces bornes ne peuvent être déterminées que par la Loi.",
+    "ar_a": "المادة 4. الحرية هي القدرة على فعل كل ما لا يضرُّ بالآخرين: وعلى ذلك فإن ممارسة كلِّ إنسانٍ لحقوقه الطبيعية ليس لها حدودٌ إلاّ تلك التي تكفل لباقي أعضاء المجتمع التمتُّع بهذه الحقوق نفسها. ولا يمكن تحديد هذه الحدود إلاّ بموجب القانون.",
     "source": "Livret p.24 — DDHC Art. 4",
     "audio": {
-      "fr_q_sha1": "0000000000000000000000000000000000000035",
-      "fr_a_sha1": "0000000000000000000000000000000000000036"
+      "fr_q_sha1": "dcaab69e46d350fb32e06c0479eec63df22e0829",
+      "fr_a_sha1": "aeda2ffa6b32f26d0202ecc4eaa51cfa715f4ec4"
+    }
+  },
+  {
+    "id": "ddhc-005",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 5 sur les limites de la Loi ?",
+    "ar_q": "ماذا تقول المادة الخامسة عن حدود القانون؟",
+    "fr_a": "Art. 5. La Loi n’a le droit de défendre que les actions nuisibles à la Société. Tout ce qui n’est pas défendu par la Loi ne peut être empêché, et nul ne peut être contraint à faire ce qu’elle n’ordonne pas.",
+    "ar_a": "المادة 5. لا يحق للقانون أن يحظر إلا الأفعال الضارَّة بالمجتمع. وكل ما لا يحظره القانون لا يمكن منعه، ولا يُكرَه أحدٌ على فعل ما لا يأمر به.",
+    "source": "Livret p.24 — DDHC Art. 5",
+    "audio": {
+      "fr_q_sha1": "4cc8d8df37d29cf67366cfc2c50744a19a81a7de",
+      "fr_a_sha1": "bde9cb645555b46e32634d54cddae2c2e59e5f24"
+    }
+  },
+  {
+    "id": "ddhc-006",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 6 sur la Loi et l’égalité des citoyens ?",
+    "ar_q": "ماذا تقول المادة السادسة عن القانون والمساواة بين المواطنين؟",
+    "fr_a": "Art. 6. La Loi est l’expression de la volonté générale. Tous les Citoyens ont droit de concourir personnellement, ou par leurs Représentants, à sa formation. Elle doit être la même pour tous, soit qu’elle protège, soit qu’elle punisse. Tous les Citoyens étant égaux à ses yeux sont également admissibles à toutes dignités, places et emplois publics, selon leur capacité, et sans autre distinction que celle de leurs vertus et de leurs talents.",
+    "ar_a": "المادة 6. القانون تعبيرٌ عن الإرادة العامة. ولجميع المواطنين الحق في الإسهام في صياغته شخصياً أو بواسطة ممثليهم. وعليه أن يكون واحداً للجميع، سواءٌ حين يحمي أو حين يعاقب. ولمَّا كان جميع المواطنين متساوين في نظره، فهم متساوون أيضاً في الأهلية لجميع المراتب والمناصب والوظائف العامة، بحسب قدراتهم، ودون أي تمييزٍ غير تمييز فضائلهم ومواهبهم.",
+    "source": "Livret p.24 — DDHC Art. 6",
+    "audio": {
+      "fr_q_sha1": "8a0044d6561bd5ff4a2c1d98463ccebdc23f8c3f",
+      "fr_a_sha1": "17f96ca48c509d4b272406584ca4d1383f5cb201"
+    }
+  },
+  {
+    "id": "ddhc-007",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 7 sur les conditions d’arrestation ou de détention ?",
+    "ar_q": "ماذا تقول المادة السابعة عن شروط الاعتقال والاحتجاز؟",
+    "fr_a": "Art. 7. Nul homme ne peut être accusé, arrêté ni détenu que dans les cas déterminés par la Loi, et selon les formes qu’elle a prescrites. Ceux qui sollicitent, expédient, exécutent ou font exécuter des ordres arbitraires, doivent être punis ; mais tout citoyen appelé ou saisi en vertu de la Loi doit obéir à l’instant : il se rend coupable par la résistance.",
+    "ar_a": "المادة 7. لا يجوز اتهام أحدٍ ولا اعتقاله ولا احتجازه إلاّ في الحالات التي يحددها القانون، ووفقاً للأشكال التي رسمها. أمَّا الذين يطلبون أوامر تعسُّفية، أو يُصدِرونها، أو ينفذونها، أو يُنفِّذها آخرون بأمرهم، فيجب أن يُعاقَبوا. غير أن أي مواطنٍ يُستدعى أو يُلقَى القبض عليه بموجب القانون عليه أن يطيع فوراً، فيُعدُّ مذنباً بمقاومته.",
+    "source": "Livret p.24 — DDHC Art. 7",
+    "audio": {
+      "fr_q_sha1": "466f1b9534fbb668d518d491ceee59a097420cf7",
+      "fr_a_sha1": "3a486992b601a8c12487ac2f4496367a1ec9308b"
+    }
+  },
+  {
+    "id": "ddhc-008",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 8 sur la non-rétroactivité des peines ?",
+    "ar_q": "ماذا تقول المادة الثامنة عن عدم رجعية العقوبات؟",
+    "fr_a": "Art. 8. La Loi ne doit établir que des peines strictement et évidemment nécessaires, et nul ne peut être puni qu’en vertu d’une Loi établie et promulguée antérieurement au délit, et légalement appliquée.",
+    "ar_a": "المادة 8. لا ينبغي للقانون أن يُقرِّر إلاّ العقوبات الضرورية ضرورة دقيقة وواضحة، ولا يُعاقَب أحدٌ إلاّ بموجب قانونٍ نافذٍ صدر قبل ارتكاب الفعل، ويُطبَّق تطبيقاً قانونياً.",
+    "source": "Livret p.24 — DDHC Art. 8",
+    "audio": {
+      "fr_q_sha1": "9796b7bd6afd6a644f9b4b54dd05e169c26fc083",
+      "fr_a_sha1": "da4e3b5a19279c98986c4e2be0db92555122d3a3"
+    }
+  },
+  {
+    "id": "ddhc-009",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 9 sur la présomption d’innocence ?",
+    "ar_q": "ماذا تقول المادة التاسعة عن افتراض البراءة؟",
+    "fr_a": "Art. 9. Tout homme étant présumé innocent jusqu’à ce qu’il ait été déclaré coupable, s’il est jugé indispensable de l’arrêter, toute rigueur qui ne serait pas nécessaire pour s’assurer de sa personne doit être sévèrement réprimée par la loi.",
+    "ar_a": "المادة 9. لمَّا كان كل إنسانٍ مفترَض البراءة حتى تثبت إدانته، فإذا اعتُبر اعتقاله أمراً لا بدَّ منه، وجب على القانون أن يقمع بصرامةٍ كل قسوةٍ لا تكون لازمةً للتحفُّظ على شخصه.",
+    "source": "Livret p.25 — DDHC Art. 9",
+    "audio": {
+      "fr_q_sha1": "c2574d946b4db3dc52500ff77a7055843e5a85f2",
+      "fr_a_sha1": "6144d2bf441f330807cf59c6a361029a050c5de8"
+    }
+  },
+  {
+    "id": "ddhc-010",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 10 sur la liberté d’opinion ?",
+    "ar_q": "ماذا تقول المادة العاشرة عن حرية الرأي؟",
+    "fr_a": "Art. 10. Nul ne doit être inquiété pour ses opinions, même religieuses, pourvu que leur manifestation ne trouble pas l’ordre public établi par la Loi.",
+    "ar_a": "المادة 10. لا يجوز مضايقة أحدٍ بسبب آرائه، حتى الدينية منها، شريطة ألاّ يخلَّ إظهارها بالنظام العام الذي يُقرِّره القانون.",
+    "source": "Livret p.25 — DDHC Art. 10",
+    "audio": {
+      "fr_q_sha1": "ab36e4e9d6922aaa17a932b4305c478af58d6725",
+      "fr_a_sha1": "2a62b2db02637fb2d0f8bc39698916b1f14cc5ae"
+    }
+  },
+  {
+    "id": "ddhc-011",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 11 sur la libre communication des pensées et des opinions ?",
+    "ar_q": "ماذا تقول المادة الحادية عشرة عن حرية تبادل الأفكار والآراء؟",
+    "fr_a": "Art. 11. La libre communication des pensées et des opinions est un des droits les plus précieux de l’Homme : tout Citoyen peut donc parler, écrire, imprimer librement, sauf à répondre de l’abus de cette liberté dans les cas déterminés par la Loi.",
+    "ar_a": "المادة 11. حرية تبادل الأفكار والآراء من أثمن حقوق الإنسان: فيحق لكل مواطنٍ بالتالي أن يتكلم ويكتب ويطبع بحرية، شريطة أن يتحمَّل المسؤولية عن إساءة استخدام هذه الحرية في الحالات التي يحددها القانون.",
+    "source": "Livret p.25 — DDHC Art. 11",
+    "audio": {
+      "fr_q_sha1": "cf97febf3aeab884ee55d734ba0635ce552848d6",
+      "fr_a_sha1": "5a17c6ff9119afc4c7a62d6cd1230e1a89dca907"
+    }
+  },
+  {
+    "id": "ddhc-012",
+    "theme": "ddhc",
+    "fr_q": "À quoi sert la force publique selon l’Article 12 ?",
+    "ar_q": "ما هي غاية القوة العامة وفقاً للمادة الثانية عشرة؟",
+    "fr_a": "Art. 12. La garantie des droits de l’Homme et du Citoyen nécessite une force publique : cette force est donc instituée pour l’avantage de tous, et non pour l’utilité particulière de ceux auxquels elle est confiée.",
+    "ar_a": "المادة 12. ضمان حقوق الإنسان والمواطن يستلزم قوةً عامة: فهذه القوة إذاً تُؤسَّس لمصلحة الجميع، لا للمنفعة الخاصة بمن أُسنِدت إليهم.",
+    "source": "Livret p.25 — DDHC Art. 12",
+    "audio": {
+      "fr_q_sha1": "7f4496bcc22be8b0ac27de8b0be5ae7cc1463a0e",
+      "fr_a_sha1": "c233be20d7e62d1b53528696723d9382e1981026"
+    }
+  },
+  {
+    "id": "ddhc-013",
+    "theme": "ddhc",
+    "fr_q": "Comment doit être répartie la contribution publique selon l’Article 13 ?",
+    "ar_q": "كيف ينبغي توزيع المساهمة العامة وفقاً للمادة الثالثة عشرة؟",
+    "fr_a": "Art. 13. Pour l’entretien de la force publique, et pour les dépenses d’administration, une contribution commune est indispensable : elle doit être également répartie entre tous les citoyens, en raison de leurs facultés.",
+    "ar_a": "المادة 13. من أجل صيانة القوة العامة، ومن أجل نفقات الإدارة، لا بدَّ من مساهمةٍ مشتركة: ويجب أن تُوزَّع بالتساوي بين جميع المواطنين، بحسب قدراتهم.",
+    "source": "Livret p.25 — DDHC Art. 13",
+    "audio": {
+      "fr_q_sha1": "d7c3f58208501a30a1e4cd10673bafa29bf45a2b",
+      "fr_a_sha1": "b7318773061615c14773faad04e65d9f6decedd3"
+    }
+  },
+  {
+    "id": "ddhc-014",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 14 sur le consentement à l’impôt ?",
+    "ar_q": "ماذا تقول المادة الرابعة عشرة عن الموافقة على الضريبة؟",
+    "fr_a": "Art. 14. Tous les Citoyens ont le droit de constater, par eux-mêmes ou par leurs représentants, la nécessité de la contribution publique, de la consentir librement, d’en suivre l’emploi, et d’en déterminer la quotité, l’assiette, le recouvrement et la durée.",
+    "ar_a": "المادة 14. لجميع المواطنين الحق في أن يتثبَّتوا بأنفسهم أو بواسطة ممثليهم من ضرورة المساهمة العامة، وأن يوافقوا عليها بحرية، وأن يتابعوا أوجه إنفاقها، وأن يحدِّدوا مقدارها ووعاءها وتحصيلها ومدتها.",
+    "source": "Livret p.25 — DDHC Art. 14",
+    "audio": {
+      "fr_q_sha1": "c4250fd8b10360ce258cddeb21326c01aba45512",
+      "fr_a_sha1": "7ce08ea37585c819f233394ac05181fcc83f5c52"
+    }
+  },
+  {
+    "id": "ddhc-015",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 15 sur la responsabilité des agents publics ?",
+    "ar_q": "ماذا تقول المادة الخامسة عشرة عن مساءلة الموظفين العموميين؟",
+    "fr_a": "Art. 15. La Société a le droit de demander compte à tout Agent public de son administration.",
+    "ar_a": "المادة 15. للمجتمع الحق في مساءلة كل موظفٍ عمومي عن إدارته.",
+    "source": "Livret p.25 — DDHC Art. 15",
+    "audio": {
+      "fr_q_sha1": "7c5c286e05cc05c420f62de661b494b0a79cbcad",
+      "fr_a_sha1": "6b1d78cbb2ceb7678b9712d213ebd4887848bfdb"
+    }
+  },
+  {
+    "id": "ddhc-016",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 16 sur ce qui constitue une Constitution ?",
+    "ar_q": "ماذا تقول المادة السادسة عشرة عما يُشكِّل دستوراً؟",
+    "fr_a": "Art. 16. Toute Société dans laquelle la garantie des Droits n’est pas assurée, ni la séparation des Pouvoirs déterminée, n’a point de Constitution.",
+    "ar_a": "المادة 16. كل مجتمعٍ لا تُضمَن فيه الحقوق ولا يُحدَّد فيه الفصلُ بين السلطات، ليس له دستور.",
+    "source": "Livret p.25 — DDHC Art. 16",
+    "audio": {
+      "fr_q_sha1": "e430a400d8777592ed211d6c47a5e973927ba5b0",
+      "fr_a_sha1": "d41aaa5a1c8ce23bfc40ead73feaad8983cdabc6"
+    }
+  },
+  {
+    "id": "ddhc-017",
+    "theme": "ddhc",
+    "fr_q": "Que dit l’Article 17 sur le droit de propriété ?",
+    "ar_q": "ماذا تقول المادة السابعة عشرة عن حق الملكية؟",
+    "fr_a": "Art. 17. La propriété étant un droit inviolable et sacré, nul ne peut en être privé, si ce n’est lorsque la nécessité publique, légalement constatée, l’exige évidemment, et sous la condition d’une juste et préalable indemnité.",
+    "ar_a": "المادة 17. لمَّا كانت الملكية حقاً مصوناً ومقدَّساً، فلا يمكن حرمان أحدٍ منها، إلاّ إذا اقتضت الضرورة العامة، المُثبتة قانوناً، ذلك بصورةٍ جلية، وشريطة تعويضٍ عادلٍ ومسبق.",
+    "source": "Livret p.25 — DDHC Art. 17",
+    "audio": {
+      "fr_q_sha1": "ba05c5c772ba96e542b4a12f031da59314fcd78a",
+      "fr_a_sha1": "57cab160fd43c3900f98d0860054dc72b7f73c7f"
     }
   }
 ]
