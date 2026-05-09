@@ -14,13 +14,24 @@ export function AudioButton({ sha1, label, size = "md" }: Props) {
   const px = size === "sm" ? "h-9 w-9" : "h-10 w-10";
 
   const Icon =
-    state === "loading" ? Loader2 : state === "playing" ? Square : state === "error" ? AlertCircle : Play;
+    state === "loading"
+      ? Loader2
+      : state === "playing"
+        ? Square
+        : state === "error"
+          ? AlertCircle
+          : Play;
 
   return (
     <button
       type="button"
-      onClick={(e) => { e.stopPropagation(); void toggle(); }}
-      onKeyDown={(e) => { if (e.key === " " || e.key === "Enter") e.stopPropagation(); }}
+      onClick={(e) => {
+        e.stopPropagation();
+        void toggle();
+      }}
+      onKeyDown={(e) => {
+        if (e.key === " " || e.key === "Enter") e.stopPropagation();
+      }}
       aria-label={label}
       aria-pressed={state === "playing"}
       className={cn(

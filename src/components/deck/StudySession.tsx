@@ -19,7 +19,10 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     function onKey(e: KeyboardEvent) {
       const t = e.target as HTMLElement | null;
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA")) return;
-      if (e.key === " " || e.key === "Enter") { e.preventDefault(); dispatch({ type: "FLIP" }); }
+      if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        dispatch({ type: "FLIP" });
+      }
       if (e.key === "ArrowLeft") dispatch({ type: "PREV" });
       if (e.key === "ArrowRight") dispatch({ type: "NEXT" });
       if (state.flipped && e.key === "1") {
@@ -33,7 +36,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     return () => window.removeEventListener("keydown", onKey);
   }, [state.deck, state.cursor, state.flipped, prefs.autoAdvance, markKnown, markReview]);
 
-  function onTouchStart(e: React.TouchEvent) { touchStartX.current = e.touches[0].clientX; }
+  function onTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX;
+  }
   function onTouchEnd(e: React.TouchEvent) {
     if (touchStartX.current == null) return;
     const dx = e.changedTouches[0].clientX - touchStartX.current;
@@ -47,7 +52,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
     return (
       <div className="text-center space-y-4 py-8">
         <h2 className="text-xl font-semibold">Bravo ! Vous avez parcouru toutes les cartes.</h2>
-        <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">أحسنت! لقد أنهيت جميع البطاقات.</p>
+        <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">
+          أحسنت! لقد أنهيت جميع البطاقات.
+        </p>
         <div className="flex justify-center gap-3">
           <button
             onClick={() => dispatch({ type: "RESTART" })}
@@ -55,7 +62,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           >
             Recommencer
           </button>
-          <Link to={backHref} className="px-4 py-2 rounded-[var(--radius)] border">Retour</Link>
+          <Link to={backHref} className="px-4 py-2 rounded-[var(--radius)] border">
+            Retour
+          </Link>
         </div>
       </div>
     );
@@ -84,10 +93,13 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
         {state.deck.map((c, i) => {
           const status = statusOf(c.id);
           const cls =
-            i === state.cursor ? "bg-[var(--color-primary)]" :
-            status === "known" ? "bg-[var(--color-primary)]/70" :
-            status === "review" ? "border border-[var(--color-primary)] bg-transparent" :
-            "bg-[var(--color-muted)]";
+            i === state.cursor
+              ? "bg-[var(--color-primary)]"
+              : status === "known"
+                ? "bg-[var(--color-primary)]/70"
+                : status === "review"
+                  ? "border border-[var(--color-primary)] bg-transparent"
+                  : "bg-[var(--color-muted)]";
           return <span key={c.id} role="listitem" className={cn("h-2 w-2 rounded-full", cls)} />;
         })}
       </div>
@@ -129,7 +141,9 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           Suivant <ChevronRight className="h-4 w-4" />
         </button>
       </div>
-      <div aria-live="polite" className="sr-only">{announce}</div>
+      <div aria-live="polite" className="sr-only">
+        {announce}
+      </div>
     </div>
   );
 }

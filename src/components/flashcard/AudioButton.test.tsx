@@ -6,10 +6,18 @@ import { AudioButton } from "@/components/flashcard/AudioButton";
 class FakeAudio {
   src = "";
   paused = true;
-  play = vi.fn(async () => { this.paused = false; this.listeners["play"]?.forEach((l) => l()); });
-  pause = vi.fn(() => { this.paused = true; this.listeners["pause"]?.forEach((l) => l()); });
+  play = vi.fn(async () => {
+    this.paused = false;
+    this.listeners["play"]?.forEach((l) => l());
+  });
+  pause = vi.fn(() => {
+    this.paused = true;
+    this.listeners["pause"]?.forEach((l) => l());
+  });
   listeners: Record<string, Array<() => void>> = {};
-  addEventListener(ev: string, cb: () => void) { (this.listeners[ev] ||= []).push(cb); }
+  addEventListener(ev: string, cb: () => void) {
+    (this.listeners[ev] ||= []).push(cb);
+  }
   removeEventListener() {}
 }
 

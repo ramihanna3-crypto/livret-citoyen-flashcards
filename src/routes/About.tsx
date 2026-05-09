@@ -20,7 +20,8 @@ export function About() {
       <section>
         <h2 className="text-xl font-semibold">Confidentialité · الخصوصية</h2>
         <p className="text-[var(--color-muted-foreground)]">
-          Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur (localStorage).
+          Aucun compte. Aucun cookie. Aucun traceur. Vos progrès restent dans votre navigateur
+          (localStorage).
         </p>
         <p dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)]">
           لا حساب. لا ملفات تعريف ارتباط. لا متعقّبات. يبقى تقدّمك في متصفّحك.
@@ -56,7 +57,8 @@ export function About() {
       <section>
         <h2 className="text-xl font-semibold">Licence</h2>
         <p className="text-[var(--color-muted-foreground)]">
-          Code : MIT. Traductions arabes : CC BY-SA 4.0. Contenu source français : © Ministère de l'Intérieur (document public).
+          Code : MIT. Traductions arabes : CC BY-SA 4.0. Contenu source français : © Ministère de
+          l'Intérieur (document public).
         </p>
       </section>
     </article>

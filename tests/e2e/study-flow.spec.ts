@@ -6,7 +6,10 @@ test("study a deck, mark cards, reload, progress survives, then reset", async ({
   await page.goto("/");
 
   // Open Valeurs deck
-  await page.getByRole("button", { name: /valeurs/i }).first().click();
+  await page
+    .getByRole("button", { name: /valeurs/i })
+    .first()
+    .click();
   await expect(page).toHaveURL(/study\/valeurs/);
 
   const card = page.getByTestId("flashcard");
@@ -39,6 +42,9 @@ test("study a deck, mark cards, reload, progress survives, then reset", async ({
   await page.getByRole("button", { name: /réinitialiser le progrès/i }).click();
 
   // Back home — should be 0 / 3
-  await page.getByRole("link", { name: /Livret du Citoyen/i }).first().click();
+  await page
+    .getByRole("link", { name: /Livret du Citoyen/i })
+    .first()
+    .click();
   await expect(page.getByText("0 / 3").first()).toBeVisible();
 });

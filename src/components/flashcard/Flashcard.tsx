@@ -34,7 +34,9 @@ export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onR
     <div
       data-testid="flashcard"
       role="button"
-      aria-label={flipped ? "Réponse révélée — touchez pour cacher" : "Touchez pour révéler la réponse"}
+      aria-label={
+        flipped ? "Réponse révélée — touchez pour cacher" : "Touchez pour révéler la réponse"
+      }
       tabIndex={0}
       onClick={onFlip}
       onKeyDown={(e) => {
@@ -62,7 +64,13 @@ export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onR
         <div className="flashcard-face back">
           <FlagAccent className="absolute left-0 top-0 h-full" />
           <div className="pl-3 h-full overflow-y-auto">
-            <CardBack card={card} position={position} total={total} onKnown={onKnown} onReview={onReview} />
+            <CardBack
+              card={card}
+              position={position}
+              total={total}
+              onKnown={onKnown}
+              onReview={onReview}
+            />
           </div>
         </div>
       </div>

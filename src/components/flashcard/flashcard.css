@@ -8,19 +8,30 @@
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
-.flashcard-inner.flipped { transform: rotateY(180deg); }
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
 .flashcard-face {
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
 }
-.flashcard-face.back { transform: rotateY(180deg); }
+.flashcard-face.back {
+  transform: rotateY(180deg);
+}
 @media (prefers-reduced-motion: reduce) {
   .flashcard-inner {
     transition: opacity 200ms ease;
     transform: none !important;
   }
-  .flashcard-face.back { display: none; }
-  .flashcard-inner.flipped .flashcard-face.front { display: none; }
-  .flashcard-inner.flipped .flashcard-face.back { display: block; transform: none; }
+  .flashcard-face.back {
+    display: none;
+  }
+  .flashcard-inner.flipped .flashcard-face.front {
+    display: none;
+  }
+  .flashcard-inner.flipped .flashcard-face.back {
+    display: block;
+    transform: none;
+  }
 }

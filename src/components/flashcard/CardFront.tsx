@@ -12,7 +12,11 @@ export function CardFront({ card, position, total }: Props) {
         {theme.label_fr} · {position} / {total}
       </div>
 
-      <p className="font-sans font-semibold text-xl sm:text-2xl leading-snug text-[var(--color-card-foreground)]" dir="ltr" lang="fr">
+      <p
+        className="font-sans font-semibold text-xl sm:text-2xl leading-snug text-[var(--color-card-foreground)]"
+        dir="ltr"
+        lang="fr"
+      >
         {card.fr_q}
       </p>
 
@@ -22,12 +26,19 @@ export function CardFront({ card, position, total }: Props) {
 
       <hr className="border-[var(--color-border)]" />
 
-      <p className="font-[family-name:var(--font-sans)] text-base sm:text-lg text-[var(--color-muted-foreground)] leading-relaxed" dir="rtl" lang="ar">
+      <p
+        className="font-[family-name:var(--font-sans)] text-base sm:text-lg text-[var(--color-muted-foreground)] leading-relaxed"
+        dir="rtl"
+        lang="ar"
+      >
         {card.ar_q}
       </p>
 
       <div className="mt-auto pt-4 text-center text-xs text-[var(--color-muted-foreground)]">
-        Tap to reveal · <span dir="rtl" lang="ar">اضغط لكشف الإجابة</span>
+        Tap to reveal ·{" "}
+        <span dir="rtl" lang="ar">
+          اضغط لكشف الإجابة
+        </span>
       </div>
     </div>
   );

@@ -8,8 +8,7 @@ export function useTheme() {
     function apply() {
       const wantDark =
         prefs.darkMode === "dark" ||
-        (prefs.darkMode === "system" &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches);
+        (prefs.darkMode === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
       document.documentElement.classList.toggle("dark", wantDark);
     }
     apply();

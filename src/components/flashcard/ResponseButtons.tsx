@@ -8,7 +8,10 @@ export function ResponseButtons({ onKnown, onReview }: Props) {
     <div className="grid grid-cols-2 gap-3 w-full">
       <button
         type="button"
-        onClick={(e) => { e.stopPropagation(); onKnown(); }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onKnown();
+        }}
         className={cn(
           "flex flex-col items-center justify-center gap-1 py-3 rounded-lg",
           "bg-[var(--color-primary)] text-[var(--color-primary-foreground)]",
@@ -20,11 +23,16 @@ export function ResponseButtons({ onKnown, onReview }: Props) {
           <Check className="h-4 w-4" aria-hidden="true" />
           Je sais
         </span>
-        <span dir="rtl" lang="ar" className="text-sm opacity-90">أعرف</span>
+        <span dir="rtl" lang="ar" className="text-sm opacity-90">
+          أعرف
+        </span>
       </button>
       <button
         type="button"
-        onClick={(e) => { e.stopPropagation(); onReview(); }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onReview();
+        }}
         className={cn(
           "flex flex-col items-center justify-center gap-1 py-3 rounded-lg border",
           "bg-[var(--color-secondary)] text-[var(--color-secondary-foreground)]",
@@ -33,10 +41,11 @@ export function ResponseButtons({ onKnown, onReview }: Props) {
         )}
       >
         <span className="inline-flex items-center gap-2 font-semibold">
-          <X className="h-4 w-4" aria-hidden="true" />
-          À revoir
+          <X className="h-4 w-4" aria-hidden="true" />À revoir
         </span>
-        <span dir="rtl" lang="ar" className="text-sm opacity-90">أحتاج مراجعة</span>
+        <span dir="rtl" lang="ar" className="text-sm opacity-90">
+          أحتاج مراجعة
+        </span>
       </button>
     </div>
   );
