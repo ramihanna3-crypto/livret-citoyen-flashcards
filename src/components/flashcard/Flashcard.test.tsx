@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { Flashcard } from "@/components/flashcard/Flashcard";
 
 class FakeAudio { paused=true; play=vi.fn(async()=>{}); pause=vi.fn(); addEventListener(){} removeEventListener(){} }
-beforeEach(() => { /* @ts-expect-error -- override global Audio for test */ globalThis.Audio = FakeAudio; });
+beforeEach(() => { globalThis.Audio = FakeAudio as unknown as typeof Audio; });
 
 const card = {
   id: "valeurs-001", theme: "valeurs" as const,
