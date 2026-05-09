@@ -1,22 +1,25 @@
-import { useState } from "react";
-import { Flashcard } from "@/components/flashcard/Flashcard";
-import { allCards } from "@/data";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Home } from "@/routes/Home";
+import { Study } from "@/routes/Study";
+import { About } from "@/routes/About";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 export default function App() {
-  const [flipped, setFlipped] = useState(false);
-  const card = allCards[0];
   return (
-    <main className="min-h-screen p-4 sm:p-8 bg-[var(--color-background)]">
-      <h1 className="text-2xl font-semibold mb-6 text-center">Livret du Citoyen</h1>
-      <Flashcard
-        card={card}
-        position={1}
-        total={allCards.length}
-        flipped={flipped}
-        onFlip={() => setFlipped((f) => !f)}
-        onKnown={() => alert("Je sais")}
-        onReview={() => alert("À revoir")}
-      />
-    </main>
+    <HashRouter>
+      <div className="min-h-screen flex flex-col bg-[var(--color-background)]">
+        <Header />
+        <main className="flex-1 mx-auto w-full max-w-[960px] px-4 sm:px-6 py-6">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/study/:theme" element={<Study />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
