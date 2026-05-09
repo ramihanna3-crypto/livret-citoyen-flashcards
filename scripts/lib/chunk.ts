@@ -80,10 +80,30 @@ export function preprocessForParagraphs(text: string): string {
   return out.join("\n");
 }
 
-export function splitParagraphs(text: string, minLen = 1): string[] {
+// Sentence-aware secondary split for paragraphs that exceed maxLen.
+// Splits at ". " boundaries and packs sentences into sub-paragraphs each ≤ maxLen.
+function splitLongParagraph(p: string, maxLen: number): string[] {
+  if (p.length <= maxLen) return [p];
+  const sentences = p.match(/[^.!?]+[.!?]+(\s+|$)/g) ?? [p];
+  const out: string[] = [];
+  let buf = "";
+  for (const s of sentences) {
+    if ((buf + s).length > maxLen && buf.length > 0) {
+      out.push(buf.trim());
+      buf = s;
+    } else {
+      buf += s;
+    }
+  }
+  if (buf.trim().length > 0) out.push(buf.trim());
+  return out;
+}
+
+export function splitParagraphs(text: string, minLen = 1, maxLen = 1800): string[] {
   return preprocessForParagraphs(text)
     .split(/\n\s*\n/)
     .map((p) => p.replace(/\s+/g, " ").trim())
+    .flatMap((p) => splitLongParagraph(p, maxLen))
     .filter((p) => p.length >= minLen);
 }
 
