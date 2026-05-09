@@ -12,8 +12,10 @@ describe("splitPages", () => {
 });
 
 describe("splitParagraphs", () => {
-  it("splits on blank lines and trims", () => {
-    expect(splitParagraphs("foo\nbar\n\nbaz\n\n   \n\nqux")).toEqual(["foo\nbar", "baz", "qux"]);
+  it("splits on blank lines, trims, and collapses internal whitespace", () => {
+    // Wrapped lines within a paragraph become a single space-joined string
+    // (PDF extraction keeps visual line breaks; we want logical paragraphs).
+    expect(splitParagraphs("foo\nbar\n\nbaz\n\n   \n\nqux")).toEqual(["foo bar", "baz", "qux"]);
   });
   it("drops paragraphs shorter than minLen", () => {
     expect(splitParagraphs("ok\n\nA\n\nlong enough text", 5)).toEqual(["long enough text"]);

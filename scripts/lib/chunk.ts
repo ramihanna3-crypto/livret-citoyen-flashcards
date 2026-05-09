@@ -26,10 +26,64 @@ export function splitPages(raw: string): Page[] {
   return out;
 }
 
+// PDF extraction (via pypdf) preserves visual line breaks but loses paragraph
+// structure. This injects synthetic blank lines around features that mark a
+// new logical paragraph: DDHC article markers, Livret section headers
+// (typically indented short title-case lines), and Q&A box transitions.
+export function preprocessForParagraphs(text: string): string {
+  // Repair OCR-style artifacts like "A r t .  7" → "Art. 7"
+  text = text.replace(/A\s*r\s*t\s*\.\s*(\d)/g, "Art. $1");
+
+  const lines = text.split(/\n/);
+  const out: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    // Insert blank line BEFORE "Art. N." markers (DDHC articles)
+    if (/^Art\.?\s*\d+\.?/.test(trimmed) && out.length && out[out.length - 1].trim() !== "") {
+      out.push("");
+    }
+
+    // Insert blank line BEFORE indented section titles
+    // Heuristic: line starts with 2+ spaces, is short (<50 chars), title-case start,
+    // doesn't end with sentence punctuation
+    const isIndentedHeader =
+      /^\s\s+[A-ZÀ-Ýa-zà-ÿ]/.test(line) &&
+      trimmed.length > 0 &&
+      trimmed.length < 50 &&
+      !/[.,?!:]$/.test(trimmed) &&
+      !/^\s+\d/.test(line);
+    if (isIndentedHeader && out.length && out[out.length - 1].trim() !== "") {
+      out.push("");
+    }
+
+    out.push(line);
+
+    // Insert blank line AFTER short title-style lines (top-level section headers
+    // like "La France est une démocratie") — short, not punctuation-terminated,
+    // followed by a longer line starting with capital
+    const next = lines[i + 1]?.trim() ?? "";
+    const isTitleHeader =
+      trimmed.length > 0 &&
+      trimmed.length < 70 &&
+      !/[.,?!:]$/.test(trimmed) &&
+      /^[A-ZÀ-Ý]/.test(trimmed) &&
+      next.length > trimmed.length * 1.3 &&
+      /^[A-ZÀ-Ý]/.test(next);
+    if (isTitleHeader) {
+      out.push("");
+    }
+  }
+
+  return out.join("\n");
+}
+
 export function splitParagraphs(text: string, minLen = 1): string[] {
-  return text
+  return preprocessForParagraphs(text)
     .split(/\n\s*\n/)
-    .map((p) => p.trim())
+    .map((p) => p.replace(/\s+/g, " ").trim())
     .filter((p) => p.length >= minLen);
 }
 
