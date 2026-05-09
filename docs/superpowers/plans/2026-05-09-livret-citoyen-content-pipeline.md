@@ -16,13 +16,13 @@
 
 ## Phase organization
 
-| Phase | Tasks | Delivers |
-|---|---|---|
-| 1. Environment & deps | 1–2 | `.env.example`, `dotenv` loader, Anthropic SDK installed, `node-fetch` (or native fetch), Zod available to scripts |
-| 2. Source extraction | 3–5 | `extract-source.ts` produces `raw/chunks.json` from livret + charte; verbatim Q&A boxes flagged |
-| 3. AI drafting | 6–8 | `draft-cards.ts` produces 6 theme JSON files in `data/cards-draft/` with French questions + Arabic translations |
-| 4. Audio generation | 9–11 | `build-audio.ts` produces content-addressed MP3s and rewrites real sha1s into card JSONs |
-| 5. User runbook + integration | 12–14 | `docs/RUNBOOK-PLAN-2.md`, replace fixture cards with real corpus, drop `SKIP_AUDIO_CHECK` from CI |
+| Phase                         | Tasks | Delivers                                                                                                           |
+| ----------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------ |
+| 1. Environment & deps         | 1–2   | `.env.example`, `dotenv` loader, Anthropic SDK installed, `node-fetch` (or native fetch), Zod available to scripts |
+| 2. Source extraction          | 3–5   | `extract-source.ts` produces `raw/chunks.json` from livret + charte; verbatim Q&A boxes flagged                    |
+| 3. AI drafting                | 6–8   | `draft-cards.ts` produces 6 theme JSON files in `data/cards-draft/` with French questions + Arabic translations    |
+| 4. Audio generation           | 9–11  | `build-audio.ts` produces content-addressed MP3s and rewrites real sha1s into card JSONs                           |
+| 5. User runbook + integration | 12–14 | `docs/RUNBOOK-PLAN-2.md`, replace fixture cards with real corpus, drop `SKIP_AUDIO_CHECK` from CI                  |
 
 Total: **14 tasks.** Engineers run tasks 1–11 with mocked APIs (no real keys needed). Task 12 is a documentation deliverable. Tasks 13–14 are flipped on by the user after they have run the pipeline locally with real keys.
 
@@ -33,6 +33,7 @@ Total: **14 tasks.** Engineers run tasks 1–11 with mocked APIs (no real keys n
 ### Task 1: `.env.example` + dotenv loader
 
 **Files:**
+
 - Create: `.env.example`, `scripts/lib/env.ts`
 - Modify: `.gitignore` (verify `.env`, `.env.local` already ignored from Plan 1; add if missing), `package.json` (add `dotenv` devDep)
 
@@ -123,6 +124,7 @@ git commit -m "chore: add .env.example and env loader for content pipeline scrip
 ### Task 2: Install Anthropic SDK + add the script entries to `package.json`
 
 **Files:**
+
 - Modify: `package.json`
 
 - [ ] **Step 1: Install the Anthropic SDK.**
@@ -165,6 +167,7 @@ git commit -m "chore: install @anthropic-ai/sdk and register pipeline npm script
 ### Task 3: Chunk types + page-tagged paragraph splitter
 
 **Files:**
+
 - Create: `scripts/lib/chunk.ts`, `scripts/lib/chunk.test.ts`
 
 - [ ] **Step 1: Failing test at `scripts/lib/chunk.test.ts`.**
@@ -185,19 +188,17 @@ describe("splitPages", () => {
 
 describe("splitParagraphs", () => {
   it("splits on blank lines and trims", () => {
-    expect(splitParagraphs("foo\nbar\n\nbaz\n\n   \n\nqux"))
-      .toEqual(["foo\nbar", "baz", "qux"]);
+    expect(splitParagraphs("foo\nbar\n\nbaz\n\n   \n\nqux")).toEqual(["foo\nbar", "baz", "qux"]);
   });
   it("drops paragraphs shorter than minLen", () => {
-    expect(splitParagraphs("ok\n\nA\n\nlong enough text", 5))
-      .toEqual(["long enough text"]);
+    expect(splitParagraphs("ok\n\nA\n\nlong enough text", 5)).toEqual(["long enough text"]);
   });
 });
 
 describe("themeForPage", () => {
   it("maps livret pages to themes per spec §7.1", () => {
     expect(themeForPage("livret", 4)).toBe("valeurs");
-    expect(themeForPage("livret", 7)).toBe("valeurs");        // 7 boundary: still valeurs (laïcité)
+    expect(themeForPage("livret", 7)).toBe("valeurs"); // 7 boundary: still valeurs (laïcité)
     expect(themeForPage("livret", 8)).toBe("droits-devoirs");
     expect(themeForPage("livret", 11)).toBe("institutions");
     expect(themeForPage("livret", 16)).toBe("histoire");
@@ -275,14 +276,14 @@ export function splitParagraphs(text: string, minLen = 1): string[] {
 }
 
 const LIVRET_RANGES: Array<{ start: number; end: number; theme: ThemeId | null }> = [
-  { start: 1, end: 3, theme: null },              // cover, table of contents, avant-propos
-  { start: 4, end: 7, theme: "valeurs" },         // pp.4–7 valeurs & laïcité
-  { start: 8, end: 8, theme: "droits-devoirs" },  // p.8 droits & devoirs (Livret part)
-  { start: 9, end: 11, theme: "institutions" },   // pp.9–11 institutions + collectivités
-  { start: 12, end: 19, theme: "histoire" },      // pp.12–19 histoire
-  { start: 20, end: 23, theme: "geographie" },    // pp.20–23 europe + caractéristiques + carte
-  { start: 24, end: 25, theme: "ddhc" },          // pp.24–25 DDHC articles
-  { start: 26, end: 28, theme: null },            // notes, back cover
+  { start: 1, end: 3, theme: null }, // cover, table of contents, avant-propos
+  { start: 4, end: 7, theme: "valeurs" }, // pp.4–7 valeurs & laïcité
+  { start: 8, end: 8, theme: "droits-devoirs" }, // p.8 droits & devoirs (Livret part)
+  { start: 9, end: 11, theme: "institutions" }, // pp.9–11 institutions + collectivités
+  { start: 12, end: 19, theme: "histoire" }, // pp.12–19 histoire
+  { start: 20, end: 23, theme: "geographie" }, // pp.20–23 europe + caractéristiques + carte
+  { start: 24, end: 25, theme: "ddhc" }, // pp.24–25 DDHC articles
+  { start: 26, end: 28, theme: null }, // notes, back cover
 ];
 
 export function themeForPage(source: Source, page: number): ThemeId | null {
@@ -308,7 +309,11 @@ export function detectQABox(paragraph: string): { fr_q: string; fr_a: string } |
   const fr_a = m[2].trim();
   if (fr_q.length < 8 || fr_a.length < 10) return null;
   // Question must be a real question — at least one of the typical interrogative words.
-  if (!/^(Avez|Pourquoi|Quelle|Quel|Que|Qu['`]|Comment|Quand|Qui|L'administration|Tout|Un|Une)/i.test(fr_q)) {
+  if (
+    !/^(Avez|Pourquoi|Quelle|Quel|Que|Qu['`]|Comment|Quand|Qui|L'administration|Tout|Un|Une)/i.test(
+      fr_q,
+    )
+  ) {
     return null;
   }
   return { fr_q, fr_a };
@@ -333,6 +338,7 @@ git commit -m "feat: chunk helpers — splitPages, splitParagraphs, themeForPage
 ### Task 4: `extract-source.ts` end-to-end
 
 **Files:**
+
 - Create: `scripts/extract-source.ts`, `scripts/extract-source.test.ts`
 - Modify: `package.json` (verify Task 2 already added the script)
 
@@ -425,9 +431,9 @@ export type Chunk = {
   source: "livret" | "charte";
   page: number;
   theme: ThemeId;
-  fr_a: string;                   // verbatim paragraph text
-  fr_q?: string;                  // present only when verbatim_question is true
-  verbatim_question?: boolean;    // true → 8 official Livret Q&A boxes
+  fr_a: string; // verbatim paragraph text
+  fr_q?: string; // present only when verbatim_question is true
+  verbatim_question?: boolean; // true → 8 official Livret Q&A boxes
 };
 
 export async function extractSource(opts?: { root?: string }) {
@@ -454,7 +460,14 @@ export async function extractSource(opts?: { root?: string }) {
 
       const qa = detectQABox(para);
       if (qa) {
-        emit({ source: "livret", page: page.page, theme, fr_q: qa.fr_q, fr_a: qa.fr_a, verbatim_question: true });
+        emit({
+          source: "livret",
+          page: page.page,
+          theme,
+          fr_q: qa.fr_q,
+          fr_a: qa.fr_a,
+          verbatim_question: true,
+        });
       } else {
         emit({ source: "livret", page: page.page, theme, fr_a: para });
       }
@@ -478,7 +491,10 @@ export async function extractSource(opts?: { root?: string }) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   extractSource()
     .then((r) => console.log(`Extracted ${r.count} chunks → raw/chunks.json`))
-    .catch((e) => { console.error(e); process.exit(1); });
+    .catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
 }
 ```
 
@@ -514,6 +530,7 @@ git commit -m "feat: extract-source.ts — chunk PDFs into theme-tagged paragrap
 ### Task 5: Per-theme chunk counts + sanity sanity-check report
 
 **Files:**
+
 - Create: `scripts/lib/chunkReport.ts`, `scripts/lib/chunkReport.test.ts`
 - Modify: `scripts/extract-source.ts` (add report at end)
 
@@ -526,7 +543,15 @@ import { reportChunks } from "./chunkReport";
 describe("reportChunks", () => {
   it("returns per-theme + total + verbatim count", () => {
     const r = reportChunks([
-      { chunk_id: "valeurs-raw-001", source: "livret", page: 4, theme: "valeurs", fr_a: "x", verbatim_question: true, fr_q: "?" },
+      {
+        chunk_id: "valeurs-raw-001",
+        source: "livret",
+        page: 4,
+        theme: "valeurs",
+        fr_a: "x",
+        verbatim_question: true,
+        fr_q: "?",
+      },
       { chunk_id: "valeurs-raw-002", source: "livret", page: 4, theme: "valeurs", fr_a: "y" },
       { chunk_id: "histoire-raw-001", source: "livret", page: 12, theme: "histoire", fr_a: "z" },
     ]);
@@ -571,12 +596,15 @@ export function printReport(r: Report) {
 - [ ] **Step 3: Wire it into `scripts/extract-source.ts`.**
 
 At the bottom of `extractSource()`, just before `return`:
+
 ```ts
 import { reportChunks, printReport } from "./lib/chunkReport.ts";
 ```
+
 (Add to the imports at the top.)
 
 And inside the `if (import.meta.url === ...)` CLI block, after `console.log("Extracted ...")`:
+
 ```ts
 const report = reportChunks(r.chunks);
 printReport(report);
@@ -607,6 +635,7 @@ git commit -m "feat: per-theme chunk count report on extract-source"
 ### Task 6: Anthropic translator wrapper (mocked)
 
 **Files:**
+
 - Create: `scripts/lib/translator.ts`, `scripts/lib/translator.test.ts`
 
 - [ ] **Step 1: Failing test at `scripts/lib/translator.test.ts`.**
@@ -692,11 +721,17 @@ describe("translateChunk", () => {
   });
 
   it("throws if the model returns no tool_use block", async () => {
-    const fakeClient = { messages: { create: vi.fn().mockResolvedValue({ content: [{ type: "text", text: "..." }] }) } };
+    const fakeClient = {
+      messages: { create: vi.fn().mockResolvedValue({ content: [{ type: "text", text: "..." }] }) },
+    };
     await expect(
       // @ts-expect-error
       translateChunk(fakeClient, "claude-sonnet-4-6", {
-        chunk_id: "x", theme: "valeurs", source: "livret", page: 4, fr_a: "ok",
+        chunk_id: "x",
+        theme: "valeurs",
+        source: "livret",
+        page: 4,
+        fr_a: "ok",
       }),
     ).rejects.toThrow(/no tool_use/i);
   });
@@ -761,7 +796,10 @@ const TOOL_EMIT_NEW = {
   input_schema: {
     type: "object",
     properties: {
-      fr_q: { type: "string", description: "Short French question that elicits the verbatim answer." },
+      fr_q: {
+        type: "string",
+        description: "Short French question that elicits the verbatim answer.",
+      },
       ar_q: { type: "string", description: "Arabic translation of fr_q." },
       ar_a: { type: "string", description: "Arabic translation of the French answer." },
     },
@@ -825,6 +863,7 @@ git commit -m "feat: translator wrapper using Anthropic tool-use for structured 
 ### Task 7: `draft-cards.ts` end-to-end (with mocked client)
 
 **Files:**
+
 - Create: `scripts/draft-cards.ts`, `scripts/draft-cards.test.ts`
 
 - [ ] **Step 1: Failing test at `scripts/draft-cards.test.ts`.**
@@ -842,14 +881,29 @@ beforeEach(() => {
   writeFileSync(
     join(TMP, "raw", "chunks.json"),
     JSON.stringify([
-      { chunk_id: "valeurs-raw-001", source: "livret", page: 4, theme: "valeurs",
-        fr_a: "La République garantit liberté, égalité, fraternité." },
-      { chunk_id: "valeurs-raw-002", source: "livret", page: 4, theme: "valeurs",
+      {
+        chunk_id: "valeurs-raw-001",
+        source: "livret",
+        page: 4,
+        theme: "valeurs",
+        fr_a: "La République garantit liberté, égalité, fraternité.",
+      },
+      {
+        chunk_id: "valeurs-raw-002",
+        source: "livret",
+        page: 4,
+        theme: "valeurs",
         fr_q: "Avez-vous le droit de tout dire ?",
         fr_a: "Oui, la liberté d'expression est un droit.",
-        verbatim_question: true },
-      { chunk_id: "ddhc-raw-001", source: "livret", page: 24, theme: "ddhc",
-        fr_a: "Art. 1er. Les hommes naissent libres et égaux." },
+        verbatim_question: true,
+      },
+      {
+        chunk_id: "ddhc-raw-001",
+        source: "livret",
+        page: 24,
+        theme: "ddhc",
+        fr_a: "Art. 1er. Les hommes naissent libres et égaux.",
+      },
     ]),
   );
 });
@@ -865,15 +919,17 @@ function fakeClient(): { messages: { create: ReturnType<typeof vi.fn> } } {
       create: vi.fn(async () => {
         n++;
         return {
-          content: [{
-            type: "tool_use",
-            name: "emit_card",
-            input: {
-              fr_q: `Generated FR Q ${n}`,
-              ar_q: `[ar] q ${n}`,
-              ar_a: `[ar] a ${n}`,
+          content: [
+            {
+              type: "tool_use",
+              name: "emit_card",
+              input: {
+                fr_q: `Generated FR Q ${n}`,
+                ar_q: `[ar] q ${n}`,
+                ar_a: `[ar] a ${n}`,
+              },
             },
-          }],
+          ],
         };
       }),
     },
@@ -918,16 +974,18 @@ describe("draftCards", () => {
     mkdirSync(join(TMP, "data/cards-draft"), { recursive: true });
     writeFileSync(
       join(TMP, "data/cards-draft/valeurs.json"),
-      JSON.stringify([{
-        id: "valeurs-001",
-        theme: "valeurs",
-        fr_q: "Already drafted ?",
-        ar_q: "ar q",
-        fr_a: "La République garantit liberté, égalité, fraternité.",
-        ar_a: "ar a",
-        source: "Livret p.4",
-        audio: { fr_q_sha1: "0".repeat(40), fr_a_sha1: "0".repeat(40) },
-      }]),
+      JSON.stringify([
+        {
+          id: "valeurs-001",
+          theme: "valeurs",
+          fr_q: "Already drafted ?",
+          ar_q: "ar q",
+          fr_a: "La République garantit liberté, égalité, fraternité.",
+          ar_a: "ar a",
+          source: "Livret p.4",
+          audio: { fr_q_sha1: "0".repeat(40), fr_a_sha1: "0".repeat(40) },
+        },
+      ]),
     );
     const fc = fakeClient();
     await draftCards({ root: TMP, client: fc as never, model: "test", resume: true });
@@ -980,7 +1038,11 @@ export async function draftCards(opts: DraftOptions = {}) {
     if (existing[c.theme]) continue;
     const path = join(draftDir, `${c.theme}.json`);
     if (existsSync(path)) {
-      try { existing[c.theme] = JSON.parse(readFileSync(path, "utf8")); } catch { existing[c.theme] = []; }
+      try {
+        existing[c.theme] = JSON.parse(readFileSync(path, "utf8"));
+      } catch {
+        existing[c.theme] = [];
+      }
     } else {
       existing[c.theme] = [];
     }
@@ -1054,7 +1116,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         console.log(`  ${t.padEnd(18)} ${n}`);
       }
     })
-    .catch((e) => { console.error(e); process.exit(1); });
+    .catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
 }
 ```
 
@@ -1076,6 +1141,7 @@ git commit -m "feat: draft-cards.ts — Claude-driven Arabic translation + FR qu
 ### Task 8: `--theme` and `--resume` CLI flags wired
 
 **Files:**
+
 - Verify: `scripts/draft-cards.ts` (already implemented in Task 7)
 
 - [ ] **Step 1: Add a small integration test at the bottom of `scripts/draft-cards.test.ts` (append to existing file).**
@@ -1115,6 +1181,7 @@ git commit -m "test: --theme filter for draft-cards"
 ### Task 9: ElevenLabs TTS wrapper (mocked)
 
 **Files:**
+
 - Create: `scripts/lib/tts.ts`, `scripts/lib/tts.test.ts`
 
 - [ ] **Step 1: Failing test at `scripts/lib/tts.test.ts`.**
@@ -1147,7 +1214,9 @@ describe("tts", () => {
 
   it("posts to the right URL with the right headers", async () => {
     const buf = await tts({
-      apiKey: "key", voiceId: "v1", modelId: "eleven_multilingual_v2",
+      apiKey: "key",
+      voiceId: "v1",
+      modelId: "eleven_multilingual_v2",
       text: "Bonjour le monde",
     });
     expect(fetchMock).toHaveBeenCalledOnce();
@@ -1165,12 +1234,14 @@ describe("tts", () => {
 
   it("throws on non-OK response with body included in the error message", async () => {
     fetchMock.mockResolvedValue({
-      ok: false, status: 401, statusText: "Unauthorized",
+      ok: false,
+      status: 401,
+      statusText: "Unauthorized",
       text: async () => '{"detail":"invalid_api_key"}',
     });
-    await expect(
-      tts({ apiKey: "bad", voiceId: "v1", modelId: "m", text: "x" }),
-    ).rejects.toThrow(/401|invalid_api_key/);
+    await expect(tts({ apiKey: "bad", voiceId: "v1", modelId: "m", text: "x" })).rejects.toThrow(
+      /401|invalid_api_key/,
+    );
   });
 });
 ```
@@ -1230,6 +1301,7 @@ git commit -m "feat: ElevenLabs TTS client with sha1 helper"
 ### Task 10: `build-audio.ts` end-to-end (mocked)
 
 **Files:**
+
 - Create: `scripts/build-audio.ts`, `scripts/build-audio.test.ts`
 
 - [ ] **Step 1: Failing test at `scripts/build-audio.test.ts`.**
@@ -1246,9 +1318,12 @@ const TMP = join(process.cwd(), "tmp-build-audio-test");
 const ZERO = "0".repeat(40);
 
 const sampleCard = (id: string, fr_q: string, fr_a: string) => ({
-  id, theme: "valeurs",
-  fr_q, ar_q: "س؟",
-  fr_a, ar_a: "إ.",
+  id,
+  theme: "valeurs",
+  fr_q,
+  ar_q: "س؟",
+  fr_a,
+  ar_a: "إ.",
   source: "Livret p.4",
   audio: { fr_q_sha1: ZERO, fr_a_sha1: ZERO },
 });
@@ -1273,7 +1348,11 @@ describe("buildAudio", () => {
   it("generates one MP3 per unique French text and rewrites card sha1s", async () => {
     const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const r = await buildAudio({
-      root: TMP, apiKey: "k", voiceId: "v", modelId: "m", tts: fakeTts,
+      root: TMP,
+      apiKey: "k",
+      voiceId: "v",
+      modelId: "m",
+      tts: fakeTts,
     });
     expect(fakeTts).toHaveBeenCalledTimes(4); // 2 cards × 2 clips
     expect(r.generated).toBe(4);
@@ -1290,7 +1369,11 @@ describe("buildAudio", () => {
     writeFileSync(join(TMP, `public/audio/${sha1("Question 1 ?")}.mp3`), "existing");
     const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const r = await buildAudio({
-      root: TMP, apiKey: "k", voiceId: "v", modelId: "m", tts: fakeTts,
+      root: TMP,
+      apiKey: "k",
+      voiceId: "v",
+      modelId: "m",
+      tts: fakeTts,
     });
     expect(r.generated).toBe(3); // 1 already there
     expect(r.reused).toBe(1);
@@ -1299,7 +1382,12 @@ describe("buildAudio", () => {
   it("--dry-run does not call TTS or write files", async () => {
     const fakeTts = vi.fn();
     const r = await buildAudio({
-      root: TMP, apiKey: "k", voiceId: "v", modelId: "m", tts: fakeTts as never, dryRun: true,
+      root: TMP,
+      apiKey: "k",
+      voiceId: "v",
+      modelId: "m",
+      tts: fakeTts as never,
+      dryRun: true,
     });
     expect(fakeTts).not.toHaveBeenCalled();
     expect(r.generated).toBe(0);
@@ -1312,7 +1400,12 @@ describe("buildAudio", () => {
     writeFileSync(join(TMP, `public/audio/${sha1("Question 1 ?")}.mp3`), "old");
     const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const r = await buildAudio({
-      root: TMP, apiKey: "k", voiceId: "v", modelId: "m", tts: fakeTts, force: true,
+      root: TMP,
+      apiKey: "k",
+      voiceId: "v",
+      modelId: "m",
+      tts: fakeTts,
+      force: true,
     });
     expect(r.generated).toBe(4);
     expect(r.reused).toBe(0);
@@ -1326,7 +1419,12 @@ describe("buildAudio", () => {
     );
     const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     await buildAudio({
-      root: TMP, apiKey: "k", voiceId: "v", modelId: "m", tts: fakeTts, theme: "valeurs",
+      root: TMP,
+      apiKey: "k",
+      voiceId: "v",
+      modelId: "m",
+      tts: fakeTts,
+      theme: "valeurs",
     });
     expect(fakeTts).toHaveBeenCalledTimes(4); // valeurs only
   });
@@ -1372,7 +1470,8 @@ export async function buildAudio(opts: BuildAudioOptions = {}): Promise<BuildAud
   const voiceId = opts.voiceId ?? (opts.dryRun ? "" : env.elevenLabsVoiceId());
   const modelId = opts.modelId ?? (opts.dryRun ? "" : env.elevenLabsModelId());
 
-  const tts = opts.tts ?? ((text: string) => defaultTts({ apiKey, voiceId, modelId, text } as TtsOptions));
+  const tts =
+    opts.tts ?? ((text: string) => defaultTts({ apiKey, voiceId, modelId, text } as TtsOptions));
 
   let generated = 0;
   let reused = 0;
@@ -1444,7 +1543,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         console.log(`Generated ${r.generated}, reused ${r.reused}. Total clips: ${r.totalClips}.`);
       }
     })
-    .catch((e) => { console.error(e); process.exit(1); });
+    .catch((e) => {
+      console.error(e);
+      process.exit(1);
+    });
 }
 ```
 
@@ -1466,6 +1568,7 @@ git commit -m "feat: build-audio.ts — content-addressed MP3 generation with --
 ### Task 11: Verify the full mocked pipeline runs end-to-end
 
 **Files:**
+
 - Create: `scripts/pipeline.test.ts`
 
 - [ ] **Step 1: Integration test.**
@@ -1487,9 +1590,17 @@ beforeEach(() => {
   const realLivret = join(process.cwd(), "raw/livret.txt");
   const realCharte = join(process.cwd(), "raw/charte.txt");
   if (existsSync(realLivret)) copyFileSync(realLivret, join(TMP, "raw/livret.txt"));
-  else writeFileSync(join(TMP, "raw/livret.txt"), "===== PAGE 4 =====\nLa République garantit liberté, égalité, fraternité.");
+  else
+    writeFileSync(
+      join(TMP, "raw/livret.txt"),
+      "===== PAGE 4 =====\nLa République garantit liberté, égalité, fraternité.",
+    );
   if (existsSync(realCharte)) copyFileSync(realCharte, join(TMP, "raw/charte.txt"));
-  else writeFileSync(join(TMP, "raw/charte.txt"), "===== PAGE 1 =====\nTout être humain possède des droits.");
+  else
+    writeFileSync(
+      join(TMP, "raw/charte.txt"),
+      "===== PAGE 1 =====\nTout être humain possède des droits.",
+    );
 });
 
 afterEach(() => {
@@ -1505,12 +1616,24 @@ describe("pipeline (extract → draft → build-audio)", () => {
     // 2. Draft (mocked Claude)
     let n = 0;
     const fakeClient = {
-      messages: { create: vi.fn(async () => {
-        n++;
-        return { content: [{ type: "tool_use", name: "emit_card", input: {
-          fr_q: `Generated Q ${n} ?`, ar_q: `[ar] q ${n}`, ar_a: `[ar] a ${n}`,
-        } }] };
-      }) },
+      messages: {
+        create: vi.fn(async () => {
+          n++;
+          return {
+            content: [
+              {
+                type: "tool_use",
+                name: "emit_card",
+                input: {
+                  fr_q: `Generated Q ${n} ?`,
+                  ar_q: `[ar] q ${n}`,
+                  ar_a: `[ar] a ${n}`,
+                },
+              },
+            ],
+          };
+        }),
+      },
     };
     await draftCards({ root: TMP, client: fakeClient as never, model: "test" });
 
@@ -1527,7 +1650,11 @@ describe("pipeline (extract → draft → build-audio)", () => {
     // 4. Build audio (mocked TTS)
     const fakeTts = vi.fn(async (text: string) => new TextEncoder().encode(`audio:${text}`).buffer);
     const audio = await buildAudio({
-      root: TMP, apiKey: "k", voiceId: "v", modelId: "m", tts: fakeTts,
+      root: TMP,
+      apiKey: "k",
+      voiceId: "v",
+      modelId: "m",
+      tts: fakeTts,
     });
     expect(audio.generated).toBeGreaterThan(0);
 
@@ -1566,11 +1693,12 @@ git commit -m "test: end-to-end pipeline integration test (mocked APIs)"
 ### Task 12: Write the user-facing runbook
 
 **Files:**
+
 - Create: `docs/RUNBOOK-PLAN-2.md`
 
 - [ ] **Step 1: Write `docs/RUNBOOK-PLAN-2.md`.**
 
-```markdown
+````markdown
 # Plan 2 Runbook — populating the real corpus
 
 Plan 2 builds the offline tooling that turns the Ministère de l'Intérieur PDFs into the full bilingual flashcard corpus + French audio. The implementation tasks (1–11) ship the scripts. **This runbook is what YOU run** to actually produce content using your own API keys.
@@ -1591,6 +1719,7 @@ cp .env.example .env.local
 #   ELEVENLABS_API_KEY=...
 #   ELEVENLABS_VOICE_ID=<your chosen voice>
 ```
+````
 
 ## Step 2 — Extract chunks from the PDFs
 
@@ -1611,6 +1740,7 @@ pnpm draft:cards
 This calls Claude once per chunk (with retries handled by the SDK). It writes draft cards to `data/cards-draft/<theme>.json`.
 
 Tips:
+
 - If the run is interrupted, restart with `pnpm draft:cards --resume` to skip already-drafted chunks.
 - To regenerate one theme only: `pnpm draft:cards --theme valeurs`.
 
@@ -1619,7 +1749,8 @@ When done, you'll have 6 draft files: `data/cards-draft/valeurs.json`, etc.
 ## Step 4 — Review the Arabic translations
 
 This is the most important manual step. Open each `data/cards-draft/<theme>.json` in your editor and review every `ar_q` and `ar_a` field. You're checking:
-- Translation accuracy (esp. legal/civic vocabulary like *laïcité*, *suffrage indirect*, *déchu de la nationalité*).
+
+- Translation accuracy (esp. legal/civic vocabulary like _laïcité_, _suffrage indirect_, _déchu de la nationalité_).
 - Modern Standard Arabic (الفصحى), not regional dialect.
 - Tone matches a formal civic document.
 
@@ -1645,6 +1776,7 @@ pnpm build:audio --dry-run
 ```
 
 This prints something like:
+
 ```
 Dry-run: 200 clips, 52,438 characters total.
 ```
@@ -1658,6 +1790,7 @@ pnpm build:audio
 ```
 
 The script:
+
 - Reads each card in `src/data/cards/*.json`
 - For each French question and answer, computes `sha1(text)`
 - If `public/audio/<sha1>.mp3` already exists → skips
@@ -1677,6 +1810,7 @@ pnpm validate:cards
 (No `SKIP_AUDIO_CHECK=1` this time — the audio files now exist.)
 
 Expected output:
+
 ```
 ✓ valeurs.json: 12 cards
 ✓ droits-devoirs.json: 22 cards
@@ -1708,15 +1842,19 @@ If you have CI + Cloudflare Pages connected (per `docs/DEPLOY.md`), the push wil
 ## Step 9 — Drop the SKIP_AUDIO_CHECK escape hatch in CI
 
 Edit `.github/workflows/ci.yml`. Find the line:
+
 ```yaml
 - run: SKIP_AUDIO_CHECK=1 pnpm validate:cards
 ```
+
 and change it to:
+
 ```yaml
 - run: pnpm validate:cards
 ```
 
 Commit:
+
 ```bash
 git add .github/workflows/ci.yml
 git commit -m "ci: enforce audio file presence in validate:cards now that audio is committed"
@@ -1732,14 +1870,15 @@ CI now fails any future PR that adds a card without generating its audio.
 - **Generation produces "voice not found" errors** — verify the voice ID exists for your account at https://elevenlabs.io/app/voice-library.
 - **Some Arabic translations look off** — edit them by hand in the JSON files. The Arabic is your authoritative source; AI is only a starting draft.
 - **Card text ends up wrong after editing** — `pnpm build:audio` regenerates audio whenever the French text changes (because the sha1 changes).
-```
 
-- [ ] **Step 2: Verify the markdown renders cleanly.** 
+````
+
+- [ ] **Step 2: Verify the markdown renders cleanly.**
 
 ```bash
 pnpm format
 pnpm format:check
-```
+````
 
 (Prettier may reformat slightly. Confirm it remains readable.)
 
@@ -1755,6 +1894,7 @@ git commit -m "docs: Plan 2 runbook for users to populate the corpus + audio"
 ### Task 13: Update README to point to Plan 2 tooling
 
 **Files:**
+
 - Modify: `README.md`
 
 - [ ] **Step 1: Read `README.md` and find the "Local development" section.**
@@ -1818,6 +1958,7 @@ data/cards-draft/          ← AI-drafted cards awaiting human review (gitignore
 - [ ] **Step 4: Add `data/cards-draft/` to `.gitignore` (so accidental commits of un-reviewed drafts don't pollute history).**
 
 Append to `.gitignore`:
+
 ```
 data/cards-draft/
 ```
@@ -1845,6 +1986,7 @@ git commit -m "docs: README — point to Plan 2 content pipeline + .gitignore dr
 ### Task 14: Wire the script test files into the existing `pnpm test`
 
 **Files:**
+
 - Verify: `vite.config.ts` (Task 3 already updated `test.include`)
 - Modify: `tsconfig.app.json` (may need to expose `scripts/` to typecheck)
 
@@ -1868,6 +2010,7 @@ If typecheck passes cleanly with all scripts/, skip to Step 4.
 ```
 
 And update the `typecheck` script in `package.json` to:
+
 ```json
 "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.scripts.json"
 ```

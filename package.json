@@ -10,11 +10,14 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.scripts.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "validate:cards": "tsx scripts/validate-cards.ts"
+    "validate:cards": "tsx scripts/validate-cards.ts",
+    "extract:source": "tsx scripts/extract-source.ts",
+    "draft:cards": "tsx scripts/draft-cards.ts",
+    "build:audio": "tsx scripts/build-audio.ts"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
@@ -34,6 +37,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.59.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -43,6 +47,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "dotenv": "^17.4.2",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react-hooks": "^7.1.1",
