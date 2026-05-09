@@ -3,9 +3,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 type State = "idle" | "loading" | "playing" | "error";
 
 const subscribers = new Set<() => void>();
-let currentlyPlaying: HTMLAudioElement | FakeAudioLike | null = null;
+let currentlyPlaying: HTMLAudioElement | AudioLike | null = null;
 
-interface FakeAudioLike {
+interface AudioLike {
   src: string;
   paused: boolean;
   play(): Promise<void>;
@@ -20,10 +20,10 @@ function broadcastStop() {
 
 export function useAudioPlayer(url: string) {
   const [state, setState] = useState<State>("idle");
-  const audioRef = useRef<FakeAudioLike | null>(null);
+  const audioRef = useRef<AudioLike | null>(null);
 
   useEffect(() => {
-    const a = new Audio(url) as unknown as FakeAudioLike;
+    const a = new Audio(url) as unknown as AudioLike;
     audioRef.current = a;
     const onPlay = () => setState("playing");
     const onPause = () => setState("idle");

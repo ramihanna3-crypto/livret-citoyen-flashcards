@@ -20,7 +20,7 @@ A free, ad-free, account-free web app that drills the verbatim contents of the o
 
 ## Tech stack
 
-Vite, React 18, TypeScript, Tailwind v4, shadcn/ui, react-router-dom (HashRouter), Zod, lucide-react.
+Vite, React 19, TypeScript, Tailwind v4, shadcn/ui, react-router-dom (HashRouter), Zod, lucide-react.
 
 ## Local development
 
