@@ -1,4 +1,5 @@
 import type Anthropic from "@anthropic-ai/sdk";
+import type { Tool } from "@anthropic-ai/sdk/resources/messages";
 import type { Chunk } from "../extract-source.ts";
 
 export type Drafted = { fr_q: string; ar_q: string; ar_a: string };
@@ -32,7 +33,7 @@ Rules:
 
 Emit your output via the emit_card tool.`;
 
-const TOOL_EMIT_VERBATIM = {
+const TOOL_EMIT_VERBATIM: Tool = {
   name: "emit_card",
   description: "Emit the Arabic translation of an existing verbatim French question and answer.",
   input_schema: {
@@ -43,9 +44,9 @@ const TOOL_EMIT_VERBATIM = {
     },
     required: ["ar_q", "ar_a"],
   },
-} as const;
+};
 
-const TOOL_EMIT_NEW = {
+const TOOL_EMIT_NEW: Tool = {
   name: "emit_card",
   description: "Emit a French question and Arabic translations for a verbatim French answer.",
   input_schema: {
@@ -60,7 +61,7 @@ const TOOL_EMIT_NEW = {
     },
     required: ["fr_q", "ar_q", "ar_a"],
   },
-} as const;
+};
 
 type AnyClient = Pick<Anthropic, "messages">;
 
