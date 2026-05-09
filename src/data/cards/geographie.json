@@ -3,10 +3,14 @@
     "id": "geographie-001",
     "theme": "geographie",
     "fr_q": "Quelle est la place de la France dans la construction européenne ?",
-    "ar_q": "ما هي مكانة فرنسا في البناء الأوروبي؟",
     "fr_a": "La France est l’un des pionniers de la construction européenne. En 1957, elle est l’un des membres fondateurs de la Communauté économique européenne. En 1992, l’Union européenne est créée, qui associe plus étroitement les États membres. Aujourd’hui, l’Union compte 27 États membres, qui partagent des principes démocratiques. La Charte des droits fondamentaux de l’Union européenne, adoptée en 2000, garantit les droits des personnes.",
-    "ar_a": "فرنسا من رواد البناء الأوروبي. ففي عام 1957، كانت من الأعضاء المؤسسين للمجموعة الاقتصادية الأوروبية. وفي عام 1992، أُسِّس الاتحاد الأوروبي (Union européenne) الذي يربط الدول الأعضاء ربطاً أوثق. واليوم يضم الاتحاد سبعاً وعشرين دولة عضواً تتقاسم مبادئ ديمقراطية. ويكفل ميثاق الحقوق الأساسية للاتحاد الأوروبي (Charte des droits fondamentaux)، الذي اعتُمد عام 2000، حقوقَ الأشخاص.",
     "source": "Livret p.20",
+    "translations": {
+      "ar": {
+        "q": "ما هي مكانة فرنسا في البناء الأوروبي؟",
+        "a": "فرنسا من رواد البناء الأوروبي. ففي عام 1957، كانت من الأعضاء المؤسسين للمجموعة الاقتصادية الأوروبية. وفي عام 1992، أُسِّس الاتحاد الأوروبي (Union européenne) الذي يربط الدول الأعضاء ربطاً أوثق. واليوم يضم الاتحاد سبعاً وعشرين دولة عضواً تتقاسم مبادئ ديمقراطية. ويكفل ميثاق الحقوق الأساسية للاتحاد الأوروبي (Charte des droits fondamentaux)، الذي اعتُمد عام 2000، حقوقَ الأشخاص."
+      }
+    },
     "audio": {
       "fr_q_sha1": "0b6f96db7c62fc945ea34a42fb184f638fcbe55b",
       "fr_a_sha1": "76915134dd3c0661258fe802e9c19a3ff7c2db34"
@@ -16,10 +20,14 @@
     "id": "geographie-002",
     "theme": "geographie",
     "fr_q": "Depuis quand les citoyens français sont-ils aussi citoyens européens, et quels droits cela leur donne-t-il ?",
-    "ar_q": "منذ متى أصبح المواطنون الفرنسيون مواطنين أوروبيين أيضاً، وما هي الحقوق التي يمنحهم ذلك؟",
     "fr_a": "Depuis 1992, les citoyens français sont aussi citoyens européens. Ils votent aux élections du Parlement européen tous les cinq ans. Ils sont libres de circuler, de travailler, d’étudier, de s’installer dans les autres pays de l’Union européenne. Dans ce cas, ils peuvent voter aux élections locales du pays dans lequel ils sont installés.",
-    "ar_a": "منذ عام 1992، أصبح المواطنون الفرنسيون مواطنين أوروبيين أيضاً. وهم يصوِّتون في انتخابات البرلمان الأوروبي كل خمس سنوات. ولهم حرية التنقل والعمل والدراسة والاستقرار في سائر دول الاتحاد الأوروبي. وفي هذه الحالة، يمكنهم التصويت في الانتخابات المحلية للبلد الذي يقيمون فيه.",
     "source": "Livret p.20",
+    "translations": {
+      "ar": {
+        "q": "منذ متى أصبح المواطنون الفرنسيون مواطنين أوروبيين أيضاً، وما هي الحقوق التي يمنحهم ذلك؟",
+        "a": "منذ عام 1992، أصبح المواطنون الفرنسيون مواطنين أوروبيين أيضاً. وهم يصوِّتون في انتخابات البرلمان الأوروبي كل خمس سنوات. ولهم حرية التنقل والعمل والدراسة والاستقرار في سائر دول الاتحاد الأوروبي. وفي هذه الحالة، يمكنهم التصويت في الانتخابات المحلية للبلد الذي يقيمون فيه."
+      }
+    },
     "audio": {
       "fr_q_sha1": "e0bb164fea061f971d296c3c4812adcd6d0f6ccd",
       "fr_a_sha1": "f848ed67e8faee61c710c375640833c60530b7f9"
@@ -29,10 +37,14 @@
     "id": "geographie-003",
     "theme": "geographie",
     "fr_q": "Depuis quand la France utilise-t-elle l’Euro et avec combien de pays partage-t-elle cette monnaie ?",
-    "ar_q": "منذ متى تستخدم فرنسا اليورو، ومع كم دولة تتقاسم هذه العملة؟",
     "fr_a": "Depuis 2000, la France partage avec 18 autres pays membres de l’Union européenne une monnaie unique : l’Euro.",
-    "ar_a": "منذ عام 2000، تتقاسم فرنسا مع ثمانية عشر بلداً آخر من الدول الأعضاء في الاتحاد الأوروبي عملةً موحَّدة هي اليورو (Euro).",
     "source": "Livret p.20",
+    "translations": {
+      "ar": {
+        "q": "منذ متى تستخدم فرنسا اليورو، ومع كم دولة تتقاسم هذه العملة؟",
+        "a": "منذ عام 2000، تتقاسم فرنسا مع ثمانية عشر بلداً آخر من الدول الأعضاء في الاتحاد الأوروبي عملةً موحَّدة هي اليورو (Euro)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "7ed68d0c8fb98a25e0bc967eede0b4bd796bc69d",
       "fr_a_sha1": "e4c20ed950ed46ec045d435a91e5ec9494bcca7e"
@@ -42,10 +54,14 @@
     "id": "geographie-004",
     "theme": "geographie",
     "fr_q": "Quelle est la place économique de la France et son rôle dans les organisations internationales ?",
-    "ar_q": "ما هي المكانة الاقتصادية لفرنسا ودورها في المنظمات الدولية؟",
     "fr_a": "La France est la sixième puissance économique mondiale. La France est membre de nombreuses organisations internationales. Elle est membre permanent du Conseil de sécurité de l’Organisation des Nations Unies (ONU).",
-    "ar_a": "فرنسا سادس قوة اقتصادية في العالم. وهي عضو في العديد من المنظمات الدولية. وهي عضو دائم في مجلس الأمن التابع لمنظمة الأمم المتحدة (ONU).",
     "source": "Livret p.20",
+    "translations": {
+      "ar": {
+        "q": "ما هي المكانة الاقتصادية لفرنسا ودورها في المنظمات الدولية؟",
+        "a": "فرنسا سادس قوة اقتصادية في العالم. وهي عضو في العديد من المنظمات الدولية. وهي عضو دائم في مجلس الأمن التابع لمنظمة الأمم المتحدة (ONU)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "6a4c57e1ce2766ed55d07e8bab2b040aad789883",
       "fr_a_sha1": "5a68a9bb78c797e7c627b2c0a21d5e0dfd96bbe5"
@@ -55,10 +71,14 @@
     "id": "geographie-005",
     "theme": "geographie",
     "fr_q": "Combien de personnes parlent français dans le monde et dans combien de pays ?",
-    "ar_q": "كم عدد الناطقين بالفرنسية في العالم، وفي كم بلد؟",
     "fr_a": "Le français est parlé couramment par 200 millions de personnes dans le monde. Les Français ne représentent que 1% de la population mondiale mais les personnes qui parlent français sont réparties dans 70 pays.",
-    "ar_a": "يتكلم الفرنسية بطلاقة 200 مليون شخصٍ في العالم. ولا يمثِّل الفرنسيون سوى 1% من سكان العالم، غير أن الناطقين بالفرنسية يتوزعون على سبعين بلداً.",
     "source": "Livret p.20",
+    "translations": {
+      "ar": {
+        "q": "كم عدد الناطقين بالفرنسية في العالم، وفي كم بلد؟",
+        "a": "يتكلم الفرنسية بطلاقة 200 مليون شخصٍ في العالم. ولا يمثِّل الفرنسيون سوى 1% من سكان العالم، غير أن الناطقين بالفرنسية يتوزعون على سبعين بلداً."
+      }
+    },
     "audio": {
       "fr_q_sha1": "f01e0dabb7218534b85bcffe60265922501c0db7",
       "fr_a_sha1": "947254d4e7662943f04e8706b86d83ddcd611f8f"
@@ -68,10 +88,14 @@
     "id": "geographie-006",
     "theme": "geographie",
     "fr_q": "Quelle place occupe le tourisme dans l’économie française ?",
-    "ar_q": "ما هي مكانة السياحة في الاقتصاد الفرنسي؟",
     "fr_a": "La France est célèbre pour ses monuments et sa culture : c’est la première destination touristique au monde. Le tourisme est un élément essentiel de l’économie française.",
-    "ar_a": "تشتهر فرنسا بآثارها وثقافتها: فهي الوجهة السياحية الأولى في العالم. والسياحة عنصرٌ أساسي في الاقتصاد الفرنسي.",
     "source": "Livret p.21",
+    "translations": {
+      "ar": {
+        "q": "ما هي مكانة السياحة في الاقتصاد الفرنسي؟",
+        "a": "تشتهر فرنسا بآثارها وثقافتها: فهي الوجهة السياحية الأولى في العالم. والسياحة عنصرٌ أساسي في الاقتصاد الفرنسي."
+      }
+    },
     "audio": {
       "fr_q_sha1": "e8a882c245f5eb4a2df53546abe0768a22e97b73",
       "fr_a_sha1": "e307c72aa6a16bc114ded453af0d332a87dcce43"
@@ -81,10 +105,14 @@
     "id": "geographie-007",
     "theme": "geographie",
     "fr_q": "Quels sont les secteurs d’excellence de l’économie française ?",
-    "ar_q": "ما هي قطاعات التميُّز في الاقتصاد الفرنسي؟",
     "fr_a": "La France est un leader mondial du transport maritime et ferroviaire. La France compte une centaine de grands groupes de plus de 10 000 salariés. Ces entreprises multinationales françaises sont présentes dans de nombreux pays. L’économie française a des secteurs d’excellence, comme l’aéronautique ou le luxe, dont certaines marques sont connues dans le monde entier.",
-    "ar_a": "فرنسا رائدة عالمياً في النقل البحري والنقل بالسكك الحديدية. وتضم نحو مئة مجموعة كبرى يعمل في كلٍّ منها أكثر من عشرة آلاف أجير. وهذه الشركات الفرنسية متعددة الجنسيات حاضرة في بلدانٍ عديدة. وللاقتصاد الفرنسي قطاعاتُ تميُّز، مثل صناعة الطيران (aéronautique) أو الكماليات (luxe)، التي تشتهر بعض علاماتها التجارية في أنحاء العالم.",
     "source": "Livret p.21",
+    "translations": {
+      "ar": {
+        "q": "ما هي قطاعات التميُّز في الاقتصاد الفرنسي؟",
+        "a": "فرنسا رائدة عالمياً في النقل البحري والنقل بالسكك الحديدية. وتضم نحو مئة مجموعة كبرى يعمل في كلٍّ منها أكثر من عشرة آلاف أجير. وهذه الشركات الفرنسية متعددة الجنسيات حاضرة في بلدانٍ عديدة. وللاقتصاد الفرنسي قطاعاتُ تميُّز، مثل صناعة الطيران (aéronautique) أو الكماليات (luxe)، التي تشتهر بعض علاماتها التجارية في أنحاء العالم."
+      }
+    },
     "audio": {
       "fr_q_sha1": "b6cad623a076385cc91d80f7dc64d0f03029a7e8",
       "fr_a_sha1": "f53228f879b35cfc22663bfe6447c6c95732de05"
@@ -94,10 +122,14 @@
     "id": "geographie-008",
     "theme": "geographie",
     "fr_q": "Qui a construit la tour Eiffel et pour quelle occasion ?",
-    "ar_q": "من بنى برج إيفل ولأي مناسبة؟",
     "fr_a": "La tour Eiffel a été construite par l’ingénieur Gustave Eiffel pour l’Exposition universelle de 1889. C’est un monument très fréquenté, avec plus de 7 millions de visiteurs par an.",
-    "ar_a": "بنى برج إيفل (la tour Eiffel) المهندسُ غوستاف إيفل (Gustave Eiffel) من أجل المعرض العالمي (Exposition universelle) لعام 1889. وهو معلَمٌ تتردد عليه أعدادٌ كبيرة، إذ يستقبل أكثر من سبعة ملايين زائر سنوياً.",
     "source": "Livret p.21",
+    "translations": {
+      "ar": {
+        "q": "من بنى برج إيفل ولأي مناسبة؟",
+        "a": "بنى برج إيفل (la tour Eiffel) المهندسُ غوستاف إيفل (Gustave Eiffel) من أجل المعرض العالمي (Exposition universelle) لعام 1889. وهو معلَمٌ تتردد عليه أعدادٌ كبيرة، إذ يستقبل أكثر من سبعة ملايين زائر سنوياً."
+      }
+    },
     "audio": {
       "fr_q_sha1": "faf0249a3af120d19c9edb3e0ea3bd3480976d7b",
       "fr_a_sha1": "987cc93fde187adc5773b1c90210c5fc85307aea"
@@ -107,10 +139,14 @@
     "id": "geographie-009",
     "theme": "geographie",
     "fr_q": "Qu’est-ce que le Mont-Saint-Michel ?",
-    "ar_q": "ما هو الموْن سان-ميشيل؟",
     "fr_a": "Le Mont-Saint-Michel est un îlot rocheux situé en Normandie dans une baie, sur lequel s’élève une abbaye. Il est classé au patrimoine mondial de l’humanité par l’UNESCO.",
-    "ar_a": "الموْن سان-ميشيل (Mont-Saint-Michel) جزيرة صخرية صغيرة تقع في نورماندي داخل خليج، تعلوها رهبانية. وهو مدرَجٌ على قائمة التراث العالمي للإنسانية لدى اليونسكو (UNESCO).",
     "source": "Livret p.22",
+    "translations": {
+      "ar": {
+        "q": "ما هو الموْن سان-ميشيل؟",
+        "a": "الموْن سان-ميشيل (Mont-Saint-Michel) جزيرة صخرية صغيرة تقع في نورماندي داخل خليج، تعلوها رهبانية. وهو مدرَجٌ على قائمة التراث العالمي للإنسانية لدى اليونسكو (UNESCO)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "98cb153e576a1e57b43c4f62fb40bc10e1e661ef",
       "fr_a_sha1": "188887983bc0f6886edd2e84c24f90474f53e0fd"
@@ -120,10 +156,14 @@
     "id": "geographie-010",
     "theme": "geographie",
     "fr_q": "Quels sont les fleuves importants de France et lequel est le plus long ?",
-    "ar_q": "ما هي الأنهار المهمة في فرنسا، وأيها الأطول؟",
     "fr_a": "La France est parcourue par des fleuves importants : la Loire, la Seine, la Garonne, le Rhône, le Rhin. La Loire est le plus long fleuve français.",
-    "ar_a": "تجري في فرنسا أنهارٌ مهمَّة: نهر اللوار (la Loire)، والسين (la Seine)، والغارون (la Garonne)، والرون (le Rhône)، والراين (le Rhin). ونهر اللوار هو أطول نهرٍ في فرنسا.",
     "source": "Livret p.22",
+    "translations": {
+      "ar": {
+        "q": "ما هي الأنهار المهمة في فرنسا، وأيها الأطول؟",
+        "a": "تجري في فرنسا أنهارٌ مهمَّة: نهر اللوار (la Loire)، والسين (la Seine)، والغارون (la Garonne)، والرون (le Rhône)، والراين (le Rhin). ونهر اللوار هو أطول نهرٍ في فرنسا."
+      }
+    },
     "audio": {
       "fr_q_sha1": "1fac0b28e589065198df748557050ae4993bfc49",
       "fr_a_sha1": "34185440e7e951da4ba776389d87744f65fb6499"
@@ -133,10 +173,14 @@
     "id": "geographie-011",
     "theme": "geographie",
     "fr_q": "Quelle est la plus haute montagne d’Europe et où se trouve-t-elle ?",
-    "ar_q": "ما هي أعلى قمة جبل في أوروبا، وأين تقع؟",
     "fr_a": "Le Mont-Blanc, sommet de la chaîne des Alpes, est la plus haute montagne d’Europe (4 810 m).",
-    "ar_a": "جبل مونْ بلان (Mont-Blanc)، قمة سلسلة جبال الألب، هو أعلى جبلٍ في أوروبا (4810 أمتار).",
     "source": "Livret p.22",
+    "translations": {
+      "ar": {
+        "q": "ما هي أعلى قمة جبل في أوروبا، وأين تقع؟",
+        "a": "جبل مونْ بلان (Mont-Blanc)، قمة سلسلة جبال الألب، هو أعلى جبلٍ في أوروبا (4810 أمتار)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "fda9462781fa1fb429193263c92e12e15b2f8fc7",
       "fr_a_sha1": "d59e447dc391a8672a2b6759d4df2ff6fb56f0aa"
@@ -146,10 +190,14 @@
     "id": "geographie-012",
     "theme": "geographie",
     "fr_q": "Combien d’habitants compte la France et quelle est la superficie de son territoire ?",
-    "ar_q": "كم يبلغ عدد سكان فرنسا، وما مساحة أراضيها؟",
     "fr_a": "En 2021, la France compte 67,4 millions d’habitants (source INSEE). Son territoire s’étend sur 675 000 km², en métropole et outre-mer.",
-    "ar_a": "في عام 2021، بلغ عدد سكان فرنسا 67.4 مليون نسمة (المصدر: المعهد الوطني للإحصاء INSEE). وتمتد أراضيها على 675000 كم² في فرنسا القارية وما وراء البحار.",
     "source": "Livret p.22",
+    "translations": {
+      "ar": {
+        "q": "كم يبلغ عدد سكان فرنسا، وما مساحة أراضيها؟",
+        "a": "في عام 2021، بلغ عدد سكان فرنسا 67.4 مليون نسمة (المصدر: المعهد الوطني للإحصاء INSEE). وتمتد أراضيها على 675000 كم² في فرنسا القارية وما وراء البحار."
+      }
+    },
     "audio": {
       "fr_q_sha1": "1b607c92b0764ed0538648801a2de3a93b4b4c7e",
       "fr_a_sha1": "3423ffca3d8eac0c019672aa38ed330864869068"
@@ -159,10 +207,14 @@
     "id": "geographie-013",
     "theme": "geographie",
     "fr_q": "Quelles sont les dix métropoles les plus importantes de France ?",
-    "ar_q": "ما هي المدن الكبرى العشر الأكثر أهميةً في فرنسا؟",
     "fr_a": "La France compte 17 agglomérations de plus de 500 000 habitants. Réparties sur l’ensemble du territoire, ces métropoles ont une dimension internationale. Les dix métropoles les plus importantes sont : Paris, Lyon, Marseille, Toulouse, Lille, Bordeaux, Nice, Nantes, Strasbourg et Rennes.",
-    "ar_a": "تضم فرنسا 17 تجمُّعاً حضرياً يتجاوز عدد سكانه 500000 نسمة. وتتوزع هذه المدن الكبرى على كامل الأراضي، ولها بعد دولي. والمدن الكبرى العشر الأكثر أهميةً هي: باريس، وليون، ومرسيليا، وتولوز، وليل، وبوردو، ونيس، ونانت، وستراسبورغ، ورين.",
     "source": "Livret p.22",
+    "translations": {
+      "ar": {
+        "q": "ما هي المدن الكبرى العشر الأكثر أهميةً في فرنسا؟",
+        "a": "تضم فرنسا 17 تجمُّعاً حضرياً يتجاوز عدد سكانه 500000 نسمة. وتتوزع هذه المدن الكبرى على كامل الأراضي، ولها بعد دولي. والمدن الكبرى العشر الأكثر أهميةً هي: باريس، وليون، ومرسيليا، وتولوز، وليل، وبوردو، ونيس، ونانت، وستراسبورغ، ورين."
+      }
+    },
     "audio": {
       "fr_q_sha1": "ffd85855ad1243bc3240afdc8924a1a6df9ebdbd",
       "fr_a_sha1": "21e23ef268b6973e290a74cbfcf3d3055b3b3bf7"
@@ -172,10 +224,14 @@
     "id": "geographie-014",
     "theme": "geographie",
     "fr_q": "Quelles sont les 13 régions métropolitaines de France ?",
-    "ar_q": "ما هي الأقاليم الثلاثة عشر في فرنسا القارية؟",
     "fr_a": "Les 13 régions métropolitaines de France sont : Île-de-France, Centre-Val de Loire, Bourgogne-Franche-Comté, Normandie, Hauts-de-France, Grand Est, Pays de la Loire, Bretagne, Nouvelle-Aquitaine, Occitanie, Auvergne-Rhône-Alpes, Provence-Alpes-Côte d’Azur, et Corse.",
-    "ar_a": "الأقاليم الثلاثة عشر في فرنسا القارية هي: إيل-دو-فرانس (Île-de-France)، وسنتر-فال دو لوار (Centre-Val de Loire)، وبورغونْي-فرانش-كونتيه (Bourgogne-Franche-Comté)، ونورماندي (Normandie)، وأو-دو-فرانس (Hauts-de-France)، وغراند إست (Grand Est)، وبيي دو لا لوار (Pays de la Loire)، وبروتانْي (Bretagne)، ونوفيل-أكيتانْ (Nouvelle-Aquitaine)، وأوكسيتانْي (Occitanie)، وأوفيرنْ-رون-آلب (Auvergne-Rhône-Alpes)، وبروفانس-آلب-كوت دازور (Provence-Alpes-Côte d’Azur)، وكورس (Corse).",
     "source": "Livret p.23",
+    "translations": {
+      "ar": {
+        "q": "ما هي الأقاليم الثلاثة عشر في فرنسا القارية؟",
+        "a": "الأقاليم الثلاثة عشر في فرنسا القارية هي: إيل-دو-فرانس (Île-de-France)، وسنتر-فال دو لوار (Centre-Val de Loire)، وبورغونْي-فرانش-كونتيه (Bourgogne-Franche-Comté)، ونورماندي (Normandie)، وأو-دو-فرانس (Hauts-de-France)، وغراند إست (Grand Est)، وبيي دو لا لوار (Pays de la Loire)، وبروتانْي (Bretagne)، ونوفيل-أكيتانْ (Nouvelle-Aquitaine)، وأوكسيتانْي (Occitanie)، وأوفيرنْ-رون-آلب (Auvergne-Rhône-Alpes)، وبروفانس-آلب-كوت دازور (Provence-Alpes-Côte d’Azur)، وكورس (Corse)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "34c8e6b8879d1d1b6912248a6b15f64513211be1",
       "fr_a_sha1": "b25d1852967734b84e7e3c307f316d401c049c5f"
@@ -185,10 +241,14 @@
     "id": "geographie-015",
     "theme": "geographie",
     "fr_q": "Qui représente l’État dans les départements et les régions ?",
-    "ar_q": "من يمثل الدولة في المحافظات والأقاليم؟",
     "fr_a": "Dans les départements et les régions de métropole et d’outre-mer, l’État est représenté par les préfets (ou par les hauts-commissaires dans certaines collectivités d’outre-mer). On distingue le préfet de région et le préfet de département.",
-    "ar_a": "في المحافظات والأقاليم، في فرنسا القارية وما وراء البحار، يمثل الدولةَ المحافظون (préfets)، أو المفوَّضون السامون (hauts-commissaires) في بعض جماعات ما وراء البحار. ويُميَّز بين محافظ الإقليم (préfet de région) ومحافظ المحافظة (préfet de département).",
     "source": "Livret p.23",
+    "translations": {
+      "ar": {
+        "q": "من يمثل الدولة في المحافظات والأقاليم؟",
+        "a": "في المحافظات والأقاليم، في فرنسا القارية وما وراء البحار، يمثل الدولةَ المحافظون (préfets)، أو المفوَّضون السامون (hauts-commissaires) في بعض جماعات ما وراء البحار. ويُميَّز بين محافظ الإقليم (préfet de région) ومحافظ المحافظة (préfet de département)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "e0c9664d87ef2ae47bf45507724d3ad37b3b55f1",
       "fr_a_sha1": "0f690aaa68c627f30a55a4f7110a1032ca3b33f0"

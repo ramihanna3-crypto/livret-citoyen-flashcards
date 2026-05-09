@@ -73,8 +73,8 @@ describe("draftCards", () => {
     const valeurs = JSON.parse(readFileSync(join(TMP, "data/cards-draft/valeurs.json"), "utf8"));
     expect(valeurs).toHaveLength(2);
     expect(valeurs[0].id).toMatch(/^valeurs-\d{3}$/);
-    expect(valeurs[0]).toHaveProperty("ar_q");
-    expect(valeurs[0]).toHaveProperty("ar_a");
+    expect(valeurs[0].translations.ar.q).toBeTruthy();
+    expect(valeurs[0].translations.ar.a).toBeTruthy();
     expect(valeurs[0].audio).toEqual({
       fr_q_sha1: "0000000000000000000000000000000000000000",
       fr_a_sha1: "0000000000000000000000000000000000000000",
@@ -106,10 +106,9 @@ describe("draftCards", () => {
           id: "valeurs-001",
           theme: "valeurs",
           fr_q: "Already drafted ?",
-          ar_q: "ar q",
           fr_a: "La République garantit liberté, égalité, fraternité.",
-          ar_a: "ar a",
           source: "Livret p.4",
+          translations: { ar: { q: "سؤال موجود مسبقاً", a: "إجابة موجودة مسبقاً" } },
           audio: { fr_q_sha1: "0".repeat(40), fr_a_sha1: "0".repeat(40) },
         },
       ]),

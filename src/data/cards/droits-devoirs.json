@@ -3,10 +3,14 @@
     "id": "droits-devoirs-001",
     "theme": "droits-devoirs",
     "fr_q": "À quel âge les citoyens français bénéficient-ils du droit de vote ?",
-    "ar_q": "في أي سنٍّ يحظى المواطنون الفرنسيون بحق التصويت؟",
     "fr_a": "Les citoyens bénéficient du droit de vote dès 18 ans.",
-    "ar_a": "يتمتع المواطنون بحق التصويت ابتداءً من سن الثامنة عشرة.",
     "source": "Livret p.8",
+    "translations": {
+      "ar": {
+        "q": "في أي سنٍّ يحظى المواطنون الفرنسيون بحق التصويت؟",
+        "a": "يتمتع المواطنون بحق التصويت ابتداءً من سن الثامنة عشرة."
+      }
+    },
     "audio": {
       "fr_q_sha1": "a1a25522311b9977505e4adb8f2abefe495a71ff",
       "fr_a_sha1": "d8af08c52bf56500f000d9c5bc5ecccfebeee63a"
@@ -16,10 +20,14 @@
     "id": "droits-devoirs-002",
     "theme": "droits-devoirs",
     "fr_q": "Sur quels critères les citoyens accèdent-ils aux emplois publics ?",
-    "ar_q": "على أي معايير يتقلَّد المواطنون الوظائف العامة؟",
     "fr_a": "Tous les citoyens ont accès, de façon égale, aux emplois dans l’administration. Ils sont sélectionnés exclusivement selon leurs qualités et leurs compétences.",
-    "ar_a": "جميع المواطنين يتمتعون، على قدم المساواة، بحق الوصول إلى الوظائف في الإدارة. ويُنتقَون حصراً وفقاً لخصالهم وكفاءاتهم.",
     "source": "Livret p.8",
+    "translations": {
+      "ar": {
+        "q": "على أي معايير يتقلَّد المواطنون الوظائف العامة؟",
+        "a": "جميع المواطنين يتمتعون، على قدم المساواة، بحق الوصول إلى الوظائف في الإدارة. ويُنتقَون حصراً وفقاً لخصالهم وكفاءاتهم."
+      }
+    },
     "audio": {
       "fr_q_sha1": "f9f93d019291ddb2274b89fe079e2730be2e34d2",
       "fr_a_sha1": "5f3ded68eccb39fa963f56711496c77a170080be"
@@ -29,10 +37,14 @@
     "id": "droits-devoirs-003",
     "theme": "droits-devoirs",
     "fr_q": "Pourquoi tout citoyen doit-il respecter la loi ?",
-    "ar_q": "لماذا يجب على كل مواطنٍ احترام القانون؟",
     "fr_a": "Respecter la loi : en effet, « nul n’est censé ignorer la loi ». Elle s’applique à tous.",
-    "ar_a": "احترام القانون: ذلك أن «لا يُعذر أحدٌ بجهل القانون» (nul n’est censé ignorer la loi). والقانون يُطبَّق على الجميع.",
     "source": "Livret p.8",
+    "translations": {
+      "ar": {
+        "q": "لماذا يجب على كل مواطنٍ احترام القانون؟",
+        "a": "احترام القانون: ذلك أن «لا يُعذر أحدٌ بجهل القانون» (nul n’est censé ignorer la loi). والقانون يُطبَّق على الجميع."
+      }
+    },
     "audio": {
       "fr_q_sha1": "efca78e47a6e25daad876e1115bcb7230b1aa979",
       "fr_a_sha1": "66f638cc24f96ab5953ac5ad79a8298834823656"
@@ -42,10 +54,14 @@
     "id": "droits-devoirs-004",
     "theme": "droits-devoirs",
     "fr_q": "Comment les citoyens contribuent-ils au financement des services publics ?",
-    "ar_q": "كيف يساهم المواطنون في تمويل الخدمات العامة؟",
     "fr_a": "Tous les citoyens doivent participer à la hauteur de leurs moyens au financement des services publics en payant des impôts. Ils participent au financement de la protection sociale par les cotisations prélevées sur leur salaire. Déclarer ses revenus et payer ses impôts est obligatoire.",
-    "ar_a": "على جميع المواطنين أن يساهموا، بقَدْر إمكاناتهم، في تمويل الخدمات العامة عبر دفع الضرائب. ويسهمون في تمويل الحماية الاجتماعية من خلال الاشتراكات (cotisations) المقتطعة من أجورهم. والتصريح بالدخل ودفع الضرائب أمرٌ إلزامي.",
     "source": "Livret p.8",
+    "translations": {
+      "ar": {
+        "q": "كيف يساهم المواطنون في تمويل الخدمات العامة؟",
+        "a": "على جميع المواطنين أن يساهموا، بقَدْر إمكاناتهم، في تمويل الخدمات العامة عبر دفع الضرائب. ويسهمون في تمويل الحماية الاجتماعية من خلال الاشتراكات (cotisations) المقتطعة من أجورهم. والتصريح بالدخل ودفع الضرائب أمرٌ إلزامي."
+      }
+    },
     "audio": {
       "fr_q_sha1": "991e69b5ae55fd9d6ae3a8bfd063ea67cc1fd3ed",
       "fr_a_sha1": "cd2a281a1a32fdc87394276b116692d7137a149b"
@@ -55,10 +71,14 @@
     "id": "droits-devoirs-005",
     "theme": "droits-devoirs",
     "fr_q": "Comment le citoyen contribue-t-il à la Défense nationale ?",
-    "ar_q": "كيف يساهم المواطن في الدفاع الوطني؟",
     "fr_a": "En cas de guerre, tout citoyen peut être appelé dans l’armée à participer à la défense du pays. À partir de 16 ans, les Françaises et les Français doivent se faire recenser à la mairie pour participer à la « Journée défense et citoyenneté ».",
-    "ar_a": "في حال الحرب، يمكن استدعاء أي مواطنٍ إلى الجيش للمشاركة في الدفاع عن البلاد. وابتداءً من سن السادسة عشرة، على المواطنين الفرنسيين والمواطنات الفرنسيات أن يسجلوا أنفسهم في البلدية للمشاركة في «يوم الدفاع والمواطَنة» (Journée défense et citoyenneté).",
     "source": "Livret p.8",
+    "translations": {
+      "ar": {
+        "q": "كيف يساهم المواطن في الدفاع الوطني؟",
+        "a": "في حال الحرب، يمكن استدعاء أي مواطنٍ إلى الجيش للمشاركة في الدفاع عن البلاد. وابتداءً من سن السادسة عشرة، على المواطنين الفرنسيين والمواطنات الفرنسيات أن يسجلوا أنفسهم في البلدية للمشاركة في «يوم الدفاع والمواطَنة» (Journée défense et citoyenneté)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "8218ed9c9da5d9666628284c57d147b93f7e0dc9",
       "fr_a_sha1": "1318d01782a828bbd20facda2a19733675113e34"
@@ -68,10 +88,14 @@
     "id": "droits-devoirs-006",
     "theme": "droits-devoirs",
     "fr_q": "Quel est l’objet de la Charte des droits et devoirs du citoyen français ?",
-    "ar_q": "ما هو موضوع ميثاق حقوق وواجبات المواطن الفرنسي؟",
     "fr_a": "En application de l’article 21-24 du code civil, la présente charte rappelle les principes et valeurs essentiels de la République et énonce les droits et devoirs du citoyen, résultant de la Constitution ou de la loi.",
-    "ar_a": "تطبيقاً للمادة 21-24 من القانون المدني (code civil)، يُذكِّر هذا الميثاق بالمبادئ والقيم الأساسية للجمهورية، ويبيِّن حقوق المواطن وواجباته الناشئة عن الدستور أو القانون.",
     "source": "Charte §Préambule",
+    "translations": {
+      "ar": {
+        "q": "ما هو موضوع ميثاق حقوق وواجبات المواطن الفرنسي؟",
+        "a": "تطبيقاً للمادة 21-24 من القانون المدني (code civil)، يُذكِّر هذا الميثاق بالمبادئ والقيم الأساسية للجمهورية، ويبيِّن حقوق المواطن وواجباته الناشئة عن الدستور أو القانون."
+      }
+    },
     "audio": {
       "fr_q_sha1": "ce4c0a98fec119af802ba65e28de22f38930bcbd",
       "fr_a_sha1": "5c2724fc5c5ecb12a4da04e60d4e23fc36a1a4ea"
@@ -81,10 +105,14 @@
     "id": "droits-devoirs-007",
     "theme": "droits-devoirs",
     "fr_q": "Quels sont les symboles républicains que le peuple français respecte ?",
-    "ar_q": "ما هي الرموز الجمهورية التي يحترمها الشعب الفرنسي؟",
     "fr_a": "Le peuple français se reconnaît dans la Déclaration des droits de l’homme et du citoyen du 26 août 1789 et dans les principes démocratiques hérités de son histoire. Il respecte les symboles républicains. L’emblème national est le drapeau tricolore, bleu, blanc, rouge. L’hymne national est La Marseillaise. La devise de la République est « Liberté, Égalité, Fraternité ». La fête nationale est le 14 juillet. « Marianne » est la représentation symbolique de la République. La langue de la République est le français.",
-    "ar_a": "يتعرَّف الشعب الفرنسي على ذاته في إعلان حقوق الإنسان والمواطن (Déclaration des droits de l’homme et du citoyen) الصادر في 26 آب/أغسطس 1789، وفي المبادئ الديمقراطية الموروثة من تاريخه. وهو يحترم الرموز الجمهورية: العَلَم الوطني هو العَلَم الثلاثي الألوان، الأزرق والأبيض والأحمر. والنشيد الوطني هو «المرسييز» (La Marseillaise). وشعار الجمهورية هو «الحرية، المساواة، الإخاء». والعيد الوطني هو الرابع عشر من يوليو. و«ماريان» (Marianne) هي التمثيل الرمزي للجمهورية. ولغة الجمهورية هي الفرنسية.",
     "source": "Charte §Symboles",
+    "translations": {
+      "ar": {
+        "q": "ما هي الرموز الجمهورية التي يحترمها الشعب الفرنسي؟",
+        "a": "يتعرَّف الشعب الفرنسي على ذاته في إعلان حقوق الإنسان والمواطن (Déclaration des droits de l’homme et du citoyen) الصادر في 26 آب/أغسطس 1789، وفي المبادئ الديمقراطية الموروثة من تاريخه. وهو يحترم الرموز الجمهورية: العَلَم الوطني هو العَلَم الثلاثي الألوان، الأزرق والأبيض والأحمر. والنشيد الوطني هو «المرسييز» (La Marseillaise). وشعار الجمهورية هو «الحرية، المساواة، الإخاء». والعيد الوطني هو الرابع عشر من يوليو. و«ماريان» (Marianne) هي التمثيل الرمزي للجمهورية. ولغة الجمهورية هي الفرنسية."
+      }
+    },
     "audio": {
       "fr_q_sha1": "db2186478209f02608f620e8691459f224c0bc66",
       "fr_a_sha1": "a64fd90c0ef0acc953c1689f15850cc47dbc713c"
@@ -94,10 +122,14 @@
     "id": "droits-devoirs-008",
     "theme": "droits-devoirs",
     "fr_q": "Quels sont les quatre principes qui définissent la République française selon la Constitution de 1958 ?",
-    "ar_q": "ما هي المبادئ الأربعة التي تُعرِّف الجمهورية الفرنسية وفقاً لدستور 1958؟",
     "fr_a": "La France est une République indivisible, laïque, démocratique et sociale dont les principes sont fixés par la Constitution du 4 octobre 1958.",
-    "ar_a": "فرنسا جمهورية لا تتجزأ، علمانية، ديمقراطية واجتماعية، تُحدِّد مبادئَها الدستورُ الصادر في الرابع من أكتوبر 1958.",
     "source": "Charte §Principes",
+    "translations": {
+      "ar": {
+        "q": "ما هي المبادئ الأربعة التي تُعرِّف الجمهورية الفرنسية وفقاً لدستور 1958؟",
+        "a": "فرنسا جمهورية لا تتجزأ، علمانية، ديمقراطية واجتماعية، تُحدِّد مبادئَها الدستورُ الصادر في الرابع من أكتوبر 1958."
+      }
+    },
     "audio": {
       "fr_q_sha1": "17fbee169797deaa2d0d214d75b87104af08fa6f",
       "fr_a_sha1": "fbbdf87c328f1e7f7ba51cd52d62af2201273d12"
@@ -107,10 +139,14 @@
     "id": "droits-devoirs-009",
     "theme": "droits-devoirs",
     "fr_q": "Que signifie le caractère « indivisible » de la République ?",
-    "ar_q": "ماذا تعني صفة «اللاتجزُّؤ» (indivisible) للجمهورية؟",
     "fr_a": "Indivisible : la souveraineté nationale appartient au peuple qui l’exerce par ses représentants élus et par la voie du référendum. Aucune partie du peuple, ni aucun individu, ne peut s’en attribuer l’exercice.",
-    "ar_a": "اللاتجزُّؤ (indivisible): السيادة الوطنية ملكٌ للشعب يمارسها عبر ممثليه المنتخبين ومن خلال الاستفتاء. ولا يحق لأي جزءٍ من الشعب ولا لأي فردٍ أن ينسب إليه ممارستها.",
     "source": "Charte §Indivisible",
+    "translations": {
+      "ar": {
+        "q": "ماذا تعني صفة «اللاتجزُّؤ» (indivisible) للجمهورية؟",
+        "a": "اللاتجزُّؤ (indivisible): السيادة الوطنية ملكٌ للشعب يمارسها عبر ممثليه المنتخبين ومن خلال الاستفتاء. ولا يحق لأي جزءٍ من الشعب ولا لأي فردٍ أن ينسب إليه ممارستها."
+      }
+    },
     "audio": {
       "fr_q_sha1": "fff7c8cb719a83759ee2907d5103867e1a871b70",
       "fr_a_sha1": "f927a1563993f43090db9d4d01822398b89e7f40"
@@ -120,10 +156,14 @@
     "id": "droits-devoirs-010",
     "theme": "droits-devoirs",
     "fr_q": "Que signifie le caractère « laïque » de la République ?",
-    "ar_q": "ماذا تعني صفة «العلمانية» (laïque) للجمهورية؟",
     "fr_a": "Laïque : la République assure la liberté de conscience. Elle respecte toutes les croyances. Chacun est libre de croire, de ne pas croire, de changer de religion. La République garantit le libre exercice des cultes mais n’en reconnaît, n’en salarie ni n’en subventionne aucun. L’État et les religions sont séparés.",
-    "ar_a": "العلمانية (laïque): تكفل الجمهورية حرية الضمير، وتحترم جميع المعتقدات. فلكلٍّ حرية الإيمان أو عدم الإيمان أو تغيير الدين. وتكفل الجمهورية حرية ممارسة الشعائر، ولكنها لا تعترف بأي دين ولا تَمنحه راتباً ولا تموِّله. والدولة والأديان منفصلان.",
     "source": "Charte §Laïque",
+    "translations": {
+      "ar": {
+        "q": "ماذا تعني صفة «العلمانية» (laïque) للجمهورية؟",
+        "a": "العلمانية (laïque): تكفل الجمهورية حرية الضمير، وتحترم جميع المعتقدات. فلكلٍّ حرية الإيمان أو عدم الإيمان أو تغيير الدين. وتكفل الجمهورية حرية ممارسة الشعائر، ولكنها لا تعترف بأي دين ولا تَمنحه راتباً ولا تموِّله. والدولة والأديان منفصلان."
+      }
+    },
     "audio": {
       "fr_q_sha1": "ec6708dcef1169109cd543c582b56906c3d595db",
       "fr_a_sha1": "c21d762b4d8361740f8a1927841715a231b6f717"
@@ -133,10 +173,14 @@
     "id": "droits-devoirs-011",
     "theme": "droits-devoirs",
     "fr_q": "Que signifie le caractère « démocratique » de la République ?",
-    "ar_q": "ماذا تعني صفة «الديمقراطية» للجمهورية؟",
     "fr_a": "Démocratique : le principe de la République est : gouvernement du peuple, par le peuple et pour le peuple. Direct ou indirect, le suffrage est toujours universel, égal et secret. La loi étant l’expression de la volonté générale, tout citoyen doit la respecter. Nul ne peut être contraint à faire ce que la loi n’ordonne pas. Rendue au nom du peuple français, la justice est indépendante. La force publique garantit le respect de la loi et des décisions de justice.",
-    "ar_a": "الديمقراطية: مبدأ الجمهورية هو حكم الشعب، من الشعب ومن أجل الشعب. والاقتراع، سواءٌ أكان مباشراً أم غير مباشر، يبقى دائماً عاماً ومتساوياً وسرياً. ولأن القانون تعبيرٌ عن الإرادة العامة، فإن على كل مواطنٍ احترامه. ولا يُكرَه أحدٌ على فعل ما لا يأمر به القانون. والقضاء، الصادر باسم الشعب الفرنسي، مستقلٌّ. وتكفل القوة العامة احترام القانون واحترام قرارات القضاء.",
     "source": "Charte §Démocratique",
+    "translations": {
+      "ar": {
+        "q": "ماذا تعني صفة «الديمقراطية» للجمهورية؟",
+        "a": "الديمقراطية: مبدأ الجمهورية هو حكم الشعب، من الشعب ومن أجل الشعب. والاقتراع، سواءٌ أكان مباشراً أم غير مباشر، يبقى دائماً عاماً ومتساوياً وسرياً. ولأن القانون تعبيرٌ عن الإرادة العامة، فإن على كل مواطنٍ احترامه. ولا يُكرَه أحدٌ على فعل ما لا يأمر به القانون. والقضاء، الصادر باسم الشعب الفرنسي، مستقلٌّ. وتكفل القوة العامة احترام القانون واحترام قرارات القضاء."
+      }
+    },
     "audio": {
       "fr_q_sha1": "fc1836039504fe71a55b329ed8e232aa2f14879c",
       "fr_a_sha1": "b872d8cfa66720f2aeefb9d866d60534f8d55898"
@@ -146,10 +190,14 @@
     "id": "droits-devoirs-012",
     "theme": "droits-devoirs",
     "fr_q": "Que signifie le caractère « social » de la République ?",
-    "ar_q": "ماذا تعني صفة «الاجتماعية» (sociale) للجمهورية؟",
     "fr_a": "Sociale : la Nation assure à l’individu et à la famille les conditions nécessaires à leur développement. La République garantit à tous la sécurité des personnes et des biens.",
-    "ar_a": "الاجتماعية (sociale): تكفل الأمة للفرد وللأسرة الشروط اللازمة لنمائهما. وتكفل الجمهورية للجميع أمن الأشخاص وأمن الممتلكات.",
     "source": "Charte §Sociale",
+    "translations": {
+      "ar": {
+        "q": "ماذا تعني صفة «الاجتماعية» (sociale) للجمهورية؟",
+        "a": "الاجتماعية (sociale): تكفل الأمة للفرد وللأسرة الشروط اللازمة لنمائهما. وتكفل الجمهورية للجميع أمن الأشخاص وأمن الممتلكات."
+      }
+    },
     "audio": {
       "fr_q_sha1": "7213c98a5bd8e7d1523ae847b94b34b6297c4842",
       "fr_a_sha1": "1d086b8b67305bc190a9980a90558c12f100d76b"
@@ -159,10 +207,14 @@
     "id": "droits-devoirs-013",
     "theme": "droits-devoirs",
     "fr_q": "Quel est le rapport de la République française avec l’Union européenne ?",
-    "ar_q": "ما هي علاقة الجمهورية الفرنسية بالاتحاد الأوروبي؟",
     "fr_a": "La République participe à l’Union européenne constituée d’États qui ont choisi librement d’exercer en commun certaines de leurs compétences.",
-    "ar_a": "تشارك الجمهورية في الاتحاد الأوروبي، الذي يتألف من دولٍ اختارت بحريةٍ ممارسة بعض اختصاصاتها بشكلٍ مشترك.",
     "source": "Charte §UE",
+    "translations": {
+      "ar": {
+        "q": "ما هي علاقة الجمهورية الفرنسية بالاتحاد الأوروبي؟",
+        "a": "تشارك الجمهورية في الاتحاد الأوروبي، الذي يتألف من دولٍ اختارت بحريةٍ ممارسة بعض اختصاصاتها بشكلٍ مشترك."
+      }
+    },
     "audio": {
       "fr_q_sha1": "27e64cf342fdcd2b07e9b153bf4c99d16c9911a7",
       "fr_a_sha1": "83dbbc018cdb8a0cd62bdfb986b61a7e1249335b"
@@ -172,10 +224,14 @@
     "id": "droits-devoirs-014",
     "theme": "droits-devoirs",
     "fr_q": "Tout être humain possède-t-il des droits inaliénables ?",
-    "ar_q": "هل لكل إنسانٍ حقوق غير قابلة للتصرُّف؟",
     "fr_a": "Tout être humain, sans distinction de race, de religion ni de croyance, possède des droits inaliénables. Sur le territoire de la République, ces droits sont garantis à chacun et chacun a le devoir de les respecter.",
-    "ar_a": "لكل إنسانٍ، دون تمييز بسبب العِرق أو الدين أو المعتقد، حقوق غير قابلة للتصرُّف. وعلى أراضي الجمهورية، تُكفَل هذه الحقوق للجميع، وعلى الجميع واجب احترامها.",
     "source": "Charte §Droits humains",
+    "translations": {
+      "ar": {
+        "q": "هل لكل إنسانٍ حقوق غير قابلة للتصرُّف؟",
+        "a": "لكل إنسانٍ، دون تمييز بسبب العِرق أو الدين أو المعتقد، حقوق غير قابلة للتصرُّف. وعلى أراضي الجمهورية، تُكفَل هذه الحقوق للجميع، وعلى الجميع واجب احترامها."
+      }
+    },
     "audio": {
       "fr_q_sha1": "5a47ad5d63ec9cad9ea6f0cb7330ffb9724d0f27",
       "fr_a_sha1": "dbd77531bfba70e266de79969298fdc87dab3176"
@@ -185,10 +241,14 @@
     "id": "droits-devoirs-015",
     "theme": "droits-devoirs",
     "fr_q": "Quels droits et devoirs particuliers s’attachent à la qualité de citoyen français ?",
-    "ar_q": "ما هي الحقوق والواجبات الخاصة المرتبطة بصفة المواطن الفرنسي؟",
     "fr_a": "À la qualité de citoyen français s’attachent en outre des droits et devoirs particuliers, tels que le droit de participer à l’élection des représentants du peuple et le devoir de concourir à la défense nationale ou de participer aux jurys d’assises.",
-    "ar_a": "ترتبط بصفة المواطن الفرنسي، فضلاً عن ذلك، حقوقٌ وواجباتٌ خاصة، كحق المشاركة في انتخاب ممثلي الشعب، وواجب الإسهام في الدفاع الوطني أو المشاركة في هيئات المحلَّفين في محاكم الجنايات (jurys d’assises).",
     "source": "Charte §Citoyenneté",
+    "translations": {
+      "ar": {
+        "q": "ما هي الحقوق والواجبات الخاصة المرتبطة بصفة المواطن الفرنسي؟",
+        "a": "ترتبط بصفة المواطن الفرنسي، فضلاً عن ذلك، حقوقٌ وواجباتٌ خاصة، كحق المشاركة في انتخاب ممثلي الشعب، وواجب الإسهام في الدفاع الوطني أو المشاركة في هيئات المحلَّفين في محاكم الجنايات (jurys d’assises)."
+      }
+    },
     "audio": {
       "fr_q_sha1": "7ebcf3b288664dda81841d134f5aa1fd2cd7962b",
       "fr_a_sha1": "58b0991a72ff4c4357b892e3e1e429b8ac34a5b2"
@@ -198,10 +258,14 @@
     "id": "droits-devoirs-016",
     "theme": "droits-devoirs",
     "fr_q": "En quoi consiste la liberté selon la Charte ?",
-    "ar_q": "في ماذا تتمثل الحرية وفقاً للميثاق؟",
     "fr_a": "Les êtres humains naissent et demeurent libres et égaux en droits. La liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui. Le respect dû à la personne interdit toute atteinte à sa dignité. Le corps humain est inviolable.",
-    "ar_a": "يولد الناس ويظلون أحراراً ومتساوين في الحقوق. والحرية هي القدرة على فعل كل ما لا يضرُّ بالآخرين. والاحترام الواجب للشخص يحظر أي مساسٍ بكرامته. وجسد الإنسان لا يجوز انتهاكه.",
     "source": "Charte §Liberté",
+    "translations": {
+      "ar": {
+        "q": "في ماذا تتمثل الحرية وفقاً للميثاق؟",
+        "a": "يولد الناس ويظلون أحراراً ومتساوين في الحقوق. والحرية هي القدرة على فعل كل ما لا يضرُّ بالآخرين. والاحترام الواجب للشخص يحظر أي مساسٍ بكرامته. وجسد الإنسان لا يجوز انتهاكه."
+      }
+    },
     "audio": {
       "fr_q_sha1": "a3a85a31d1012dedd12de068e8336d43e5ba19c1",
       "fr_a_sha1": "efb28e01d953a039e50000547ff822e3ea3adcff"
@@ -211,10 +275,14 @@
     "id": "droits-devoirs-017",
     "theme": "droits-devoirs",
     "fr_q": "Quelles libertés d’opinion et d’expression la Charte garantit-elle ?",
-    "ar_q": "ما هي حريات الرأي والتعبير التي يكفلها الميثاق؟",
     "fr_a": "Nul ne peut être inquiété pour ses opinions pourvu que leur manifestation ne trouble pas l’ordre public. Tout citoyen peut parler, écrire, imprimer librement, sauf à répondre de l’abus de cette liberté dans les cas prévus par la loi. Chacun a droit au respect de sa vie privée.",
-    "ar_a": "لا يجوز مضايقة أحدٍ بسبب آرائه، ما دام إظهارها لا يُخلّ بالنظام العام. ولكل مواطنٍ أن يتكلَّم ويكتب ويطبع بحرية، شريطة أن يتحمَّل المسؤولية عن إساءة استخدام هذه الحرية في الحالات التي ينص عليها القانون. ولكل فردٍ حق في احترام حياته الخاصة.",
     "source": "Charte §Liberté",
+    "translations": {
+      "ar": {
+        "q": "ما هي حريات الرأي والتعبير التي يكفلها الميثاق؟",
+        "a": "لا يجوز مضايقة أحدٍ بسبب آرائه، ما دام إظهارها لا يُخلّ بالنظام العام. ولكل مواطنٍ أن يتكلَّم ويكتب ويطبع بحرية، شريطة أن يتحمَّل المسؤولية عن إساءة استخدام هذه الحرية في الحالات التي ينص عليها القانون. ولكل فردٍ حق في احترام حياته الخاصة."
+      }
+    },
     "audio": {
       "fr_q_sha1": "53613e17c1230c1b9dd10c829e55d7719f26ce0e",
       "fr_a_sha1": "78572c359930eaad8c606d864d4b6dd533784ee6"
@@ -224,10 +292,14 @@
     "id": "droits-devoirs-018",
     "theme": "droits-devoirs",
     "fr_q": "Quelles garanties protègent une personne accusée ou arrêtée ?",
-    "ar_q": "ما هي الضمانات التي تحمي الشخصَ المتَّهَم أو الموقوف؟",
     "fr_a": "Nul ne peut être accusé, arrêté ni détenu que dans les cas et dans les formes déterminés par la loi. Chacun est présumé innocent tant qu’il n’a pas été jugé coupable.",
-    "ar_a": "لا يجوز اتهام أحدٍ ولا اعتقاله ولا احتجازه إلا في الحالات وبالأشكال التي يحدِّدها القانون. وكل شخصٍ بريءٌ حتى تثبت إدانته بحكمٍ قضائي.",
     "source": "Charte §Liberté",
+    "translations": {
+      "ar": {
+        "q": "ما هي الضمانات التي تحمي الشخصَ المتَّهَم أو الموقوف؟",
+        "a": "لا يجوز اتهام أحدٍ ولا اعتقاله ولا احتجازه إلا في الحالات وبالأشكال التي يحدِّدها القانون. وكل شخصٍ بريءٌ حتى تثبت إدانته بحكمٍ قضائي."
+      }
+    },
     "audio": {
       "fr_q_sha1": "22197aed02a75616c5ff5aace998eec33bc8e786",
       "fr_a_sha1": "ee36a0dbaf1ea264b060805a3a9b5b583e75914a"
@@ -237,10 +309,14 @@
     "id": "droits-devoirs-019",
     "theme": "droits-devoirs",
     "fr_q": "Quelles libertés d’association, de partis et de syndicats sont garanties ?",
-    "ar_q": "ما هي حريات تكوين الجمعيات والأحزاب والنقابات المكفولة؟",
     "fr_a": "Chacun a la liberté de créer une association ou de participer à celles de son choix. Il peut adhérer librement aux partis ou groupements politiques et défendre ses droits et ses intérêts par l’action syndicale.",
-    "ar_a": "لكل فردٍ حرية إنشاء جمعيةٍ أو المشاركة في الجمعيات التي يختارها. وله الانخراط بحرية في الأحزاب أو التكتلات السياسية، والدفاع عن حقوقه ومصالحه عبر العمل النقابي.",
     "source": "Charte §Liberté",
+    "translations": {
+      "ar": {
+        "q": "ما هي حريات تكوين الجمعيات والأحزاب والنقابات المكفولة؟",
+        "a": "لكل فردٍ حرية إنشاء جمعيةٍ أو المشاركة في الجمعيات التي يختارها. وله الانخراط بحرية في الأحزاب أو التكتلات السياسية، والدفاع عن حقوقه ومصالحه عبر العمل النقابي."
+      }
+    },
     "audio": {
       "fr_q_sha1": "b0743244564444b0f90806742881cb2b0001b4bb",
       "fr_a_sha1": "925bdcce8af32d83e16e96c5467f248b365568e8"
@@ -250,10 +326,14 @@
     "id": "droits-devoirs-020",
     "theme": "droits-devoirs",
     "fr_q": "Qui est électeur en France et que représente le vote ?",
-    "ar_q": "من هو الناخب في فرنسا وماذا يمثل التصويت؟",
     "fr_a": "Tout citoyen français âgé de dix-huit ans et jouissant de ses droits civiques est électeur. Chaque citoyen ayant la qualité d’électeur peut faire acte de candidature dans les conditions prévues par la loi. Voter est un droit, c’est aussi un devoir civique.",
-    "ar_a": "كل مواطنٍ فرنسي بلغ الثامنة عشرة من عمره ويتمتع بحقوقه المدنية يُعدُّ ناخباً. وكل مواطنٍ يتمتع بصفة الناخب يحق له الترشح وفق الشروط التي ينص عليها القانون. والتصويت حقٌّ، وهو في الوقت نفسه واجبٌ مدني.",
     "source": "Charte §Liberté",
+    "translations": {
+      "ar": {
+        "q": "من هو الناخب في فرنسا وماذا يمثل التصويت؟",
+        "a": "كل مواطنٍ فرنسي بلغ الثامنة عشرة من عمره ويتمتع بحقوقه المدنية يُعدُّ ناخباً. وكل مواطنٍ يتمتع بصفة الناخب يحق له الترشح وفق الشروط التي ينص عليها القانون. والتصويت حقٌّ، وهو في الوقت نفسه واجبٌ مدني."
+      }
+    },
     "audio": {
       "fr_q_sha1": "71472db0d830e0a6c41b00c1a5c03df0a3cc298a",
       "fr_a_sha1": "0092b8e9335b9b865f12f4335a2445b7c0235156"
@@ -263,10 +343,14 @@
     "id": "droits-devoirs-021",
     "theme": "droits-devoirs",
     "fr_q": "Que dit la Charte sur l’égalité de tous devant la loi ?",
-    "ar_q": "ماذا يقول الميثاق عن مساواة الجميع أمام القانون؟",
     "fr_a": "Tous les citoyens sont égaux devant la loi, sans distinction de sexe, d’origine, de race ou de religion. La loi est la même pour tous, soit qu’elle protège, soit qu’elle punisse.",
-    "ar_a": "جميع المواطنين متساوون أمام القانون، دون تمييز بسبب الجنس أو الأصل أو العِرق أو الدين. والقانون واحدٌ للجميع، سواءٌ حين يحمي أو حين يعاقِب.",
     "source": "Charte §Égalité",
+    "translations": {
+      "ar": {
+        "q": "ماذا يقول الميثاق عن مساواة الجميع أمام القانون؟",
+        "a": "جميع المواطنين متساوون أمام القانون، دون تمييز بسبب الجنس أو الأصل أو العِرق أو الدين. والقانون واحدٌ للجميع، سواءٌ حين يحمي أو حين يعاقِب."
+      }
+    },
     "audio": {
       "fr_q_sha1": "c45b53196fbb7f293211f56ce2d8366b6349690d",
       "fr_a_sha1": "7c48327f3b601c060a0539fbe3cc2ea1119c759c"
@@ -276,10 +360,14 @@
     "id": "droits-devoirs-022",
     "theme": "droits-devoirs",
     "fr_q": "Quelle est la position de la Charte sur l’égalité entre l’homme et la femme ?",
-    "ar_q": "ما هو موقف الميثاق من المساواة بين الرجل والمرأة؟",
     "fr_a": "L’homme et la femme ont dans tous les domaines les mêmes droits. La République favorise l’égal accès des femmes et des hommes aux mandats électoraux et fonctions électives, ainsi qu’aux responsabilités professionnelles et sociales. Chacun des conjoints peut librement exercer une profession, percevoir ses revenus et en disposer comme il l’entend après avoir contribué aux charges communes.",
-    "ar_a": "للرجل والمرأة في جميع المجالات الحقوق نفسها. وتُشجِّع الجمهورية المساواةَ في وصول النساء والرجال إلى المناصب الانتخابية والمناصب المنتخَبة، فضلاً عن المسؤوليات المهنية والاجتماعية. ولكل من الزوجين حرية ممارسة مهنةٍ ما، وتلقّي دخلِه والتصرف فيه كما يشاء، بعد المساهمة في الأعباء المشتركة.",
     "source": "Charte §Égalité",
+    "translations": {
+      "ar": {
+        "q": "ما هو موقف الميثاق من المساواة بين الرجل والمرأة؟",
+        "a": "للرجل والمرأة في جميع المجالات الحقوق نفسها. وتُشجِّع الجمهورية المساواةَ في وصول النساء والرجال إلى المناصب الانتخابية والمناصب المنتخَبة، فضلاً عن المسؤوليات المهنية والاجتماعية. ولكل من الزوجين حرية ممارسة مهنةٍ ما، وتلقّي دخلِه والتصرف فيه كما يشاء، بعد المساهمة في الأعباء المشتركة."
+      }
+    },
     "audio": {
       "fr_q_sha1": "799b2206b0063580b782bcd975a328ef2cf83c1c",
       "fr_a_sha1": "44a7eca1ad85954cd39af5aeb54fad3bcf4a043a"
@@ -289,10 +377,14 @@
     "id": "droits-devoirs-023",
     "theme": "droits-devoirs",
     "fr_q": "Quel est le devoir des parents envers leurs enfants ?",
-    "ar_q": "ما هو واجب الوالدين تجاه أبنائهم؟",
     "fr_a": "Les parents exercent en commun l’autorité parentale. Ils pourvoient à l’éducation des enfants et préparent leur avenir. L’instruction est obligatoire pour les enfants des deux sexes jusqu’à seize ans. L’organisation de l’enseignement public gratuit et laïque à tous les degrés est un devoir de l’État.",
-    "ar_a": "يمارس الوالدان السلطة الأبوية بشكلٍ مشترك. وهما يتكفلان بتعليم الأبناء وإعداد مستقبلهم. والتعليم إلزاميٌّ للأطفال من الجنسين حتى السادسة عشرة. وتنظيم التعليم العام المجاني والعلماني في جميع مراحله واجبٌ على الدولة.",
     "source": "Charte §Égalité",
+    "translations": {
+      "ar": {
+        "q": "ما هو واجب الوالدين تجاه أبنائهم؟",
+        "a": "يمارس الوالدان السلطة الأبوية بشكلٍ مشترك. وهما يتكفلان بتعليم الأبناء وإعداد مستقبلهم. والتعليم إلزاميٌّ للأطفال من الجنسين حتى السادسة عشرة. وتنظيم التعليم العام المجاني والعلماني في جميع مراحله واجبٌ على الدولة."
+      }
+    },
     "audio": {
       "fr_q_sha1": "538f62cec4ff911fb9cc5dc9ed206f08ace42ad7",
       "fr_a_sha1": "d00664cb0619266bb91aa3c7ac75abdde64ed90a"
@@ -302,10 +394,14 @@
     "id": "droits-devoirs-024",
     "theme": "droits-devoirs",
     "fr_q": "Dans quels cas un Français peut-il être déchu de la nationalité française ?",
-    "ar_q": "في أي الحالات يمكن إسقاط الجنسية الفرنسية عن شخصٍ اكتسبها؟",
     "fr_a": "Tout citoyen français concourt à la défense et à la cohésion de la Nation. Une personne qui a acquis la qualité de Français peut être déchue de la nationalité française si elle s’est soustraite à ses obligations de défense, ou si elle s’est livrée à des actes contraires aux intérêts fondamentaux de la France.",
-    "ar_a": "يُسهم كل مواطنٍ فرنسي في الدفاع عن الأمة وتماسكها. ويمكن إسقاط الجنسية الفرنسية عن الشخص الذي اكتسب صفة الفرنسي إذا تهرَّب من واجباته الدفاعية، أو إذا اقترف أفعالاً تتعارض مع المصالح الأساسية لفرنسا.",
     "source": "Charte §Fraternité",
+    "translations": {
+      "ar": {
+        "q": "في أي الحالات يمكن إسقاط الجنسية الفرنسية عن شخصٍ اكتسبها؟",
+        "a": "يُسهم كل مواطنٍ فرنسي في الدفاع عن الأمة وتماسكها. ويمكن إسقاط الجنسية الفرنسية عن الشخص الذي اكتسب صفة الفرنسي إذا تهرَّب من واجباته الدفاعية، أو إذا اقترف أفعالاً تتعارض مع المصالح الأساسية لفرنسا."
+      }
+    },
     "audio": {
       "fr_q_sha1": "c575439e9e0e7b3d9b878d57eeb4467d2d5d6a17",
       "fr_a_sha1": "8a7aa85482d8659dcd32f316c4b009d5d2a83da2"
@@ -315,10 +411,14 @@
     "id": "droits-devoirs-025",
     "theme": "droits-devoirs",
     "fr_q": "Quels sont les devoirs financiers du citoyen et les garanties sociales que l’État offre ?",
-    "ar_q": "ما هي الواجبات المالية للمواطن وما هي الضمانات الاجتماعية التي تكفلها الدولة؟",
     "fr_a": "Chacun a le devoir de contribuer, selon ses capacités financières, aux dépenses de la Nation par le paiement d’impôts et de cotisations sociales. La Nation garantit à tous la protection de la santé, la sécurité matérielle et le droit à des congés. Toute personne qui, en raison de son âge, de son état physique ou mental, de la situation économique, se trouve dans l’incapacité de travailler a le droit d’obtenir de la collectivité des moyens convenables d’existence.",
-    "ar_a": "على كلٍّ منا واجب الإسهام، بحسب قدراته المالية، في نفقات الأمة عن طريق دفع الضرائب والاشتراكات الاجتماعية (cotisations sociales). وتكفل الأمة للجميع حماية الصحة، والأمن المادي، والحق في الإجازات. ولكل شخصٍ يجد نفسه عاجزاً عن العمل بسبب سنه أو حالته الجسدية أو الذهنية أو وضعه الاقتصادي، الحق في الحصول من المجموعة على وسائل عيشٍ ملائمة.",
     "source": "Charte §Fraternité",
+    "translations": {
+      "ar": {
+        "q": "ما هي الواجبات المالية للمواطن وما هي الضمانات الاجتماعية التي تكفلها الدولة؟",
+        "a": "على كلٍّ منا واجب الإسهام، بحسب قدراته المالية، في نفقات الأمة عن طريق دفع الضرائب والاشتراكات الاجتماعية (cotisations sociales). وتكفل الأمة للجميع حماية الصحة، والأمن المادي، والحق في الإجازات. ولكل شخصٍ يجد نفسه عاجزاً عن العمل بسبب سنه أو حالته الجسدية أو الذهنية أو وضعه الاقتصادي، الحق في الحصول من المجموعة على وسائل عيشٍ ملائمة."
+      }
+    },
     "audio": {
       "fr_q_sha1": "f4fa341b787e04bae033612da22952679f03ff14",
       "fr_a_sha1": "7352fbf2c22d087457506e8f3169d5b9b3eb2119"

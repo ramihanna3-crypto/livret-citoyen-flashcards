@@ -5,11 +5,10 @@ import type { Card } from "@/lib/card";
 const c = (id: string): Card => ({
   id,
   theme: "valeurs",
-  fr_q: "Q?",
-  ar_q: "س؟",
-  fr_a: "R",
-  ar_a: "إ",
-  source: "x",
+  fr_q: "Question?",
+  fr_a: "Réponse",
+  source: "Livret",
+  translations: { ar: { q: "س؟", a: "إجابة" } },
   audio: { fr_q_sha1: "a".repeat(40), fr_a_sha1: "b".repeat(40) },
 });
 

@@ -24,8 +24,8 @@ describe("progress adapter", () => {
     expect(p["valeurs-002"].status).toBe("review");
     expect(typeof p["valeurs-001"].lastSeenAt).toBe("number");
   });
-  it("prefs default to system + auto-advance true", () => {
-    expect(getPrefs()).toEqual({ darkMode: "system", autoAdvance: true });
+  it("prefs default to system + auto-advance true + Arabic language", () => {
+    expect(getPrefs()).toEqual({ darkMode: "system", autoAdvance: true, language: "ar" });
   });
   it("setPref persists", () => {
     setPref("autoAdvance", false);

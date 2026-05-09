@@ -1,11 +1,17 @@
 import type { Card } from "@/lib/card";
 import { themeById } from "@/data/themes";
 import { AudioButton } from "@/components/flashcard/AudioButton";
+import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
 
 type Props = { card: Card; position: number; total: number };
 
 export function CardFront({ card, position, total }: Props) {
   const theme = themeById(card.theme);
+  const { prefs } = useProgress();
+  const lang = languageById(prefs.language);
+  const tr = card.translations[prefs.language] ?? card.translations.ar;
+
   return (
     <div className="flex h-full flex-col p-6 sm:p-8 gap-4">
       <div className="text-xs text-[var(--color-muted-foreground)] uppercase tracking-wide">
@@ -28,16 +34,16 @@ export function CardFront({ card, position, total }: Props) {
 
       <p
         className="font-[family-name:var(--font-sans)] text-base sm:text-lg text-[var(--color-muted-foreground)] leading-relaxed"
-        dir="rtl"
-        lang="ar"
+        dir={lang.dir}
+        lang={lang.lang}
       >
-        {card.ar_q}
+        {tr.q}
       </p>
 
       <div className="mt-auto pt-4 text-center text-xs text-[var(--color-muted-foreground)]">
         Tap to reveal ·{" "}
-        <span dir="rtl" lang="ar">
-          اضغط لكشف الإجابة
+        <span dir={lang.dir} lang={lang.lang}>
+          {lang.reveal_hint}
         </span>
       </div>
     </div>

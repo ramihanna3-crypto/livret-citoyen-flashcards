@@ -1,3 +1,5 @@
+import type { LanguageId } from "@/lib/card";
+
 export type CardStatus = "known" | "review";
 export type CardEntry = { status: CardStatus; lastSeenAt: number };
 export type CardProgress = Record<string, CardEntry>;
@@ -5,12 +7,13 @@ export type CardProgress = Record<string, CardEntry>;
 export type Prefs = {
   darkMode: "system" | "light" | "dark";
   autoAdvance: boolean;
+  language: LanguageId;
 };
 
 type StoredV1 = { v: 1; cards: CardProgress; prefs: Prefs };
 
 const KEY = "lc.progress.v1";
-const DEFAULT_PREFS: Prefs = { darkMode: "system", autoAdvance: true };
+const DEFAULT_PREFS: Prefs = { darkMode: "system", autoAdvance: true, language: "ar" };
 
 function read(): StoredV1 {
   try {

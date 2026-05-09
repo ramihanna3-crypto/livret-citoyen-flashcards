@@ -2,21 +2,32 @@ import { Link } from "react-router-dom";
 import { Info } from "lucide-react";
 import { FlagAccent } from "@/components/flashcard/FlagAccent";
 import { DarkModeToggle } from "@/components/layout/DarkModeToggle";
+import { LanguagePicker } from "@/components/layout/LanguagePicker";
+import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
 
 export function Header() {
+  const { prefs } = useProgress();
+  const lang = languageById(prefs.language);
+
   return (
     <header className="sticky top-0 z-10 bg-[var(--color-background)]/90 backdrop-blur border-b border-[var(--color-border)]">
       <div className="mx-auto w-full max-w-[960px] px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
-        <Link to="/" className="inline-flex flex-col">
-          <span className="font-semibold text-base sm:text-lg leading-none">
+        <Link to="/" className="inline-flex flex-col min-w-0">
+          <span className="font-semibold text-base sm:text-lg leading-none truncate">
             Livret du Citoyen{" "}
-            <span dir="rtl" lang="ar" className="text-[var(--color-muted-foreground)] font-normal">
-              · كتيب المواطن
+            <span
+              dir={lang.dir}
+              lang={lang.lang}
+              className="text-[var(--color-muted-foreground)] font-normal"
+            >
+              · {lang.app_title}
             </span>
           </span>
           <FlagAccent orientation="horizontal" className="mt-1" />
         </Link>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
+          <LanguagePicker />
           <DarkModeToggle />
           <Link
             to="/about"

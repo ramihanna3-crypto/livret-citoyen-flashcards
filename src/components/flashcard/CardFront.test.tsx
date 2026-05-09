@@ -18,9 +18,8 @@ const card = {
   id: "valeurs-001",
   theme: "valeurs" as const,
   fr_q: "Question en français ?",
-  ar_q: "سؤال بالعربية؟",
   fr_a: "Réponse",
-  ar_a: "إجابة",
+  translations: { ar: { q: "سؤال بالعربية؟", a: "إجابة" } },
   source: "Livret p.4",
   audio: { fr_q_sha1: "a".repeat(40), fr_a_sha1: "b".repeat(40) },
 };

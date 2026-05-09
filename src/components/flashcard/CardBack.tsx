@@ -2,6 +2,8 @@ import type { Card } from "@/lib/card";
 import { themeById } from "@/data/themes";
 import { AudioButton } from "@/components/flashcard/AudioButton";
 import { ResponseButtons } from "@/components/flashcard/ResponseButtons";
+import { useProgress } from "@/lib/useProgress";
+import { languageById } from "@/lib/languages";
 
 type Props = {
   card: Card;
@@ -13,6 +15,10 @@ type Props = {
 
 export function CardBack({ card, position, total, onKnown, onReview }: Props) {
   const theme = themeById(card.theme);
+  const { prefs } = useProgress();
+  const lang = languageById(prefs.language);
+  const tr = card.translations[prefs.language] ?? card.translations.ar;
+
   return (
     <div className="flex h-full flex-col p-6 sm:p-8 gap-4">
       <div className="text-xs text-[var(--color-muted-foreground)] uppercase tracking-wide">
@@ -35,10 +41,10 @@ export function CardBack({ card, position, total, onKnown, onReview }: Props) {
 
       <p
         className="text-sm sm:text-base leading-relaxed text-[var(--color-muted-foreground)]"
-        dir="rtl"
-        lang="ar"
+        dir={lang.dir}
+        lang={lang.lang}
       >
-        {card.ar_a}
+        {tr.a}
       </p>
 
       <div className="mt-auto pt-2">

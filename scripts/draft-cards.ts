@@ -77,10 +77,9 @@ export async function draftCards(opts: DraftOptions = {}) {
       id,
       theme: chunk.theme,
       fr_q: out.fr_q,
-      ar_q: out.ar_q,
       fr_a: chunk.fr_a,
-      ar_a: out.ar_a,
       source: chunk.source === "livret" ? `Livret p.${chunk.page}` : `Charte`,
+      translations: { ar: { q: out.ar_q, a: out.ar_a } },
       audio: { fr_q_sha1: PLACEHOLDER_SHA1, fr_a_sha1: PLACEHOLDER_SHA1 },
     };
 

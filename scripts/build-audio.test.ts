@@ -12,9 +12,8 @@ const sampleCard = (id: string, fr_q: string, fr_a: string) => ({
   id,
   theme: "valeurs",
   fr_q,
-  ar_q: "سؤال؟",
   fr_a,
-  ar_a: "إجابة.",
+  translations: { ar: { q: "سؤال؟", a: "إجابة." } },
   source: "Livret p.4",
   audio: { fr_q_sha1: ZERO, fr_a_sha1: ZERO },
 });
