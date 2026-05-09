@@ -44,7 +44,10 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
         markKnown(state.deck[state.cursor].id);
         if (prefs.autoAdvance) dispatch({ type: "NEXT" });
       }
-      if (state.flipped && e.key === "2") markReview(state.deck[state.cursor].id);
+      if (state.flipped && e.key === "2") {
+        markReview(state.deck[state.cursor].id);
+        if (prefs.autoAdvance) dispatch({ type: "NEXT" });
+      }
       if (e.key.toLowerCase() === "s") dispatch({ type: "SHUFFLE" });
     }
     window.addEventListener("keydown", onKey);
@@ -134,6 +137,7 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           onReview={() => {
             markReview(card.id);
             showToast("review", "✗ Carte ajoutée à revoir");
+            if (prefs.autoAdvance) dispatch({ type: "NEXT" });
           }}
         />
       </div>

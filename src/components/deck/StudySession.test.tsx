@@ -32,13 +32,13 @@ describe("StudySession", () => {
     expect(screen.getAllByText(/2 \/ \d+/).length).toBeGreaterThan(0);
   });
 
-  it("flip → À revoir stays on the same card", async () => {
+  it("flip → À revoir auto-advances to next card", async () => {
     const user = userEvent.setup();
     render(
       wrap(<StudySession cards={cardsByTheme("valeurs")} backHref="/" themeLabel="Valeurs" />),
     );
     await user.click(screen.getByTestId("flashcard"));
     await user.click(screen.getByRole("button", { name: /à revoir/i }));
-    expect(screen.getAllByText(/1 \/ \d+/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/2 \/ \d+/).length).toBeGreaterThan(0);
   });
 });
