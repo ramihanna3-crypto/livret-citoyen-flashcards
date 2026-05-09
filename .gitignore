@@ -16,6 +16,8 @@ lerna-debug.log*
 playwright-report/
 test-results/
 playwright/.cache/
+data/cards-draft/
+tmp-*-test/
 
 # Editor directories and files
 .vscode/*
