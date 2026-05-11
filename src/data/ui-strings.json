@@ -8,7 +8,8 @@
       "privacy": "الخصوصية",
       "privacy_text": "لا حساب. لا ملفات تعريف ارتباط. لا متعقّبات. يبقى تقدّمك في متصفّحك.",
       "settings": "الإعدادات",
-      "footer_attribution": "المحتوى الأصلي © وزارة الداخلية الفرنسية. الترجمة العربية والتطبيق: رامي حنا، رخصة CC BY-SA 4.0. تطبيق غير رسمي."
+      "footer_attribution": "المحتوى الأصلي © وزارة الداخلية الفرنسية. الترجمة العربية والتطبيق: رامي حنا، رخصة CC BY-SA 4.0. تطبيق غير رسمي.",
+      "letter_heading": "رسالة إلى وزارة الداخلية"
     },
     "themes": {
       "valeurs": {
@@ -46,7 +47,8 @@
       "privacy": "Конфіденційність",
       "privacy_text": "Без облікового запису. Без файлів cookie. Без трекерів. Ваш прогрес зберігається у вашому браузері.",
       "settings": "Налаштування",
-      "footer_attribution": "Оригінальний вміст © Міністерство внутрішніх справ Франції. Український переклад і застосунок: Рамі Ханна, ліцензія CC BY-SA 4.0. Неофіційний застосунок."
+      "footer_attribution": "Оригінальний вміст © Міністерство внутрішніх справ Франції. Український переклад і застосунок: Рамі Ханна, ліцензія CC BY-SA 4.0. Неофіційний застосунок.",
+      "letter_heading": "Лист до Міністерства внутрішніх справ"
     },
     "themes": {
       "valeurs": {
@@ -84,7 +86,8 @@
       "privacy": "حریم خصوصی",
       "privacy_text": "بدون حساب کاربری. بدون کوکی. بدون ردیاب. پیشرفت شما در مرورگرتان باقی می‌ماند.",
       "settings": "تنظیمات",
-      "footer_attribution": "محتوای اصلی © وزارت کشور فرانسه. ترجمهٔ دری و برنامه: رامی حنا، مجوز CC BY-SA 4.0. برنامهٔ غیررسمی."
+      "footer_attribution": "محتوای اصلی © وزارت کشور فرانسه. ترجمهٔ دری و برنامه: رامی حنا، مجوز CC BY-SA 4.0. برنامهٔ غیررسمی.",
+      "letter_heading": "نامه به وزارت داخله"
     },
     "themes": {
       "valeurs": {
@@ -122,7 +125,8 @@
       "privacy": "محرمیت",
       "privacy_text": "هیڅ حساب نشته. هیڅ کوکیز نشته. هیڅ څارونکي نشته. ستاسو پرمختګ ستاسو په براوزر کې پاتې کیږي.",
       "settings": "تنظیمات",
-      "footer_attribution": "اصلي محتوا © د فرانسې د کورنیو چارو وزارت. پښتو ژباړه او اپلیکیشن: رامي حنا، د CC BY-SA 4.0 جواز. غیررسمي اپلیکیشن."
+      "footer_attribution": "اصلي محتوا © د فرانسې د کورنیو چارو وزارت. پښتو ژباړه او اپلیکیشن: رامي حنا، د CC BY-SA 4.0 جواز. غیررسمي اپلیکیشن.",
+      "letter_heading": "د کورنیو چارو وزارت ته لیک"
     },
     "themes": {
       "valeurs": {
@@ -160,7 +164,8 @@
       "privacy": "Konfidansyalite",
       "privacy_text": "Pa gen kont. Pa gen cookies. Pa gen suivi. Pwogrè ou rete nan navigatè ou.",
       "settings": "Paramèt",
-      "footer_attribution": "Kontni orijinal © Ministè Enteryè Franse a. Tradiksyon kreyòl ayisyen ak aplikasyon: Rami Hanna, lisans CC BY-SA 4.0. Aplikasyon ki pa ofisyèl."
+      "footer_attribution": "Kontni orijinal © Ministè Enteryè Franse a. Tradiksyon kreyòl ayisyen ak aplikasyon: Rami Hanna, lisans CC BY-SA 4.0. Aplikasyon ki pa ofisyèl.",
+      "letter_heading": "Lèt voye bay Ministè Enteryè a"
     },
     "themes": {
       "valeurs": {
@@ -198,7 +203,8 @@
       "privacy": "Gizlilik",
       "privacy_text": "Hesap yok. Çerez yok. İzleyici yok. İlerlemeniz tarayıcınızda kalır.",
       "settings": "Ayarlar",
-      "footer_attribution": "Özgün içerik © Fransa İçişleri Bakanlığı. Türkçe çeviri ve uygulama: Rami Hanna, CC BY-SA 4.0 lisansı. Resmi olmayan uygulama."
+      "footer_attribution": "Özgün içerik © Fransa İçişleri Bakanlığı. Türkçe çeviri ve uygulama: Rami Hanna, CC BY-SA 4.0 lisansı. Resmi olmayan uygulama.",
+      "letter_heading": "İçişleri Bakanlığı'na Mektup"
     },
     "themes": {
       "valeurs": {

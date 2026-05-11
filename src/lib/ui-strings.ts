@@ -10,6 +10,7 @@ export type UiStrings = {
   privacy_text: string;
   settings: string;
   footer_attribution: string;
+  letter_heading: string;
 };
 
 export type ThemeI18n = { label: string; description: string };
