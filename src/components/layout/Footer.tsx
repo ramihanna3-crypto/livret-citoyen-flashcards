@@ -14,7 +14,16 @@ export function Footer() {
           Contenu original © Ministère de l'Intérieur. Traduction et application : Rami Hanna, CC
           BY-SA 4.0. Application non officielle.
         </p>
-        <p dir={lang.dir} lang={lang.lang}>
+        {/*
+          Per user feedback: the footer attribution should be left-anchored
+          for every language. RTL scripts (Arabic, Persian, Dari, Pashto)
+          still read right-to-left at the character level (we keep `dir`),
+          but the line itself sits flush against the left edge — `text-left`
+          overrides the default `text-align: start` so right-alignment
+          doesn't kick in for RTL. This rule is scoped to the footer only;
+          card content keeps its natural per-language alignment.
+        */}
+        <p dir={lang.dir} lang={lang.lang} className="text-left">
           {ui.footer_attribution}
         </p>
       </div>
