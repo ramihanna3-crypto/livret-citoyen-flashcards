@@ -1,4 +1,5 @@
 import { DeckPicker } from "@/components/deck/DeckPicker";
+import { UsageCount } from "@/components/layout/UsageCount";
 import { useProgress } from "@/lib/useProgress";
 import { languageById } from "@/lib/languages";
 import { uiStrings } from "@/lib/ui-strings";
@@ -17,6 +18,7 @@ export function Home() {
         </span>
       </h2>
       <DeckPicker />
+      <UsageCount />
     </section>
   );
 }

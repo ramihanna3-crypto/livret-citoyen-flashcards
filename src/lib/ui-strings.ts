@@ -10,6 +10,8 @@ export type UiStrings = {
   privacy_text: string;
   settings: string;
   footer_attribution: string;
+  /** "{count} people have used this app" — `{count}` is replaced at runtime. */
+  usage_count: string;
 };
 
 export type ThemeI18n = { label: string; description: string };

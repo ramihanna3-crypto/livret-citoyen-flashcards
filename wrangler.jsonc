@@ -1,9 +1,20 @@
 {
   "$schema": "https://json.schemastore.org/wrangler.json",
   "name": "livret-citoyen",
+  "main": "src/worker/index.ts",
   "compatibility_date": "2025-01-01",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "VISITS", "class_name": "VisitCounter" }]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["VisitCounter"]
+    }
+  ]
 }
