@@ -111,7 +111,8 @@
       "Bash(curl -sS https://livret-citoyen.pages.dev/ -o /tmp/live.html)",
       "Bash(grep -hE \"https?://[A-Za-z0-9._-]+\\\\.[a-z]{2,}\" README.md docs/DEPLOY.md docs/RUNBOOK-PLAN-2.md)",
       "Bash(python3 -c ' *)",
-      "Bash(python3 -c \"import json; json.load\\(open\\('src/data/ui-strings.json'\\)\\); print\\('JSON OK'\\)\")"
+      "Bash(python3 -c \"import json; json.load\\(open\\('src/data/ui-strings.json'\\)\\); print\\('JSON OK'\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/data/ui-strings.json'\\)\\); [print\\(f'{k}:', repr\\(d[k]['ui']['share_message']\\)\\) for k in d]\")"
     ]
   }
 }

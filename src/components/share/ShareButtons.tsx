@@ -31,8 +31,14 @@ const SITE_URL = "https://livret-citoyen.com";
 // renders bilingual UI throughout — French + the user's selected language).
 const FR_PROMPT = "Partagez ce site";
 const FR_FINISH_PROMPT = "Cette application vous a aidé ? Partagez-la avec une personne qui en a besoin.";
+// Three-block layout for messenger apps. Each block on its own line with
+// a blank line between, so the brand name reads as a header at the top and
+// the URL reads as a clear call-to-action at the bottom — even though
+// WhatsApp / Telegram / SMS can't actually center text, the separation
+// gives the same visual structure the user asked for.
 const FR_MESSAGE =
-  "Livret du Citoyen — préparez gratuitement l'entretien d'assimilation pour la nationalité française. Sept langues, sans inscription, sans suivi. " +
+  "Livret du Citoyen\n\n" +
+  "Préparez gratuitement l'entretien d'assimilation pour la nationalité française. Sept langues, sans inscription, sans suivi.\n\n" +
   SITE_URL;
 const FR_LINK_COPIED = "Lien copié";
 
