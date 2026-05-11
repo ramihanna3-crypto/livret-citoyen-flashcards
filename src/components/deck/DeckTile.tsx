@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/useProgress";
 import { languageById } from "@/lib/languages";
 import { themeI18n } from "@/lib/ui-strings";
+import { useTiltHover } from "@/lib/useTiltHover";
 
 type Props = { theme: Theme; known: number; total: number; onClick: () => void };
 
@@ -12,9 +13,24 @@ export function DeckTile({ theme, known, total, onClick }: Props) {
   const { prefs } = useProgress();
   const lang = languageById(prefs.language);
   const tr = themeI18n(prefs.language, theme.id);
+  // Cursor-following tilt + lift on hover. No design changes — only the
+  // `ref`, inline `style` (transform), and the two mouse handlers below
+  // are added; every existing class is preserved exactly.
+  // Destructured (rather than `tilt.ref`) to satisfy react-hooks/refs,
+  // which flags property access on objects that contain refs.
+  const {
+    ref: tiltRef,
+    style: tiltStyle,
+    onMouseMove: onTiltMove,
+    onMouseLeave: onTiltLeave,
+  } = useTiltHover<HTMLButtonElement>();
 
   return (
     <button
+      ref={tiltRef}
+      style={tiltStyle}
+      onMouseMove={onTiltMove}
+      onMouseLeave={onTiltLeave}
       type="button"
       onClick={onClick}
       className={cn(

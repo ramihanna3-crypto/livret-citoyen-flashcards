@@ -4,6 +4,7 @@ import { CardFront } from "@/components/flashcard/CardFront";
 import { CardBack } from "@/components/flashcard/CardBack";
 import { FlagAccent } from "@/components/flashcard/FlagAccent";
 import { cn } from "@/lib/utils";
+import { useTiltHover } from "@/lib/useTiltHover";
 import "./flashcard.css";
 
 type Props = {
@@ -17,6 +18,19 @@ type Props = {
 };
 
 export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onReview }: Props) {
+  // Cursor-following tilt + lift on hover. Applied to the outer shell.
+  // The existing inner flip (rotateY 180°) lives in its own 3D context
+  // (the shell's CSS `perspective: 1200px` property), independent of the
+  // tilt's transform-list `perspective(1000px)`, so the two compose
+  // without fighting. Design is unchanged — only motion is added.
+  // Destructured (rather than `tilt.ref`) to satisfy react-hooks/refs.
+  const {
+    ref: tiltRef,
+    style: tiltStyle,
+    onMouseMove: onTiltMove,
+    onMouseLeave: onTiltLeave,
+  } = useTiltHover<HTMLDivElement>();
+
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       const active = document.activeElement;
@@ -32,6 +46,10 @@ export function Flashcard({ card, position, total, flipped, onFlip, onKnown, onR
 
   return (
     <div
+      ref={tiltRef}
+      style={tiltStyle}
+      onMouseMove={onTiltMove}
+      onMouseLeave={onTiltLeave}
       data-testid="flashcard"
       role="button"
       aria-label={
