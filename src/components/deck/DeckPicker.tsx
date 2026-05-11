@@ -38,16 +38,18 @@ export function DeckPicker() {
           className={cn(
             "inline-flex items-center gap-2 rounded-[var(--radius)] px-5 py-3",
             // Solid deep indigo. Stays inside the single color family the
-            // whole app already uses for primary emphasis (--primary is
-            // indigo-500 in light mode, indigo-400 in dark — both felt too
-            // light against slate-900). Going to indigo-700 keeps the
-            // button in-family but gives it the substance it needed
-            // without introducing any second color, which would have read
-            // as fluorescent against the restrained pastel-indigo palette
-            // of the surrounding category tiles.
-            "bg-indigo-700 hover:bg-indigo-800",
+            // whole app already uses for primary emphasis. Per user
+            // request to darken by ~50%, dropped from indigo-700 (HSL
+            // lightness ≈ 53%) to indigo-950 (≈ 20%) — roughly the closest
+            // Tailwind step to half the previous brightness. Against the
+            // slate-900 page background the hue differs enough (indigo vs.
+            // slate) for the button to still read clearly, while sitting
+            // much quieter than the previous shade.
+            // Hover lightens to indigo-900 so the interactive state is
+            // perceptible without becoming bright again.
+            "bg-indigo-950 hover:bg-indigo-900",
             "text-white font-medium",
-            "transition-colors shadow-md shadow-black/20 dark:shadow-black/40",
+            "transition-colors shadow-md shadow-black/30 dark:shadow-black/50",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)] focus-visible:ring-offset-2",
           )}
         >
