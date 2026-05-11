@@ -37,8 +37,18 @@ export function DeckPicker() {
           onClick={() => navigate("/study/all")}
           className={cn(
             "inline-flex items-center gap-2 rounded-[var(--radius)] px-5 py-3",
-            "bg-[var(--color-primary)] text-[var(--color-primary-foreground)]",
-            "hover:opacity-90 transition shadow-sm",
+            // Gradient that traces the same color sweep as the category
+            // tiles above it (indigo → violet → purple → fuchsia → pink →
+            // rose). Using three stops (indigo → purple → fuchsia) gives
+            // the button enough warmth on the right edge to echo the
+            // pink/rose tiles without being a literal six-stop rainbow.
+            // Saturated 600 shades read as rich on both light and dark
+            // backgrounds, which fixes the "too light" lavender feel the
+            // primary token had in dark mode.
+            "bg-gradient-to-r from-indigo-600 via-purple-600 to-fuchsia-600",
+            "text-white font-medium",
+            "hover:from-indigo-700 hover:via-purple-700 hover:to-fuchsia-700",
+            "transition-colors shadow-md shadow-indigo-500/20 dark:shadow-fuchsia-500/20",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)] focus-visible:ring-offset-2",
           )}
         >
