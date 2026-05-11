@@ -101,7 +101,17 @@
       "mcp__Claude_in_Chrome__navigate",
       "mcp__Claude_in_Chrome__find",
       "mcp__Claude_in_Chrome__javascript_tool",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(pnpm wrangler *)",
+      "Bash(npx wrangler *)",
+      "Bash(python3 -c \"import json,sys; p=json.load\\(sys.stdin\\); print\\('scripts:'\\); [print\\(f'  {k}: {v}'\\) for k,v in p.get\\('scripts',{}\\).items\\(\\)]; print\\('deps:', list\\(p.get\\('dependencies',{}\\).keys\\(\\)\\)\\); print\\('devDeps:', list\\(p.get\\('devDependencies',{}\\).keys\\(\\)\\)\\)\")",
+      "Bash(gh run *)",
+      "Bash(curl -sS https://livret-citoyen.pages.dev)",
+      "Bash(curl -sSI https://livret-citoyen.pages.dev)",
+      "Bash(curl -sS https://livret-citoyen.pages.dev/ -o /tmp/live.html)",
+      "Bash(grep -hE \"https?://[A-Za-z0-9._-]+\\\\.[a-z]{2,}\" README.md docs/DEPLOY.md docs/RUNBOOK-PLAN-2.md)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('src/data/ui-strings.json'\\)\\); print\\('JSON OK'\\)\")"
     ]
   }
 }

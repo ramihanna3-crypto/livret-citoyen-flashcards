@@ -12,6 +12,16 @@ export type UiStrings = {
   footer_attribution: string;
   /** "{count} people have used this app" — `{count}` is replaced at runtime. */
   usage_count: string;
+  /** Section label on Home page: "Share this site". */
+  share_prompt: string;
+  /** Longer prompt shown on the deck-finish screen. */
+  share_finish_prompt: string;
+  /** Pre-composed message body that gets injected into WhatsApp / Telegram /
+   * Email / SMS / clipboard. Ends with the site URL.
+   */
+  share_message: string;
+  /** Brief confirmation toast shown after Copy. */
+  share_link_copied: string;
 };
 
 export type ThemeI18n = { label: string; description: string };

@@ -4,6 +4,7 @@ import { ArrowLeft, ChevronLeft, ChevronRight, Shuffle } from "lucide-react";
 import type { Card } from "@/lib/card";
 import { Flashcard } from "@/components/flashcard/Flashcard";
 import { initSession, sessionReducer } from "@/components/deck/sessionReducer";
+import { ShareButtons } from "@/components/share/ShareButtons";
 import { useProgress } from "@/lib/useProgress";
 import { languageById } from "@/lib/languages";
 import { uiStrings } from "@/lib/ui-strings";
@@ -89,6 +90,10 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
             Retour
           </Link>
         </div>
+        {/* Share prompt on the emotional peak (Option D). The user just
+            finished a deck — best moment to invite them to pass the app
+            along to someone else who's preparing for the same interview. */}
+        <ShareButtons variant="finish" />
       </div>
     );
   }

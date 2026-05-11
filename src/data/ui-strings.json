@@ -9,7 +9,11 @@
       "privacy_text": "لا حساب. لا ملفات تعريف ارتباط. لا متعقّبات. يبقى تقدّمك في متصفّحك.",
       "settings": "الإعدادات",
       "footer_attribution": "المحتوى الأصلي © وزارة الداخلية الفرنسية. الترجمة العربية والتطبيق: رامي حنا، رخصة CC BY-SA 4.0. تطبيق غير رسمي.",
-      "usage_count": "{count} شخصاً قد استخدم هذا التطبيق"
+      "usage_count": "{count} شخصاً قد استخدم هذا التطبيق",
+      "share_prompt": "شارك هذا الموقع",
+      "share_finish_prompt": "هل ساعدك هذا التطبيق؟ شاركه مع شخص يحتاج إليه.",
+      "share_message": "Livret du Citoyen — حضّر مجاناً مقابلة الاندماج للحصول على الجنسية الفرنسية. سبع لغات، بدون تسجيل ولا تتبع. https://livret-citoyen.com",
+      "share_link_copied": "تم نسخ الرابط"
     },
     "themes": {
       "valeurs": {
@@ -48,7 +52,11 @@
       "privacy_text": "Без облікового запису. Без файлів cookie. Без трекерів. Ваш прогрес зберігається у вашому браузері.",
       "settings": "Налаштування",
       "footer_attribution": "Оригінальний вміст © Міністерство внутрішніх справ Франції. Український переклад і застосунок: Рамі Ханна, ліцензія CC BY-SA 4.0. Неофіційний застосунок.",
-      "usage_count": "{count} людей уже скористалися цим застосунком"
+      "usage_count": "{count} людей уже скористалися цим застосунком",
+      "share_prompt": "Поділіться цим сайтом",
+      "share_finish_prompt": "Цей застосунок вам допоміг? Поділіться ним із тим, кому він потрібен.",
+      "share_message": "Livret du Citoyen — безкоштовна підготовка до співбесіди для отримання французького громадянства. Сім мов, без реєстрації, без відстеження. https://livret-citoyen.com",
+      "share_link_copied": "Посилання скопійовано"
     },
     "themes": {
       "valeurs": {
@@ -87,7 +95,11 @@
       "privacy_text": "بدون حساب کاربری. بدون کوکی. بدون ردیاب. پیشرفت شما در مرورگرتان باقی می‌ماند.",
       "settings": "تنظیمات",
       "footer_attribution": "محتوای اصلی © وزارت کشور فرانسه. ترجمهٔ دری و برنامه: رامی حنا، مجوز CC BY-SA 4.0. برنامهٔ غیررسمی.",
-      "usage_count": "{count} نفر از این برنامه استفاده کرده‌اند"
+      "usage_count": "{count} نفر از این برنامه استفاده کرده‌اند",
+      "share_prompt": "این سایت را به اشتراک بگذارید",
+      "share_finish_prompt": "آیا این برنامه به شما کمک کرد؟ آن را با کسی که به آن نیاز دارد به اشتراک بگذارید.",
+      "share_message": "Livret du Citoyen — برای مصاحبهٔ شهروندی فرانسه به‌صورت رایگان آماده شوید. هفت زبان، بدون ثبت‌نام و بدون ردیابی. https://livret-citoyen.com",
+      "share_link_copied": "پیوند کپی شد"
     },
     "themes": {
       "valeurs": {
@@ -126,7 +138,11 @@
       "privacy_text": "هیڅ حساب نشته. هیڅ کوکیز نشته. هیڅ څارونکي نشته. ستاسو پرمختګ ستاسو په براوزر کې پاتې کیږي.",
       "settings": "تنظیمات",
       "footer_attribution": "اصلي محتوا © د فرانسې د کورنیو چارو وزارت. پښتو ژباړه او اپلیکیشن: رامي حنا، د CC BY-SA 4.0 جواز. غیررسمي اپلیکیشن.",
-      "usage_count": "{count} کسانو دا اپلیکیشن کارولی دی"
+      "usage_count": "{count} کسانو دا اپلیکیشن کارولی دی",
+      "share_prompt": "دا ویب پاڼه شریک کړئ",
+      "share_finish_prompt": "آیا دې اپلیکیشن تاسو سره مرسته وکړه؟ دا له هغه چا سره شریک کړئ چې اړتیا یې لري.",
+      "share_message": "Livret du Citoyen — د فرانسوي تابعیت د مرکې لپاره وړیا چمتو کېدل. اوه ژبې، پرته له نوم لیکنې، پرته له څارنې. https://livret-citoyen.com",
+      "share_link_copied": "لینک کاپي شو"
     },
     "themes": {
       "valeurs": {
@@ -165,7 +181,11 @@
       "privacy_text": "Pa gen kont. Pa gen cookies. Pa gen suivi. Pwogrè ou rete nan navigatè ou.",
       "settings": "Paramèt",
       "footer_attribution": "Kontni orijinal © Ministè Enteryè Franse a. Tradiksyon kreyòl ayisyen ak aplikasyon: Rami Hanna, lisans CC BY-SA 4.0. Aplikasyon ki pa ofisyèl.",
-      "usage_count": "{count} moun deja sèvi ak aplikasyon sa a"
+      "usage_count": "{count} moun deja sèvi ak aplikasyon sa a",
+      "share_prompt": "Pataje sit sa a",
+      "share_finish_prompt": "Èske aplikasyon sa a te ede w? Pataje l ak yon moun ki bezwen li.",
+      "share_message": "Livret du Citoyen — prepare gratis pou entrevyou sitwayènte franse a. Sèt lang, san enskripsyon, san suivi. https://livret-citoyen.com",
+      "share_link_copied": "Lyen kopye"
     },
     "themes": {
       "valeurs": {
@@ -204,7 +224,11 @@
       "privacy_text": "Hesap yok. Çerez yok. İzleyici yok. İlerlemeniz tarayıcınızda kalır.",
       "settings": "Ayarlar",
       "footer_attribution": "Özgün içerik © Fransa İçişleri Bakanlığı. Türkçe çeviri ve uygulama: Rami Hanna, CC BY-SA 4.0 lisansı. Resmi olmayan uygulama.",
-      "usage_count": "{count} kişi bu uygulamayı kullandı"
+      "usage_count": "{count} kişi bu uygulamayı kullandı",
+      "share_prompt": "Bu siteyi paylaşın",
+      "share_finish_prompt": "Bu uygulama size yardımcı oldu mu? İhtiyacı olan biriyle paylaşın.",
+      "share_message": "Livret du Citoyen — Fransız vatandaşlığı uyum görüşmesine ücretsiz hazırlanın. Yedi dil, kayıt yok, takip yok. https://livret-citoyen.com",
+      "share_link_copied": "Bağlantı kopyalandı"
     },
     "themes": {
       "valeurs": {
