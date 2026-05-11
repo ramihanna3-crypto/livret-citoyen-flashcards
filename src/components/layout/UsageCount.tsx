@@ -7,32 +7,33 @@ import { cn } from "@/lib/utils";
 /**
  * Horizontally-scrolling marquee that announces the global visit count.
  *
- * Each slide cycles through the bleu/blanc/rouge of the French flag for the
- * surrounding TEXT color; the number itself stays in the app's primary indigo
- * and is wrapped in a small pill (background tint + padding) so the digits
- * have breathing room from the surrounding words.
+ * The surrounding text is rendered in the theme-adaptive foreground color
+ * (near-black on light backgrounds, white on dark) so the marquee reads as
+ * one coherent line across all 7 languages. The number itself stays in the
+ * app's primary indigo and is wrapped in a small pill (background tint +
+ * padding) so the digits have breathing room from the surrounding words.
+ *
+ * Large counts are abbreviated via locale-aware compact notation
+ * (e.g. 37,520 → "38 k" in French, "38K" in English, "٣٨ ألف" in Arabic),
+ * so the pill stays narrow no matter how the counter grows.
  */
-
-// Slide text-color rotation: bleu → blanc → rouge.
-// Tailwind dark: variants raise contrast on the dark theme — official flag
-// blue (#0055A4) is too dark on a slate-900 background, so dark mode uses a
-// lighter sky blue; "blanc" means foreground (auto-adapting via the theme).
-const SLIDE_COLOR_CYCLE = [
-  "text-[#0055A4] dark:text-sky-300", // bleu
-  "text-[var(--color-foreground)]", // blanc (theme-adaptive)
-  "text-[#EF4135] dark:text-red-400", // rouge
-];
 
 export function UsageCount() {
   const count = useVisitCount();
   if (count == null) return null;
 
   function formatFor(localeTag: string): string {
-    return new Intl.NumberFormat(localeTag, { useGrouping: true }).format(count!);
+    // Compact notation: 1 → "1", 999 → "999", 1_500 → "1.5K", 37_520 → "38K".
+    // Each locale renders its own suffix ("k", "тис.", "ألف", "B"…). One
+    // fractional digit so 1.2K reads naturally without becoming verbose.
+    return new Intl.NumberFormat(localeTag, {
+      notation: "compact",
+      maximumFractionDigits: 1,
+    }).format(count!);
   }
 
   const slides = [
-    // French canonical slide
+    // French canonical slide.
     {
       key: "fr",
       dir: "ltr" as const,
@@ -62,14 +63,17 @@ export function UsageCount() {
   return (
     <div className="pt-6">
       <Marquee duration={45} pauseOnHover fade fadeAmount={12} aria-label="Compteur de visites">
-        {slides.map((s, i) => (
+        {slides.map((s) => (
           <span
             key={s.key}
             dir={s.dir}
             lang={s.lang}
             className={cn(
-              "mx-6 sm:mx-10 text-sm sm:text-base font-medium whitespace-nowrap inline-flex items-center",
-              SLIDE_COLOR_CYCLE[i % SLIDE_COLOR_CYCLE.length],
+              // ~10% smaller than the previous text-sm / sm:text-base scale:
+              //   text-sm  (14px) × 0.9 ≈ 12.6px = 0.7875rem
+              //   text-base (16px) × 0.9 ≈ 14.4px = 0.9rem
+              "mx-6 sm:mx-10 text-[0.7875rem] sm:text-[0.9rem] font-medium whitespace-nowrap inline-flex items-center",
+              "text-[var(--color-foreground)]",
             )}
           >
             {s.before.trim() && <span>{s.before.trim()}</span>}
