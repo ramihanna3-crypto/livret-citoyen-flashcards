@@ -37,18 +37,17 @@ export function DeckPicker() {
           onClick={() => navigate("/study/all")}
           className={cn(
             "inline-flex items-center gap-2 rounded-[var(--radius)] px-5 py-3",
-            // Gradient that traces the same color sweep as the category
-            // tiles above it (indigo → violet → purple → fuchsia → pink →
-            // rose). Using three stops (indigo → purple → fuchsia) gives
-            // the button enough warmth on the right edge to echo the
-            // pink/rose tiles without being a literal six-stop rainbow.
-            // Saturated 600 shades read as rich on both light and dark
-            // backgrounds, which fixes the "too light" lavender feel the
-            // primary token had in dark mode.
-            "bg-gradient-to-r from-indigo-600 via-purple-600 to-fuchsia-600",
+            // Solid deep indigo. Stays inside the single color family the
+            // whole app already uses for primary emphasis (--primary is
+            // indigo-500 in light mode, indigo-400 in dark — both felt too
+            // light against slate-900). Going to indigo-700 keeps the
+            // button in-family but gives it the substance it needed
+            // without introducing any second color, which would have read
+            // as fluorescent against the restrained pastel-indigo palette
+            // of the surrounding category tiles.
+            "bg-indigo-700 hover:bg-indigo-800",
             "text-white font-medium",
-            "hover:from-indigo-700 hover:via-purple-700 hover:to-fuchsia-700",
-            "transition-colors shadow-md shadow-indigo-500/20 dark:shadow-fuchsia-500/20",
+            "transition-colors shadow-md shadow-black/20 dark:shadow-black/40",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)] focus-visible:ring-offset-2",
           )}
         >
