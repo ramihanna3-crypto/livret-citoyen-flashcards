@@ -18,12 +18,16 @@ export function Footer() {
           Per user feedback: the footer attribution should be left-anchored
           for every language. RTL scripts (Arabic, Persian, Dari, Pashto)
           still read right-to-left at the character level (we keep `dir`),
-          but the line itself sits flush against the left edge — `text-left`
-          overrides the default `text-align: start` so right-alignment
-          doesn't kick in for RTL. This rule is scoped to the footer only;
-          card content keeps its natural per-language alignment.
+          but the line itself sits flush against the left edge.
+
+          The app sets a global `[dir="rtl"] { text-align: right }` rule in
+          index.css so every RTL element across the app right-aligns by
+          default — that rule is correct for cards, headers, and buttons.
+          We use an INLINE `textAlign: left` here (higher specificity than
+          any stylesheet rule) to override it exclusively for the footer
+          attribution, without touching the global behavior.
         */}
-        <p dir={lang.dir} lang={lang.lang} className="text-left">
+        <p dir={lang.dir} lang={lang.lang} style={{ textAlign: "left" }}>
           {ui.footer_attribution}
         </p>
       </div>
