@@ -60,7 +60,7 @@ export function About() {
         </label>
       </section>
 
-      <section>
+      <section className="space-y-3">
         <h2 className="text-xl font-semibold">Progrès</h2>
         <button
           type="button"
@@ -79,55 +79,6 @@ export function About() {
           Code : MIT. Traductions : CC BY-SA 4.0. Contenu source français : © Ministère de
           l'Intérieur (document public, Licence Ouverte 2.0 d'Etalab).
         </p>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-semibold">
-          Lettre au Ministère de l'Intérieur ·{" "}
-          <span dir={lang.dir} lang={lang.lang}>
-            {ui.letter_heading}
-          </span>
-        </h2>
-        <p className="text-[var(--color-muted-foreground)]">
-          Dans un esprit de transparence, voici le texte de la lettre destinée à être adressée à la
-          Direction générale des étrangers en France pour les informer de l'existence de cette
-          application et de l'usage qui est fait des contenus du <em>Livret du citoyen</em> sous
-          Licence Ouverte 2.0 d'Etalab.
-        </p>
-        <blockquote className="mt-3 border-l-4 border-[var(--color-primary)] bg-[var(--color-muted)]/40 px-4 py-3 rounded-r font-serif text-sm leading-relaxed space-y-3">
-          <p>
-            <em>Objet :</em> Information — Application web pédagogique fondée sur le{" "}
-            <em>Livret du citoyen</em>
-          </p>
-          <p>Madame, Monsieur,</p>
-          <p>
-            Je me permets de vous informer, à titre de courtoisie, de l'existence d'une application
-            web pédagogique libre et gratuite que j'ai développée pour aider les candidates et
-            candidats à la naturalisation française : <em>Livret du Citoyen — Cartes mémoire</em>.
-          </p>
-          <p>
-            L'application reproduit le contenu du <em>Livret du citoyen</em> (édition février 2022)
-            et de la <em>Charte des droits et devoirs du citoyen français</em>, conformément à la
-            Licence Ouverte 2.0 d'Etalab applicable à ces publications. Elle est entièrement
-            gratuite, sans publicité, sans cookie, sans création de compte ni collecte de données.
-            La source est explicitement créditée sur chaque page : «&nbsp;Contenu original ©
-            Ministère de l'Intérieur — Application non officielle.&nbsp;»
-          </p>
-          <p>
-            L'application propose les contenus du Livret en six langues — français, arabe,
-            ukrainien, dari, pachto, créole haïtien et turc — accompagnées d'un enregistrement audio
-            des questions et réponses en français, dans une démarche d'accessibilité pour les
-            publics réfugiés et primo-arrivants.
-          </p>
-          <p>
-            Je tenais à porter cette démarche à votre connaissance, dans un esprit de transparence,
-            et reste à votre disposition pour toute remarque, suggestion ou demande d'ajustement.
-          </p>
-          <p>
-            Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations respectueuses.
-          </p>
-          <p className="mt-2">Rami Hanna</p>
-        </blockquote>
       </section>
     </article>
   );
