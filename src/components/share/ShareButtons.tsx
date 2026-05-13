@@ -37,15 +37,17 @@ const FR_FINISH_PROMPT = "Cette application vous a aidé ? Partagez-la avec une 
 // WhatsApp / Telegram / SMS can't actually center text, the separation
 // gives the same visual structure the user asked for.
 //
-// Copy revised per user request: drop "seven languages, no tracking" tail
-// (the recipient already sees the message in their own language, so the
-// multilingual story is implicit) and emphasize the simplicity-and-cost
-// angle instead. Phrased as "préparez l'entretien" — what the app
-// actually helps with — rather than "préparez les documents", which
-// would mislead recipients into expecting a paperwork tool.
+// Copy revised again per user request: name the source book "Livret du
+// citoyen" explicitly in the body for credibility — recipients who
+// recognize it as the official Ministère de l'Intérieur booklet for the
+// assimilation interview understand this isn't a random app but a study
+// tool for the actual published material. The gloss "le livret officiel"
+// makes that authority signal legible to recipients who don't already
+// know the book by name. Closing triplet "simple, gratuit, sans
+// inscription" is short enough to skim.
 const FR_MESSAGE =
   "Livret du Citoyen\n\n" +
-  "Préparez l'entretien de nationalité française simplement et facilement. Site gratuit, sans inscription.\n\n" +
+  "Préparez l'entretien de nationalité française avec le Livret du citoyen, le livret officiel. Simple, gratuit, sans inscription.\n\n" +
   SITE_URL;
 const FR_LINK_COPIED = "Lien copié";
 
