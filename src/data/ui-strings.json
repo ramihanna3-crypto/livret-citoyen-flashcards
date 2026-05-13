@@ -12,7 +12,7 @@
       "usage_count": "{count} شخصاً قد استخدم هذا التطبيق",
       "share_prompt": "شارك هذا الموقع",
       "share_finish_prompt": "هل ساعدك هذا التطبيق؟ شاركه مع شخص يحتاج إليه.",
-      "share_message": "Livret du Citoyen\n\nحضّر مجاناً مقابلة الاندماج للحصول على الجنسية الفرنسية. سبع لغات، بدون تسجيل ولا تتبع.\n\nhttps://livret-citoyen.com",
+      "share_message": "Livret du Citoyen\n\nحضّر مقابلة الجنسية الفرنسية بطريقة بسيطة وسلسة. الموقع مجاني ولا يتطلب التسجيل.\n\nhttps://livret-citoyen.com",
       "share_link_copied": "تم نسخ الرابط"
     },
     "themes": {
@@ -55,7 +55,7 @@
       "usage_count": "{count} людей уже скористалися цим застосунком",
       "share_prompt": "Поділіться цим сайтом",
       "share_finish_prompt": "Цей застосунок вам допоміг? Поділіться ним із тим, кому він потрібен.",
-      "share_message": "Livret du Citoyen\n\nБезкоштовна підготовка до співбесіди для отримання французького громадянства. Сім мов, без реєстрації, без відстеження.\n\nhttps://livret-citoyen.com",
+      "share_message": "Livret du Citoyen\n\nПідготуйтеся до співбесіди на французьке громадянство просто і без зайвих зусиль. Сайт безкоштовний, без реєстрації.\n\nhttps://livret-citoyen.com",
       "share_link_copied": "Посилання скопійовано"
     },
     "themes": {
@@ -98,7 +98,7 @@
       "usage_count": "{count} نفر از این برنامه استفاده کرده‌اند",
       "share_prompt": "این سایت را به اشتراک بگذارید",
       "share_finish_prompt": "آیا این برنامه به شما کمک کرد؟ آن را با کسی که به آن نیاز دارد به اشتراک بگذارید.",
-      "share_message": "Livret du Citoyen\n\nبرای مصاحبهٔ شهروندی فرانسه به‌صورت رایگان آماده شوید. هفت زبان، بدون ثبت‌نام و بدون ردیابی.\n\nhttps://livret-citoyen.com",
+      "share_message": "Livret du Citoyen\n\nبرای مصاحبهٔ شهروندی فرانسه به سادگی و راحتی آماده شوید. سایت رایگان است و به ثبت‌نام نیاز ندارد.\n\nhttps://livret-citoyen.com",
       "share_link_copied": "پیوند کپی شد"
     },
     "themes": {
@@ -141,7 +141,7 @@
       "usage_count": "{count} کسانو دا اپلیکیشن کارولی دی",
       "share_prompt": "دا ویب پاڼه شریک کړئ",
       "share_finish_prompt": "آیا دې اپلیکیشن تاسو سره مرسته وکړه؟ دا له هغه چا سره شریک کړئ چې اړتیا یې لري.",
-      "share_message": "Livret du Citoyen\n\nد فرانسوي تابعیت د مرکې لپاره وړیا چمتو کېدل. اوه ژبې، پرته له نوم لیکنې، پرته له څارنې.\n\nhttps://livret-citoyen.com",
+      "share_message": "Livret du Citoyen\n\nد فرانسوي تابعیت د مرکې لپاره په ساده او اسانه توګه چمتو شئ. ویب پاڼه وړیا ده او نوم لیکنې ته اړتیا نه لري.\n\nhttps://livret-citoyen.com",
       "share_link_copied": "لینک کاپي شو"
     },
     "themes": {
@@ -184,7 +184,7 @@
       "usage_count": "{count} moun deja sèvi ak aplikasyon sa a",
       "share_prompt": "Pataje sit sa a",
       "share_finish_prompt": "Èske aplikasyon sa a te ede w? Pataje l ak yon moun ki bezwen li.",
-      "share_message": "Livret du Citoyen\n\nPrepare gratis pou entrevyou sitwayènte franse a. Sèt lang, san enskripsyon, san suivi.\n\nhttps://livret-citoyen.com",
+      "share_message": "Livret du Citoyen\n\nPrepare entrevyou sitwayènte franse a yon fason senp e fasil. Sit la gratis, san enskripsyon.\n\nhttps://livret-citoyen.com",
       "share_link_copied": "Lyen kopye"
     },
     "themes": {
@@ -227,7 +227,7 @@
       "usage_count": "{count} kişi bu uygulamayı kullandı",
       "share_prompt": "Bu siteyi paylaşın",
       "share_finish_prompt": "Bu uygulama size yardımcı oldu mu? İhtiyacı olan biriyle paylaşın.",
-      "share_message": "Livret du Citoyen\n\nFransız vatandaşlığı uyum görüşmesine ücretsiz hazırlanın. Yedi dil, kayıt yok, takip yok.\n\nhttps://livret-citoyen.com",
+      "share_message": "Livret du Citoyen\n\nFransız vatandaşlık görüşmesine basit ve kolay bir şekilde hazırlanın. Site ücretsiz, kayıt gerektirmez.\n\nhttps://livret-citoyen.com",
       "share_link_copied": "Bağlantı kopyalandı"
     },
     "themes": {

@@ -36,9 +36,16 @@ const FR_FINISH_PROMPT = "Cette application vous a aidé ? Partagez-la avec une 
 // the URL reads as a clear call-to-action at the bottom — even though
 // WhatsApp / Telegram / SMS can't actually center text, the separation
 // gives the same visual structure the user asked for.
+//
+// Copy revised per user request: drop "seven languages, no tracking" tail
+// (the recipient already sees the message in their own language, so the
+// multilingual story is implicit) and emphasize the simplicity-and-cost
+// angle instead. Phrased as "préparez l'entretien" — what the app
+// actually helps with — rather than "préparez les documents", which
+// would mislead recipients into expecting a paperwork tool.
 const FR_MESSAGE =
   "Livret du Citoyen\n\n" +
-  "Préparez gratuitement l'entretien d'assimilation pour la nationalité française. Sept langues, sans inscription, sans suivi.\n\n" +
+  "Préparez l'entretien de nationalité française simplement et facilement. Site gratuit, sans inscription.\n\n" +
   SITE_URL;
 const FR_LINK_COPIED = "Lien copié";
 
