@@ -12,7 +12,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-[960px] px-4 sm:px-6 py-4 text-xs text-[var(--color-muted-foreground)] space-y-1">
         <p>
           Contenu original © Ministère de l'Intérieur. Traduction et application : Rami Hanna, CC
-          BY-SA 4.0. Application non officielle.
+          BY-SA 4.0. Application non gouvernementale.
         </p>
         {/*
           Per user feedback: the footer attribution should be left-anchored
