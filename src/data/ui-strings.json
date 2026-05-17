@@ -13,7 +13,10 @@
       "share_prompt": "شارك هذا الموقع",
       "share_finish_prompt": "هل ساعدك هذا التطبيق؟ شاركه مع شخص يحتاج إليه.",
       "share_message": "Livret du Citoyen\n\nحضّر مقابلة الجنسية الفرنسية باستخدام Livret du citoyen، الكتيّب الرسمي. بسيط، مجاني، بدون تسجيل.\n\nhttps://livret-citoyen.com",
-      "share_link_copied": "تم نسخ الرابط"
+      "share_link_copied": "تم نسخ الرابط",
+      "rate_title": "هل تحب Livret du Citoyen؟",
+      "rate_subtitle": "رأيك يساعدنا على تحسين التطبيق.",
+      "rate_submit": "إرسال"
     },
     "themes": {
       "valeurs": {
@@ -56,7 +59,10 @@
       "share_prompt": "Поділіться цим сайтом",
       "share_finish_prompt": "Цей застосунок вам допоміг? Поділіться ним із тим, кому він потрібен.",
       "share_message": "Livret du Citoyen\n\nПідготуйтеся до співбесіди на французьке громадянство за допомогою Livret du citoyen — офіційного посібника. Просто, безкоштовно, без реєстрації.\n\nhttps://livret-citoyen.com",
-      "share_link_copied": "Посилання скопійовано"
+      "share_link_copied": "Посилання скопійовано",
+      "rate_title": "Чи подобається вам Livret du Citoyen?",
+      "rate_subtitle": "Ваш відгук допомагає нам покращувати застосунок.",
+      "rate_submit": "Надіслати"
     },
     "themes": {
       "valeurs": {
@@ -99,7 +105,10 @@
       "share_prompt": "این سایت را به اشتراک بگذارید",
       "share_finish_prompt": "آیا این برنامه به شما کمک کرد؟ آن را با کسی که به آن نیاز دارد به اشتراک بگذارید.",
       "share_message": "Livret du Citoyen\n\nبرای مصاحبهٔ شهروندی فرانسه با Livret du citoyen، کتابچهٔ رسمی، آماده شوید. ساده، رایگان، بدون ثبت‌نام.\n\nhttps://livret-citoyen.com",
-      "share_link_copied": "پیوند کپی شد"
+      "share_link_copied": "پیوند کپی شد",
+      "rate_title": "آیا از Livret du Citoyen راضی هستید؟",
+      "rate_subtitle": "نظر شما به ما کمک می‌کند برنامه را بهتر کنیم.",
+      "rate_submit": "ارسال"
     },
     "themes": {
       "valeurs": {
@@ -142,7 +151,10 @@
       "share_prompt": "دا ویب پاڼه شریک کړئ",
       "share_finish_prompt": "آیا دې اپلیکیشن تاسو سره مرسته وکړه؟ دا له هغه چا سره شریک کړئ چې اړتیا یې لري.",
       "share_message": "Livret du Citoyen\n\nد فرانسوي تابعیت د مرکې لپاره د Livret du citoyen — رسمي کتابچې — په مرسته چمتو شئ. ساده، وړیا، پرته له نوم لیکنې.\n\nhttps://livret-citoyen.com",
-      "share_link_copied": "لینک کاپي شو"
+      "share_link_copied": "لینک کاپي شو",
+      "rate_title": "آیا له Livret du Citoyen راضي یاست؟",
+      "rate_subtitle": "ستاسو نظر مونږ سره مرسته کوي چې اپلیکیشن ښه کړو.",
+      "rate_submit": "لیږل"
     },
     "themes": {
       "valeurs": {
@@ -185,7 +197,10 @@
       "share_prompt": "Pataje sit sa a",
       "share_finish_prompt": "Èske aplikasyon sa a te ede w? Pataje l ak yon moun ki bezwen li.",
       "share_message": "Livret du Citoyen\n\nPrepare entrevyou sitwayènte franse a avèk Livret du citoyen, ti liv ofisyèl la. Senp, gratis, san enskripsyon.\n\nhttps://livret-citoyen.com",
-      "share_link_copied": "Lyen kopye"
+      "share_link_copied": "Lyen kopye",
+      "rate_title": "Èske ou renmen Livret du Citoyen?",
+      "rate_subtitle": "Opinyon ou ede nou amelyore aplikasyon an.",
+      "rate_submit": "Voye"
     },
     "themes": {
       "valeurs": {
@@ -228,7 +243,10 @@
       "share_prompt": "Bu siteyi paylaşın",
       "share_finish_prompt": "Bu uygulama size yardımcı oldu mu? İhtiyacı olan biriyle paylaşın.",
       "share_message": "Livret du Citoyen\n\nFransız vatandaşlık görüşmesine resmi kitapçık Livret du citoyen ile hazırlanın. Basit, ücretsiz, kayıt gerektirmez.\n\nhttps://livret-citoyen.com",
-      "share_link_copied": "Bağlantı kopyalandı"
+      "share_link_copied": "Bağlantı kopyalandı",
+      "rate_title": "Livret du Citoyen'i beğendiniz mi?",
+      "rate_subtitle": "Yorumunuz uygulamayı geliştirmemize yardımcı olur.",
+      "rate_submit": "Gönder"
     },
     "themes": {
       "valeurs": {

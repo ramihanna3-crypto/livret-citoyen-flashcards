@@ -22,6 +22,12 @@ export type UiStrings = {
   share_message: string;
   /** Brief confirmation toast shown after Copy. */
   share_link_copied: string;
+  /** Rating modal title: "Do you like Livret du Citoyen?" */
+  rate_title: string;
+  /** Rating modal subtitle: short reason text below the title. */
+  rate_subtitle: string;
+  /** Submit button label inside the rating modal. */
+  rate_submit: string;
 };
 
 export type ThemeI18n = { label: string; description: string };

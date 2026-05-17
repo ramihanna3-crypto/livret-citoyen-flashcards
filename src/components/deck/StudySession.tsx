@@ -6,6 +6,7 @@ import { Flashcard } from "@/components/flashcard/Flashcard";
 import { initSession, sessionReducer } from "@/components/deck/sessionReducer";
 import { ShareButtons } from "@/components/share/ShareButtons";
 import { useProgress } from "@/lib/useProgress";
+import { recordCardInteraction } from "@/lib/rating";
 import { languageById } from "@/lib/languages";
 import { uiStrings } from "@/lib/ui-strings";
 import { cn } from "@/lib/utils";
@@ -39,6 +40,10 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA")) return;
       if (e.key === " " || e.key === "Enter") {
         e.preventDefault();
+        // Record interaction with the current card before the flip — the
+        // rating-prompt threshold is based on UNIQUE card flips, so this is
+        // a no-op for cards already seen and a deduped insert otherwise.
+        recordCardInteraction(state.deck[state.cursor].id);
         dispatch({ type: "FLIP" });
       }
       if (e.key === "ArrowLeft") dispatch({ type: "PREV" });
@@ -138,7 +143,12 @@ export function StudySession({ cards, backHref, themeLabel }: Props) {
           position={state.cursor + 1}
           total={state.deck.length}
           flipped={state.flipped}
-          onFlip={() => dispatch({ type: "FLIP" })}
+          onFlip={() => {
+            // Mirror the keyboard path: record the (deduped) interaction
+            // before flipping. Feeds the rating-prompt counter.
+            recordCardInteraction(card.id);
+            dispatch({ type: "FLIP" });
+          }}
           onKnown={() => {
             markKnown(card.id);
             showToast("known", "✓ Carte marquée comme connue");
