@@ -4,7 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Livret du Citoyen</title>
+
+    <!--
+      Primary title and meta description target the canonical search query
+      "préparer l'entretien d'assimilation nationalité française" — what
+      refugees and naturalization candidates actually type into Google.
+      Title stays under 60 chars so it doesn't get truncated in the SERP;
+      description stays under 160. Brand name at the end after a middot is
+      conventional and improves CTR over leading with the brand.
+
+      Note: this app uses HashRouter, so Google crawls a single URL
+      (livret-citoyen.com/) regardless of which route the SPA is rendering.
+      The static <title> here is what shows up in search results for every
+      route — per-route titles set by useDocumentTitle only change the
+      browser tab. Migrating to BrowserRouter would unlock per-route SEO
+      but is out of scope here.
+    -->
+    <title>Préparer l'entretien d'assimilation · Livret du Citoyen</title>
+    <meta
+      name="description"
+      content="Préparez l'entretien de nationalité française avec le Livret du citoyen, le livret officiel du Ministère de l'Intérieur. Gratuit, 7 langues, sans inscription ni suivi."
+    />
+    <meta
+      name="keywords"
+      content="livret du citoyen, entretien d'assimilation, nationalité française, naturalisation française, citoyenneté française, examen de naturalisation, Ministère de l'Intérieur"
+    />
+    <meta name="author" content="Rami Hanna" />
+    <link rel="canonical" href="https://livret-citoyen.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp link previews, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://livret-citoyen.com/" />
+    <meta property="og:site_name" content="Livret du Citoyen" />
+    <meta
+      property="og:title"
+      content="Préparer l'entretien d'assimilation · Livret du Citoyen"
+    />
+    <meta
+      property="og:description"
+      content="Préparez l'entretien de nationalité française avec le livret officiel. Gratuit, 7 langues, sans inscription."
+    />
+    <meta property="og:image" content="https://livret-citoyen.com/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ar_FR" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:locale:alternate" content="fa_AF" />
+    <meta property="og:locale:alternate" content="ps_AF" />
+    <meta property="og:locale:alternate" content="ht_HT" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Préparer l'entretien d'assimilation · Livret du Citoyen"
+    />
+    <meta
+      name="twitter:description"
+      content="Préparez l'entretien de nationalité française avec le livret officiel. Gratuit, 7 langues, sans inscription."
+    />
+    <meta name="twitter:image" content="https://livret-citoyen.com/og.svg" />
+
+    <!--
+      JSON-LD structured data. Two interconnected nodes via @graph:
+        - WebSite : the site itself, with name/description/url
+        - LearningResource : describes what the site IS — flashcards for
+          self-study, free, multilingual. This is the right schema type
+          for educational content; Google honors it for rich results
+          (course panels, "free" badges in some locales).
+
+      Deliberately omitted: aggregateRating. Self-declared ratings are
+      prohibited by Google's structured-data guidelines and would risk a
+      manual action against the site. Real ratings (Trustpilot, GBP, etc.)
+      can be wired in later if/when the project gains third-party reviews.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://livret-citoyen.com/#website",
+            "url": "https://livret-citoyen.com/",
+            "name": "Livret du Citoyen",
+            "description": "Préparer l'entretien d'assimilation pour la nationalité française",
+            "inLanguage": "fr"
+          },
+          {
+            "@type": "LearningResource",
+            "@id": "https://livret-citoyen.com/#resource",
+            "name": "Livret du Citoyen — Préparation à l'entretien de nationalité française",
+            "description": "Cartes-mémoire bilingues pour préparer l'entretien d'assimilation. Contenu basé sur le livret officiel du Ministère de l'Intérieur. Gratuit, 7 langues, sans inscription.",
+            "url": "https://livret-citoyen.com/",
+            "learningResourceType": "Flashcards",
+            "educationalUse": "Self-study",
+            "interactivityType": "active",
+            "isAccessibleForFree": true,
+            "audience": {
+              "@type": "EducationalAudience",
+              "educationalRole": "naturalization candidate"
+            },
+            "inLanguage": ["fr", "ar", "uk", "fa", "ps", "ht", "tr"],
+            "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "isBasedOn": {
+              "@type": "Book",
+              "name": "Livret du citoyen",
+              "publisher": {
+                "@type": "GovernmentOrganization",
+                "name": "Ministère de l'Intérieur (France)"
+              }
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

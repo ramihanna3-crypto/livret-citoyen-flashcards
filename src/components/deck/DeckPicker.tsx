@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { themes } from "@/data/themes";
 import { DeckTile } from "@/components/deck/DeckTile";
-import { cardsByTheme } from "@/data";
+// Import only the COUNTS — not the card content — so this module doesn't
+// drag the 388 KB of card JSON into the Home chunk. See cardCounts.ts for
+// the trade-off rationale and cardCounts.test.ts for the drift guard.
+import { cardCountByTheme } from "@/data/cardCounts";
 import { useProgress } from "@/lib/useProgress";
 import { languageById } from "@/lib/languages";
 import { uiStrings } from "@/lib/ui-strings";
@@ -18,7 +21,7 @@ export function DeckPicker() {
     <div className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {themes.map((t) => {
-          const total = cardsByTheme(t.id).length;
+          const total = cardCountByTheme[t.id];
           return (
             <DeckTile
               key={t.id}

@@ -1,4 +1,5 @@
 import { useProgress } from "@/lib/useProgress";
+import { useDocumentTitle } from "@/lib/useDocumentTitle";
 import { languageById } from "@/lib/languages";
 import { uiStrings } from "@/lib/ui-strings";
 
@@ -6,6 +7,7 @@ export function About() {
   const { prefs, setPref, reset } = useProgress();
   const lang = languageById(prefs.language);
   const ui = uiStrings(prefs.language);
+  useDocumentTitle("À propos");
 
   return (
     <article className="prose prose-sm max-w-none space-y-6">
