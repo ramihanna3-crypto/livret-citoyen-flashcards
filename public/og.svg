@@ -1,7 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#6366f1"/>
-  <text x="50%" y="56%" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="#fff">LC</text>
-  <rect x="14" y="48" width="12" height="3" fill="#0055A4"/>
-  <rect x="26" y="48" width="12" height="3" fill="#FFFFFF"/>
-  <rect x="38" y="48" width="12" height="3" fill="#EF4135"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Open Graph share card. 1200×630 (the Facebook / Twitter standard).
+  Rendered as the thumbnail when livret-citoyen.com is pasted into
+  WhatsApp, Telegram, LinkedIn, Facebook, X, Slack, Discord, etc.
+
+  Designed to read at thumbnail size too (most platforms scale this
+  down to ~500×260 in feed previews):
+   - High contrast (white on dark indigo)
+   - Brand name is the dominant element
+   - Three pills compress the value prop into skimmable chips
+   - French flag accent ties it to the app's visual language
+   - Decorative card stack on the right hints at what the product is
+
+  All attribute-style styling (no <style> blocks) so OG crawlers that
+  re-render the SVG server-side don't drop CSS. Inter with system-ui
+  fallback because most platforms convert SVG → PNG and use whatever
+  fonts they have available.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="glow" cx="35%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#312e81" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- French flag accent (vertical stripes, top-left) -->
+  <rect x="80" y="80" width="14" height="64" fill="#0055A4"/>
+  <rect x="94" y="80" width="14" height="64" fill="#ffffff"/>
+  <rect x="108" y="80" width="14" height="64" fill="#EF4135"/>
+
+  <!-- Brand -->
+  <text x="80" y="280"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+        font-size="92" font-weight="800" fill="#ffffff"
+        letter-spacing="-2">Livret du Citoyen</text>
+
+  <!-- Tagline (two lines) -->
+  <text x="80" y="360"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+        font-size="36" font-weight="500" fill="#e2e8f0">Préparer l'entretien de</text>
+  <text x="80" y="408"
+        font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+        font-size="36" font-weight="500" fill="#e2e8f0">nationalité française</text>
+
+  <!-- Pills row (Gratuit · 7 langues · Sans inscription) -->
+  <g transform="translate(80, 470)">
+    <rect x="0" y="0" width="135" height="48" rx="24" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="67.5" y="32" text-anchor="middle"
+          font-family="Inter, system-ui, -apple-system, sans-serif"
+          font-size="22" font-weight="600" fill="#e2e8f0">Gratuit</text>
+  </g>
+  <g transform="translate(231, 470)">
+    <rect x="0" y="0" width="160" height="48" rx="24" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="80" y="32" text-anchor="middle"
+          font-family="Inter, system-ui, -apple-system, sans-serif"
+          font-size="22" font-weight="600" fill="#e2e8f0">7 langues</text>
+  </g>
+  <g transform="translate(407, 470)">
+    <rect x="0" y="0" width="220" height="48" rx="24" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="110" y="32" text-anchor="middle"
+          font-family="Inter, system-ui, -apple-system, sans-serif"
+          font-size="22" font-weight="600" fill="#e2e8f0">Sans inscription</text>
+  </g>
+
+  <!-- URL footer -->
+  <text x="80" y="580"
+        font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="26" font-weight="600" fill="#818cf8" letter-spacing="1">livret-citoyen.com</text>
+
+  <!-- Decorative card stack (top-right) — hints at "this is a flashcard app" -->
+  <g transform="translate(820, 140) rotate(8)" opacity="0.85">
+    <rect x="0" y="0" width="280" height="380" rx="20" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <rect x="0" y="0" width="6" height="380" fill="#0055A4"/>
+    <rect x="6" y="0" width="6" height="380" fill="#ffffff" fill-opacity="0.95"/>
+    <rect x="12" y="0" width="6" height="380" fill="#EF4135"/>
+    <text x="40" y="80" font-family="Inter, system-ui, sans-serif"
+          font-size="22" font-weight="500" fill="#cbd5e1">Question 1 / 113</text>
+    <text x="40" y="170" font-family="Merriweather, Georgia, serif"
+          font-size="28" font-weight="700" fill="#ffffff">Qu'est-ce que la</text>
+    <text x="40" y="206" font-family="Merriweather, Georgia, serif"
+          font-size="28" font-weight="700" fill="#ffffff">laïcité ?</text>
+    <text x="40" y="330" font-family="Inter, system-ui, sans-serif"
+          font-size="18" font-weight="500" fill="#818cf8">Touchez pour révéler</text>
+  </g>
 </svg>

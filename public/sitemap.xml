@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for Google / Bing / etc.
+
+  Only one URL is listed: the homepage. The app uses HashRouter, which
+  means routes like /#/study/histoire are not distinct documents to a
+  crawler — they're URL fragments of the same page. Listing them would
+  be wrong (Google ignores fragments) and would not help ranking.
+
+  If/when the project migrates to BrowserRouter (clean paths like
+  /study/histoire that Google does crawl), this sitemap should grow to
+  list each route — `/`, `/about`, and one entry per theme.
+
+  lastmod is intentionally omitted — there's no automated build step
+  that updates it on every deploy. A stale lastmod is worse than no
+  lastmod (Google may de-prioritize re-crawling).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://livret-citoyen.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

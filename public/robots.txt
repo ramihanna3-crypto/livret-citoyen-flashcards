@@ -1,0 +1,16 @@
+# Livret du Citoyen — robots.txt
+#
+# Allow all well-behaved crawlers full access. The app has no private
+# routes (everything is the same SPA shell) and no /admin/ or similar
+# to hide.
+#
+# The HashRouter design means Google crawls a single URL anyway — the
+# fragments after # are not separate documents from a crawler's view.
+# If/when the project migrates to BrowserRouter we'll re-think this.
+
+User-agent: *
+Allow: /
+
+# Pointer to the sitemap. Required for Search Console to pick it up
+# without a manual submission step.
+Sitemap: https://livret-citoyen.com/sitemap.xml
